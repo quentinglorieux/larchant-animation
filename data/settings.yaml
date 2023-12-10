@@ -80,7 +80,7 @@ mailinglist:
   heading: "Inscrivez vous à notre liste de diffusion"
   content:
     - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
-  action: "#"
+  action: "https://formsubmit.co/quentin.glorieux@gmail.com"
   label: "Adresse email"
   placeholder: "Entrez votre email"
   button: "Inscrivez moi !"
