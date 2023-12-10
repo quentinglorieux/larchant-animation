@@ -32,7 +32,7 @@ ateliers:
   - identifier: yoga
     pre: yoga
     name: Yoga
-    post: "Mardi et jeudi avec Antonine"
+    post: "Mardi et Jeudi avec Antonine"
     url: /ateliers/yoga/
     weight: 10
   - identifier: pilates

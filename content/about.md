@@ -4,7 +4,6 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Le mot de la présidente
-# featured_image: ../assets/images/large-logo.png
 ---
 
 ## Le mot de la présidente

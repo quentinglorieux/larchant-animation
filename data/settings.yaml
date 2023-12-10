@@ -1,6 +1,4 @@
 author: Quentin Glorieux
-authorimage: ../assets/images/auteurs/panda1.jpg
-# og_image: /images/tailbliss-cover.png
 moto: "Vie sociale et culturelle à Larchant depuis 1983"
 description: "Bienvenue sur notre site. Découvrez nos activités et nos évenements."
 disable_theme_toggle: false
@@ -28,7 +26,7 @@ ateliers:
     - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
   links:
     - text: Voir tous nos ateliers
-      url: "#"
+      url: "/ateliers"
   logos:
     - identifier: Yoga Iyengar
       image: "images/logos/yoga.svg"
@@ -53,7 +51,7 @@ activities:
     - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
   links:
     - text: Voir toutes nous activités
-      url: "#"
+      url: "/activites"
   logos:
     - identifier: Course
       image: "images/logos/running.svg"
