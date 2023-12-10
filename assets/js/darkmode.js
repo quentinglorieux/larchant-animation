@@ -28,12 +28,12 @@ themeToggleBtn.addEventListener('click', function() {
 
     // if NOT set via local storage previously
     } else {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
+        if (document.documentElement.classList.contains('light')) {
+            document.documentElement.classList.remove('light');
             localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.add('light');
+            localStorage.setItem('color-theme', 'light');
         }
     }
     
