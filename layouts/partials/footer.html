@@ -12,8 +12,8 @@
             {{ end }}
         </nav>
         <div class="flex justify-center mt-8 space-x-6">
-            {{ if .Site.Params.Social_media.Facebook.Enabled }}
-            <a href="#" class="text-gray-400 hover:text-gray-300">
+            {{ if .Site.Data.settings.social_media.facebook.enabled }}
+            <a href={{.Site.Data.settings.social_media.facebook.url}} target="_blank" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Facebook</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -22,8 +22,8 @@
                 </svg>
             </a>
             {{ end }}
-            {{ if .Site.Params.Social_media.Instagram.Enabled }}
-            <a href="#" class="text-gray-400 hover:text-gray-300">
+            {{ if .Site.Data.settings.social_media.instagram.enabled }}
+            <a href={{.Site.Data.settings.social_media.instagram.url}} target="_blank" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Instagram</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -32,8 +32,8 @@
                 </svg>
             </a>
             {{ end }}
-            {{ if .Site.Params.Social_media.Twitter.Enabled }}
-            <a href="#" class="text-gray-400 hover:text-gray-300">
+            {{ if .Site.Data.settings.social_media.twitter.enabled }}
+            <a href={{.Site.Data.settings.social_media.twitter.url}} target="_blank" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Twitter</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
@@ -41,8 +41,8 @@
                 </svg>
             </a>
             {{ end }}
-            {{ if .Site.Params.Social_media.Github.Enabled }}
-            <a href="#" class="text-gray-400 hover:text-gray-300">
+            {{ if .Site.Data.settings.social_media.github.enabled }}
+            <a href={{.Site.Data.settings.social_media.github.url}} target="_blank" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">GitHub</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -56,8 +56,11 @@
             {{ .Site.Title }}. All rights
             reserved.</p>
         <p class="mt-2 text-base text-center text-gray-400">Made with &#x2764;&#xfe0f; by <a
-               href="https://nusserstudios.com" class="hover:underline hover:text-primary-600"><span
-                      class="font-black uppercase">Nusser</span> <span class="font-light uppercase">Studios.</span></a>
+               href="https://cv.quentinglorieux.fr" class="hover:underline hover:text-indigo-400"><span
+                      class="font-light uppercase">Quentin</span> <span class=" uppercase">Glorieux.</span></a>
         </p>
     </div>
 </footer>
+
+
+

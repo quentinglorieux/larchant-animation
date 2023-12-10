@@ -1,0 +1,30 @@
+{{ .context.Scratch.Set "height" .height }}
+{{ .context.Scratch.Set "unit" .unit }}
+{{ .context.Scratch.Set "items" .items }}
+
+
+<div id="carousel10" class="carousel" duration="{{ .duration }}" items="{{ .items }}">
+    <ul>
+        {{ range $index, $slide := .context.Site.Data.carousel.images }}
+          <li id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
+            {{ $image := resources.Get $slide.image }}
+              {{ with $image }}
+                {{ with .Resize "x1400 webp" }}
+                  <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="800px" class="w-fit h-auto" loading="lazy" />
+                {{ end }}
+              {{ end }}
+              <div>{{ $slide.content_html }}</div>
+          </li>
+        {{ end }}
+    </ul>
+    <ol>
+      {{ range $index, $page := .context.Site.Data.carousel.images }}
+        <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
+      {{ end }}
+    </ol>
+    <div class="prev">&lsaquo;</div>
+    <div class="next">&rsaquo;</div>
+</div>
+
+<script type="text/javascript" src="js/carousel.js"></script>
+<link rel="stylesheet" href="css/carousel.css">

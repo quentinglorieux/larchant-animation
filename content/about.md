@@ -1,242 +1,47 @@
 ---
-title: "About"
-date: 2021-12-18T11:10:36+08:00
+title: "Présentation de l'association"
+date: 2023-01-01
 draft: false
-language: en
-description: About Us
-featured_image: ../assets/images/featured/featured-img-placeholder.png
+language: fr
+description: Le mot de la présidente
+# featured_image: ../assets/images/large-logo.png
 ---
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+## Le mot de la présidente
+En 2023, l’association Larchant Animation fête ses 40 ans, et c’est cette année que **Dominique AUDEBERT** a souhaité quitter le poste de Présidente. Pendant toutes ces années (dont 17 ans en tant que présidente) Dominique s’est investie sans compter offrant son temps et ses compétences pour apporter une pierre à cet édifice associatif ! Nous l’en remercions tous vivement !
 
+Depuis le début de cette année et la **40e assemblée générale** du 21 janvier dernier le déroulement des activités régulières a suivi son cours :
 
-## Horizontal Rules
+Gym, jeux de société, yoga, atelier couture, dessin enfants, Pilate, Théâtre, Djembé, Trail, marche nordique, VTT…Il est toujours possible de prendre certaines activités en cours de route contactez-nous sur [Facebook](https://www.facebook.com/larchant.animation)
 
-***
 
----
+par mail : larchantanimation@hotmail.fr ou encore **venez nous rencontrer à la Médiathèque**.
 
-___
+> L’équipe de la Médiathèque : Catherine, Corinne, Dominique, Floriane, Isabelle, Laurence L., Laurence M. et Thérèse, vous accueille les lundis et mercredis de 17 h 30 à 19 h et les samedis de 11 h à 13 h et la classe de Larchant 1 fois par mois le lundi. Laurence L. propose régulièrement des activités et lectures pour les jeunes enfants et Catherine des séances d’aide à la connexion au portail numérique de la Médiathèque Départementale.
 
+### Évenements
+Pour ce qui concerne les manifestations de ce début d’année :
 
-## Typographic replacements
+- 15e édition de l’hivernale le dimanche 5 février avec 342 partants, toujours aussi contents de notre organisation au top !
 
-Enable typographer option to see result.
+- 12e édition de la fête des plantes avec beaucoup de visiteurs pour admirer les plantes, goûter aux produits locaux et participer aux conférences, projection et ateliers divers.
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+- Les prochains événements seront un tournoi de pétanque en doublette le samedi 10 juin puis un pique-nique géant pour les 40 ans de l’association le samedi 24 juin.
 
-test.. test... test..... test?..... test!....
+- Pour la rentrée de septembre, le programme vous sera distribué avec la reprise des différents ateliers et comme événements majeurs :
 
-!!!!!! ???? ,,  -- ---
+- 1er vide-greniers dimanche 24 septembre, pour vous inscrire téléchargez un bulletin d’inscription sur http://www.larchantanimation.fr/evenements/vide-grenier-2023.
 
-"Smartypants, double quotes" and 'single quotes'
+- 8e édition du Lyrican’trail dimanche 8 octobre, l’ouverture des inscriptions sera annoncée sur les réseaux sociaux.
 
 
-## Emphasis
+### Bureau
+Et enfin, pour terminer, j’ai le plaisir de vous présenter la composition du nouveau bureau et Conseil d’Administration
 
-**This is bold text**
+- Isabelle LAMY (présidente), Noël MEDALE, Eric ROTELLINI (vice-présidents), Jocelyne BERNARD (trésorière), Catherine DE BŒUF (secrétaire).
 
-__This is bold text__
+- Alain DURY, Jean-Luc GREGOIRE, Danièle GRILLET, Karine JAMOTEAU, Stéphane JAMOTEAU, Jean-François LAMY, Laurence LIMIER, Patrick PIPET, Alain TOURNANT.
 
-*This is italic text*
+Nous rappelons que l’association a le souhait de permettre aux bénévoles, habitants de Larchant et plus largement des communes environnantes de se retrouver au sein d’activités et d’animations multiples avec pour leitmotiv, la convivialité, la créativité et le plaisir partagé.
 
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
+La présidente, *Isabelle LAMY*
