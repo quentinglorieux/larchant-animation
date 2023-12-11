@@ -15,8 +15,11 @@
               {{ end }}
               <div>{{ $slide.content_html }}</div>
           </li>
+        
         {{ end }}
+      
     </ul>
+
     <ol>
       {{ range $index, $page := .context.Site.Data.carousel.images }}
         <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
@@ -24,7 +27,10 @@
     </ol>
     <div class="prev">&lsaquo;</div>
     <div class="next">&rsaquo;</div>
+    
 </div>
+
+
 
 <script type="text/javascript" src="js/carousel.js"></script>
 <link rel="stylesheet" href="css/carousel.css">
