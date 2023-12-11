@@ -17,4 +17,4 @@ Dès 6 ans.
 
 ##  Calendrier
 
-![Calendrier](/calendrier.png)
+![Calendrier](calendrier.png)
