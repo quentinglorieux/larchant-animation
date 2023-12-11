@@ -1,0 +1,37 @@
+    <!-- Atelier section -->
+    <div class="">
+    <div class="max-w-md px-4 mx-auto md:pt-10 md:pb-6 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 ">
+        <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
+            <div class="mt-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+                {{ range .Site.Data.settings.ateliers.logos }}
+                <a href="{{.url}}"> <div class="flex flex-col justify-center col-span-1 px-8 pt-8 pb-4 dark:text-slate-200 dark:hover:text-indigo-400 bg-gray-50 dark:bg-gray-900/10 dark:hover:bg-slate-600 dark:hover:text-indigo-300 hover:bg-slate-300 hover:text-indigo-600">
+                    {{ if .image }}                
+                    <img src="{{ .image}}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />                   
+                    {{ end }}
+                    <div class="text-center pt-2 "> {{.identifier }} </div>
+                </div>
+                </a>
+                
+                {{ end }}
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+                    {{ .Site.Data.settings.ateliers.heading }}
+                </h2>
+                {{ range .Site.Data.settings.ateliers.content }}
+                <p class="max-w-3xl mt-6 text-lg leading-7 text-gray-900 dark:text-white">
+                    {{ .text }}
+                </p>
+                {{ end }}
+                {{ range .Site.Data.settings.ateliers.links }}
+                <div class="my-6">
+                    <a href="{{ .url }}" class="text-base font-medium text-primary-400 dark:text-indigo-400 ">
+                        {{ .text }}&nbsp&rarr;
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+</div>
