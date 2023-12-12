@@ -1,6 +1,6 @@
 {
   "name": "larchantanimation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Larchant Animation with Tail Bliss",
   "main": "index.js",
   "devDependencies": {
