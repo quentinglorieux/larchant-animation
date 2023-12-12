@@ -1,8 +1,8 @@
 main:
-  - identifier: home
-    name: Accueil
-    url: /
-    weight: 10
+  # - identifier: home
+  #   name: Accueil
+  #   url: /
+  #   weight: 10
   - identifier: about
     name: L'association
     url: /about/

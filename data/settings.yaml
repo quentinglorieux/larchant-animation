@@ -29,7 +29,7 @@ ateliers:
     - identifier: Yoga Iyengar
       image: "images/logos/yoga.svg"
       url: "ateliers/yoga"
-    - identifier: Pilatess
+    - identifier: Pilates
       image: "images/logos/pilates.svg"
       url: "ateliers/pilates"
     - identifier: Gym douce
