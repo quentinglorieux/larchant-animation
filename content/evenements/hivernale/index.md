@@ -34,7 +34,7 @@ Cette année, **une nouveauté**, nous lançons la "Petite Hivernale", _seulemen
 Nous avons mis en place une charte avec les chasseurs afin que certaines périodes soient « fermées » aux vététistes et randonneurs et nous nous concertons également avec des propriétaires privés, les carrières de la Sibelco, et l’ONF.
 
 Des affiches, visibles, sont apposées à l’entrée de ces secteurs, interdisant l’accès du 1er septembre au 1er mars de l’année suivante.
-_Merci de respecter cette charte, pour que l’Hivernale vive encore de belles années !_
+Merci de respecter cette charte, pour que l’Hivernale vive encore de belles années !
 
 ## Inscriptions
 

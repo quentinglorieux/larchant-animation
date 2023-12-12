@@ -7,7 +7,7 @@ description: Les Pachydermes de Larchant
 # featured_image: ../assets/images/large-logo.png
 ---
 
-# Les Pachydermes de Larchant
+# Les Pachydermes de Larchant et de Nemours
 ## Présentation
 
 Un club multisports pour découvrir et progresser en Cirque, en Escalade et dans pleins d'autres activités.

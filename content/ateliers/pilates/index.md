@@ -10,10 +10,10 @@ featured_image: pilates.jpg
 # Cours de Pilates 
 
 ## Horaires :
-- 
-
+- Jeudi : 19h - 20h
+ 
 ## Lieu : 
-Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy. Larchant
+Salle de la *Sablonnière*, 1 Rue de la Cave de Châtenoy. Larchant
 
 ## L'enseignante 
 Marie
