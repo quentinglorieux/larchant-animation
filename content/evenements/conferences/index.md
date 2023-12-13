@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Conférences pour tous et toutes
-featured_image: samedi_14_octobre_2023.jpg
+preview: samedi_14_octobre_2023.jpg
 ---
 
 # Conférence 

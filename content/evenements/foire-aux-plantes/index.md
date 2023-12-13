@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Botanique à Larchant
-featured_image: plante.png
+preview: plante.png
 ---
 
 # Foire aux plantes

@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Lyricantrail
-featured_image: trail23.jpg
+preview: trail23.jpg
 ---
 
 # Lyricantrail

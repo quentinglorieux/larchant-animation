@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Théâtre adultes avec Justine
-featured_image: theatre.jpg
+preview: theatre.jpg
 ---
 
 # Cours de Théâtre enfants 

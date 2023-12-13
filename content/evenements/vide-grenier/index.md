@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Vide Grenier
-featured_image: grenier23.jpg
+preview: grenier23.jpg
 ---
 
 # Vide Grenier

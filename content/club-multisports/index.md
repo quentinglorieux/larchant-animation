@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Les Pachydermes de Larchant
-# featured_image: ../assets/images/large-logo.png
+# preview: ../assets/images/large-logo.png
 ---
 
 # Les Pachydermes de Larchant et de Nemours

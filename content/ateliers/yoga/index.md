@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Yoga avec Antonine
-featured_image: yoga.jpg
+preview: yoga.jpg
 ---
 
 # Cours de Yoga Iyengar

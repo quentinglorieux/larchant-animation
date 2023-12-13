@@ -1,0 +1,83 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Club Multisports",
+      "path": "[[workspace]]/content/club-multisports"
+    },
+    {
+      "title": "Mediatheque",
+      "path": "[[workspace]]/content/mediatheque"
+
+    },
+    {
+      "title": "Ateliers",
+      "path": "[[workspace]]/content/ateliers",
+      "previewPath": "ateliers"
+    },
+    {
+      "title": "Evenements",
+      "path": "[[workspace]]/content/evenements",
+      "previewPath": "evenements"
+    },
+    {
+      "title": "Posts",
+      "path": "[[workspace]]/content/posts",
+      "previewPath": "posts"
+    },
+    {
+      "title": "Home",
+      "path": "[[workspace]]/content/",
+      "excludeSubdir": true
+    }
+  ]
+}

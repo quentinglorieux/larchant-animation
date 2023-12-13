@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Cours de Gym avec Monique
-featured_image: gym.jpg
+preview: gym.jpg
 ---
 
 # Cours de Gym 

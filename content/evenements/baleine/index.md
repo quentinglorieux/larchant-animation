@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Festival de Musique
-featured_image: baleine22.jpg
+preview: baleine22.jpg
 ---
 
 # Festi'Baleine

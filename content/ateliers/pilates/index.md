@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Pilates avec Marie
-featured_image: pilates.jpg
+preview: pilates.jpg
 ---
 
 # Cours de Pilates 

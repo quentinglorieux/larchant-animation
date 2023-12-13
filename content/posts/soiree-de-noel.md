@@ -3,7 +3,7 @@ title: "Soirée de Noel"
 date: 2023-12-07
 draft: false
 language: fr
-featured_image: ../assets/images/featured/featured-img-placeholder.png
+preview: ../assets/images/featured/featured-img-placeholder.png
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
 author: Panda
 authorimage: ../assets/images/auteurs/panda2.png   

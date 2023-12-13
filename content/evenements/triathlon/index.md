@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Triathlon
-featured_image: triathlon22.jpg
+preview: triathlon22.jpg
 ---
 
 # Triathlon 
