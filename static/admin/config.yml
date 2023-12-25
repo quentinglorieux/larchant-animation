@@ -1,15 +1,24 @@
 local_backend: true
 backend:
-  name: git-gateway
+  # name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: quentinglorieux/larchant-animation-tailbliss
+
 media_folder: assets/images
 public_folder: /assets/images
+
+site_url: http://localhost:1313
+display_url: http://localhost:1313
+logo_url: http://localhost:1313/assets/images/logo.png
+
 collections:
-  - name: 'blog'
+  - name: 'ateliers'
     label: 'Ateliers'
     folder: 'content/ateliers/'
+    path: 'content/ateliers/{{slug}}'
     create: true
-    slug: '{{slug}}'
+    # slug: '{{slug}}'
     editor:
       preview: false
     fields:
