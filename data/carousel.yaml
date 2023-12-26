@@ -1,7 +1,9 @@
-images: 
-  - image: /images/hivernale24.jpg
-    content_html: ""
+images:
   - image: /images/noel.jpg
     content_html: ""
-  - image: /images/petanque.jpg
+    title: Noel
+  - image: /images/hivernale24.jpg
     content_html: ""
+    title: Hivernale
+  - image: /images/petanque.jpg
+    title: Pétanque

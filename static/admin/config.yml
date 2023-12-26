@@ -1,9 +1,9 @@
 local_backend: true
 backend:
-  # name: git-gateway
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-  name: github
-  repo: quentinglorieux/larchant-animation-tailbliss
+  # name: github
+  # repo: quentinglorieux/larchant-animation-tailbliss
 
 media_folder: assets/images
 public_folder: /assets/images
@@ -15,20 +15,40 @@ logo_url: http://localhost:1313/assets/images/logo.png
 collections:
   - name: 'ateliers'
     label: 'Ateliers'
-    folder: 'content/ateliers/'
-    path: 'content/ateliers/{{slug}}'
+    folder: '/content/ateliers/'
+    path: '/{{slug}}/index'
+    media_folder: ''
     create: true
-    # slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Image', name: 'preview', widget: 'image'}
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+
+  - name: 'evenements'
+    label: 'Évènements'
+    folder: '/content/evenements/'
+    path: '/{{slug}}/index'
+    media_folder: ''
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Image', name: 'preview', widget: 'image'}
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+
   - name: 'club-multisports'
     label: 'Club Multisports'
     folder: 'content/club-multisports/'
+    media_folder: ''
     create: false
     editor:
       preview: false
@@ -37,3 +57,48 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  
+  - name: 'mediatheque'
+    label: 'Médiathèque'
+    folder: 'content/mediatheque/'
+    media_folder: ''
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'content'
+    label: 'Pages'
+    folder: 'content/'
+    media_folder: ''
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+
+
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Carousel"
+        name: "carousel"
+        file: "data/carousel.yaml"
+        media_folder: '/assets/images/'
+        public_folder: '/images'
+        fields:
+          - label: Images
+            name: images
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {label: Image, name: image, widget: image}
+              - {label: Contenu, name: content_html, widget: string, required: false}
