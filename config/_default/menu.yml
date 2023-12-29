@@ -1,8 +1,4 @@
 main:
-  # - identifier: home
-  #   name: Accueil
-  #   url: /
-  #   weight: 10
   - identifier: about
     name: L'association
     url: /about/
@@ -27,84 +23,80 @@ main:
     name: Contact
     url: /contact/
     weight: 50
-
 ateliers:
   - identifier: yoga
-    pre: yoga
+    pre: /images/logos/yoga.svg
     name: Yoga
-    post: "Mardi et Jeudi avec Antonine"
+    post: Mardi et Jeudi avec Antonine
     url: /ateliers/yoga/
     weight: 10
   - identifier: pilates
-    pre: pilates
+    pre: /images/logos/pilates.svg
     name: Pilates
-    post: "Jeudi avec Marie"
+    post: Jeudi avec Marie
     url: /ateliers/pilates/
     weight: 20
   - identifier: gym
-    pre: gym
+    pre: /images/logos/gym.svg
     name: Gym
-    post: "Lundi et Mercredi avec Monique"
+    post: Lundi et Mercredi avec Monique
     url: /ateliers/gym/
     weight: 30
   - identifier: theatre-adultes
-    pre: theatre
+    pre: /images/logos/theatre.svg
     name: Théâtre adultes
-    post: "Vendredi avec Alain"
+    post: Vendredi avec Alain
     url: /ateliers/theatre-adultes/
     weight: 40
   - identifier: theatre-enfants
-    pre: theatre
+    pre: /images/logos/theatre.svg
     name: Théâtre enfants
-    post: "Lundi avec Justine"
+    post: Lundi avec Justine
     url: /ateliers/theatre-enfants/
     weight: 50
-
 events:
   - identifier: hivernale
-    pre: vtt # can be stars, comments or piechart
+    pre: /images/logos/vtt.svg
     name: L'hivernale
-    post: "Randonnée VTT"
-    url: "/evenements/hivernale"
+    post: Randonnée VTT
+    url: /evenements/hivernale
     weight: 10
   - identifier: trail
-    pre: running # can be stars, comments or piechart
+    pre: /images/logos/running.svg
     name: Lyricantrail
-    post: "Course nature de 20km"
-    url: "/evenements/lyricantrail"
+    post: Course nature de 20km
+    url: /evenements/lyricantrail
     weight: 20
   - identifier: festibaleine
-    pre: baleine # can be stars, comments or piechart
+    pre: /images/logos/baleine.svg
     name: Festi'Baleine
-    post: "Festival de Musique"
-    url: "/evenements/baleine"
+    post: Festival de Musique
+    url: /evenements/baleine
     weight: 30
   - identifier: triathlon
-    pre: triathlon # can be stars, comments or piechart
+    pre: /images/logos/triathlon.svg
     name: Triathlon
-    post: "Grimpe, VTT, trail"
-    url: "/evenements/triathlon"
+    post: Grimpe, VTT, trail
+    url: /evenements/triathlon
     weight: 40
   - identifier: conferences
-    pre: conference # can be stars, comments or piechart
+    pre: /images/logos/conference.svg
     name: Conférences
-    post: "Ouvertes à tous et toutes"
-    url: "/evenements/conferences"
+    post: Ouvertes à tous et toutes
+    url: /evenements/conferences
     weight: 50
   - identifier: foire
-    pre: plante # can be stars, comments or piechart
+    pre: /images/logos/plante.svg
     name: Foire aux plantes
-    post: "Botanique et vie locale"
-    url: "/evenements/foire-aux-plantes"
+    post: Botanique et vie locale
+    url: /evenements/foire-aux-plantes
     weight: 60
   - identifier: vide-grenier
-    pre: market # can be stars, comments or piechart
+    pre: /images/logos/market.svg
     name: Vide Grenier
-    post: "de retour à Larchant"
-    url: "/evenements/vide-grenier"
+    post: de retour à Larchant
+    url: /evenements/vide-grenier
     weight: 70
-
-    
 footer:
   - identifier: about
     name: L'association
@@ -130,4 +122,3 @@ footer:
     name: Contact
     url: /contact/
     weight: 50
-
