@@ -1,98 +1,113 @@
-author: Quentin Glorieux
-moto: "Vie sociale et culturelle à Larchant depuis 1983."
-description: "Bienvenue sur notre site !"
 disable_theme_toggle: false
-
 paragraph1:
-  heading: "Notre association"
-  image: "images/LOGO LA 2024.png"
+  heading: Notre association
+  image: images/LOGO LA 2024.png
   content:
-    - text: "Lorem tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."
-    - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
-
+    - text: Lorem tristique eros erat odio sed vitae, consequat turpis elementum.
+        Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut
+        volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio
+        sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu
+        vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
+    - text: Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel
+        ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in
+        venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim
+        sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
 paragraph2:
-  heading: "L'équipe"
-  image: "images/groupe1.jpg"
+  heading: L'équipe
+  image: images/groupe1.jpg
   content:
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at purus non enim commodo tincidunt vel in nulla. Aenean pretium dolor non ultricies bibendum. Etiam quis blandit enim. Nunc condimentum ut lorem in faucibus. Phasellus varius ligula et commodo tristique. Nunc sodales nisl nec laoreet vehicula. Donec velit nibh, sollicitudin at nulla a, egestas dignissim eros. Sed lacinia hendrerit interdum. Vestibulum pellentesque sem venenatis nisl tempor accumsan sit amet tempus felis. Mauris leo diam, porttitor nec bibendum id, tempus ac nulla. Etiam congue ornare erat at convallis. Donec in nisi dapibus, mattis risus vel, imperdiet enim. Donec fermentum sit amet tortor nec tincidunt. Nam nec lectus tortor. Nunc sit amet laoreet orci, porta ornare massa. Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim arcu eleifend."
-
-
-## https://icon-sets.iconify.design/ pour trouver de nouveaux icones ##
+    - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at
+        purus non enim commodo tincidunt vel in nulla. Aenean pretium dolor non
+        ultricies bibendum. Etiam quis blandit enim. Nunc condimentum ut lorem
+        in faucibus. Phasellus varius ligula et commodo tristique. Nunc sodales
+        nisl nec laoreet vehicula. Donec velit nibh, sollicitudin at nulla a,
+        egestas dignissim eros. Sed lacinia hendrerit interdum. Vestibulum
+        pellentesque sem venenatis nisl tempor accumsan sit amet tempus felis.
+        Mauris leo diam, porttitor nec bibendum id, tempus ac nulla. Etiam
+        congue ornare erat at convallis. Donec in nisi dapibus, mattis risus
+        vel, imperdiet enim. Donec fermentum sit amet tortor nec tincidunt. Nam
+        nec lectus tortor. Nunc sit amet laoreet orci, porta ornare massa.
+        Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo
+        bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim
+        arcu eleifend.
+blog:
+  heading: Le Blog
+  content:
+    - text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero
+        labore natus atque, ducimus sed.
+mailinglist:
+  heading: Inscrivez vous à notre liste de diffusion
+  content:
+    - text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna
+        sed consectetur neque tristique pellentesque.
+  action: https://formsubmit.co/quentin.glorieux@gmail.com
+  label: Adresse email
+  placeholder: Entrez votre email
+  button: Inscrivez moi !
+author: Quentin Glorieux
+moto: Vie sociale et culturelle à Larchant depuis 1983.
+description: Bienvenue sur notre site !
 ateliers:
-  heading: "Nos ateliers" 
+  heading: Nos ateliers
   content:
-    - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
+    - text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna
+        sed consectetur neque tristique pellentesque. Blandit amet, sed aenean
+        erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor
+        vitae ut. Amet vitae fames senectus vitae.
   links:
     - text: Voir tous nos ateliers
-      url: "/ateliers"
+      url: /ateliers
   logos:
     - identifier: Yoga Iyengar
-      image: "images/logos/yoga.svg"
-      url: "ateliers/yoga"
+      image: images/logos/yoga.svg
+      url: ateliers/yoga
     - identifier: Pilates
-      image: "images/logos/pilates.svg"
-      url: "ateliers/pilates"
+      image: images/logos/pilates.svg
+      url: ateliers/pilates
     - identifier: Gym douce
-      image: "images/logos/gym.svg"
-      url: "ateliers/gym"
+      image: images/logos/gym.svg
+      url: ateliers/gym
     - identifier: Theatre adultes
-      image: "images/logos/theatre.svg"
-      url: "ateliers/theatre-adultes"
+      image: images/logos/theatre.svg
+      url: ateliers/theatre-adultes
     - identifier: Theatre enfants
-      image: "images/logos/theatre.svg"
-      url: "ateliers/theatre-enfants"
-## https://icon-sets.iconify.design/ pour trouver de nouveaux icones ##
-
+      image: images/logos/theatre.svg
+      url: ateliers/theatre-enfants
 activities:
-  heading: "Nos activités libres" 
+  heading: Nos activités libres
   content:
-    - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
+    - text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna
+        sed consectetur neque tristique pellentesque. Blandit amet, sed aenean
+        erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor
+        vitae ut. Amet vitae fames senectus vitae.
   links:
     - text: Voir toutes nous activités
-      url: "/activites"
+      url: /activites
   logos:
     - identifier: Course
-      image: "images/logos/running.svg"
+      image: images/logos/running.svg
     - identifier: Pétanque
-      image: "images/logos/petanque.svg"
+      image: images/logos/petanque.svg
     - identifier: Marche
-      image: "images/logos/marche.svg"
+      image: images/logos/marche.svg
     - identifier: Djembé
-      image: "images/logos/djembe.svg"
+      image: images/logos/djembe.svg
     - identifier: De fil en aiguille
-      image: "images/logos/couture.svg"
+      image: images/logos/couture.svg
     - identifier: Jeux
-      image: "images/logos/jeux.svg"
+      image: images/logos/jeux.svg
     - identifier: VTT
-      image: "images/logos/vtt.svg"
-    # - identifier: Apéro
-    #   image: "images/logos/biere.svg"
-# Logos sont stockés dans le dossier static
-    
-blog:
-  heading: "News"
-  content:
-    - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
-
-mailinglist:
-  heading: "Inscrivez vous à notre liste de diffusion"
-  content:
-    - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
-  action: "https://formsubmit.co/quentin.glorieux@gmail.com"
-  label: "Adresse email"
-  placeholder: "Entrez votre email"
-  button: "Inscrivez moi !"
-
+      image: images/logos/vtt.svg
 social_media:
   github:
     enabled: false
-    url: "https://github.com/"
+    url: https://github.com/
   facebook:
     enabled: true
-    url: "https://www.facebook.com/larchant.animation"
+    url: https://www.facebook.com/larchant.animation
   instagram:
     enabled: false
-    url: "https://instagram.com/"
+    url: https://instagram.com/
   twitter:
     enabled: false
     url: "@quentinglorieux"

@@ -1,32 +1,43 @@
-<div class="bg-slate-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto">
-        <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-            <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
-                <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-                    {{ .Site.Title }} 
-                </h1>
-                <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
-                   {{ .Site.Data.settings.moto }}
-                </h2>
-                <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
-                    {{ .Site.Data.settings.description}}
-                </p>
-            </div>
-            <div class="col-span-6 ">
-                <div class="lg:block hidden"> 
-                {{ partial "carousel.html" (dict "context" . "items" "1" "height" "800" "unit" "px" "duration" "4000") }}
+<div class="bg-slate-200 dark:bg-gray-900 hero-cont">
+  <div class="max-w-screen-xl px-4 py-8 mx-auto">
+    <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12 ">
+      <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0 flex flex-col justify-around ">
+        <h1
+          class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
+          {{ .Site.Title }}
+        </h1>
+        <h2
+          class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
+          {{ .Site.Data.settings.moto }}
+        </h2>
+        <p
+          class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+          {{ .Site.Data.settings.description}}
+        </p>
 
-                <a class="flex justify-center no-underline mt-3" href="/evenements/hivernale#inscriptions">
-                    <button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions Hivernale 2024 </button>
-                </a>
-                
-            </div>
+        {{/*  <div class="lg:block hidden pt-10 lg:pt-1">
+          {{ partial "carousel.html" (dict "context" . "items" "1" "height" "500" "unit" "px" "duration" "40000") }}
 
-            
+          <a
+            class="flex justify-center no-underline mt-3"
+            href="/evenements/hivernale#inscriptions">
+            <button class="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200">
+              Inscriptions Hivernale 2024
+            </button>
+          </a>
+        </div>  */}}
+      </div>
 
-            </div>
-
+      <div class="col-span-6">            
+         {{ partial "home/alaune.html"  . }} 
         </div>
-        
+
     </div>
+    
+  </div>
 </div>
+
+<style>
+  .hero-cont{
+  min-height: 75vh;}
+</style>

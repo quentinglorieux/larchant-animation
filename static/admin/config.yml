@@ -169,6 +169,62 @@ collections:
             - { label: Nom, name: identifier, widget: string}
             - { label: Image, name: image, widget: image}
             # - { label: Lien, name: url, widget: string, hint: 'activites/'}
+        - label: Bloc News
+          name: blog
+          widget: object
+          collapsed: true
+          fields: 
+          - {label: "Titre", name: "heading", widget: "string"}
+          - label: "Contenu"
+            name: "content"
+            widget: "list"
+            fields:
+            - { label: Texte, name: text, widget: text}
+        - label: Formulaire de contact
+          name: mailinglist
+          widget: object
+          collapsed: true
+          fields: 
+          - { label: "Titre", name: "heading", widget: "string"}
+          - label: "Contenu"
+            name: "content"
+            widget: "list"
+            fields:
+            - { label: Texte, name: text, widget: text}
+          - { label: "Action", name: "action", widget: "string", hint: 'Ne pas toucher : https://formsubmit.co/quentin.glorieux@gmail.com'}
+          - { label: "Sous-titre", name: "label", widget: "string"}
+          - { label: "Remplissage par défaut", name: "placeholder", widget: "string"}
+          - { label: "Bouton", name: "button", widget: "string"}
+        - label: Réseaux sociaux
+          name: social_media
+          widget: object
+          collapsed: true
+          fields: 
+          - label: "Github"
+            name: "github"
+            widget: "object"
+            fields:
+            - { label: Activé, name: enabled, widget: boolean, required: false}
+            - { label: Lien, name: url, widget: string, required: false}
+          - label: "Facebook"
+            name: "facebook"
+            widget: "object"
+            fields:
+            - { label: Activé, name: enabled, widget: boolean, required: false}
+            - { label: Lien, name: url, widget: string, required: false}
+          - label: "Instagram"
+            name: "instagram"
+            widget: "object"
+            fields:
+            - { label: Activé, name: enabled, widget: boolean, required: false}
+            - { label: Lien, name: url, widget: string, required: false}
+          - label: "Twitter"
+            name: "twitter"
+            widget: "object"
+            fields:
+            - { label: Activé, name: enabled, widget: boolean, required: false}
+            - { label: Lien, name: url, widget: string, required: false}
+
 
 
       - label: Menus
