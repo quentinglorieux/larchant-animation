@@ -25,6 +25,22 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
+  - name: 'alaune'
+    label: 'A la Une'
+    folder: 'content/news'
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean" }
+      - { label: "Image", name: "preview", widget: "image", media_library: { config: { allow_multiple: false } } }
+      - { label: "Résumé", name: "summary", widget: "text" }
+      - { label: "Categorie", name: "categories", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+
   - name: 'ateliers'
     label: 'Ateliers'
     folder: '/content/ateliers/'
