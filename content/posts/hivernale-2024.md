@@ -1,12 +1,14 @@
 ---
-title: "Bientot l'Hivernale"
+title: Bientot l'Hivernale !
 date: 2023-12-10
 draft: false
-language: fr
-preview: ../assets/images/featured/featured-img-placeholder.png
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
+preview: images/hivernale24.jpg
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus,
+  odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut
+  libero.
 author: Quentin
-authorimage: ../assets/images/auteurs/panda1.png   
+authorimage: ../assets/images/auteurs/panda1.png
+language: fr
 categories: Blog
 tags: Évenements
 ---

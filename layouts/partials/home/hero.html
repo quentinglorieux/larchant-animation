@@ -1,43 +1,73 @@
-<div class="bg-slate-200 dark:bg-gray-900 hero-cont">
+<div class="bg-slate-200 dark:bg-gray-900 hero-cont relative">
   <div class="max-w-screen-xl px-4 py-8 mx-auto">
-    <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12 ">
-      <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0 flex flex-col justify-around ">
-        <h1
-          class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
+    <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+      <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0 flex flex-col justify-around">
+        <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
           {{ .Site.Title }}
         </h1>
-        <h2
-          class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
+        <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
           {{ .Site.Data.settings.moto }}
         </h2>
-        <p
-          class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+        <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
           {{ .Site.Data.settings.description}}
         </p>
-
-        {{/*  <div class="lg:block hidden pt-10 lg:pt-1">
-          {{ partial "carousel.html" (dict "context" . "items" "1" "height" "500" "unit" "px" "duration" "40000") }}
-
-          <a
-            class="flex justify-center no-underline mt-3"
-            href="/evenements/hivernale#inscriptions">
-            <button class="px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200">
-              Inscriptions Hivernale 2024
-            </button>
-          </a>
-        </div>  */}}
       </div>
 
-      <div class="col-span-6">            
-         {{ partial "home/alaune.html"  . }} 
-        </div>
-
+      <div class="col-span-6">
+        {{ partial "home/alaune.html"  . }}
+      </div>
     </div>
-    
+
   </div>
+
+  <div class="hidden md:flex pt-10 ">
+    <div class="mx-auto chevron-container"> 
+      <a href="#association" class="text-gray-500 dark:text-white chevron">
+        <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
 </div>
 
 <style>
-  .hero-cont{
-  min-height: 75vh;}
+  .hero-cont {
+    height: 95vh;
+  }
+
+  .hero-cont a {
+    margin-top: -12px; /* Adjust the margin to avoid overlapping */
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the distance as needed */
+    }
+  }
+
+  .chevron-container {
+    animation: pulse 1s infinite;
+  }
 </style>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const chevronLink = document.querySelector('.chevron');
+    chevronLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      const scrollTarget = document.querySelector('#association');
+      const offset = 150; // Adjust the offset value as needed
+      const targetPosition = scrollTarget.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: targetPosition - offset,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
