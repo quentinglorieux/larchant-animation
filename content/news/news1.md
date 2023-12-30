@@ -1,14 +1,15 @@
 ---
-title: "News 1"
+title: L'équipe au complet
 date: 2023-12-29
 draft: false
-language: fr
-preview: ../assets/images/featured/featured-img-placeholder.png
+preview: images/groupe1.jpg
 summary: >
-    Lorem ipsum dolor sit amet in ornare feugiat morbi facilisis. Sagittis eget do justo dui massa condimentum venenatis scelerisque nec duis quam duis vulputate hac.
-    Sagittis eget do justo dui massa condimentum venenatis scelerisque nec duis quam duis vulputate hac.
-categories: 'A la Une'
-tags: Évenements
+  Lorem ipsum dolor sit amet in ornare feugiat morbi facilisis. Sagittis eget do
+  justo dui massa condimentum venenatis scelerisque nec duis quam duis vulputate
+  hac. Sagittis eget do justo dui massa condimentum venenatis scelerisque nec
+  duis quam duis vulputate hac.
+language: fr
+categories: A la Une
+tags: Equipe
 ---
-
-
+Bravo à notre super équipe 

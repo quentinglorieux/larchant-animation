@@ -1,34 +1,4 @@
 
-<style>
-    .news-image {
-      height: 100%;
-      object-fit: cover; /* Add this to maintain aspect ratio and cover the entire space */
-    }
-    @media (max-width: 768px) {
-        .news-image {
-            display: none;
-        }
-    }
-    .tag-overlay {
-        position: relative;
-        bottom: 40px;
-        left: 0;
-        width: 60%;
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
-        padding: 4px 8px;
-        font-size: 12px;
-        border-top-right-radius: 10px; /* Adjust the radius as needed */
-        border-bottom-right-radius: 10px; /* Adjust the radius as needed */
-        transition: transform 0.3s ease-in-out; /* Added transition for smooth movement */
-    }
-    .tag-overlay:hover {
-        transform: translateY(-5px); /* Adjust the upward movement value as needed */
-    }
-    .news-card:hover {
-        box-shadow: 0 0 16px rgba(255, 255, 255, 0.3); /* Adjust the shadow color and size as needed */
-    }
-</style>
 
   <!-- News Section -->
   <div class="flex flex-col mt-8">
@@ -40,7 +10,7 @@
         {{ range (first 3 (where .Site.RegularPages "Section" "news")) }}
                   <div class="flex overflow-hidden bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg mb-4 news-card">
                       <a href="{{.Permalink}}" class="flex-shrink-0">
-                          <img src="{{ with .Params.preview }}{{ with resources.Get . }}{{ (.Resize "300x200 webp q90").RelPermalink }}{{ end }}{{ end }}" class="news-image rounded-l-lg w-32 h-32 md:w-48 md:h-32" loading="lazy" alt="{{ .Title }}" />
+                          <img src="{{ with .Params.preview }}{{ with resources.Get . }}{{ (.Resize "600x webp q90").RelPermalink }}{{ end }}{{ end }}" class="news-image rounded-l-lg w-32 h-32 md:w-48 md:h-32" loading="lazy" alt="{{ .Title }}" />
                       
                           <div class="tag-overlay">
                             {{ .Params.tags }}
@@ -67,3 +37,36 @@
       </div>
   </div>
   
+
+
+<style>
+    .news-image {
+        height: 100%;
+        width: 132px;
+        object-fit: cover;
+    }
+    @media (max-width: 568px) {
+        .news-image {
+            display: none;
+        }
+    }
+    .tag-overlay {
+        position: relative;
+        bottom: 40px;
+        left: 0;
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 4px 8px;
+        font-size: 12px;
+        border-top-right-radius: 10px; /* Adjust the radius as needed */
+        border-bottom-right-radius: 10px; /* Adjust the radius as needed */
+        transition: transform 0.3s ease-in-out; /* Added transition for smooth movement */
+    }
+    .tag-overlay:hover {
+        transform: translateY(-5px); /* Adjust the upward movement value as needed */
+    }
+    .news-card:hover {
+        box-shadow: 0 0 16px rgba(255, 255, 255, 0.3); /* Adjust the shadow color and size as needed */
+    }
+</style>

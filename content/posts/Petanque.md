@@ -1,5 +1,5 @@
 ---
-title: Nouveauté Pétanque !
+title: Nouveauté Pétanque
 date: 2023-12-08
 draft: false
 preview: images/petanque.jpg
@@ -10,7 +10,7 @@ author: MaxiPanda
 authorimage: ""
 language: fr
 categories: News
-tags: Évenements
+tags: Conférence
 ---
 
 
