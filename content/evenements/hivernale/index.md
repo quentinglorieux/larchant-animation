@@ -36,5 +36,6 @@ Des affiches, visibles, sont apposées à l’entrée de ces secteurs, interdisa
 /extension-output-eliostruyf.vscode-front-matter-#1-Front Matter CMSMerci de respecter cette charte, pour que l’Hivernale vive encore de belles années !
 
 ## Inscriptions
+En attente d'autorisation
 
-<iframe width="950" height="850" src="https://larchant-animation.s2.yapla.com/fr/event-49641"></iframe>
+<!-- <iframe width="950" height="850" src="https://larchant-animation.s2.yapla.com/fr/event-49641"></iframe> -->
