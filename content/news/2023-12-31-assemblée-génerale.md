@@ -7,5 +7,5 @@ summary: >-
   célébré fièrement sa 40e !
 
   Nous clôturons cette année en vous souhaitant une excellente année 2024, pleine de bonheur et de nouvelles aventures. Consultez le nouveau calendrier distribué dans vos boîtes aux lettres ou rejoignez-nous lors de notre AG le 20 janvier pour découvrir les activités que nous vous proposons en 2024.
-tags: 20 JANVIER 2024
+tags: AG
 ---
