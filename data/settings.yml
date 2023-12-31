@@ -1,4 +1,7 @@
 disable_theme_toggle: false
+moto: Vie sociale et culturelle à Larchant depuis 1983.
+description: "Bienvenue sur notre nouveau site ! Nous sommes en reconstruction
+  un peu de patience et @bientôt "
 paragraph1:
   heading: Notre association
   image: images/LOGO LA 2024.png
@@ -30,23 +33,6 @@ paragraph2:
         Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo
         bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim
         arcu eleifend.
-blog:
-  heading: Le Blog
-  content:
-    - text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero
-        labore natus atque, ducimus sed.
-mailinglist:
-  heading: Inscrivez vous à notre liste de diffusion
-  content:
-    - text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna
-        sed consectetur neque tristique pellentesque.
-  action: https://formsubmit.co/quentin.glorieux@gmail.com
-  label: Adresse email
-  placeholder: Entrez votre email
-  button: Inscrivez moi !
-author: Quentin Glorieux
-moto: Vie sociale et culturelle à Larchant depuis 1983.
-description: Bienvenue sur notre site !
 ateliers:
   heading: Nos ateliers
   content:
@@ -98,6 +84,21 @@ activities:
       image: images/logos/jeux.svg
     - identifier: VTT
       image: images/logos/vtt.svg
+blog:
+  heading: Le Blog
+  content:
+    - text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero
+        labore natus atque, ducimus sed.
+mailinglist:
+  heading: Inscrivez vous à notre liste de diffusion
+  content:
+    - text: Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna
+        sed consectetur neque tristique pellentesque.
+  action: https://formsubmit.co/quentin.glorieux@gmail.com
+  label: Adresse email
+  placeholder: Entrez votre email
+  button: Inscrivez moi !
+author: Quentin Glorieux
 social_media:
   github:
     enabled: false
