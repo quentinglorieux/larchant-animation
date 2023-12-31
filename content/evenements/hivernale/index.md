@@ -12,7 +12,7 @@ preview: hivernale24.jpg
 > Une rando VTT mythique au coeur de la foret de Larchant. (500 places et c'est tout !)
 
 <a class="flex justify-center no-underline" href="#inscriptions">
-<button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscription 2024 </button>
+<button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions 2024 (en attente) </button>
 </a>
 
 ## Date : 3 Mars 2024
