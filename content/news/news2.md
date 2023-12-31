@@ -1,6 +1,6 @@
 ---
 title: Bientot L'Hivernale
-date: 2023-12-29
+date: 2023-12-31T11:34:01.965Z
 draft: false
 language: fr
 preview: images/hivernale24.jpg
