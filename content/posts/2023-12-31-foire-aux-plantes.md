@@ -15,5 +15,5 @@ summary: |-
   Restauration sur place
   Horticulteurs, pépiniéristes, rosiéristes, fleuristes
   et tous les artisans de la nature et du jardin
-tags: évènements
+tags: Évenements
 ---
