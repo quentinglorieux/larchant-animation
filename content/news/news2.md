@@ -6,5 +6,5 @@ language: fr
 preview: images/hivernale24.jpg
 summary: Soyez pret, les inscriptions ouvrent en janvier !
 categories: A la Une
-tags: Évenements
+tags: 3 MARS 2024
 ---
