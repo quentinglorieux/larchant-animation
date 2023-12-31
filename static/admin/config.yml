@@ -12,9 +12,9 @@ public_folder: images
 # display_url: http://localhost:1313
 # logo_url: http://localhost:1313/assets/images/logo.png
 
-site_url: https://larchantanimation.netlify.app/
-display_url: https://larchantanimation.netlify.app/
-logo_url: https://larchantanimation.netlify.app/assets/images/logo.png
+site_url: https://larchantanimation.fr/
+display_url: https://larchantanimation.fr/
+logo_url: https://larchantanimation.fr/images/logo.png
 
 collections:
   - name: 'content'
@@ -126,7 +126,7 @@ collections:
 
 
 
-  - label: "Settings"
+  - label: "Homepage & Settings"
     name: "settings"
     editor:
       preview: false
