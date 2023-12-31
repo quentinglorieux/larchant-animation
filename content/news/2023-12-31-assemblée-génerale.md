@@ -20,4 +20,5 @@ summary: >
   Isabelle, Jean-François, Jean-Luc, Jocelyne, 
 
   Karine, Laurence, Noel, Patrick, Stephane.
+tags: AG
 ---
