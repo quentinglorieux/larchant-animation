@@ -1,6 +1,6 @@
 ---
 title: Foire aux plantes
-
+date: 2023-12-10
 preview: images/fete-des-plantes-2024.jpg
 summary: "12e Foire aux plantes "
 tags: Évenements
