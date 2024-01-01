@@ -17,3 +17,4 @@ summary: |-
   et tous les artisans de la nature et du jardin
 tags: Évenements
 ---
+![](images/LOGO LA 2024.png)
