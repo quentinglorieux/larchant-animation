@@ -31,7 +31,7 @@ Monique, notre instructrice expérimentée, vous guidera avec passion à travers
 
 Les tarifs pour les cours de gym sont les suivants :
 
-* **Adhésion annuelle :** 
-* **Cours à la séance :**
+* **Abonnement annuel : 200 euros + adhésion à Larchant Animation**
+* **Cours à la séance : 10 euros**
 
 Rejoignez-nous pour une expérience de gym agréable et bénéfique pour votre santé !
