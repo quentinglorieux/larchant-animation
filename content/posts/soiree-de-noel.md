@@ -1,5 +1,5 @@
 ---
-title: La Mariols troupe en tourné
+title: La Mariols troupe en tournée
 date: 2023-12-07
 draft: false
 preview: images/affiche-rage-dedans-1-_page-0001.jpg
