@@ -31,7 +31,9 @@ paragraph2:
 ateliers:
   heading: Nos ateliers
   content:
-    - text: Nous proposons toute l'année (hors vacances) des ateliers encadrés par des enseignant-e-s qualifié-e-s. Vous pouve nous rejoindre ou simplement venir découvrir une activité sur les créneaux proposés.
+    - text: Nous proposons toute l'année (hors vacances) des ateliers encadrés par des
+        enseignant-e-s qualifié-e-s. Vous pouve nous rejoindre ou simplement
+        venir découvrir une activité sur les créneaux proposés.
   links:
     - text: Voir tous nos ateliers
       url: /ateliers
@@ -54,7 +56,9 @@ ateliers:
 activities:
   heading: Nos activités libres
   content:
-    - text: Nous proposons des activités libres pour se retrouver entre passionné-es et pratiquer ensemble. Ces activités sont gratuites et nécessitent simplement une adhésion à Larchant Animation.
+    - text: Nous proposons des activités libres pour se retrouver entre passionné-es
+        et pratiquer ensemble. Ces activités sont gratuites et nécessitent
+        simplement une adhésion à Larchant Animation.
   links:
     - text: Voir toutes nous activités
       url: /activites
@@ -75,9 +79,7 @@ activities:
       image: images/logos/vtt.svg
 blog:
   heading: Le Blog
-  content:
-    - text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero
-        labore natus atque, ducimus sed.
+  content: []
 mailinglist:
   heading: Inscrivez vous à notre liste de diffusion
   content:
