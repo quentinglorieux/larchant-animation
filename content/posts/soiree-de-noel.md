@@ -1,19 +1,16 @@
 ---
-title: Soirée de Noel
+title: La Mariols troupe en tournéen
 date: 2023-12-07
 draft: false
-preview: images/noel.jpg
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus,
-  odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut
-  libero.
-author: Panda
+preview: images/affiche-rage-dedans-1-_page-0001.jpg
+summary: |-
+  LA TOURNEE
+  samedi 24 février 2024 à Villiers sous Gretz 
+  samedi 2 mars 2024 à Guercheville
+  samedi 30 mars 2024 à Larchant
+author: ""
 authorimage: ../assets/images/auteurs/panda2.png
 language: fr
 categories: Blog
 tags: Évenements
 ---
-
-
-#  Soiree de Noel
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum 
