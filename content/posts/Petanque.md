@@ -8,6 +8,6 @@ author: MaxiPanda
 authorimage: ""
 language: fr
 categories: News
-tags: ""
+tags: Activité libre
 ---
 Tous les jeudis nous nous retrouvons au terrain de boules devant le terrain et le city stade
