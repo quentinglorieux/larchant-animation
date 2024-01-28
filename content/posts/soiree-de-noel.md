@@ -5,11 +5,11 @@ draft: false
 preview: images/affiche-rage-dedans-1-_page-0001.jpg
 summary: |-
   
-  samedi 24 février 2024 à Villiers sous Gretz<br>
-  samedi 2 mars 2024 à Guercheville<br>
-  samedi 30 mars 2024 à Larchant<br>
+  samedi 24 février 2024 à Villiers sous Gretz
+  samedi 2 mars 2024 à Guercheville
+  samedi 30 mars 2024 à Larchant
 author: ""
-authorimage: ../assets/images/auteurs/panda2.png
+authorimage: ""
 language: fr
 categories: Blog
 tags: Évenements
