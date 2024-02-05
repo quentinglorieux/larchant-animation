@@ -27,3 +27,5 @@ Les **dates de la tournée** :
 ## Réservation
 
 * 06 33 42 47 88
+
+  ![](images/affiche-rage-dedans-1-_page-0001.jpg "L'affiche du spectacle")
