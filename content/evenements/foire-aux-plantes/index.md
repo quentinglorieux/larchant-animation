@@ -16,10 +16,5 @@ preview: plante.png
 
 Place des Tilleuls et place Pasteur. Larchant
 
-## Activités
+## [Tout savoir sur l'édition 2024](http://larchantanimation.fr/posts/2023-12-31-foire-aux-plantes/)
 
-* 1
-* 2
-* 3
-
-## Tarifs exposants
