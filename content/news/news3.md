@@ -1,6 +1,6 @@
 ---
 title: Conférence
-date: 2023-12-29
+date: 2024-02-24T16:00:00.000Z
 draft: true
 preview: ../assets/images/featured/featured-img-placeholder.png
 summary: |-
@@ -19,4 +19,4 @@ dans le sud de l’Ile-de-France
 
 Par Colas Guéret et Alexandre Cantin, archéologues du laboratoire
 
-« Technologie et Ethnologie des Mondes PréhistoriqueS » - CNRS
+« Technologie et Ethnologie des Mondes Préhistoriques » - CNRS
