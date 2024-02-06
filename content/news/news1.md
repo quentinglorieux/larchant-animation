@@ -1,7 +1,7 @@
 ---
 title: L'équipe au complet
 date: 2023-12-29
-draft: true
+draft: false
 preview: images/groupe1.jpg
 summary: >
   Lorem ipsum dolor sit amet in ornare feugiat morbi facilisis. Sagittis eget do
