@@ -2,7 +2,7 @@
 title: Conférence
 date: 2024-02-06T18:51:41.808Z
 draft: false
-preview: images/featured-img-placeholder.png
+preview: images/sculpture-3129558_640.jpg
 summary: |-
   CONFERENCE : SAMEDI 24 FEVRIER
   Samedi de 17h à 19h
