@@ -1,6 +1,6 @@
 ---
 title: Conférence
-date: 2024-02-24T16:00:00.000Z
+date: 2024-02-06T18:51:41.808Z
 draft: false
 preview: images/featured-img-placeholder.png
 summary: |-
