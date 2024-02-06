@@ -9,7 +9,7 @@ summary: |-
   Entrée libre
 language: fr
 categories: A la Une
-tags: Évenements
+tags: Conférence
 ---
 Sociétés mésolithiques et gravures rupestres
 
