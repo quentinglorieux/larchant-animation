@@ -1,8 +1,8 @@
 ---
 title: Conférence
 date: 2024-02-24T16:00:00.000Z
-draft: true
-preview: ../assets/images/featured/featured-img-placeholder.png
+draft: false
+preview: ""
 summary: |-
   CONFERENCE : SAMEDI 24 FEVRIER
   Samedi de 17h à 19h
