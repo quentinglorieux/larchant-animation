@@ -4,8 +4,7 @@ date: 2024-02-06T18:51:41.808Z
 draft: false
 preview: images/sculpture-3129558_640.jpg
 summary: |-
-  SAMEDI 24 FEVRIER
-  Samedi de 17h à 19h
+  SAMEDI 24 FEVRIER 17h à 19h
   Entrée libre
 language: fr
 categories: A la Une
