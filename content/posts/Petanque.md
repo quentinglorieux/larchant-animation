@@ -1,6 +1,6 @@
 ---
 title: Nouveauté Pétanque
-date: 2023-12-08
+date: 2024-01-01T18:04:00.000Z
 draft: false
 preview: images/petanque.jpg
 summary: "Retrouvez-nous tous les jeudis "
