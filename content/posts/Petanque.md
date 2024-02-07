@@ -1,7 +1,7 @@
 ---
 title: Nouveauté Pétanque
 date: 2023-12-08
-draft: true
+draft: false
 preview: images/petanque.jpg
 summary: "Retrouvez-nous tous les jeudis "
 author: MaxiPanda
