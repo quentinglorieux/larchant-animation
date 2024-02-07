@@ -10,9 +10,7 @@ language: fr
 categories: A la Une
 tags: Conférence
 ---
-Sociétés mésolithiques et gravures rupestres
-
-dans le sud de l’Ile-de-France
+Sociétés mésolithiques et gravures rupestres dans le sud de l’Ile-de-France
 
 (Xè-VIè millénaires av. notre ère) : apport des recherches récentes
 
