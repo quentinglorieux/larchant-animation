@@ -4,7 +4,7 @@ description: Bienvenue sur notre tout nouveau site en cours de reconstruction !
   Merci de faire preuve de patience et à bientôt !
 paragraph1:
   heading: Notre association
-  image: images/LOGO LA 2024.png
+  image: images/groupe1.jpg
   content:
     - text: « Pour Larchant et son rayonnement, pour faire vivre le village, mais
         aussi le faire connaitre. Pour distraire les Lyricantois, pour les faire
@@ -16,15 +16,6 @@ paragraph1:
         se tourne vers l'avenir avec enthousiasme, prête à continuer à inspirer,
         divertir et rassembler. Merci à tous ceux qui ont participé et contribué
         au succès de ces beaux moments !
-paragraph2:
-  heading: L'équipe
-  image: images/groupe1.jpg
-  content:
-    - text: >+
-        Nous exprimons nos vœux les plus sincères à chacun d'entre vous, pour
-        une année remplie de lumière, agrémentée de charmantes surprises et
-        marquée par de belles rencontres.
-
 
 
 
