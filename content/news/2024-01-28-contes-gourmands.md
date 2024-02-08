@@ -3,6 +3,7 @@ title: Contes Gourmands
 date: 2024-02-15T14:00:00.000Z
 draft: false
 preview: images/contes-gourmands-6-février-2-.png
+categories: A la Une
 summary: >
   Le Réseau des Bibliothèques du Pays de Nemours est ravi de vous convier à un
   événement enchanté,
