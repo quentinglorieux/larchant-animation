@@ -14,7 +14,7 @@
 
         <div class="sm:px-6 mx-auto lg:mx-0 md:pt-0 pt-10">
           <div class="overflow-hidden">
-              {{ $p1image := resources.Get .Site.Data.settings.paragraph1.image }}
+              {{ $p1image := resources.Get .Site.Data.settings.paragraph2.image }}
               {{ with $p1image }}
               {{ with .Resize (printf "%dx%d webp q90" 250 250) }}
               <div class="image-container">
