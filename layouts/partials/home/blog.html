@@ -55,15 +55,15 @@
                                     {{ end }}
                                     {{ end }}
                                 </div>
-                                <div class="pt-1 ml-3">
+                                <div class="pt-1">
                                     <p class="text-sm font-medium text-gray-900 dark:text-white">
                                         {{ .Params.author }}
                                     </p>
-                                    <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
-                                        <time datetime="2020-02-12">{{.Date.Format "2006-01-02"}}</time>
-                                        <span aria-hidden="true">&middot;</span>
-                                        <span>{{ math.Ceil (div (countwords .Content) 220.0) }}
-                                            min de lecture</span>
+                                    <div class="flex pt-4 font-black text-md text-gray-800  dark:text-white">
+                                        <time datetime="{{ .Date.Format "2006-01-02" | lang .Site.Language.Lang }}">{{ upper (dateFormat "Monday 02 January 2006" .Date) }}</time>
+
+                                        {{/*  <span>{{ math.Ceil (div (countwords .Content) 220.0) }}
+                                            min de lecture</span>  */}}
                                     </div>
                                 </div>
                             </div>

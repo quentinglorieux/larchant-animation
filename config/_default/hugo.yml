@@ -1,6 +1,6 @@
 baseURL: ''
 title: Larchant Animation
-languageCode: fr-fr
+languageCode: fr
 DefaultContentLanguage: fr
 enableEmoji: true
 enableGitInfo: true
@@ -10,6 +10,7 @@ paginate: 9
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
+buildFuture : true
 
 params:
   disable_theme_toggle: false
@@ -50,8 +51,6 @@ markup:
       hardWraps: false
       unsafe: true
       xhtml: false
-
-
 
 
 markup:

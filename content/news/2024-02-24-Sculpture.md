@@ -1,11 +1,12 @@
 ---
 title: Conférence
-date: 2024-02-06T18:51:41.808Z
+date: 2024-02-24
 draft: false
 preview: images/sculpture-3129558_640.jpg
 summary: |-
-  SAMEDI 24 FEVRIER 17h à 19h
-  Entrée libre
+  Sociétés mésolithiques et gravures rupestres dans le sud de l’Ile-de-France.
+  17h à 19h.
+  Entrée libre.
 language: fr
 categories: A la Une
 tags: Conférence

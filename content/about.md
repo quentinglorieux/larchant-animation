@@ -17,7 +17,7 @@ par mail : larchantanimation@hotmail.fr ou encore **venez nous rencontrer à la 
 
 > L’équipe de la Médiathèque : Catherine, Corinne, Dominique, Floriane, Isabelle, Laurence L., Laurence M. et Thérèse, vous accueille les lundis et mercredis de 17 h 30 à 19 h et les samedis de 11 h à 13 h et la classe de Larchant 1 fois par mois le lundi. Laurence L. propose régulièrement des activités et lectures pour les jeunes enfants et Catherine des séances d’aide à la connexion au portail numérique de la Médiathèque Départementale.
 
-### Évenements
+### Évènements
 
 Pour ce qui concerne les manifestations de ce début d’année :
 

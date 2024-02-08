@@ -70,7 +70,7 @@ activities:
     - identifier: VTT
       image: images/logos/vtt.svg
 blog:
-  heading: Le Blog
+  heading: Le Blog des Évènements
   content: []
 mailinglist:
   heading: Inscrivez vous à notre liste de diffusion
