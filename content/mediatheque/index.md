@@ -5,6 +5,10 @@ draft: false
 language: fr
 description: Médiathèque de Larchant
 ---
+
+
+![](newsletter-fevrier-2024.jpg)
+
 # Médiathèque
 
 > Bienvenue sur la page de la médiathèque de Larchant
@@ -35,4 +39,4 @@ La classe de Larchant est reçue 1 fois par mois le lundi.
 
 ## Infos et inscriptions
 
-![](newsletter-fevrier-2024.jpg)
+![]()
