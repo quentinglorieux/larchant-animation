@@ -8,9 +8,8 @@ author: ""
 authorimage: ""
 language: fr
 categories: Théatre
-tags: 
-- Évènements
-
+tags:
+  - Évènements
 ---
 ## Les dates
 
@@ -29,6 +28,4 @@ Les **dates de la tournée** :
 ## Réservation
 
 * 06 33 42 47 88
-
-
-* ![](images/affiche-rage-dedans-1-_page-0001.jpg "L'affiche du spectacle")
+* ![](https://larchantanimation.fr/images/affiche-rage-dedans-1-_page-0001_hueb07afbaaa0b667ebccb16782afa28e9_1069210_500x0_resize_q90_h2_box.webp "L'affiche du spectacle")
