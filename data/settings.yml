@@ -57,18 +57,25 @@ activities:
   logos:
     - identifier: Course
       image: images/logos/running.svg
+      url: activites/course
     - identifier: Pétanque
       image: images/logos/petanque.svg
+      url: activites/petanque
     - identifier: Marche
       image: images/logos/marche.svg
+      url: activites/marche
     - identifier: Djembé
       image: images/logos/djembe.svg
+      url: activites/djembe
     - identifier: De fil en aiguille
       image: images/logos/couture.svg
+      url: activites/couture
     - identifier: Jeux
       image: images/logos/jeux.svg
+      url: activites/jeux
     - identifier: VTT
       image: images/logos/vtt.svg
+      url: activites/vtt
 blog:
   heading: Le Blog des Évènements
   content: []
