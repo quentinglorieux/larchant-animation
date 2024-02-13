@@ -82,6 +82,23 @@ collections:
         name: 'body'
         widget: 'markdown'
 
+  - name: 'activites'
+    label: 'Activités libres'
+    folder: '/content/activites/'
+    path: '/{{slug}}/index'
+    media_folder: ''
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Image', name: 'preview', widget: 'image'}
+      # - { label: 'Icon', name: 'icon', widget: 'string'}
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+
   - name: 'evenements'
     label: 'Évènements'
     folder: '/content/evenements/'
