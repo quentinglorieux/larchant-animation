@@ -10,15 +10,12 @@ preview: plante.png
 
 ## Inscriptions :
 
-### [Tout savoir sur l'édition 2024 (inscriptions)](http://larchantanimation.fr/posts/2023-12-31-foire-aux-plantes/)
+### [Tout savoir sur l'édition 2024 (inscriptions)](http://larchantanimation.fr/posts/2024-04-07-foire-aux-plantes/)
 
-## Date : 
+## Date :
 
 7 Avril 2024
 
 ## Lieu :
 
 Place des Tilleuls et place Pasteur. Larchant
-
-
-

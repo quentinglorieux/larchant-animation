@@ -9,3 +9,6 @@ tags:
   - Évènements
 file_label: ""
 ---
+Formulaire d'inscription bientot disponible.
+
+[Contactez](/contact/) nous pour en savoir plus.
