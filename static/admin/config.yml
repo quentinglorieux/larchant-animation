@@ -18,17 +18,7 @@ logo_url: http://localhost:1313/assets/images/logo.png
 locale: 'fr'
 
 collections:
-  - name: 'content'
-    label: 'Pages générales'
-    folder: 'content/'
-    media_folder: ''
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+
 
   - name: 'alaune'
     label: 'A la Une'
@@ -39,13 +29,15 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", format: 'DD/MM/YYYY' }
+      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Draft", name: "draft", widget: "boolean" , required: false}
       - { label: "Image", name: "preview", widget: "image", media_library: { config: { allow_multiple: false } } , required: false}
       - { label: "Résumé", name: "summary", widget: "text" }
       - { label: "Categorie", name: "categories", widget: "string" , required: false}
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" , required: false}
+
+
 
   - name: 'blog'
     label: 'Blog'
@@ -58,7 +50,7 @@ collections:
     slug: "{{year}}-{{month}}-{{slug}}"
     fields:
       - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Date de l'évènement", name: "date", widget: "datetime", format: 'DD/MM/YYYY' }
+      - { label: "Date de l'évènement", name: "date", widget: "datetime" }
       - { label: "Draft", name: "draft", widget: "boolean" , required: false}
       - { label: "Image de présentation", name: "preview", widget: "image", media_library: { config: { allow_multiple: false}}, media_folder: '/assets/images', public_folder: 'images'  , required: false}
       - { label: "Résumé", name: "summary", widget: "text" }
@@ -145,7 +137,18 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
-
+  - name: 'newsletter'
+    label: 'News Mediatheque'
+    folder: 'content/newsletter'
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "preview", widget: "image", media_library: { config: { allow_multiple: false } } , media_folder: '/assets/images', public_folder: 'images', required: false}
+      - { label: "Categorie", name: "categories", widget: "string" , required: false}
 
 
   - label: "Homepage & Settings"
@@ -287,7 +290,17 @@ collections:
             - { label: Activé, name: enabled, widget: boolean, required: false}
             - { label: Lien, name: url, widget: string, required: false}
 
-
+  - name: 'content'
+    label: 'Pages générales'
+    folder: 'content/'
+    media_folder: ''
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
       - label: Menus
         name: menu
