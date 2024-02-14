@@ -2,19 +2,20 @@ local_backend: true
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-  # name: github
-  # repo: quentinglorieux/larchant-animation-tailbliss
+  #  name: github
+  #  repo: quentinglorieux/larchant-animation-tailbliss
 
 media_folder: assets/images
-public_folder: images
+public_folder: /images
 
-# site_url: http://localhost:1313
-# display_url: http://localhost:1313
-# logo_url: http://localhost:1313/assets/images/logo.png
+site_url: http://localhost:1313
+display_url: http://localhost:1313
+logo_url: http://localhost:1313/assets/images/logo.png
 
-site_url: https://larchantanimation.fr/
-display_url: https://larchantanimation.fr/
-logo_url: https://larchantanimation.fr/images/logo.png
+# site_url: https://larchantanimation.fr/
+# display_url: https://larchantanimation.fr/
+# logo_url: https://larchantanimation.fr/images/logo.png
+locale: 'fr'
 
 collections:
   - name: 'content'
@@ -38,7 +39,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Date", name: "date", widget: "datetime", format: 'DD/MM/YYYY' }
       - { label: "Draft", name: "draft", widget: "boolean" , required: false}
       - { label: "Image", name: "preview", widget: "image", media_library: { config: { allow_multiple: false } } , required: false}
       - { label: "Résumé", name: "summary", widget: "text" }
@@ -49,21 +50,25 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: 'content/posts'
+    media_folder: /static/files
+    public_folder: /files
     create: true
     editor:
       preview: false
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{slug}}"
     fields:
       - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Date de l'évènement", name: "date", widget: "datetime", format: 'DD/MM/YYYY' }
       - { label: "Draft", name: "draft", widget: "boolean" , required: false}
-      - { label: "Image", name: "preview", widget: "image", media_library: { config: { allow_multiple: false } } , required: false}
+      - { label: "Image de présentation", name: "preview", widget: "image", media_library: { config: { allow_multiple: false}}, media_folder: '/assets/images', public_folder: 'images'  , required: false}
       - { label: "Résumé", name: "summary", widget: "text" }
-      - { label: "Author", name: "author", widget: "string" , required: false}
-      - { label: "Author Image", name: "authorimage", widget: "image", media_library: { config: { allow_multiple: false } } , required: false}
+      - { label: "Auteur", name: "author", widget: "string" , required: false}
+      - { label: "Image Auteur", name: "authorimage", widget: "image", media_library: { config: { allow_multiple: false } } , required: false}
       - { label: "Categorie", name: "categories", widget: "string" , required: false}
       - { label: "Tags", name: "tags", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" , required: false}
+      - { label: "Fichier Joint", name: "file", widget: "file" , required: false}
+      - { label: "Légende du fichier", name: "file_label", widget: "string" , required: false}
+      - { label: "Texte du post", name: "body", widget: "markdown" , required: false}
 
   - name: 'ateliers'
     label: 'Ateliers'
