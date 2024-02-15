@@ -6,9 +6,7 @@ language: fr
 layout: mediatheque
 description: Médiathèque de Larchant
 ---
-
-
-![](newsletter-fevrier-2024.jpg)
+![]()
 
 # Médiathèque
 
