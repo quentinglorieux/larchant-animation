@@ -8,8 +8,6 @@ categories: Foire aux Plantes
 tags:
   - Évènements
 file: /files/fete-des-plantes-2024_inscription.pdf
-file_label: Bulletin d'inscription à télécharger
+file_label: "Bulletin d'inscription : "
 ---
-Attention pour les stands de restauration sur place veuillez nous contacter avant pour savoir si il reste de la place
-
-[Contactez](/contact/) nous pour en savoir plus.
+[Contactez](/contact/) nous pour en savoir plus et pour les stands de restauration
