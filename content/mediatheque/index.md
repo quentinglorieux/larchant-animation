@@ -6,8 +6,6 @@ language: fr
 layout: mediatheque
 description: Médiathèque de Larchant
 ---
-![]()
-
 # Médiathèque
 
 > Bienvenue sur la page de la médiathèque de Larchant
@@ -37,5 +35,3 @@ La classe de Larchant est reçue 1 fois par mois le lundi.
 * Thérèse
 
 ## Infos et inscriptions
-
-![]()
