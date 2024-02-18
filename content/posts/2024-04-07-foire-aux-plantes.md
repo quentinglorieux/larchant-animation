@@ -7,7 +7,8 @@ authorimage: ""
 categories: Foire aux Plantes
 tags:
   - Évènements
-file_label: ""
+file: /files/cotes-1424-ss03-04.pdf
+file_label: Test
 ---
 Formulaire d'inscription bientot disponible.
 
