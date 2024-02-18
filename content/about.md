@@ -19,11 +19,9 @@ Lors de la 1ere assemblée générale le 26 novembre 1983 sous la Présidence de
 
 40 ans après, cette déclaration, est toujours parfaitement d’actualité !
 
-Aujourd’hui nous proposons aux habitants de Larchant et des communes environnantes, de nombreuses activités telles que **Gym, Jeux de société, Yoga, Atelier couture, Dessin, Pilate, Théâtre, Djembé, Trail, Marche nordique, VTT** et des évènements qui font notre renommée comme le **Lyricantrail, l’Hivernale, la Foire aux plantes, le Triathlon, le Vide-greniers, la Bourse aux jouets, le Festi’Baleine**. Tous ces divertissements rayonnent autour de la Médiathèque qui, au-delà de ces activités propres, est un carrefour d’information et de rencontres propice à la naissance de projets collaboratifs.
+Aujourd’hui nous proposons aux habitants de Larchant et des communes environnantes, de nombreuses activités telles que **Gym, Jeux de société, Yoga, Atelier couture, Dessin, Pilate, Théâtre, Djembé, Trail, Marche nordique, VTT** et des évènements qui font notre renommée comme le **Lyricantrail, l’Hivernale, la Foire aux plantes, le Triathlon, le Vide-greniers, la Bourse aux jouets, le Festi’Baleine**. Tous ces divertissements rayonnent autour de la **Médiathèque** qui, au-delà de ces activités propres, est un carrefour d’information et de rencontres propice à la naissance de projets collaboratifs.
 
-Je tiens à exprimer ma profonde gratitude envers l’équipe exceptionnelle du conseil d’administration mais pas seulement car il y a autour de nous de très nombreux bénévoles qui participent à nos activités et nous proposent de l’aide. 
-
-C'est grâce à cette énergie contagieuse et à l'engagement de chacun que nous sommes en mesure de continuellement vous proposer de nouvelles animations. Nous sommes fiers de pouvoir compter sur une communauté aussi dynamique et participative, et nous sommes impatients de partager de nombreux moments de convivialité et de découvertes ensemble. Merci à tous pour votre précieuse contribution à la vitalité de notre vie associative.
+En plus des 15 membres du conseil d'administration il y a autour de nous de très nombreux bénévoles qui participent à nos activités et nous proposent de l’aide. C'est grâce à l'engagement de chacun que nous sommes en mesure de continuellement vous proposer de nouvelles animations. Nous sommes fiers de pouvoir compter sur une communauté aussi dynamique et participative, et nous sommes impatients de partager de nombreux moments de convivialité et de découvertes ensemble. Merci à tous pour votre précieuse contribution à la vitalité de notre vie associative.
 
 \    La présidente, Isabelle LAMY
 
