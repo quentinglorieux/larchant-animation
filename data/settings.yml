@@ -17,9 +17,9 @@ paragraph2:
 ateliers:
   heading: Nos ateliers
   content:
-    - text: Nous proposons toute l'année (hors vacances) des ateliers encadrés par des
-        enseignant-e-s qualifié-e-s. Vous pouve nous rejoindre ou simplement
-        venir découvrir une activité sur les créneaux proposés.
+    - text: Nous proposons toute l'année (hors vacances scolaires) des ateliers
+        encadrés par des enseignants qualifiés. Vous pouvez nous rejoindre ou
+        simplement venir découvrir une activité sur les créneaux proposés.
   links:
     - text: Voir tous nos ateliers
       url: /ateliers
