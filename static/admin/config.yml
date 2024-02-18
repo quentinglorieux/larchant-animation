@@ -8,13 +8,13 @@ backend:
 media_folder: assets/images
 public_folder: /images
 
-site_url: http://localhost:1313
-display_url: http://localhost:1313
-logo_url: http://localhost:1313/assets/images/logo.png
+# site_url: http://localhost:1313
+# display_url: http://localhost:1313
+# logo_url: http://localhost:1313/assets/images/logo.png
 
-# site_url: https://larchantanimation.fr/
-# display_url: https://larchantanimation.fr/
-# logo_url: https://larchantanimation.fr/images/logo.png
+site_url: https://larchantanimation.fr/
+display_url: https://larchantanimation.fr/
+logo_url: https://larchantanimation.fr/images/logo.png
 locale: 'fr'
 
 collections:
