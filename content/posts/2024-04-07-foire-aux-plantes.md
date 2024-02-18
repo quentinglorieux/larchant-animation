@@ -7,7 +7,7 @@ authorimage: ""
 categories: Foire aux Plantes
 tags:
   - Évènements
-file: /files/cotes-1424-ss03-04.pdf
+file: /files/fete-des-plantes-2024_inscription.pdf
 file_label: Test
 ---
 Formulaire d'inscription bientot disponible.
