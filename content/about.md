@@ -4,37 +4,37 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Le mot de la présidente
+menu: association
+carousel: association
 ---
 ## Le mot de la présidente
 
-En 2023, l’association Larchant Animation fête ses 40 ans, et c’est cette année que **Dominique AUDEBERT** a souhaité quitter le poste de Présidente. Pendant toutes ces années (dont 17 ans en tant que présidente) Dominique s’est investie sans compter offrant son temps et ses compétences pour apporter une pierre à cet édifice associatif ! Nous l’en remercions tous vivement ! 
+Larchant Animation est née en 1983.
 
-Depuis le début de cette année et la **40e assemblée générale** du 21 janvier dernier le déroulement des activités régulières a suivi son cours :
+Dès la 1ère année les activités ont commencées à s’enchainer avec le 17 septembre 1983 la 1ère randonnée cycliste (eh oui déjà !) réunissant 167 participants, le 18 septembre 1983 l’inauguration de la bibliothèque et le 23 octobre 1983 la 1ère édition de la Foire à la brocante.
 
-Gym, jeux de société, yoga, atelier couture, dessin enfants, Pilate, Théâtre, Djembé, Trail, marche nordique, VTT…Il est toujours possible de prendre certaines activités en cours de route contactez-nous sur [Facebook](https://www.facebook.com/larchant.animation)
+Lors de la 1ere assemblée générale le 26 novembre 1983 sous la Présidence de Jean-Marc Muller les bases fondamentales de l’association étaient posées : 
 
-par mail : larchantanimation@hotmail.fr ou encore **venez nous rencontrer à la Médiathèque**.
+> ***« Pour Larchant et son rayonnement, pour faire vivre le village, mais aussi le faire connaitre. Pour distraire les Lyricantois, pour les faire se rencontrer, se parler, se sourire, pour leur faire vivre une expérience commune et partager la vie locale tous ensemble, pour que la place de notre village soit un carrefour de rencontres et un lieu où il fait bon vivre. »***
 
-> L’équipe de la Médiathèque : Catherine, Corinne, Dominique, Floriane, Isabelle, Laurence L., Laurence M. et Thérèse, vous accueille les lundis et mercredis de 17 h 30 à 19 h et les samedis de 11 h à 13 h et la classe de Larchant 1 fois par mois le lundi. Laurence L. propose régulièrement des activités et lectures pour les jeunes enfants et Catherine des séances d’aide à la connexion au portail numérique de la Médiathèque Départementale.
+40 ans après, cette déclaration, est toujours parfaitement d’actualité !
 
-### Évènements
+Aujourd’hui nous proposons aux habitants de Larchant et des communes environnantes, de nombreuses activités telles que **Gym, Jeux de société, Yoga, Atelier couture, Dessin, Pilate, Théâtre, Djembé, Trail, Marche nordique, VTT** et des évènements qui font notre renommée comme le **Lyricantrail, l’Hivernale, la Foire aux plantes, le Triathlon, le Vide-greniers, la Bourse aux jouets, le Festi’Baleine**. Tous ces divertissements rayonnent autour de la Médiathèque qui, au-delà de ces activités propres, est un carrefour d’information et de rencontres propice à la naissance de projets collaboratifs.
 
-Pour ce qui concerne les manifestations de ce début d’année :
+Je tiens à exprimer ma profonde gratitude envers l’équipe exceptionnelle du conseil d’administration mais pas seulement car il y a autour de nous de très nombreux bénévoles qui participent à nos activités et nous proposent de l’aide. 
 
-* 15e édition de l’hivernale le dimanche 5 février avec 342 partants, toujours aussi contents de notre organisation au top !
-* 12e édition de la fête des plantes avec beaucoup de visiteurs pour admirer les plantes, goûter aux produits locaux et participer aux conférences, projection et ateliers divers.
-* Les prochains événements seront un tournoi de pétanque en doublette le samedi 10 juin puis un pique-nique géant pour les 40 ans de l’association le samedi 24 juin.
-* Pour la rentrée de septembre, le programme vous sera distribué avec la reprise des différents ateliers et comme événements majeurs :
-* 1er vide-greniers dimanche 24 septembre, pour vous inscrire téléchargez un bulletin d’inscription sur http://www.larchantanimation.fr/evenements/vide-grenier-2023.
-* 8e édition du Lyrican’trail dimanche 8 octobre, l’ouverture des inscriptions sera annoncée sur les réseaux sociaux.
+C'est grâce à cette énergie contagieuse et à l'engagement de chacun que nous sommes en mesure de continuellement vous proposer de nouvelles animations. Nous sommes fiers de pouvoir compter sur une communauté aussi dynamique et participative, et nous sommes impatients de partager de nombreux moments de convivialité et de découvertes ensemble. Merci à tous pour votre précieuse contribution à la vitalité de notre vie associative.
 
-### Bureau
+\    La présidente, Isabelle LAMY
 
-Et enfin, pour terminer, j’ai le plaisir de vous présenter la composition du nouveau bureau et Conseil d’Administration
+### Conseil d'Administration et Bureau 2024
 
-* Isabelle LAMY (présidente), Noël MEDALE, Eric ROTELLINI (vice-présidents), Jocelyne BERNARD (trésorière), Catherine DE BŒUF (secrétaire).
-* Alain DURY, Jean-Luc GREGOIRE, Danièle GRILLET, Karine JAMOTEAU, Stéphane JAMOTEAU, Jean-François LAMY, Laurence LIMIER, Patrick PIPET, Alain TOURNANT.
+Isabelle LAMY (présidente), Noël MEDALE, Eric ROTELLINI (vice-présidents), Floriane BAWEDIN (trésorière), Catherine DE BŒUF (secrétaire), Karine JAMOTEAU (secrétaire adjointe).
 
-Nous rappelons que l’association a le souhait de permettre aux bénévoles, habitants de Larchant et plus largement des communes environnantes de se retrouver au sein d’activités et d’animations multiples avec pour leitmotiv, la convivialité, la créativité et le plaisir partagé.
+Dany CARREAU Alain DURY, Quentin GLORIEUX, Jean-Luc GREGOIRE, Danièle GRILLET, Karine JAMOTEAU, Jean-François LAMY, Laurence LIMIER, Patrick PIPET, Alain TOURNANT.
 
-La présidente, *Isabelle LAMY*
+### **La Médiathèque**
+
+> L'équipe de la Médiathèque : Catherine, Corinne, Dominique, Floriane, Isabelle, Laurence L., Laurence M. et Thérèse, vous accueille les lundis et mercredis de 17 h 30 à 19 h et les samedis de 11 h à 13 h et la classe de Larchant 1 fois par mois le lundi. Laurence L. propose régulièrement des activités et lectures pour les jeunes enfants et Catherine des séances d’aide à la connexion au portail numérique de la Médiathèque Départementale.
+
+Il est toujours possible de prendre certaines activités en cours de route, contactez-nous sur [Facebook](https://www.facebook.com/larchant.animation) ou par mail : larchantanimation@gmail.com
