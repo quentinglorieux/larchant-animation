@@ -1,22 +1,21 @@
 ---
-title: "Festi'Baleine"
+title: Festi'Baleine
 date: 2023-01-01
 draft: false
 language: fr
 description: Festival de Musique
-preview: baleine22.jpg
+preview: affiche-2024-01.jpg
 ---
-
 # Festi'Baleine
 
 ## Date :
-- 
 
-## Lieu : 
-Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy. Larchant
+* 29 juin 2024
 
+## Lieu :
 
-## Nos conseils
+Retour dans un lieu mythique au lieu-dit « La Baleine » 
 
-## Tarifs
+à partir de 18 h
 
+## Concert pour les Lyricantois et leurs amis
