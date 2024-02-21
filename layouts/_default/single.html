@@ -14,7 +14,7 @@
       {{ $small := (.Crop "300x200 webp q80").RelPermalink }}
       {{ $medium := (.Crop "300x200 webp q80").RelPermalink }}
       {{ $large := (.Crop "600x400 webp q100").RelPermalink }}
-      {{ $featuredimage := (.Fit "1000x500 webp q100").RelPermalink }}
+      {{ $featuredimage := (.Fit "1200x700 webp q100").RelPermalink }}
       <img src="{{ $featuredimage }}" srcset="
         {{- with $small -}}, {{.}} 400w{{- end -}}
         {{- with $medium -}}, {{.}} 550w{{- end -}}
