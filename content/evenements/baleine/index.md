@@ -10,12 +10,13 @@ preview: affiche-2024-double.png
 
 ## Date :
 
-* 29 juin 2024
+* Samedi 29 Juin 2024 (et dancefloor dans le sable le 28 Juin)
 
 ## Lieu :
 
-Retour dans un lieu mythique au lieu-dit « La Baleine » 
+Retour dans un lieu mythique au lieu-dit « La Baleine » à Larchant.
 
-à partir de 18 h
+Cette année on innove ! En plus de la traditionnelle soirée du Samedi (à partir de 18 h), nous lançons une soirée DanceFloor dans le Sable le Vendredi soir dès 20h.
+A très vite
 
 ## Concert pour les Lyricantois et leurs amis
