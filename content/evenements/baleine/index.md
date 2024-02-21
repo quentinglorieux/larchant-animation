@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Festival de Musique
-preview: affiche-2024-01.jpg
+preview: affiche-2024-double.png
 ---
 # Festi'Baleine
 
