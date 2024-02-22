@@ -29,4 +29,6 @@ Ensemble, faisons résonner la magie de la musique à Larchant !
 Lorsque vous remplissez le formulaire de dons, Yapla notre prestataire va vous proposer, en plus du don, une contribution volontaire. Cette contribution ne revient pas à Larchant animation mais au Crédit agricole qui gère l'outil de paiement en ligne. A vous de voir si vous souhaitez conserver ou non cette contribution. Si vous souhaitez la supprimer c'est possible avec le lien *Modifier* juste en dessous de **Contribution suggérée**. Nous ne pouvons pas la mettre par défaut à zéro.
 
 ## La cagnotte
+Sur mobile cliquez [ici](https://larchant-animation.s2.yapla.com/fr/campaign-8247) 
+Sinon c'est en dessous:
 <iframe width="950" height="1000" src="https://larchant-animation.s2.yapla.com/fr/campaign-8247"></iframe>
