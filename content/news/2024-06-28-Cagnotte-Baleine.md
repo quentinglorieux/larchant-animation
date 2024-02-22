@@ -25,4 +25,7 @@ Ensemble, faisons résonner la magie de la musique à Larchant !
 **Important** :  Les dons au profit des associations ouvrent droit à une réduction d'impôt sur le revenu de 66 % à 75 % du montant versé, selon l’association choisie, dans la limite de 20 % du revenu imposable. 
 [En savoir plus](https://www.economie.gouv.fr/particuliers/prelevement-a-la-source-reductions-fiscales-dons-associations)
 
+## A lire avant de contribuer 
+Lorsque vous remplissez le formulaire de dons, Yapla notre prestataire va vous proposer, en plus du don, une contribution volontaire. Cette contribution ne revient pas à Larchant animation mais au Crédit agricole qui gère l'outil de paiement en ligne. A vous de voir si vous souhaitez conserver ou non cette contribution. Si vous souhaitez la supprimer c'est possible avec le lien *Modifier* juste en dessous de **Contribution suggérée**. Nous ne pouvons pas la mettre par défaut à zéro.
+
 <iframe width="950" height="1000" src="https://larchant-animation.s2.yapla.com/fr/campaign-8247"></iframe>
