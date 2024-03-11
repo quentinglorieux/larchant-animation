@@ -89,3 +89,7 @@ module:
   hugoVersion:
     extended: true
     min: "0.104.0"
+
+staticDir:
+- assets
+- static 

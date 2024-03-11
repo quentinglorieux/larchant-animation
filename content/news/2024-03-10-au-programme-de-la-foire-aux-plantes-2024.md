@@ -8,9 +8,11 @@ summary: >-
 
   boutures… Produits locaux et autres délices. 
 tags: "Expo : les oiseaux"
+
+
 ---
+
 
 
 ![LE PROGRAMME](/images/programme-foire-aux-plantes-20242.jpg)
 
-![](/images/programme-foire-aux-plantes-20242.jpg)
