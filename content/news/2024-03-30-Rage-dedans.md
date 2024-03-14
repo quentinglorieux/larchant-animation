@@ -6,8 +6,7 @@ preview: images/affiche-rage-dedans-1-_page-0001.jpg
 summary: La Mariols à Larchant le 30 Mars
 language: fr
 categories: Théatre
-tags:
-  - Évènements
+tags: Théatre
 ---
 ## Les dates
 
