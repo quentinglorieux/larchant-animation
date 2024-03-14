@@ -7,7 +7,7 @@ summary: >-
   Bourse d’échange de plantes, graines,
 
   boutures… Produits locaux et autres délices. 
-tags: "Expo : les oiseaux"
+tags: "Plantes"
 
 
 ---
