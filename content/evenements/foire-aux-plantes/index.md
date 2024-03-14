@@ -19,3 +19,5 @@ preview: plante.png
 ## Lieu :
 
 Place des Tilleuls et place Pasteur. Larchant
+
+![](programme-foire-aux-plantes-2024_page-0002.jpg)
