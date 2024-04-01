@@ -1,7 +1,7 @@
 ---
 title: Rage Dedans
 date: 2024-03-30
-draft: false
+draft: true
 preview: images/affiche-rage-dedans-1-_page-0001.jpg
 summary: La Mariols troupe en tournée. Cliquez pour connaitre les dates.
 author: ""
