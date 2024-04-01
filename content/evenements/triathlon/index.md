@@ -1,24 +1,31 @@
 ---
-title: "Triathlon"
+title: Triathlon
 date: 2023-01-01
 draft: false
 language: fr
 description: Triathlon
-preview: triathlon22.jpg
+preview: triathlon-2024.jpg
 ---
+# Triathlon
 
-# Triathlon 
+Essayez de réaliser un maximum de BLOCS puis le meilleur grimpeur sera  le 1er à s’élancer en VTT et le TRAIL s’enchaînera à la suite  
 
-## Horaires :
-- 
+Epreuve limitée à 150 participants  
 
-## Lieu : 
+Renseignements auprès de Cyril : 06 23 78 53 32
 
+## Horaires
 
-## Infos et Inscriptions
+###### Remise des dossards entre 8h et 8h30
 
+## Lieu
 
-## Nos conseils
+###### site de la Dame Jouanne 
 
 ## Tarif
 
+###### 16€ (8 € pour les juniors 12-17ans)
+
+## Inscriptions en ligne prochainement à venir sur le site
+
+## Port du casque et certificat médical ou licence obligatoires  Assurance à la charge du participant
