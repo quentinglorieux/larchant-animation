@@ -1,5 +1,5 @@
 ---
-title: Rage Dedans
+title: "Rage Dedans : Séance supplémentaire samedi 4 mai"
 date: 2024-03-30
 draft: false
 preview: images/affiche-rage-dedans-1-_page-0001.jpg
@@ -15,6 +15,7 @@ Les **dates de la tournée** :
 * samedi 24 février 2024 à Villiers sous Gretz
 * samedi 2 mars 2024 à Guercheville
 * samedi 30 mars 2024 à Larchant
+* samedi 4 mai 2024 à Larchant
 
 ## Les tarifs
 
