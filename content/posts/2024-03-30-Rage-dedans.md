@@ -1,7 +1,7 @@
 ---
 title: Rage Dedans
 date: 2024-03-30
-draft: true
+draft: false
 preview: images/affiche-rage-dedans-1-_page-0001.jpg
 summary: Prochaine séance le 04 mai
 author: ""
