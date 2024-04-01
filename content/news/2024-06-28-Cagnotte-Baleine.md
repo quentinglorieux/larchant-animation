@@ -2,7 +2,7 @@
 title: Cagnotte pour l'organisation du Festi'Baleine 2024
 date: 2024-06-29T18:04:00.000Z
 draft: false
-preview: images/affiche-2024-01.jpg
+preview: /images/test.jpg
 summary: Nous lançons une cagnotte et vous invitons à contribuer pour soutenir
   cet événement qui rassemble notre communauté. Cliquez pour en savoir plus.
 language: fr
