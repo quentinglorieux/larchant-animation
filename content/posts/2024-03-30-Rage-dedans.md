@@ -2,7 +2,7 @@
 title: Rage Dedans
 date: 2024-05-04T16:48:00.000Z
 draft: false
-preview: ""
+preview: images/whatsapp-image-2024-04-12-à-18.34.15_2b700fd9.jpg
 summary: Prochaine séance le 04 mai
 author: ""
 authorimage: /files/whatsapp-image-2024-04-12-à-18.34.15_2b700fd9.jpg
