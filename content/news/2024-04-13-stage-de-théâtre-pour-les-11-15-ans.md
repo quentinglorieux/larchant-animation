@@ -6,6 +6,6 @@ summary: "le défi : réaliser une pièce en 3 jours pour une représentation fi
   devant famille et amis le 20 mai à 16 heures"
 tags: Théâtre
 ---
-
+Inscription : demandez votre bulletin d'inscription à [larchantanimation@gmail.com](larchantanimation@gmail.com)[](larchantanimation@gmail.com)
 
 ![](/images/affiche-stage-larchant-mai-2024.jpg)
