@@ -26,4 +26,4 @@ Les **dates de la tournée** :
 ## Réservation
 
 * 06 33 42 47 88
-* ![](https://larchantanimation.fr/images/affiche-rage-dedans-1-_page-0001_hueb07afbaaa0b667ebccb16782afa28e9_1069210_500x0_resize_q90_h2_box.webp "L'affiche du spectacle")
+* ![](/images/whatsapp-image-2024-04-12-à-18.34.15_2b700fd9.jpg "L'affiche du spectacle")
