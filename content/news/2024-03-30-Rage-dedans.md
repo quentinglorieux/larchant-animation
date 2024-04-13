@@ -1,8 +1,8 @@
 ---
 title: "Rage Dedans : Séance supplémentaire samedi 4 mai"
-date: 2024-03-30
-draft: false
-preview: images/affiche-rage-dedans-1-_page-0001.jpg
+date: 2024-05-04T19:23:00.000Z
+draft: true
+preview: /images/whatsapp-image-2024-04-12-à-18.34.15_2b700fd9.jpg
 summary: La Mariols à Larchant le 30 Mars
 language: fr
 categories: Théatre
