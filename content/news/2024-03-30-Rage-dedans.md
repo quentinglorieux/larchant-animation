@@ -1,7 +1,7 @@
 ---
 title: "Rage Dedans : Séance supplémentaire samedi 4 mai"
 date: 2024-05-04T20:00:00.000Z
-draft: true
+draft: false
 preview: /images/whatsapp-image-2024-04-12-à-18.34.15_2b700fd9.jpg
 summary: La Mariols à Larchant le 04 MAI 2024
 language: fr
