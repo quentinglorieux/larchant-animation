@@ -9,18 +9,58 @@ tags:
   - Évènements
 ---
 
+# Festival Baleino
 
-## Cette année le festi Baleine se tient sur 2 jours ! 
-**Première soirée le vendredi 28 Juin 2024,** avec une soirée ecléctique dans le sable avec de la guinguette, du juzz fusion, de l'elector punk et des DJset.
+## Cette année le festi Baleine se tient sur 2 jours !
 
-**Deuxième soirée le samedi 29 Juin 2024 des 18h,** avec un concert époustouflant au coeur d'un site exceptionnel pour les habitants de Larchant et leurs amis. Trois groupes talentueux animeront une soirée mémorable.
+Bienvenue au Festival Baleino, un événement unique qui transforme la forêt de Larchant en un espace vibrant de musique, de danse et de convivialité. Plongez dans une ambiance exceptionnelle au cœur de la nature !
 
-![Balein'o 2024](images/Baleino_2024.png)
+## Programme
 
-L’association Larchant Animation a le plaisir de convier les Lyricantois et leurs amis au Festi’baleine.
+![Balein'o 2024](/images/Baleino_2024.png)
 
-Trois groupes de musiciens joueront au cœur d’une carrière de sable dans un lieu mythique pour notre association comme un retour aux sources au lieudit « La Baleine » . 
+### Lineup
 
-Cette fête organisée pour tous est entièrement gratuite. En contrepartie nous vous demanderons de venir consommer au bar qui sera installé sur place et avec la possibilité de vous restaurer avec des frites, des grillades et des crêpes. 
+![Cyclobal - Guinguette](../static/cyclobal-image.png)
 
-*Pour des questions de sécurité aucune bouteille en verre ni cannette ne seront acceptées sur ce lieu. Nous vous remercions de votre compréhension et vous souhaitons une très belle soirée !*
+- **Cyclobal** - Guinguette
+  _Cyclobal vous transporte dans une ambiance guinguette avec des airs entraînants et festifs qui vous feront danser toute la nuit._
+
+![Oz - Jazz Fusion](../static/oz-image.png)
+
+- **Oz** - Jazz Fusion
+  _Oz mélange habilement le jazz traditionnel avec des éléments modernes, créant une expérience musicale fusion unique._
+
+![Rotule Sirocco - Electro Punk](../static/rotule-sirocco-image.png)
+
+- **Rotule Sirocco** - Electro Punk
+  _Préparez-vous pour une explosion d'énergie avec Rotule Sirocco, qui fusionne des rythmes électro avec une attitude punk._
+
+![^V - DJ Set](../static/av-image.png)
+
+- **^V** - DJ Set
+  _Les sets de DJ d'^V sont connus pour leur capacité à enflammer la piste de danse avec des beats électroniques captivants._
+
+![Cosmos - Psy Trance](../static/cosmos-image.png)
+
+- **Cosmos** - Psy Trance
+  _Cosmos vous emmène dans un voyage psychédélique avec ses sons trance hypnotiques et envoûtants._
+
+## Détails de l'événement
+
+- **Date**: 28 Juin
+- **Heure**: 20h00 - 2h00
+- **Lieu**: La Baleine, Forêt de Larchant
+- **Prix**: Libre (Donnez ce que vous pouvez et ce que vous estimez juste pour soutenir les artistes et l'organisation.)
+
+### Qu'est-ce que le "Prix Libre" ?
+
+Le concept de prix libre permet à chacun de contribuer selon ses moyens. C'est une manière de rendre la culture accessible à tous tout en soutenant équitablement les artistes.
+
+## Restauration Vegan et Locale
+
+Durant le festival, vous pourrez savourer une variété de plats vegan préparés par des producteurs locaux.
+
+Nous vous attendons nombreux pour une soirée mémorable remplie de musique, de bonne nourriture et de convivialité !
+
+_Pour des questions de sécurité aucune bouteille en verre ni cannette ne seront acceptées sur ce lieu. Nous vous remercions de votre compréhension et vous souhaitons une très belle soirée !_
