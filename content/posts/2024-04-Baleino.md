@@ -1,14 +1,13 @@
 ---
-title: Festi'Baleine
-date: 2024-06-29T00:00:00.000Z
-preview: images/affiche-2024-01.jpg
-summary: Concert et Festival
+title: Balein'o 2024
+date: 2024-06-28T00:00:00.000Z
+preview: images/Baleino_2024.png
 author: Festi'Baleine
+summary: Cette année le festi Baleine se tient sur 2 jours ! Et le vendredi c'est Balein'o !
 authorimage: ""
 tags:
   - Évènements
 ---
-Vous connaissez Larchant et peut être savez-vous que depuis 2006 l’association Larchant Animation organise une fête **« FESTI BALEINE »** au mois de juin réservée aux habitants du village, une année sur deux, sur le site du lieu-dit « la Baleine ». Y sont invités et présents plus de 500 habitants, amis et voisins de Larchant. 
 
 
 ## Cette année le festi Baleine se tient sur 2 jours ! 
@@ -16,7 +15,7 @@ Vous connaissez Larchant et peut être savez-vous que depuis 2006 l’associatio
 
 **Deuxième soirée le samedi 29 Juin 2024 des 18h,** avec un concert époustouflant au coeur d'un site exceptionnel pour les habitants de Larchant et leurs amis. Trois groupes talentueux animeront une soirée mémorable.
 
-![Balein'o 2024](/images/affiche-2024-01.jpg)
+![Balein'o 2024](images/Baleino_2024.png)
 
 L’association Larchant Animation a le plaisir de convier les Lyricantois et leurs amis au Festi’baleine.
 
