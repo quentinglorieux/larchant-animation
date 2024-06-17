@@ -10,7 +10,7 @@ Essayez de réaliser un maximum de BLOCS puis le meilleur grimpeur sera  le 1er 
 
 ## Les inscriptions pour le triathlon 2024 sont lancées.
 
-Inscrivez vous sur le site de notre partenaire Yapla.
+[Inscrivez vous ICI sur le site de notre partenaire Yapla](https://larchant-animation.s2.yapla.com/fr/event-58468).
 
 ### Tarif
 

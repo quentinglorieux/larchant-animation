@@ -30,4 +30,6 @@ _Port du casque et certificat médical ou licence obligatoires  Assurance à la 
 
 ## Inscriptions en ligne pour l'édition 2024 c'est ICI !
 
+[Inscrivez vous ICI sur le site de notre partenaire Yapla](https://larchant-animation.s2.yapla.com/fr/event-58468)
+
 
