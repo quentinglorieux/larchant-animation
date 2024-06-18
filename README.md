@@ -26,3 +26,4 @@ Le menu s'édite à partir du fichier de configuration config/menu.yaml
 Pour éditer les pages il faut ouvrir le fichier .md correspondant.
 Les pages sont dans content puis ...
 Il est important de bien remplir l'en-tete du fichier .md qui servira pour afficher correctement la page.
+
