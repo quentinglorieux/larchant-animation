@@ -16,9 +16,18 @@ preview: theatre.jpg
 Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy. Larchant
 
 ## L'enseignante 
-Justin
+Justine Mattioli
 
-## Nos conseils
+## Nos représentations
+
+L'atelier jeune de Larchant Animation présente sa nouvelle pièce de théâtre intitulée "Panique à l'hôpital". Cette comédie captivante, écrite et mise en scène par Justine Mattioli, promet de vous faire rire aux éclats. Plongez dans l'univers de cet hôpital. Ne manquez pas cette représentation unique qui saura divertir petits et grands.
+
+ Soyez prêts à vivre une après-midi remplie de rires et de surprises ! 
+
+ - Samedi 22 Juin à 17h
+ - Salle Sablonnière, Larchant
+
 
 ## Tarifs
+* **Abonnement annuel : 200 euros + adhésion à Larchant Animation**
 
