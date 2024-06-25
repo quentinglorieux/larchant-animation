@@ -3016,3 +3016,9 @@ EmojiSymbols;
     line-height: 1.75rem;
   }
 }
+
+iframe {
+  width: 100%; /* Make the iframe take the full width of its container */
+  height: 90vh; /* Adjust height based on the viewport height */
+  border: none; /* Optional: Removes the border */
+}

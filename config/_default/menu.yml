@@ -104,11 +104,11 @@ footer:
     weight: 10
   - identifier: blog
     name: Blog
-    url: /categories/blog/
+    url: /posts/
     weight: 20
   - identifier: news
     name: News
-    url: /categories/news/
+    url: /news/
     weight: 30
   - identifier: ateliers
     name: Les ateliers

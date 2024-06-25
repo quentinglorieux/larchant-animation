@@ -98,4 +98,10 @@ module.exports = {
     typography: ["dark"],
   },
   plugins: [require("@tailwindcss/typography")],
+  // purge: {
+  //   content: [
+  //       themeDir + 'layouts/**/*.html',
+  //       './*(layouts|content|data|static)/**/*.*(html|toml|md)'
+  //   ],
+  // }
 };

@@ -9,9 +9,7 @@ preview: videgrenier2024.jpg
 
 # Vide Grenier
 Larchant Animation a le plaisir de vous annoncer le grand Vide-Grenier de Larchant, qui se tiendra le dimanche 22 septembre 2024. Cette journée festive est l’occasion idéale pour dénicher des trésors, rencontrer les habitants et profiter de l’atmosphère conviviale de notre charmant village.
-#### Inscriptions avec notre partenaire Yapla : [c'est ICI](https://larchant-animation.s2.yapla.com/fr/event-60695) !
 
-_Si vous avez des difficultés pour vous inscrire, n'hésitez pas à nous contacter par téléphone ou par mail. Vous pouvez également remplir [la version papier ICI](2024_inscription.pdf) et la retrouner par voie postale._ 
 
 ## Informations Pratiques
 
@@ -20,7 +18,6 @@ _Si vous avez des difficultés pour vous inscrire, n'hésitez pas à nous contac
 - Buvette et restauration sur place
 
 ## Réservation des Emplacements
-#### Inscriptions avec notre partenaire Yapla : [c'est ICI](https://larchant-animation.s2.yapla.com/fr/event-60695) !
 
 
 Les emplacements sont disponibles à la réservation selon les modalités suivantes :
@@ -28,6 +25,14 @@ Les emplacements sont disponibles à la réservation selon les modalités suivan
 - Emplacement minimum de 3 mètres (sans voiture) : 6,00 €
 - Mètre supplémentaire : 2,00 €
 - Voiture sur le stand (sur réservation) : 10,00 €
+
+#### Inscriptions avec notre partenaire Yapla [c'est ICI](https://larchant-animation.s2.yapla.com/fr/event-60695) ou directement sur notre site ci-dessous :
+
+<iframe  src="https://larchant-animation.s2.yapla.com/fr/event-60695"></iframe>
+
+
+_Si vous avez des difficultés pour vous inscrire, n'hésitez pas à nous contacter par téléphone ou par mail. Vous pouvez également remplir [la version papier ICI](2024_inscription.pdf) et la retrouner par voie postale._ 
+
 
 
 ## Conditions de Participation
@@ -40,5 +45,6 @@ Réglement en [PDF](REGLEMENT.pdf).
 Pour toute question ou information supplémentaire, vous pouvez contacter Catherine au 06 83 68 47 97 ou par email à l’adresse suivante : larchantanimation.videgrenier@gmail.com 
 
 Venez nombreux pour faire de cette journée un moment inoubliable !
+
 
 

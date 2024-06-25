@@ -24,3 +24,9 @@ Isabelle LAMY (présidente), Noël MEDALE, Eric ROTELLINI (vice-présidents), Fl
 Dany CARREAU Alain DURY, Quentin GLORIEUX, Jean-Luc GREGOIRE, Danièle GRILLET, Karine JAMOTEAU, Jean-François LAMY, Laurence LIMIER, Patrick PIPET, Alain TOURNANT.
 
 Il est toujours possible de prendre certaines activités en cours de route, contactez-nous sur [Facebook](https://www.facebook.com/larchant.animation) ou par mail : larchantanimation@gmail.com
+
+### Adhésion
+<div> 
+          <a href="/adherez" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+            Adhérez à Larchant Animation
+          </a>
