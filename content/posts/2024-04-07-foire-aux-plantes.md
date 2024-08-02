@@ -1,13 +1,14 @@
 ---
-title: Foire aux plantes 2024
-date: 2024-04-07
-preview: images/fete-des-plantes-2024.jpg
-summary: "12e Foire aux plantes "
+title: Le triathlon de Larchant 2024
+date: 2024-09-15T00:00:00.000Z
+preview: images/triathlon-2024.jpg
+summary: Essayez de réaliser un maximum de BLOCS puis le meilleur grimpeur sera
+  le 1er à s’élancer en VTT et le TRAIL s’enchaînera à la suite.
 authorimage: ""
-categories: Foire aux Plantes
+categories: "triathlon "
 tags:
   - Évènements
-file: /files/fete-des-plantes-2024_inscription.pdf
-file_label: Bulletin d'inscription
+file: ""
+file_label: ""
 ---
-[Contactez](/contact/) nous pour en savoir plus et pour les stands de restauration
+[Inscrivez vous ICI sur le site de notre partenaire Yapla.](https://larchant-animation.s2.yapla.com/fr/event-58468)
