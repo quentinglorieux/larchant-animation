@@ -1,30 +1,37 @@
 ---
-title: "Pilates"
+title: Cirque
 date: 2023-01-01
 draft: false
 language: fr
-description: Pilates avec Marie
-preview: pilates.jpg
+description: Atelier Cirque Adultes avec Alice
+preview: handball_5485069.png
 ---
-
-# Cours de Pilates 
+# Atelier Cirque Adultes
 
 ## Horaires :
-- Jeudi : 19h - 20h
- 
-## Lieu : 
+
+* Mercredi : 18h30 - 19h45
+
+## Lieu :
+
 Salle de la *Sablonnière*, 1 Rue de la Cave de Châtenoy. Larchant
 
-## L'enseignante 
-Marie
+## L'enseignante
+
+Alice
 
 ## Nos conseils
 
 ## Tarifs
 
-Les tarifs pour les cours de pilates sont les suivants :
+* **Abonnement annuel : 221 euros + adhésion à Larchant Animation**
 
-* **Abonnement annuel : 200 euros + adhésion à Larchant Animation**
-* **Cours à la séance : 10 euros**
+Venez découvrir une activité sportive originale et artistique qui vous permettra de développer vos facultés corporelles telles que l’équilibre, la dextérité, la force, la souplesse et bien plus encore !
 
-Rejoignez-nous pour une expérience de gym agréable et bénéfique pour votre santé !
+Déroulement de la séance :
+
+\    Echauffement acrobatique
+
+\    Equilibre et jonglerie
+
+\    Exercices de souplesse
