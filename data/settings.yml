@@ -28,7 +28,7 @@ ateliers:
       image: images/logos/yoga.svg
       url: ateliers/yoga
     - identifier: Cirque
-      image: /images/logos/handball_5485069.png
+      image: /images/logos/circus-stunt-acrobat-svgrepo-com.svg
       url: ateliers/pilates
     - identifier: Gym douce
       image: images/logos/gym.svg
