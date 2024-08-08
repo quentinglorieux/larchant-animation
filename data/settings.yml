@@ -42,6 +42,9 @@ ateliers:
     - identifier: Cirque enfant
       image: /images/logos/circus-stunt-acrobat-svgrepo-com.svg
       url: atelier/cirque-enfants
+    - identifier: Sophrologie
+      image: /images/logos/petroglyph-153863.svg
+      url: ateliers/Sophrologie
 activities:
   heading: Nos activités libres
   content:
