@@ -10,8 +10,7 @@ preview: gym.jpg
 
 ## Horaires :
 
-* **Balance -** Lundi : 10h00 - 11h00
-* **Tonique -** Mercredi : 18h30 - 19h30
+* **Gym douce -** Lundi : 10h00 - 11h00
 
 ## Lieu :
 
@@ -20,6 +19,10 @@ Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy, Larchant
 ## L'enseignante
 
 Monique, notre instructrice expérimentée, vous guidera avec passion à travers chaque séance.
+
+Echauffement, exercices d’équilibre statiques et dynamiques, renforcement musculaire, étirements et exercices
+
+de respiration.
 
 ## Nos conseils
 
@@ -31,7 +34,7 @@ Monique, notre instructrice expérimentée, vous guidera avec passion à travers
 
 Les tarifs pour les cours de gym sont les suivants :
 
-* **Abonnement annuel : 200 euros + adhésion à Larchant Animation**
+* **Abonnement annuel :** 34 séances de 1 h - 204 € **+ adhésion à Larchant Animation**
 * **Cours à la séance : 10 euros**
 
 Rejoignez-nous pour une expérience de gym agréable et bénéfique pour votre santé !
