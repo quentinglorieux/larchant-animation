@@ -1,35 +1,43 @@
 ---
-title: "Yoga"
+title: Yoga
 date: 2023-01-01
 draft: false
 language: fr
 description: Yoga avec Antonine
 preview: yoga.jpg
 ---
-
 # Cours de Yoga Iyengar
 
-## Horaires :
-- Mardi 18h-19h20 : cours initiation
-- Mardi 19h30-21h : cours avancé
-- Jeudi 16h-17h : Yoga des ainés
-## Lieu : 
-Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy. Larchant
+Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèreté, autant de mots pour vous donner le goût de l’exploration du corps comme le lieu de la conscience.
 
-## L'enseignante 
+## Horaires :
+
+* lundi 12h15 - 13h15
+* Mercredi 18h30-20h
+* Jeudi 12h15 - 13h15
+* Jeudi 18h30-20h
+
+## Lieu :
+
+Bienvenue dans **LE STUDIO** nouveau lieu pour pratiquer le Yoga en toute quiétude, proche de la salle Sablonnière
+
+au n°16 de la place des Tilleuls.
+
+## L'enseignante
+
 Antonine pratique le yoga depuis 8 ans et l'enseigne depuis 2021.
 
 ## Nos conseils
-- Focus sur la Précision : Maximisez les bienfaits en mettant l'accent sur la précision dans les postures.
-- Utilisation de Matériel : N'hésitez pas à utiliser des accessoires comme des blocs et des ceintures pour faciliter votre alignement corporel.
-- Adaptabilité à Tous Niveaux : Que vous soyez débutant ou avancé, nos cours sont adaptés à tous les niveaux.
-- Respiration Consciente : Explorez l'importance de la respiration consciente pendant la pratique.
+
+* Focus sur la Précision : Maximisez les bienfaits en mettant l'accent sur la précision dans les postures.
+* Utilisation de Matériel : N'hésitez pas à utiliser des accessoires comme des blocs et des ceintures pour faciliter votre alignement corporel.
+* Adaptabilité à Tous Niveaux : Que vous soyez débutant ou avancé, nos cours sont adaptés à tous les niveaux.
+* Respiration Consciente : Explorez l'importance de la respiration consciente pendant la pratique.
+* plus d'infos sur le site d'Antonine :  [Sādhaka yoga des racines à la cime](https://yoga.antoninerochet.fr/)
 
 ## Tarifs
 
-Les tarifs pour les cours de gym sont les suivants :
-
-* **Abonnement annuel : 200 euros + adhésion à Larchant Animation**
+* **Abonnement annuel : 33 à 35 séances de 1h à 1h3 : 200€ + adhésion à Larchant Animation**
 * **Cours à la séance : 10 euros**
 
 Possibilité de rejoindre en cours d'année sur demande. Nous contacter.
