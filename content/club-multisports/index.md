@@ -9,13 +9,16 @@ description: Les Pachydermes de Larchant
 
 ## Présentation
 
-Un club multisports pour découvrir et progresser en Cirque, en Escalade et dans pleins d'autres activités.
-Dès 6 ans.
+Le club multisport vous accueille cette année pour une rentrée dynamique avec une gamme variée d’activités en salle et en extérieur, telles que judo, yoga, rugby, jeux et bien d’autres encore. 
 
-> **Nous sommes complet pour 2023-2024. Les inscriptions reprendront en septembre 2024.**
+Chaque séance est conçue pour permettre aux enfants de 6 à 12 ans de découvrir des sports dans une atmosphère amusante et stimulante. Le prix comprend l’affiliation à la Fédération Sportive et Gymnique du Travail (FSGT) pour les enfants ainsi que les animateurs et enseignants qualifiés.
+
+>  **Les inscriptions reprendront en septembre 2024.**
+>
+> 29 séances de 50mns à 1h15 116€
 
 ## Calendrier
 
-<iframe width="950" height="850" src="https://docs.google.com/spreadsheets/d/1kLPX1jLGxaBnEOQjV8aLfr8MsAmMfbLYMeRp1EKedn4/edit?usp=sharing"></iframe>
 
-![Calendrier](calendrier.png "Calendrier")
+
+![Calendrier]( "Calendrier")
