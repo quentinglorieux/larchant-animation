@@ -24,4 +24,4 @@ Justine Mattioli
 
 ## Tarifs
 
-* **Abonnement annuel : 34 séances de1h 15 - 221€ + adhésion à Larchant Animation**
+* **Abonnement annuel : 34 séances de 1h 15 - 221€ + adhésion à Larchant Animation**
