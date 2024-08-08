@@ -8,30 +8,28 @@ preview: handball_5485069.png
 ---
 # Atelier Cirque Adultes
 
-## Horaires :
+Venez découvrir une activité sportive originale et artistique qui vous permettra de développer vos facultés corporelles telles que l’équilibre, la dextérité, la force, la souplesse et bien plus encore !
+
+## Horaires 
 
 * Mercredi : 18h30 - 19h45
 
-## Lieu :
+## Lieu 
 
 Salle de la *Sablonnière*, 1 Rue de la Cave de Châtenoy. Larchant
 
-## L'enseignante
+## L'enseignante 
 
 Alice
 
-## Nos conseils
-
-## Tarifs
-
-* **Abonnement annuel : 221 euros + adhésion à Larchant Animation**
-
-Venez découvrir une activité sportive originale et artistique qui vous permettra de développer vos facultés corporelles telles que l’équilibre, la dextérité, la force, la souplesse et bien plus encore !
-
-Déroulement de la séance :
+## Déroulement de la séance 
 
 \    Echauffement acrobatique
 
 \    Equilibre et jonglerie
 
 \    Exercices de souplesse
+
+## Tarifs
+
+* **Abonnement annuel : 221 euros + adhésion à Larchant Animation**
