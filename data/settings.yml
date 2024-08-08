@@ -70,9 +70,6 @@ activities:
     - identifier: Jeux
       image: images/logos/jeux.svg
       url: activites/jeux
-    - identifier: VTT
-      image: images/logos/vtt.svg
-      url: activites/vtt
 blog:
   heading: Le Blog des Évènements
   content: []
