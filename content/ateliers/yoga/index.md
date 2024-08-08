@@ -37,7 +37,7 @@ Antonine pratique le yoga depuis 8 ans et l'enseigne depuis 2021.
 
 ## Tarifs
 
-* **Abonnement annuel : 33 à 35 séances de 1h à 1h3 : 200€ + adhésion à Larchant Animation**
+* **Abonnement annuel : 33 à 35 séances de 1h à 1h30 : 200€ + adhésion à Larchant Animation**
 * **Cours à la séance : 10 euros**
 
 Possibilité de rejoindre en cours d'année sur demande. Nous contacter.
