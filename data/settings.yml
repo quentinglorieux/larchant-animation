@@ -36,7 +36,7 @@ ateliers:
     - identifier: Theatre adultes
       image: images/logos/theatre.svg
       url: ateliers/theatre-adultes
-    - identifier: Theatre enfants
+    - identifier: Theatre Ado
       image: images/logos/theatre.svg
       url: ateliers/theatre-enfants
     - identifier: Cirque enfant
