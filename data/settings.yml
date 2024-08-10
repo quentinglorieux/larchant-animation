@@ -44,7 +44,7 @@ ateliers:
       url: atelier/cirque-enfants
     - identifier: Sophrologie
       image: /images/logos/petroglyph-153863.svg
-      url: ateliers/Sophrologie
+      url: atelier/sophrologie
 activities:
   heading: Nos activités libres
   content:
