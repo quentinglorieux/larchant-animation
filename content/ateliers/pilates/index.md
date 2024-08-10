@@ -10,25 +10,27 @@ preview: handball_5485069.png
 
 Venez découvrir une activité sportive originale et artistique qui vous permettra de développer vos facultés corporelles telles que l’équilibre, la dextérité, la force, la souplesse et bien plus encore !
 
-## Horaires 
+## Horaires
 
 * Mercredi : 18h30 - 19h45
 
-## Lieu 
+## Lieu
 
 Salle de la *Sablonnière*, 1 Rue de la Cave de Châtenoy. Larchant
 
-## L'enseignante 
+## L'enseignante
 
-Alice
+Alice diplômée de l’académie Fratellini
 
-## Déroulement de la séance 
+## Déroulement de la séance
 
 \    Echauffement acrobatique
 
 \    Equilibre et jonglerie
 
 \    Exercices de souplesse
+
+Cours adultes est adapté à tous les niveaux acrobatiques.
 
 ## Tarifs
 
