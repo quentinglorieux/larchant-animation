@@ -9,7 +9,17 @@ preview: triathlon-2024.jpg
 # Triathlon
 ## 15 Septembre 2024
 
-Essayez de réaliser un maximum de BLOCS puis le meilleur grimpeur sera  le 1er à s’élancer en VTT et le TRAIL s’enchaînera à la suite  
+Essayez de réaliser un maximum de BLOCS puis le meilleur grimpeur sera  le 1er à s’élancer en VTT et le TRAIL s’enchaînera à la suite.
+
+Trois parcours au choix: 
+- L : Grimpe + VTT (20km) + Trail (10km)
+- M : Grimpe + VTT (10km) + Trail (10km)
+- S : Grimpe + VTT (10km) + Trail (5km)
+
+Les Seniors Hommes (SH) et Vétérans Hommes (VH) seront récompensés sur le parcours L, les Seniors Femmes (SF) et Vétérans Femmes (VF) sur le parcours M et les Juniors Hommes (JH) et Femmes (JF) sur le parcours S.
+_ Il est possible de vous inscrire sur d'autres distances mais dans ce cas vous serez classés uniquement au scratch._
+
+
 
 Epreuve limitée à 150 participants  
 

@@ -18,14 +18,15 @@ Essayez de réaliser un maximum de BLOCS puis le meilleur grimpeur sera  le 1er 
 
 ### Les parcours
 
+Trois parcours au choix: 
+- L : Grimpe + VTT (20km) + Trail (10km)
+- M : Grimpe + VTT (10km) + Trail (10km)
+- S : Grimpe + VTT (10km) + Trail (5km)
+
+Les Seniors Hommes (SH) et Vétérans Hommes (VH) seront récompensés sur le parcours L, les Seniors Femmes (SF) et Vétérans Femmes (VF) sur le parcours M et les Juniors Hommes (JH) et Femmes (JF) sur le parcours S.
 
 
-- Junior : 
-    - VTT 10 km - Trail 5 km - Blocs
-- Parcours H/F au choix: 
-    - VTT 10 ou 20 km - Trail 10 km - Blocs
-
-_Les remises des récompenses pour la catégorie Femme seront effectués sur VTT : 10km / Trail : 10km  et pour la catégorie Homme sur VTT : 20km / Trail : 10km. Il est possible de vous inscrire sur d'autres distances mais dans ce cas vous serez classés uniquement au scratch._
+_ Il est possible de vous inscrire sur d'autres distances mais dans ce cas vous serez classés uniquement au scratch._
 
 ### Les infos
 
