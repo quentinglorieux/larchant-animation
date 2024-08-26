@@ -29,7 +29,7 @@ ateliers:
       url: ateliers/yoga
     - identifier: Cirque Adulte
       image: /images/logos/circus-stunt-acrobat-svgrepo-com.svg
-      url: ateliers/cirque-adulte
+      url: cirque-adulte/ateliers
     - identifier: Gym douce
       image: images/logos/gym.svg
       url: ateliers/gym
