@@ -38,7 +38,7 @@ ateliers:
       url: ateliers/theatre-adultes
     - identifier: Theatre Ado
       image: images/logos/theatre.svg
-      url: ateliers/theatre-enfants
+      url: ateliers/theatre
     - identifier: Cirque enfant
       image: /images/logos/circus-stunt-acrobat-svgrepo-com.svg
       url: ateliers/cirque-enfant
