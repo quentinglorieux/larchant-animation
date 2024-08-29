@@ -38,12 +38,12 @@ ateliers:
       url: ateliers/theatre-adultes
     - identifier: Theatre Ado
       image: images/logos/theatre.svg
-      url: ateliers/theatre
+      url: ateliers/theatre-ado
     - identifier: Cirque enfant
       image: /images/logos/circus-stunt-acrobat-svgrepo-com.svg
       url: ateliers/cirque-enfant
     - identifier: Sophrologie
-      image: /images/logos/petroglyph-153863.svg
+      image: /images/logos/sophrologie.svg
       url: ateliers/sophrologie
 activities:
   heading: Nos activités libres

@@ -60,6 +60,12 @@ ateliers:
     post: Lundi avec Justine
     url: /ateliers/theatre-ado/
     weight: 50
+  - identifier: sophrologie
+    pre: /images/logos/sophrologie.svg
+    name: Sophrologie
+    post: Lundi avec Aurélie
+    url: /ateliers/sophrologie/
+    weight: 60
 events:
   - identifier: hivernale
     pre: /images/logos/vtt.svg
