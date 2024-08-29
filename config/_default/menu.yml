@@ -27,19 +27,25 @@ ateliers:
   - identifier: yoga
     pre: /images/logos/yoga.svg
     name: Yoga
-    post: Mardi et Jeudi avec Antonine
+    post: Lundi, Mercredi & Jeudi avec Antonine
     url: /ateliers/yoga/
     weight: 10
-  - identifier: pilates
-    pre: /images/logos/pilates.svg
-    name: Pilates
-    post: Jeudi avec Marie
-    url: /ateliers/pilates/
+  - identifier: cirque
+    pre: /images/logos/cirque.svg
+    name: Cirque Adultes
+    post: Mercredi avec Alice
+    url: /ateliers/cirque/
     weight: 20
+  - identifier: cirque-enfant
+    pre: /images/logos/cirque.svg
+    name: Cirque Enfant
+    post: Mardi, Mercerdi & Jeudi avec Alice
+    url: /ateliers/cirque-enfant/
+    weight: 21
   - identifier: gym
     pre: /images/logos/gym.svg
     name: Gym
-    post: Lundi et Mercredi avec Monique
+    post: Lundi avec Monique
     url: /ateliers/gym/
     weight: 30
   - identifier: theatre-adultes
@@ -48,11 +54,11 @@ ateliers:
     post: Vendredi avec Alain
     url: /ateliers/theatre-adultes/
     weight: 40
-  - identifier: theatre-enfants
+  - identifier: theatre-ado
     pre: /images/logos/theatre.svg
-    name: Théâtre enfants
+    name: Théâtre Ado
     post: Lundi avec Justine
-    url: /ateliers/theatre-enfants/
+    url: /ateliers/theatre-ado/
     weight: 50
 events:
   - identifier: hivernale

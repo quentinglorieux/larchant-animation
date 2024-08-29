@@ -6,7 +6,7 @@ language: fr
 description: Théâtre ados avec Justine
 preview: whatsapp-image-2024-07-31-à-17.59.16_a5d42125.jpg
 ---
-# THEATRE ADO
+# Théâtre Ado
 
 ###### Sous la direction d’une comédienne et metteuse en scène professionnelle, apprendre les bases de l’art dramatique et s’exprimer par le jeu théâtral, grâce à des exercices ludiques sur le corps, la voix, l’espace, des improvisations puis créer un spectacle avec et pour le groupe qui sera présenté en fin d’année.
 

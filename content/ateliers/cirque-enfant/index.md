@@ -6,7 +6,7 @@ language: fr
 description: Cours de Cirque Enfant avec Alice
 preview: cirque.jpg
 ---
-# Cours de Cirque
+# Cours de Cirque Enfant
 
 ## Horaires :
 

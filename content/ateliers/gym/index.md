@@ -1,12 +1,12 @@
 ---
-title: Gym
+title: Gym Douce
 date: 2023-01-01
 draft: false
 language: fr
 description: Cours de Gym avec Monique
 preview: gym.jpg
 ---
-# Cours de Gym
+# Cours de Gym douce
 
 ## Horaires :
 
