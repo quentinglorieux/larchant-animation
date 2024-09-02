@@ -6,23 +6,26 @@ language: fr
 description: Sophorlogie
 preview: arbre.png
 ---
-# Sophorlogie
+# Sophrologie
+
+Cultiver sa présence à l’instant pour se connecter à ses ressources.
 
 ## Horaires :
 
+- Lundi 19h - 20h15 et 20h15
+
+- Séances du 1er trimestre 9, 16, 30 sep. 14 oct. 4, 18 nov. 2, 16 déc.
 
 ## Lieu :
-
+Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy, Larchant
 
 ## L'enseignante
 
-
-
-## Nos conseils
+Aurélie
 
 
 ## Tarifs :
 
-Les tarifs sont les suivants :
+Les tarifs sont les suivants : 192 euros plus adhésion à Larchant Animation.
 
 

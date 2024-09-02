@@ -19,9 +19,7 @@ Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèret�
 
 ## Lieu :
 
-Bienvenue dans **LE STUDIO** nouveau lieu pour pratiquer le Yoga en toute quiétude, proche de la salle Sablonnière
-
-au n°16 de la place des Tilleuls.
+Bienvenue dans **LE STUDIO** nouveau lieu pour pratiquer le Yoga en toute quiétude, proche de la salle Sablonnière au n°16 de la place des Tilleuls.
 
 ## L'enseignante
 
@@ -40,4 +38,4 @@ Antonine pratique le yoga depuis 8 ans et l'enseigne depuis 2021.
 * **Abonnement annuel : 33 à 35 séances de 1h à 1h30 : 200€ + adhésion à Larchant Animation**
 * **Cours à la séance : 10 euros**
 
-Possibilité de rejoindre en cours d'année sur demande. Nous contacter.
+Possibilité de rejoindre en cours d'année sur demande. [Nous contacter.](/contact)

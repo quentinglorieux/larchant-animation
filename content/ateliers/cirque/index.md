@@ -33,3 +33,4 @@ Cours adultes est adapté à tous les niveaux acrobatiques.
 ## Tarifs
 
 * **Abonnement annuel : 221 euros + adhésion à Larchant Animation**
+
