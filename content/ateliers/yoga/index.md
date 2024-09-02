@@ -12,10 +12,10 @@ Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèret�
 
 ## Horaires :
 
-* lundi 12h15 - 13h15
-* Mercredi 18h30-20h
-* Jeudi 12h15 - 13h15
-* Jeudi 18h30-20h
+* lundi 12h15 - 13h15 (Yoga doux)
+* Mercredi 18h30-20h   (débutants et intermédiaires)
+* Jeudi 12h15 - 13h15 (Yoga doux)
+* Jeudi 18h30-20h    (débutants et intermédiaires)
 
 ## Lieu :
 
@@ -37,5 +37,12 @@ Antonine pratique le yoga depuis 8 ans et l'enseigne depuis 2021.
 
 * **Abonnement annuel : 33 à 35 séances de 1h à 1h30 : 200€ + adhésion à Larchant Animation**
 * **Cours à la séance : 10 euros**
+
+<div > 
+          <a href="/inscriptions" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+            S'inscrire en ligne
+          </a>
+          
+</div>
 
 Possibilité de rejoindre en cours d'année sur demande. [Nous contacter.](/contact)

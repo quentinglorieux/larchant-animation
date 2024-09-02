@@ -15,9 +15,8 @@ Depuis proposons aux habitants de Larchant et des communes environnantes, de nom
 
 ## Adhésion 2024-2025
 
-L'adhésion est annuelle et valable du 1er septembre au 31 août de l'année suivante.
+L'adhésion est annuelle de date à date. Elle est obligatoire pour participer aux activités de l'association.
 
-_Pour cette année avec la migration sur une adhésion en ligne, nous vous proposons de renouveller votre adhésion dès maintenant pour la saison 2024-2025 et de bénéficier de tous les avantages de l'association immédiatement et jusqu'au 15 septembre 2025._
 
 ### Tarifs
 - Individuelle : 15 euros

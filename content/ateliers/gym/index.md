@@ -38,3 +38,11 @@ Les tarifs pour les cours de gym sont les suivants :
 * **Cours à la séance : 10 euros**
 
 Rejoignez-nous pour une expérience de gym agréable et bénéfique pour votre santé !
+
+
+<div > 
+          <a href="/inscriptions" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+            S'inscrire en ligne
+          </a>
+          
+</div>

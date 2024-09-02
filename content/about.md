@@ -31,3 +31,5 @@ Il est toujours possible de prendre certaines activités en cours de route, cont
           <a href="/adherez" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
             Adhérez à Larchant Animation
           </a>
+          
+</div>
