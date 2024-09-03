@@ -13,7 +13,12 @@ Le club multisport vous accueille cette année pour une rentrée dynamique avec 
 
 Chaque séance est conçue pour permettre aux enfants de 6 à 12 ans de découvrir des sports dans une atmosphère amusante et stimulante. Le prix comprend l’affiliation à la Fédération Sportive et Gymnique du Travail (FSGT) pour les enfants ainsi que les animateurs et enseignants qualifiés.
 
->  **Les inscriptions reprendront en septembre 2024.**
+<div > 
+          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-enfants-2024-2025-14144" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+            S'inscrire en ligne
+          </a>
+          
+</div>
 
 ## Tarifs
 
