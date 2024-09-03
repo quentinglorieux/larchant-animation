@@ -10,6 +10,14 @@ preview: yoga.jpg
 
 Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèreté, autant de mots pour vous donner le goût de l’exploration du corps comme le lieu de la conscience.
 
+
+<div > 
+          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+            S'inscrire en ligne
+          </a>
+          
+</div>
+
 ## Horaires :
 
 * lundi 12h15 - 13h15 (Yoga doux)
@@ -38,11 +46,13 @@ Antonine pratique le yoga depuis 8 ans et l'enseigne depuis 2021.
 * **Abonnement annuel : 33 à 35 séances de 1h à 1h30 : 200€ + adhésion à Larchant Animation**
 * **Cours à la séance : 10 euros**
 
+
 <div > 
           <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
             S'inscrire en ligne
           </a>
           
 </div>
+
 
 Possibilité de rejoindre en cours d'année sur demande. [Nous contacter.](/contact)

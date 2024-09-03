@@ -10,6 +10,14 @@ preview: handball_5485069.png
 
 Venez découvrir une activité sportive originale et artistique qui vous permettra de développer vos facultés corporelles telles que l’équilibre, la dextérité, la force, la souplesse et bien plus encore !
 
+<div > 
+          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+            S'inscrire en ligne
+          </a>
+          
+</div>
+
+
 ## Horaires
 
 * Mercredi : 18h30 - 19h45
@@ -35,9 +43,3 @@ Cours adultes est adapté à tous les niveaux acrobatiques.
 * **Abonnement annuel : 221 euros + adhésion à Larchant Animation**
 
 
-<div > 
-          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
-            S'inscrire en ligne
-          </a>
-          
-</div>
