@@ -27,15 +27,16 @@ Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy, Larchant
 
 Monique, notre instructrice expérimentée, vous guidera avec passion à travers chaque séance.
 
-Echauffement, exercices d’équilibre statiques et dynamiques, renforcement musculaire, étirements et exercices
+Echauffement, exercices d’équilibre statiques et dynamiques, renforcement musculaire, étirements et exercices de respiration.
 
-de respiration.
 
 ## Nos conseils
 
 * Assurez-vous d'arriver quelques minutes à l'avance pour vous préparer.
 * Portez des vêtements confortables et apportez une bouteille d'eau pour rester hydraté(e).
 * N'hésitez pas à poser des questions à Monique si vous avez besoin de conseils personnalisés.
+* Axés vers les thématiques du Sport Santé, les cours de gym douce sont adaptés à tous les niveaux et tous les âges.
+
 
 ## Tarifs :
 

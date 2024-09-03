@@ -33,6 +33,12 @@ Bienvenue dans **LE STUDIO** nouveau lieu pour pratiquer le Yoga en toute quiét
 
 Antonine pratique le yoga depuis 8 ans et l'enseigne depuis 2021.
 
+## Iyengar et Sport Santé
+
+La méthode Iyengar est basée sur une pratique rigoureuse des postures en se souciant principalement de l’alignement précis du corps dans l’espace ; les supports tels que les briques, les sangles ou les chaises permettent à toutes morphologies ou particularités corporelles d’organiser le travail debout et au sol pour développer la force, l’endurance, la souplesse et la relaxation. Chacun progresse petit à petit ; tous les élèves peuvent s’engager avec ferveur, dès lors que le goût de l’effort et l’intensité du travail ne les rebutent pas. Quand le mental est concentré sur l’action, la conscience intérieure s’améliore.
+
+Nos cours permettent de travailler sur la posture, la respiration, la concentration et la relaxation. Ils sont adaptés à tous les niveaux et tous les âges.
+
 ## Nos conseils
 
 * Focus sur la Précision : Maximisez les bienfaits en mettant l'accent sur la précision dans les postures.

@@ -30,6 +30,9 @@ Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy, Larchant
 
 Aurélie
 
+## Pratique Sport Santé
+> « Le Sport santé permet un état de bien-être physique, psychologique et social et les activités physiques participent de cet état. » (OMS)
+
 
 ## Tarifs :
 
