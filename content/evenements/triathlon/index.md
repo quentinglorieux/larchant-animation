@@ -38,7 +38,12 @@ _Port du casque et certificat médical ou licence obligatoires  Assurance à la 
 
 17€ (8 € pour les juniors 12-17ans)
 
-## Inscriptions en ligne pour l'édition 2024 c'est ICI !
+
+## Important : à lire avant de s'inscrire en ligne
+Attention lors de l'inscription en ligne, Yapla vous demandera une *contribution suggérée* pour les frais de gestion. Vous pouvez modifier cette contribution à votre convenance et bien sur même la mettre à 0. **Cette contribution est uniquement destinée à couvrir les frais de gestion de notre partenaire bancaire Yapla et n'est absolument pas reversée à l'association.**
+Voir ci-dessous: ![](/images/contrib.png).
+
+# Inscriptions en ligne pour l'édition 2024 c'est ICI !
 
 [Inscrivez vous sur le site de notre partenaire Yapla](https://larchant-animation.s2.yapla.com/fr/event-58468) ou directement sur notre site ci-dessous :
 

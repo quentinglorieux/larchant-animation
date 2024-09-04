@@ -18,5 +18,12 @@ Vous pouvez consulter les ateliers adultes proposés pour la saison 2024-2025 et
 ## Ateliers enfants
 Pour les ateliers enfants visitez la [page dédiée](https://larchant-animation.s2.yapla.com/fr/ateliers-enfants-2024-2025-14144).
 
+
+## Important : à lire avant de s'inscrire en ligne
+Attention lors de l'inscription en ligne, Yapla vous demandera une *contribution suggérée* pour les frais de gestion. Vous pouvez modifier cette contribution à votre convenance et bien sur même la mettre à 0. **Cette contribution est uniquement destinée à couvrir les frais de gestion de notre partenaire bancaire Yapla et n'est absolument pas reversée à l'association.**
+Voir ci-dessous: ![](/images/contrib.png).
+
+
+
 ## Inscription en ligne
 <iframe  src="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141"></iframe>
