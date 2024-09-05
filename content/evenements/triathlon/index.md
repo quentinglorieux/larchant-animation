@@ -27,6 +27,15 @@ Renseignements auprès de Cyril : 06 23 78 53 32
 
 _Port du casque et certificat médical ou licence obligatoires  Assurance à la charge du participant_
 
+## Parcours
+- Cyan : Trail 5km (10km = 2 boucles)
+- Jaune : VTT 10km (20km = 2 boucles)
+- Les blocs sont secrets !
+
+![Parcours](/images/tri.jpg).
+
+Les GPX sont ici pour le [VTT](/assets/gpx/exp_VTT.gpx) et pour le [trail](/assets/gpx/exp_Trail_Tri.gpx) 
+
 ## Horaires
 
  Remise des dossards entre 8h et 8h30

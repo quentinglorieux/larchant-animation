@@ -40,3 +40,12 @@ _ Il est possible de vous inscrire sur d'autres distances mais dans ce cas vous 
 
 - Renseignements auprès de Cyril : 06 23 78 53 32
 
+## Parcours
+- Cyan : Trail 5km (10km = 2 boucles)
+- Jaune : VTT 10km (20km = 2 boucles)
+- Les blocs sont secrets !
+
+![Parcours](/images/tri.jpg).
+
+Les GPX sont ici pour le [VTT](/assets/gpx/exp_VTT.gpx) et pour le [trail](/assets/gpx/exp_Trail_Tri.gpx) 
+
