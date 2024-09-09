@@ -43,6 +43,10 @@ Les GPX sont ici pour le [VTT](/assets/gpx/exp_VTT.gpx) et pour le [trail](/asse
 ## Lieu
  site de la Dame Jouanne 
 
+## Règlement
+
+[Télécharger le règlement](/pdf/reglement.pdf).
+
 ## Tarif
 
 17€ (8 € pour les juniors 12-17ans)
