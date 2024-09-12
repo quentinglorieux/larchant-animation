@@ -34,7 +34,7 @@ _Port du casque et certificat médical ou licence obligatoires  Assurance à la 
 
 ![Parcours](/images/tri.jpg).
 
-Les GPX sont ici pour le [VTT](/assets/gpx/exp_VTT.gpx) et pour le [trail](/assets/gpx/exp_Trail_Tri.gpx) 
+Les GPX sont ici pour le [VTT](/gpx/exp_VTT.gpx) et pour le [trail](/gpx/exp_Trail_Tri.gpx) 
 
 ## Horaires
 
