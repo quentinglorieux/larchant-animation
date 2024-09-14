@@ -47,9 +47,14 @@ Les GPX sont ici pour le [VTT](/gpx/exp_VTT.gpx) et pour le [trail](/gpx/exp_Tra
 
 [Télécharger le règlement](/pdf/reglement.pdf).
 
-## Tarif
+## Tarifs
 
-17€ (8 € pour les juniors 12-17ans)
+16€ (8 € pour les juniors 12-17ans)
+
+LES INSCRIPTIONS EN LIGNE SONT FERMEES.
+INSCRIPTION POSSIBLE DIMANCHE MATIN 8H SUR PLACE.
+PAIEMENT EN CB Junior:8e / Adultes: 16e
+PAIEMENT EN ESPECES: Junior:10e / Adultes: 20e
 
 
 ## Important : à lire avant de s'inscrire en ligne
@@ -57,6 +62,11 @@ Attention lors de l'inscription en ligne, Yapla vous demandera une *contribution
 Voir ci-dessous: ![](/images/contrib.png).
 
 # Inscriptions en ligne pour l'édition 2024 c'est ICI !
+
+LES INSCRIPTIONS EN LIGNE SONT FERMEES.
+INSCRIPTION POSSIBLE DIMANCHE MATIN 8H SUR PLACE.
+PAIEMENT EN CB Junior:8e / Adultes: 16e
+PAIEMENT EN ESPECES: Junior:10e / Adultes: 20e
 
 [Inscrivez vous sur le site de notre partenaire Yapla](https://larchant-animation.s2.yapla.com/fr/event-58468) ou directement sur notre site ci-dessous :
 
