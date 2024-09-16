@@ -27,8 +27,8 @@
         </select>
     </div>
 
-    <!-- Single chart for comparison with controlled size and horizontal bars -->
-    <div class="chart-container bg-white p-4 rounded-lg shadow-lg" style="height: 800px;  margin: 0 auto;">
+    <!-- Single chart for comparison with a fixed height of 800px -->
+    <div class="chart-container bg-white p-4 rounded-lg shadow-lg" style="height: 800px; max-width: 1400px; margin: 0 auto;">
         <h2 class="text-2xl font-bold mb-2">Comparaison des Participants</h2>
         <canvas id="comparisonChart"></canvas>
     </div>
@@ -105,6 +105,10 @@
         function displayComparisonChart(selectedCategory) {
             const filteredAthletes = filterAthletesByCategory(athleteData, selectedCategory);
 
+            // Calculate the desired chart height based on the number of participants
+            const numParticipants = filteredAthletes.length;
+            const chartHeight =800;  // Ensure bars stay evenly spaced
+
             // Prepare the datasets for each activity (Grimpe, Vélo, Course)
             const labels = filteredAthletes.map(athlete => athlete.name);
             const grimpeData = filteredAthletes.map(athlete => timeToSeconds(climbingCoefficients[athlete.grimpe.value]));
@@ -117,6 +121,8 @@
             }
 
             const ctx = document.getElementById('comparisonChart').getContext('2d');
+            document.getElementById('comparisonChart').height = chartHeight;  // Dynamically set canvas height
+
             comparisonChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -144,6 +150,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,  // Allow chart to adjust its height
                     indexAxis: 'y', // Set to 'y' to make horizontal bars
                     plugins: {
                         tooltip: {
