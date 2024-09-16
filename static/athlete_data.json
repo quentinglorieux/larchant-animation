@@ -1,0 +1,1520 @@
+[
+  {
+    "name": "frangin simon",
+    "dossard": 108,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "38",
+      "rank": 1
+    },
+    "velo": {
+      "value": "01:12:10",
+      "rank": 11
+    },
+    "course": {
+      "value": "00:59:29",
+      "rank": 17
+    },
+    "triathlon": {
+      "value": "02:11:39",
+      "rank": 5
+    }
+  },
+  {
+    "name": "Chavanneau Fabien",
+    "dossard": 144,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "38",
+      "rank": 2
+    },
+    "velo": {
+      "value": "01:14:43",
+      "rank": 13
+    },
+    "course": {
+      "value": "00:54:46",
+      "rank": 10
+    },
+    "triathlon": {
+      "value": "02:09:29",
+      "rank": 4
+    }
+  },
+  {
+    "name": "Chasles Lucas",
+    "dossard": 103,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "34",
+      "rank": 3
+    },
+    "velo": {
+      "value": "01:19:55",
+      "rank": 16
+    },
+    "course": {
+      "value": "00:59:51",
+      "rank": 18
+    },
+    "triathlon": {
+      "value": "02:26:46",
+      "rank": 12
+    }
+  },
+  {
+    "name": "Couton Pierre",
+    "dossard": 105,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "33",
+      "rank": 4
+    },
+    "velo": {
+      "value": "01:38:25",
+      "rank": 27
+    },
+    "course": {
+      "value": "00:53:16",
+      "rank": 8
+    },
+    "triathlon": {
+      "value": "02:40:41",
+      "rank": 16
+    }
+  },
+  {
+    "name": "Rogeaux Augustin",
+    "dossard": 121,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "33",
+      "rank": 5
+    },
+    "velo": {
+      "value": "01:12:17",
+      "rank": 12
+    },
+    "course": {
+      "value": "00:53:36",
+      "rank": 9
+    },
+    "triathlon": {
+      "value": "02:14:53",
+      "rank": 6
+    }
+  },
+  {
+    "name": "Jurine St\u00e9phane",
+    "dossard": 133,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "33",
+      "rank": 6
+    },
+    "velo": {
+      "value": "01:07:06",
+      "rank": 5
+    },
+    "course": {
+      "value": "00:48:24",
+      "rank": 3
+    },
+    "triathlon": {
+      "value": "02:04:30",
+      "rank": 1
+    }
+  },
+  {
+    "name": "Hamon Alexandre",
+    "dossard": 113,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "32",
+      "rank": 7
+    },
+    "velo": {
+      "value": "01:07:40",
+      "rank": 6
+    },
+    "course": {
+      "value": "01:03:07",
+      "rank": 20
+    },
+    "triathlon": {
+      "value": "02:21:17",
+      "rank": 7
+    }
+  },
+  {
+    "name": "Chianale Hugo",
+    "dossard": 104,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "31",
+      "rank": 8
+    },
+    "velo": {
+      "value": "01:08:01",
+      "rank": 7
+    },
+    "course": {
+      "value": "00:46:06",
+      "rank": 2
+    },
+    "triathlon": {
+      "value": "02:06:07",
+      "rank": 2
+    }
+  },
+  {
+    "name": "Pigeard Christophe",
+    "dossard": 139,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "31",
+      "rank": 9
+    },
+    "velo": {
+      "value": "01:16:15",
+      "rank": 14
+    },
+    "course": {
+      "value": "00:58:56",
+      "rank": 15
+    },
+    "triathlon": {
+      "value": "02:27:11",
+      "rank": 13
+    }
+  },
+  {
+    "name": "Reau Mathieu",
+    "dossard": 119,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "29",
+      "rank": 10
+    },
+    "velo": {
+      "value": "01:18:48",
+      "rank": 15
+    },
+    "course": {
+      "value": "01:12:16",
+      "rank": 23
+    },
+    "triathlon": {
+      "value": "02:46:04",
+      "rank": 18
+    }
+  },
+  {
+    "name": "ZIMMERMANN Charles",
+    "dossard": 122,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "29",
+      "rank": 11
+    },
+    "velo": {
+      "value": "01:23:02",
+      "rank": 18
+    },
+    "course": {
+      "value": "00:50:52",
+      "rank": 4
+    },
+    "triathlon": {
+      "value": "02:28:54",
+      "rank": 14
+    }
+  },
+  {
+    "name": "Vasseur Thierry",
+    "dossard": 142,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "29",
+      "rank": 12
+    },
+    "velo": {
+      "value": "01:32:06",
+      "rank": 24
+    },
+    "course": {
+      "value": "01:28:26",
+      "rank": 29
+    },
+    "triathlon": {
+      "value": "03:15:32",
+      "rank": 25
+    }
+  },
+  {
+    "name": "Palies Thibault",
+    "dossard": 117,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "28",
+      "rank": 13
+    },
+    "velo": {
+      "value": "01:05:37",
+      "rank": 3
+    },
+    "course": {
+      "value": "00:45:23",
+      "rank": 1
+    },
+    "triathlon": {
+      "value": "02:07:30",
+      "rank": 3
+    }
+  },
+  {
+    "name": "Chevalier Boris",
+    "dossard": 126,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "27",
+      "rank": 14
+    },
+    "velo": {
+      "value": "01:11:20",
+      "rank": 10
+    },
+    "course": {
+      "value": "00:57:19",
+      "rank": 12
+    },
+    "triathlon": {
+      "value": "02:26:39",
+      "rank": 11
+    }
+  },
+  {
+    "name": "Hebrard Roland",
+    "dossard": 130,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "27",
+      "rank": 15
+    },
+    "velo": {
+      "value": "01:11:14",
+      "rank": 9
+    },
+    "course": {
+      "value": "01:09:55",
+      "rank": 22
+    },
+    "triathlon": {
+      "value": "02:39:09",
+      "rank": 15
+    }
+  },
+  {
+    "name": "Renshaw Alex",
+    "dossard": 141,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "25",
+      "rank": 16
+    },
+    "velo": {
+      "value": "01:26:17",
+      "rank": 22
+    },
+    "course": {
+      "value": "01:17:07",
+      "rank": 26
+    },
+    "triathlon": {
+      "value": "03:04:24",
+      "rank": 22
+    }
+  },
+  {
+    "name": "Dawes Mike",
+    "dossard": 127,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "24",
+      "rank": 17
+    },
+    "velo": {
+      "value": "01:25:45",
+      "rank": 21
+    },
+    "course": {
+      "value": "01:17:28",
+      "rank": 27
+    },
+    "triathlon": {
+      "value": "03:05:13",
+      "rank": 23
+    }
+  },
+  {
+    "name": "LARIVE Stephane",
+    "dossard": 134,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "24",
+      "rank": 18
+    },
+    "velo": {
+      "value": "01:23:57",
+      "rank": 19
+    },
+    "course": {
+      "value": "01:17:01",
+      "rank": 25
+    },
+    "triathlon": {
+      "value": "03:02:58",
+      "rank": 21
+    }
+  },
+  {
+    "name": "Guimard Aurelien",
+    "dossard": 112,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "23",
+      "rank": 19
+    },
+    "velo": {
+      "value": "01:01:03",
+      "rank": 1
+    },
+    "course": {
+      "value": "00:58:31",
+      "rank": 13
+    },
+    "triathlon": {
+      "value": "02:23:34",
+      "rank": 9
+    }
+  },
+  {
+    "name": "Perrissin Fabert Baptiste",
+    "dossard": 118,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "23",
+      "rank": 20
+    },
+    "velo": {
+      "value": "02:07:26",
+      "rank": 31
+    },
+    "course": {
+      "value": "00:56:04",
+      "rank": 11
+    },
+    "triathlon": {
+      "value": "03:27:30",
+      "rank": 29
+    }
+  },
+  {
+    "name": "jaudet renaud",
+    "dossard": 132,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "23",
+      "rank": 21
+    },
+    "velo": {
+      "value": "01:05:55",
+      "rank": 4
+    },
+    "course": {
+      "value": "00:52:52",
+      "rank": 7
+    },
+    "triathlon": {
+      "value": "02:22:47",
+      "rank": 8
+    }
+  },
+  {
+    "name": "NEOSCHIL Nicolas",
+    "dossard": 137,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "22",
+      "rank": 22
+    },
+    "velo": {
+      "value": "01:46:48",
+      "rank": 30
+    },
+    "course": {
+      "value": "01:29:19",
+      "rank": 30
+    },
+    "triathlon": {
+      "value": "03:41:07",
+      "rank": 31
+    }
+  },
+  {
+    "name": "ANSART Arnaud",
+    "dossard": 124,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "19",
+      "rank": 23
+    },
+    "velo": {
+      "value": "01:40:18",
+      "rank": 29
+    },
+    "course": {
+      "value": "01:30:05",
+      "rank": 31
+    },
+    "triathlon": {
+      "value": "03:38:23",
+      "rank": 30
+    }
+  },
+  {
+    "name": "Glorieux Quentin",
+    "dossard": 110,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "18",
+      "rank": 24
+    },
+    "velo": {
+      "value": "01:05:10",
+      "rank": 2
+    },
+    "course": {
+      "value": "00:52:25",
+      "rank": 6
+    },
+    "triathlon": {
+      "value": "02:26:35",
+      "rank": 10
+    }
+  },
+  {
+    "name": "Gaillot Arthur",
+    "dossard": 143,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "15",
+      "rank": 25
+    },
+    "velo": {
+      "value": "01:35:41",
+      "rank": 26
+    },
+    "course": {
+      "value": "00:59:08",
+      "rank": 16
+    },
+    "triathlon": {
+      "value": "03:06:49",
+      "rank": 24
+    }
+  },
+  {
+    "name": "BOUGAULT Christian",
+    "dossard": 125,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "14",
+      "rank": 26
+    },
+    "velo": {
+      "value": "01:30:00",
+      "rank": 23
+    },
+    "course": {
+      "value": "01:19:44",
+      "rank": 28
+    },
+    "triathlon": {
+      "value": "03:22:44",
+      "rank": 27
+    }
+  },
+  {
+    "name": "CREMIERE Benoit",
+    "dossard": 106,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "13",
+      "rank": 27
+    },
+    "velo": {
+      "value": "01:10:34",
+      "rank": 8
+    },
+    "course": {
+      "value": "00:58:51",
+      "rank": 14
+    },
+    "triathlon": {
+      "value": "02:43:25",
+      "rank": 17
+    }
+  },
+  {
+    "name": "HOSHINO Jean-Jacques",
+    "dossard": 131,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "12",
+      "rank": 28
+    },
+    "velo": {
+      "value": "01:33:01",
+      "rank": 25
+    },
+    "course": {
+      "value": "01:14:50",
+      "rank": 24
+    },
+    "triathlon": {
+      "value": "03:22:51",
+      "rank": 28
+    }
+  },
+  {
+    "name": "Marbouty Martial",
+    "dossard": 116,
+    "category": "SH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "10",
+      "rank": 29
+    },
+    "velo": {
+      "value": "01:20:11",
+      "rank": 17
+    },
+    "course": {
+      "value": "01:05:37",
+      "rank": 21
+    },
+    "triathlon": {
+      "value": "03:02:48",
+      "rank": 20
+    }
+  },
+  {
+    "name": "Le Vu St\u00e9phane",
+    "dossard": 135,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "10",
+      "rank": 30
+    },
+    "velo": {
+      "value": "01:39:34",
+      "rank": 28
+    },
+    "course": {
+      "value": "01:03:01",
+      "rank": 19
+    },
+    "triathlon": {
+      "value": "03:19:35",
+      "rank": 26
+    }
+  },
+  {
+    "name": "Moenne-loccoz Christophe",
+    "dossard": 136,
+    "category": "VH",
+    "parcours": "L",
+    "grimpe": {
+      "value": "6",
+      "rank": 31
+    },
+    "velo": {
+      "value": "01:24:41",
+      "rank": 20
+    },
+    "course": {
+      "value": "00:51:00",
+      "rank": 5
+    },
+    "triathlon": {
+      "value": "02:55:11",
+      "rank": 19
+    }
+  },
+  {
+    "name": "Jurine Marie",
+    "dossard": 212,
+    "category": "VF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "31",
+      "rank": 1
+    },
+    "velo": {
+      "value": "00:42:30",
+      "rank": 4
+    },
+    "course": {
+      "value": "00:50:09",
+      "rank": 1
+    },
+    "triathlon": {
+      "value": "01:44:39",
+      "rank": 1
+    }
+  },
+  {
+    "name": "ARNAUD S\u00e9bastien",
+    "dossard": 214,
+    "category": "VH",
+    "parcours": "M",
+    "grimpe": {
+      "value": "25",
+      "rank": 2
+    },
+    "velo": {
+      "value": "00:42:32",
+      "rank": 5
+    },
+    "course": {
+      "value": "01:06:21",
+      "rank": 8
+    },
+    "triathlon": {
+      "value": "02:09:53",
+      "rank": 5
+    }
+  },
+  {
+    "name": "Franchini Elsa",
+    "dossard": 203,
+    "category": "SF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "24",
+      "rank": 3
+    },
+    "velo": {
+      "value": "00:43:31",
+      "rank": 6
+    },
+    "course": {
+      "value": "01:09:03",
+      "rank": 10
+    },
+    "triathlon": {
+      "value": "02:14:34",
+      "rank": 6
+    }
+  },
+  {
+    "name": "Bodin Juliette",
+    "dossard": 201,
+    "category": "SF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "21",
+      "rank": 4
+    },
+    "velo": {
+      "value": "00:40:55",
+      "rank": 2
+    },
+    "course": {
+      "value": "00:57:05",
+      "rank": 3
+    },
+    "triathlon": {
+      "value": "02:04:00",
+      "rank": 2
+    }
+  },
+  {
+    "name": "MICHALLETZ Marlie",
+    "dossard": 206,
+    "category": "SF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "21",
+      "rank": 5
+    },
+    "velo": {
+      "value": "00:40:49",
+      "rank": 1
+    },
+    "course": {
+      "value": "00:57:54",
+      "rank": 4
+    },
+    "triathlon": {
+      "value": "02:04:43",
+      "rank": 3
+    }
+  },
+  {
+    "name": "Galy St\u00e9phane",
+    "dossard": 209,
+    "category": "SH",
+    "parcours": "M",
+    "grimpe": {
+      "value": "19",
+      "rank": 6
+    },
+    "velo": {
+      "value": "00:44:20",
+      "rank": 8
+    },
+    "course": {
+      "value": "01:06:09",
+      "rank": 7
+    },
+    "triathlon": {
+      "value": "02:18:29",
+      "rank": 8
+    }
+  },
+  {
+    "name": "ROYANT Josselin",
+    "dossard": 210,
+    "category": "SH",
+    "parcours": "M",
+    "grimpe": {
+      "value": "17",
+      "rank": 7
+    },
+    "velo": {
+      "value": "00:43:42",
+      "rank": 7
+    },
+    "course": {
+      "value": "00:53:43",
+      "rank": 2
+    },
+    "triathlon": {
+      "value": "02:07:25",
+      "rank": 4
+    }
+  },
+  {
+    "name": "Chagnon Jean-Pierre",
+    "dossard": 215,
+    "category": "VH",
+    "parcours": "M",
+    "grimpe": {
+      "value": "13",
+      "rank": 8
+    },
+    "velo": {
+      "value": "00:41:20",
+      "rank": 3
+    },
+    "course": {
+      "value": "01:01:09",
+      "rank": 5
+    },
+    "triathlon": {
+      "value": "02:16:29",
+      "rank": 7
+    }
+  },
+  {
+    "name": "FAVEROLLE Fabrice",
+    "dossard": 128,
+    "category": "VH",
+    "parcours": "M",
+    "grimpe": {
+      "value": "11",
+      "rank": 9
+    },
+    "velo": {
+      "value": "00:53:41",
+      "rank": 9
+    },
+    "course": {
+      "value": "01:02:24",
+      "rank": 6
+    },
+    "triathlon": {
+      "value": "02:32:05",
+      "rank": 9
+    }
+  },
+  {
+    "name": "gandon ghislaine",
+    "dossard": 211,
+    "category": "VF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "10",
+      "rank": 10
+    },
+    "velo": {
+      "value": "01:01:29",
+      "rank": 12
+    },
+    "course": {
+      "value": "01:09:47",
+      "rank": 12
+    },
+    "triathlon": {
+      "value": "02:48:16",
+      "rank": 12
+    }
+  },
+  {
+    "name": "Mouilliet Margote",
+    "dossard": 216,
+    "category": "SF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "7",
+      "rank": 11
+    },
+    "velo": {
+      "value": "00:56:06",
+      "rank": 11
+    },
+    "course": {
+      "value": "01:09:12",
+      "rank": 11
+    },
+    "triathlon": {
+      "value": "02:44:18",
+      "rank": 11
+    }
+  },
+  {
+    "name": "Pesnelle Bertille",
+    "dossard": 207,
+    "category": "SF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "6",
+      "rank": 12
+    },
+    "velo": {
+      "value": "00:55:09",
+      "rank": 10
+    },
+    "course": {
+      "value": "01:06:21",
+      "rank": 9
+    },
+    "triathlon": {
+      "value": "02:41:00",
+      "rank": 10
+    }
+  },
+  {
+    "name": "Le Vu Bianca",
+    "dossard": 204,
+    "category": "SF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "2",
+      "rank": 13
+    },
+    "velo": {
+      "value": "01:00:00",
+      "rank": 14
+    },
+    "course": {
+      "value": "01:11:40",
+      "rank": 13
+    },
+    "triathlon": {
+      "value": "01:00:00",
+      "rank": 14
+    }
+  },
+  {
+    "name": "Bressaud Helena",
+    "dossard": 202,
+    "category": "SF",
+    "parcours": "M",
+    "grimpe": {
+      "value": "1",
+      "rank": 14
+    },
+    "velo": {
+      "value": "01:08:58",
+      "rank": 13
+    },
+    "course": {
+      "value": "01:28:30",
+      "rank": 14
+    },
+    "triathlon": {
+      "value": "03:17:28",
+      "rank": 13
+    }
+  },
+  {
+    "name": "Tournus Titouan",
+    "dossard": 419,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "38",
+      "rank": 1
+    },
+    "velo": {
+      "value": "00:37:23",
+      "rank": 1
+    },
+    "course": {
+      "value": "00:27:12",
+      "rank": 1
+    },
+    "triathlon": {
+      "value": "01:04:35",
+      "rank": 1
+    }
+  },
+  {
+    "name": "Tournus Est\u00e9ban",
+    "dossard": 420,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "36",
+      "rank": 2
+    },
+    "velo": {
+      "value": "00:39:41",
+      "rank": 4
+    },
+    "course": {
+      "value": "00:27:54",
+      "rank": 4
+    },
+    "triathlon": {
+      "value": "01:11:35",
+      "rank": 2
+    }
+  },
+  {
+    "name": "Lebreton Silas",
+    "dossard": 413,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "32",
+      "rank": 3
+    },
+    "velo": {
+      "value": "00:43:47",
+      "rank": 5
+    },
+    "course": {
+      "value": "00:39:47",
+      "rank": 18
+    },
+    "triathlon": {
+      "value": "01:34:04",
+      "rank": 5
+    }
+  },
+  {
+    "name": "Chafi Yanis",
+    "dossard": 405,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "30",
+      "rank": 4
+    },
+    "velo": {
+      "value": "00:43:59",
+      "rank": 6
+    },
+    "course": {
+      "value": "00:31:02",
+      "rank": 6
+    },
+    "triathlon": {
+      "value": "01:28:31",
+      "rank": 3
+    }
+  },
+  {
+    "name": "Couston Ulysse",
+    "dossard": 407,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "30",
+      "rank": 5
+    },
+    "velo": {
+      "value": "00:46:03",
+      "rank": 10
+    },
+    "course": {
+      "value": "00:34:26",
+      "rank": 13
+    },
+    "triathlon": {
+      "value": "01:33:59",
+      "rank": 4
+    }
+  },
+  {
+    "name": "renoult laetitia",
+    "dossard": 425,
+    "category": "SF",
+    "parcours": "S",
+    "grimpe": {
+      "value": "24",
+      "rank": 6
+    },
+    "velo": {
+      "value": "01:00:00",
+      "rank": 23
+    },
+    "course": {
+      "value": "02:06:16",
+      "rank": 24
+    },
+    "triathlon": {
+      "value": "02:28:16",
+      "rank": 22
+    }
+  },
+  {
+    "name": "Godfroy Mathias",
+    "dossard": 408,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "23",
+      "rank": 7
+    },
+    "velo": {
+      "value": "01:03:03",
+      "rank": 19
+    },
+    "course": {
+      "value": "00:32:38",
+      "rank": 9
+    },
+    "triathlon": {
+      "value": "01:59:41",
+      "rank": 11
+    }
+  },
+  {
+    "name": "Perrissin Fabert C\u00f4me",
+    "dossard": 418,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "23",
+      "rank": 8
+    },
+    "velo": {
+      "value": "01:28:21",
+      "rank": 22
+    },
+    "course": {
+      "value": "00:35:48",
+      "rank": 16
+    },
+    "triathlon": {
+      "value": "02:28:09",
+      "rank": 21
+    }
+  },
+  {
+    "name": "EVRARD Loic",
+    "dossard": 427,
+    "category": "VH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "21",
+      "rank": 9
+    },
+    "velo": {
+      "value": "00:45:48",
+      "rank": 9
+    },
+    "course": {
+      "value": "00:48:28",
+      "rank": 21
+    },
+    "triathlon": {
+      "value": "02:00:16",
+      "rank": 12
+    }
+  },
+  {
+    "name": "Besson Arthur",
+    "dossard": 403,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "18",
+      "rank": 10
+    },
+    "velo": {
+      "value": "00:44:05",
+      "rank": 7
+    },
+    "course": {
+      "value": "00:27:43",
+      "rank": 3
+    },
+    "triathlon": {
+      "value": "01:40:48",
+      "rank": 6
+    }
+  },
+  {
+    "name": "Jurine Simon",
+    "dossard": 411,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "17",
+      "rank": 11
+    },
+    "velo": {
+      "value": "00:45:07",
+      "rank": 8
+    },
+    "course": {
+      "value": "00:27:20",
+      "rank": 2
+    },
+    "triathlon": {
+      "value": "01:42:27",
+      "rank": 7
+    }
+  },
+  {
+    "name": "WARROT S\u00c9VERIN",
+    "dossard": 421,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "14",
+      "rank": 12
+    },
+    "velo": {
+      "value": "00:37:57",
+      "rank": 2
+    },
+    "course": {
+      "value": "00:33:47",
+      "rank": 12
+    },
+    "triathlon": {
+      "value": "01:44:44",
+      "rank": 8
+    }
+  },
+  {
+    "name": "MARIN C\u00e9cile",
+    "dossard": 213,
+    "category": "VF",
+    "parcours": "S",
+    "grimpe": {
+      "value": "12",
+      "rank": 13
+    },
+    "velo": {
+      "value": "01:21:12",
+      "rank": 20
+    },
+    "course": {
+      "value": "00:49:41",
+      "rank": 22
+    },
+    "triathlon": {
+      "value": "02:45:53",
+      "rank": 23
+    }
+  },
+  {
+    "name": "Guinard Is\u00e9e",
+    "dossard": 401,
+    "category": "JF",
+    "parcours": "S",
+    "grimpe": {
+      "value": "8",
+      "rank": 14
+    },
+    "velo": {
+      "value": "00:59:48",
+      "rank": 16
+    },
+    "course": {
+      "value": "00:32:23",
+      "rank": 8
+    },
+    "triathlon": {
+      "value": "02:10:41",
+      "rank": 17
+    }
+  },
+  {
+    "name": "Nessi Aladdin",
+    "dossard": 417,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "8",
+      "rank": 15
+    },
+    "velo": {
+      "value": "00:49:19",
+      "rank": 11
+    },
+    "course": {
+      "value": "00:28:16",
+      "rank": 5
+    },
+    "triathlon": {
+      "value": "01:56:05",
+      "rank": 10
+    }
+  },
+  {
+    "name": "Marbouty Noah",
+    "dossard": 414,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "7",
+      "rank": 16
+    },
+    "velo": {
+      "value": "00:52:08",
+      "rank": 12
+    },
+    "course": {
+      "value": "00:32:22",
+      "rank": 7
+    },
+    "triathlon": {
+      "value": "02:03:30",
+      "rank": 13
+    }
+  },
+  {
+    "name": "Vauclair Camille",
+    "dossard": 423,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "5",
+      "rank": 17
+    },
+    "velo": {
+      "value": "00:39:38",
+      "rank": 3
+    },
+    "course": {
+      "value": "00:34:27",
+      "rank": 14
+    },
+    "triathlon": {
+      "value": "01:54:05",
+      "rank": 9
+    }
+  },
+  {
+    "name": "Botte Mael",
+    "dossard": 404,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "4",
+      "rank": 18
+    },
+    "velo": {
+      "value": "01:00:00",
+      "rank": 24
+    },
+    "course": {
+      "value": "01:30:37",
+      "rank": 23
+    },
+    "triathlon": {
+      "value": "02:10:37",
+      "rank": 16
+    }
+  },
+  {
+    "name": "Moenne-loccoz Aurelien",
+    "dossard": 415,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "4",
+      "rank": 19
+    },
+    "velo": {
+      "value": "00:57:44",
+      "rank": 14
+    },
+    "course": {
+      "value": "00:32:47",
+      "rank": 10
+    },
+    "triathlon": {
+      "value": "02:10:31",
+      "rank": 15
+    }
+  },
+  {
+    "name": "Herfort Na\u00efa",
+    "dossard": 402,
+    "category": "JF",
+    "parcours": "S",
+    "grimpe": {
+      "value": "2",
+      "rank": 20
+    },
+    "velo": {
+      "value": "00:55:51",
+      "rank": 13
+    },
+    "course": {
+      "value": "00:33:24",
+      "rank": 11
+    },
+    "triathlon": {
+      "value": "02:09:15",
+      "rank": 14
+    }
+  },
+  {
+    "name": "Herfort Tom",
+    "dossard": 410,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "2",
+      "rank": 21
+    },
+    "velo": {
+      "value": "01:00:27",
+      "rank": 17
+    },
+    "course": {
+      "value": "00:34:57",
+      "rank": 15
+    },
+    "triathlon": {
+      "value": "02:15:24",
+      "rank": 18
+    }
+  },
+  {
+    "name": "Herfort Ludovic",
+    "dossard": 426,
+    "category": "SH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "2",
+      "rank": 22
+    },
+    "velo": {
+      "value": "00:59:26",
+      "rank": 15
+    },
+    "course": {
+      "value": "00:36:04",
+      "rank": 17
+    },
+    "triathlon": {
+      "value": "02:15:30",
+      "rank": 19
+    }
+  },
+  {
+    "name": "Nessi Charles-Z\u00e9phyr",
+    "dossard": 416,
+    "category": "JH",
+    "parcours": "S",
+    "grimpe": {
+      "value": "1",
+      "rank": 23
+    },
+    "velo": {
+      "value": "01:00:37",
+      "rank": 18
+    },
+    "course": {
+      "value": "00:39:47",
+      "rank": 19
+    },
+    "triathlon": {
+      "value": "02:20:24",
+      "rank": 20
+    }
+  },
+  {
+    "name": "Wattiau Enola",
+    "dossard": 422,
+    "category": "JF",
+    "parcours": "S",
+    "grimpe": {
+      "value": "1",
+      "rank": 24
+    },
+    "velo": {
+      "value": "01:26:20",
+      "rank": 21
+    },
+    "course": {
+      "value": "00:45:46",
+      "rank": 20
+    },
+    "triathlon": {
+      "value": "02:52:06",
+      "rank": 24
+    }
+  }
+]
