@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement Général</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans p-6">
+
+    <h1 class="text-3xl font-bold mb-6 text-center">Classement Général</h1>
+
+    <!-- Section to filter by category -->
+    <div class="mb-8">
+        <label for="categoryInput" class="block text-lg font-medium text-gray-700">Sélectionnez la Catégorie :</label>
+        <select id="categoryInput" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            <option value="L_Scratch">L Scratch</option>
+            <option value="M_Scratch">M Scratch</option>
+            <option value="S_Scratch">S Scratch</option>
+            <option value="SH">SH</option>
+            <option value="VH">VH</option>
+            <option value="SF">SF</option>
+            <option value="VF">VF</option>
+            <option value="JH">JH</option>
+            <option value="JF">JF</option>
+        </select>
+    </div>
+
+    <!-- Single chart for comparison with controlled size and horizontal bars -->
+    <div class="chart-container bg-white p-4 rounded-lg shadow-lg" style="height: 800px;  margin: 0 auto;">
+        <h2 class="text-2xl font-bold mb-2">Comparaison des Participants</h2>
+        <canvas id="comparisonChart"></canvas>
+    </div>
+
+    <script>
+        let athleteData = [];
+        let climbingCoefficients = {};  // This will be loaded from external JSON
+
+        // Fetch the climbing coefficients from the external file
+        fetch('/climbingCoefficients.json')
+            .then(response => response.json())
+            .then(data => {
+                climbingCoefficients = data;
+
+                // Fetch athlete data and filter them based on parcours and category
+                return fetch("/athlete_data.json");
+            })
+            .then(response => response.json())
+            .then(data => {
+                athleteData = data;
+
+                // Add event listener for category selection
+                document.getElementById('categoryInput').addEventListener('change', (event) => {
+                    displayComparisonChart(event.target.value);
+                });
+
+                // Display initial chart for "L Scratch"
+                displayComparisonChart('L_Scratch');
+            });
+
+        // Function to filter athletes based on the selected category and parcours, and then sort by triathlon rank
+        function filterAthletesByCategory(data, selectedCategory) {
+            let filteredAthletes = data.filter(athlete => {
+                const parcours = athlete.parcours;
+                const category = athlete.category;
+                const hasValidData = athlete.grimpe && athlete.velo && athlete.course && athlete.triathlon;
+
+                // For "Scratch" categories, select all participants for the specific parcours
+                if (selectedCategory === 'L_Scratch' && parcours === 'L') return hasValidData;
+                if (selectedCategory === 'M_Scratch' && parcours === 'M') return hasValidData;
+                if (selectedCategory === 'S_Scratch' && parcours === 'S') return hasValidData;
+
+                // Specific categories based on parcours:
+                if ((selectedCategory === 'SH' || selectedCategory === 'VH') && parcours === 'L') return hasValidData && category === selectedCategory;
+                if ((selectedCategory === 'SF' || selectedCategory === 'VF') && parcours === 'M') return hasValidData && category === selectedCategory;
+                if ((selectedCategory === 'JH' || selectedCategory === 'JF') && parcours === 'S') return hasValidData && category === selectedCategory;
+
+                return false;
+            });
+
+            // Sort the filtered athletes by their triathlon rank
+            filteredAthletes.sort((a, b) => a.triathlon.rank - b.triathlon.rank);
+
+            return filteredAthletes;
+        }
+
+        // Convert time string (HH:MM:SS) to seconds
+        function timeToSeconds(time) {
+            const [heures, minutes, secondes] = time.split(':').map(Number);
+            return heures * 3600 + minutes * 60 + secondes;
+        }
+
+        // Convert seconds to HH:MM:SS
+        function secondsToTime(seconds) {
+            const heures = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secondesRestantes = seconds % 60;
+            return `${String(heures).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secondesRestantes).padStart(2, '0')}`;
+        }
+
+        let comparisonChart = null;  // Reference to the comparison chart
+
+        // Display comparison chart for all participants in the filtered list
+        function displayComparisonChart(selectedCategory) {
+            const filteredAthletes = filterAthletesByCategory(athleteData, selectedCategory);
+
+            // Prepare the datasets for each activity (Grimpe, Vélo, Course)
+            const labels = filteredAthletes.map(athlete => athlete.name);
+            const grimpeData = filteredAthletes.map(athlete => timeToSeconds(climbingCoefficients[athlete.grimpe.value]));
+            const veloData = filteredAthletes.map(athlete => timeToSeconds(athlete.velo.value));
+            const courseData = filteredAthletes.map(athlete => timeToSeconds(athlete.course.value));
+
+            // Destroy previous chart instance if it exists
+            if (comparisonChart) {
+                comparisonChart.destroy();
+            }
+
+            const ctx = document.getElementById('comparisonChart').getContext('2d');
+            comparisonChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels, // Participant names
+                    datasets: [
+                        {
+                            label: 'Grimpe',
+                            data: grimpeData,
+                            backgroundColor: 'rgba(75, 192, 192, 0.7)',
+                            stack: 'ActivityStack'
+                        },
+                        {
+                            label: 'Vélo',
+                            data: veloData,
+                            backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                            stack: 'ActivityStack'
+                        },
+                        {
+                            label: 'Course',
+                            data: courseData,
+                            backgroundColor: 'rgba(255, 159, 64, 0.7)',
+                            stack: 'ActivityStack'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    indexAxis: 'y', // Set to 'y' to make horizontal bars
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    const dataset = tooltipItem.dataset;
+                                    return `${dataset.label}: ${secondsToTime(tooltipItem.raw)}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Temps'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return secondsToTime(value);  // Display time in HH:MM:SS format
+                                }
+                            }
+                        },
+                        y: {
+                            stacked: true,  // Stack the bars
+                            title: {
+                                display: true,
+                                text: 'Participants'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
