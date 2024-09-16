@@ -32,28 +32,30 @@
           ></div>
         </div>
 
-                <!-- Toggle and Dropdown for comparison -->
-                <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <label class="block text-lg font-medium text-gray-700">
-                      <input type="checkbox" id="compareToggle" class="mr-2" />
-                      Comparez mon résultat
-                    </label>
-          
-                    <!-- Dropdown that will show participants in the same parcours when the toggle is activated -->
-                    <div id="participantDropdown" class="mt-4 hidden">
-                      <label
-                        for="compareInput"
-                        class="block text-lg font-medium text-gray-700"
-                        >Sélectionnez un participant :</label
-                      >
-                      <select
-                        id="compareInput"
-                        class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                      >
-                        <!-- Options will be populated dynamically -->
-                      </select>
-                    </div>
-                  </div>
+
+
+        <!-- Toggle and Dropdown for comparison -->
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+          <label class="block text-lg font-medium text-gray-700">
+            <input type="checkbox" id="compareToggle" class="mr-2" />
+            Comparez mon résultat
+          </label>
+
+          <!-- Dropdown that will show participants in the same parcours when the toggle is activated -->
+          <div id="participantDropdown" class="mt-4 hidden">
+            <label
+              for="compareInput"
+              class="block text-lg font-medium text-gray-700"
+              >Sélectionnez un participant :</label
+            >
+            <select
+              id="compareInput"
+              class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            >
+              <!-- Options will be populated dynamically -->
+            </select>
+          </div>
+        </div>
 
         <!-- Section pour afficher les données associées -->
         <div id="athleteInfo" class="bg-white p-4 rounded-lg shadow-lg">
@@ -61,18 +63,26 @@
           <!-- Les données de l'athlète seront affichées ici -->
         </div>
 
+                <!-- Section to display the cumulative rankings -->
+                <div
+                id="cumulativeRankings"
+                class="bg-white p-4 rounded-lg shadow-lg mt-6"
+              >
+                <h2 class="text-2xl font-bold mb-2">Classement</h2>
+                <!-- The cumulative rankings after Grimpe, Vélo, and Course will be displayed here -->
+              </div>
+
         <!-- Classement Après Chaque Activité -->
         <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
           <h2 class="text-2xl font-bold mb-2">Classement dans chaque sport</h2>
           <canvas id="rankScatterPlot"></canvas>
         </div>
       </div>
+      
 
       <!-- Right column: Charts -->
       <div class="space-y-8">
         <!-- Graphiques -->
-
-
 
         <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
           <h2 class="text-2xl font-bold mb-2">Temps d'Activité</h2>
@@ -81,9 +91,7 @@
 
         <!-- Add this new section for the third graph -->
         <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
-          <h2 class="text-2xl font-bold mb-2">
-            Comparaison par Sport (Barres Verticales)
-          </h2>
+          <h2 class="text-2xl font-bold mb-2">Comparaison par Sport</h2>
           <canvas id="comparisonBarChart"></canvas>
         </div>
       </div>
@@ -146,7 +154,10 @@
         // Populate the comparison dropdown with participants from the same parcours
         populateComparisonDropdown(athlete.parcours);
 
-        plotComparisonBySport(athlete)
+        // Compute and display cumulative rankings
+        displayCumulativeRankings(athlete);
+
+        plotComparisonBySport(athlete);
       }
 
       const climbingCoefficients = {
@@ -212,30 +223,48 @@
       document.getElementById("compareToggle").checked = false;
       document.getElementById("participantDropdown").classList.add("hidden");
 
-// Show or hide the comparison dropdown based on the toggle and recompute the chart
-document.getElementById("compareToggle").addEventListener("change", function () {
-    const dropdown = document.getElementById("participantDropdown");
-    const selectedAthleteName = document.getElementById("nameInput").value;
-    const selectedAthlete = athleteData.find((a) => a.name === selectedAthleteName);
+      // Show or hide the comparison dropdown based on the toggle and recompute the chart
+      document
+        .getElementById("compareToggle")
+        .addEventListener("change", function () {
+          const dropdown = document.getElementById("participantDropdown");
+          const selectedAthleteName =
+            document.getElementById("nameInput").value;
+          const selectedAthlete = athleteData.find(
+            (a) => a.name === selectedAthleteName
+          );
 
-    if (this.checked) {
-        dropdown.classList.remove("hidden"); // Show the dropdown
-        // Add event listener for comparison
-        document.getElementById("compareInput").addEventListener("change", function () {
-            const comparisonAthleteName = document.getElementById("compareInput").value;
-            const comparisonAthlete = athleteData.find((a) => a.name === comparisonAthleteName);
+          if (this.checked) {
+            dropdown.classList.remove("hidden"); // Show the dropdown
+
+            // Immediately select the first entry in the comparison dropdown
+            const comparisonDropdown = document.getElementById("compareInput");
+            const firstComparisonName = comparisonDropdown.options[0].value; // Get the first option's value
+            const comparisonAthlete = athleteData.find(
+              (a) => a.name === firstComparisonName
+            );
 
             // Plot both the activity times and the comparison by sport
-            plotActivityTimes(selectedAthlete, comparisonAthlete);  // Plot with comparison
-            plotComparisonBySport(selectedAthlete, comparisonAthlete);  // New vertical bar chart
-        });
-    } else {
-        dropdown.classList.add("hidden"); // Hide the dropdown
-        plotActivityTimes(selectedAthlete); // Plot only the selected athlete
-        plotComparisonBySport(selectedAthlete); // Plot the selected athlete only in the vertical bar chart
-    }
-});
+            plotActivityTimes(selectedAthlete, comparisonAthlete); // Plot with comparison
+            plotComparisonBySport(selectedAthlete, comparisonAthlete); // New vertical bar chart
 
+            // Add event listener for manual comparison selection
+            comparisonDropdown.addEventListener("change", function () {
+              const comparisonAthleteName = comparisonDropdown.value;
+              const comparisonAthlete = athleteData.find(
+                (a) => a.name === comparisonAthleteName
+              );
+
+              // Plot both the activity times and the comparison by sport
+              plotActivityTimes(selectedAthlete, comparisonAthlete); // Plot with comparison
+              plotComparisonBySport(selectedAthlete, comparisonAthlete); // New vertical bar chart
+            });
+          } else {
+            dropdown.classList.add("hidden"); // Hide the dropdown
+            plotActivityTimes(selectedAthlete); // Plot only the selected athlete
+            plotComparisonBySport(selectedAthlete); // Plot the selected athlete only in the vertical bar chart
+          }
+        });
 
       // Fonction d'aide pour convertir une chaîne de temps en secondes totales
       function timeToSeconds(time) {
@@ -253,6 +282,60 @@ document.getElementById("compareToggle").addEventListener("change", function () 
           "0"
         )}:${String(secondesRestantes).padStart(2, "0")}`;
       }
+
+      // Function to calculate and display the cumulative ranking after each activity for the selected athlete
+      function displayCumulativeRankings(selectedAthlete) {
+        const parcours = selectedAthlete.parcours;
+
+        // Filter athletes from the same parcours
+        const athletesInSameCategory = athleteData.filter(
+          (athlete) => athlete.parcours === parcours
+        );
+
+        // Compute cumulative times for all athletes in the same category
+        const cumulativeTimes = athletesInSameCategory.map((athlete) => {
+          const grimpeTime = timeToSeconds(
+            climbingCoefficients[athlete.grimpe.value]
+          );
+          const veloTime = timeToSeconds(athlete.velo.value);
+          const courseTime = timeToSeconds(athlete.course.value);
+
+          return {
+            name: athlete.name,
+            cumulativeGrimpe: grimpeTime,
+            cumulativeVelo: grimpeTime + veloTime,
+            cumulativeCourse: grimpeTime + veloTime + courseTime,
+          };
+        });
+
+        // Sort athletes based on cumulative times for each activity and determine rankings
+        const sortedGrimpe = [...cumulativeTimes].sort(
+          (a, b) => a.cumulativeGrimpe - b.cumulativeGrimpe
+        );
+        const sortedVelo = [...cumulativeTimes].sort(
+          (a, b) => a.cumulativeVelo - b.cumulativeVelo
+        );
+        const sortedCourse = [...cumulativeTimes].sort(
+          (a, b) => a.cumulativeCourse - b.cumulativeCourse
+        );
+
+        // Get rankings for the selected athlete
+        const grimpeRank =
+          sortedGrimpe.findIndex((a) => a.name === selectedAthlete.name) + 1;
+        const veloRank =
+          sortedVelo.findIndex((a) => a.name === selectedAthlete.name) + 1;
+        const courseRank =
+          sortedCourse.findIndex((a) => a.name === selectedAthlete.name) + 1;
+
+        // Display the rankings for the selected athlete after each activity
+        document.getElementById("cumulativeRankings").innerHTML = `
+        <p><strong>Classement après Grimpe:</strong> ${grimpeRank}</p>
+        <p><strong>Classement après Vélo:</strong> ${veloRank}</p>
+        <p><strong>Classement après Course:</strong> ${courseRank}</p>
+    `;
+      }
+
+      // Call this function inside `selectAthlete` to update the rankings when an athlete is selected.
 
       let activityChart = null; // Référence pour le graphique des activités
       let rankChart = null; // Référence pour le graphique des classements
