@@ -1,88 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Données des Athlètes</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 font-sans p-6">
-
+  </head>
+  <body class="bg-gray-100 font-sans p-6">
     <h1 class="text-3xl font-bold mb-6 text-center">Résultat individuel</h1>
 
     <!-- Grid for two-column layout on larger screens and single column on smaller screens -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        
-        <!-- Left column: Athlete information and search -->
-        <div class="space-y-4">
-            <!-- Champ pour filtrer les noms -->
-            <div>
-                <label for="nameInput" class="block text-lg font-medium text-gray-700">Entrez le Nom :</label>
-                <input type="text" id="nameInput" placeholder="Entrez le Nom" oninput="filterNames()" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                <div id="athleteDropdown" class="bg-white mt-1 shadow-lg rounded-md max-h-40 overflow-y-auto hidden border border-gray-300"></div>
-            </div>
-
-            <!-- Section pour afficher les données associées -->
-            <div id="athleteInfo" class="bg-white p-4 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-2">Informations</h2>
-                <!-- Les données de l'athlète seront affichées ici -->
-            </div>
-
-            <!-- Classement Après Chaque Activité -->
-            <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-2">Classement dans chaque sport</h2>
-                <canvas id="rankScatterPlot"></canvas>
-            </div>
+      <!-- Left column: Athlete information and search -->
+      <div class="space-y-4">
+        <!-- Champ pour filtrer les noms -->
+        <div>
+          <label for="nameInput" class="block text-lg font-medium text-gray-700"
+            >Entrez votre Nom :</label
+          >
+          <input
+            type="text"
+            id="nameInput"
+            placeholder="Entrez le Nom"
+            oninput="filterNames()"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+          <div
+            id="athleteDropdown"
+            class="bg-white mt-1 shadow-lg rounded-md max-h-40 overflow-y-auto hidden border border-gray-300"
+          ></div>
         </div>
 
-        <!-- Right column: Charts -->
-        <div class="space-y-8">
-            <!-- Graphiques -->
-            <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-2">Temps d'Activité</h2>
-                <canvas id="activityBarChart"></canvas>
-            </div>
+                <!-- Toggle and Dropdown for comparison -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <label class="block text-lg font-medium text-gray-700">
+                      <input type="checkbox" id="compareToggle" class="mr-2" />
+                      Comparez mon résultat
+                    </label>
+          
+                    <!-- Dropdown that will show participants in the same parcours when the toggle is activated -->
+                    <div id="participantDropdown" class="mt-4 hidden">
+                      <label
+                        for="compareInput"
+                        class="block text-lg font-medium text-gray-700"
+                        >Sélectionnez un participant :</label
+                      >
+                      <select
+                        id="compareInput"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                      >
+                        <!-- Options will be populated dynamically -->
+                      </select>
+                    </div>
+                  </div>
+
+        <!-- Section pour afficher les données associées -->
+        <div id="athleteInfo" class="bg-white p-4 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-2">Informations</h2>
+          <!-- Les données de l'athlète seront affichées ici -->
         </div>
+
+        <!-- Classement Après Chaque Activité -->
+        <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-2">Classement dans chaque sport</h2>
+          <canvas id="rankScatterPlot"></canvas>
+        </div>
+      </div>
+
+      <!-- Right column: Charts -->
+      <div class="space-y-8">
+        <!-- Graphiques -->
+
+
+
+        <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-2">Temps d'Activité</h2>
+          <canvas id="activityBarChart"></canvas>
+        </div>
+
+        <!-- Add this new section for the third graph -->
+        <div class="chart-container bg-white p-4 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-2">
+            Comparaison par Sport (Barres Verticales)
+          </h2>
+          <canvas id="comparisonBarChart"></canvas>
+        </div>
+      </div>
     </div>
 
     <script>
-        let athleteData = [];
+      let athleteData = [];
 
-        // Récupérer les données à partir du fichier athlete_data.json situé dans le dossier static
-        fetch("/athlete_data.json")
-            .then(response => response.json())
-            .then(data => athleteData = data);
+      // Récupérer les données à partir du fichier athlete_data.json situé dans le dossier static
+      fetch("/athlete_data.json")
+        .then((response) => response.json())
+        .then((data) => (athleteData = data));
 
-        // Fonction pour filtrer les noms et afficher les résultats correspondants dans une liste déroulante
-        function filterNames() {
-            const input = document.getElementById('nameInput').value.toLowerCase();
-            const dropdown = document.getElementById('athleteDropdown');
-            dropdown.innerHTML = '';  // Clear previous results
-            dropdown.style.display = 'none';
+      // Fonction pour filtrer les noms et afficher les résultats correspondants dans une liste déroulante
+      function filterNames() {
+        const input = document.getElementById("nameInput").value.toLowerCase();
+        const dropdown = document.getElementById("athleteDropdown");
+        dropdown.innerHTML = ""; // Clear previous results
+        dropdown.style.display = "none";
 
-            if (input.length > 0) {
-                const filteredAthletes = athleteData.filter(athlete => athlete.name.toLowerCase().includes(input));
-                
-                if (filteredAthletes.length > 0) {
-                    dropdown.style.display = 'block';  // Show the dropdown
-                    filteredAthletes.forEach(athlete => {
-                        const div = document.createElement('div');
-                        div.textContent = athlete.name;
-                        div.onclick = () => selectAthlete(athlete);  // Attach click event
-                        dropdown.appendChild(div);
-                    });
-                }
-            }
+        if (input.length > 0) {
+          const filteredAthletes = athleteData.filter((athlete) =>
+            athlete.name.toLowerCase().includes(input)
+          );
+
+          if (filteredAthletes.length > 0) {
+            dropdown.style.display = "block"; // Show the dropdown
+            filteredAthletes.forEach((athlete) => {
+              const div = document.createElement("div");
+              div.textContent = athlete.name;
+              div.onclick = () => selectAthlete(athlete); // Attach click event
+              dropdown.appendChild(div);
+            });
+          }
         }
+      }
 
-        // Fonction pour afficher les données de l'athlète sélectionné
-        function selectAthlete(athlete) {
-            document.getElementById('nameInput').value = athlete.name;
-            document.getElementById('athleteDropdown').style.display = 'none';  // Hide the dropdown
+      // Fonction pour afficher les données de l'athlète sélectionné
+      function selectAthlete(athlete) {
+        document.getElementById("nameInput").value = athlete.name;
+        document.getElementById("athleteDropdown").style.display = "none"; // Hide the dropdown
 
-            // Afficher les informations de l'athlète
-            document.getElementById('athleteInfo').innerHTML = `
+        // Afficher les informations de l'athlète
+        document.getElementById("athleteInfo").innerHTML = `
                 <p><strong>Nom :</strong> ${athlete.name}</p>
                 <p><strong>Catégorie :</strong> ${athlete.category}</p>
                 <p><strong>Parcours :</strong> ${athlete.parcours}</p>
@@ -92,161 +137,381 @@
                 <p><strong>Temps Total Triathlon :</strong> ${athlete.triathlon.value} (Classement Général : ${athlete.triathlon.rank})</p>
             `;
 
-            // Afficher le graphique en barres empilées pour le temps d'activité
-            plotActivityTimes(athlete);
+        // Afficher le graphique en barres empilées pour le temps d'activité
+        plotActivityTimes(athlete);
 
-            // Afficher le graphique en barres pour les classements
-            plotRankBarChart(athlete);
+        // Afficher le graphique en barres pour les classements
+        plotRankBarChart(athlete);
+
+        // Populate the comparison dropdown with participants from the same parcours
+        populateComparisonDropdown(athlete.parcours);
+
+        plotComparisonBySport(athlete)
+      }
+
+      const climbingCoefficients = {
+        38: "00:00:00",
+        37: "00:02:00",
+        36: "00:04:00",
+        35: "00:05:00",
+        34: "00:07:00",
+        33: "00:09:00",
+        32: "00:10:30",
+        31: "00:12:00",
+        30: "00:13:30",
+        29: "00:15:00",
+        28: "00:16:30",
+        27: "00:18:00",
+        26: "00:20:00",
+        25: "00:21:00",
+        24: "00:22:00",
+        23: "00:24:00",
+        22: "00:25:00",
+        21: "00:26:00",
+        20: "00:27:00",
+        19: "00:28:00",
+        18: "00:29:00",
+        17: "00:30:00",
+        16: "00:31:00",
+        15: "00:32:00",
+        14: "00:33:00",
+        13: "00:34:00",
+        12: "00:35:00",
+        11: "00:36:00",
+        10: "00:37:00",
+        9: "00:38:00",
+        8: "00:38:30",
+        7: "00:39:00",
+        6: "00:39:30",
+        5: "00:40:00",
+        4: "00:40:00",
+        3: "00:40:00",
+        2: "00:40:00",
+        1: "00:40:00",
+      };
+
+      // Fonction pour peupler la liste des participants du même parcours
+      function populateComparisonDropdown(parcours) {
+        const dropdown = document.getElementById("compareInput");
+        dropdown.innerHTML = ""; // Clear previous options
+
+        // Filter participants based on parcours and order by triathlon rank
+        const participants = athleteData
+          .filter((athlete) => athlete.parcours === parcours)
+          .sort((a, b) => a.triathlon.rank - b.triathlon.rank);
+
+        participants.forEach((participant) => {
+          const option = document.createElement("option");
+          option.value = participant.name;
+          option.textContent = `${participant.name} (Classement Général : ${participant.triathlon.rank})`;
+          dropdown.appendChild(option);
+        });
+      }
+
+      // Initially set the checkbox to unticked and hide the dropdown
+      document.getElementById("compareToggle").checked = false;
+      document.getElementById("participantDropdown").classList.add("hidden");
+
+// Show or hide the comparison dropdown based on the toggle and recompute the chart
+document.getElementById("compareToggle").addEventListener("change", function () {
+    const dropdown = document.getElementById("participantDropdown");
+    const selectedAthleteName = document.getElementById("nameInput").value;
+    const selectedAthlete = athleteData.find((a) => a.name === selectedAthleteName);
+
+    if (this.checked) {
+        dropdown.classList.remove("hidden"); // Show the dropdown
+        // Add event listener for comparison
+        document.getElementById("compareInput").addEventListener("change", function () {
+            const comparisonAthleteName = document.getElementById("compareInput").value;
+            const comparisonAthlete = athleteData.find((a) => a.name === comparisonAthleteName);
+
+            // Plot both the activity times and the comparison by sport
+            plotActivityTimes(selectedAthlete, comparisonAthlete);  // Plot with comparison
+            plotComparisonBySport(selectedAthlete, comparisonAthlete);  // New vertical bar chart
+        });
+    } else {
+        dropdown.classList.add("hidden"); // Hide the dropdown
+        plotActivityTimes(selectedAthlete); // Plot only the selected athlete
+        plotComparisonBySport(selectedAthlete); // Plot the selected athlete only in the vertical bar chart
+    }
+});
+
+
+      // Fonction d'aide pour convertir une chaîne de temps en secondes totales
+      function timeToSeconds(time) {
+        const [heures, minutes, secondes] = time.split(":").map(Number);
+        return heures * 3600 + minutes * 60 + secondes;
+      }
+
+      // Fonction d'aide pour convertir des secondes en HH:MM:SS
+      function secondsToTime(seconds) {
+        const heures = Math.floor(seconds / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        const secondesRestantes = seconds % 60;
+        return `${String(heures).padStart(2, "0")}:${String(minutes).padStart(
+          2,
+          "0"
+        )}:${String(secondesRestantes).padStart(2, "0")}`;
+      }
+
+      let activityChart = null; // Référence pour le graphique des activités
+      let rankChart = null; // Référence pour le graphique des classements
+      let comparisonBarChart = null; // Reference for the new vertical bars chart
+
+      // Update the plotActivityTimes function to handle comparison
+      function plotActivityTimes(athlete, comparisonAthlete = null) {
+        const bouldersValidated = athlete.grimpe.value;
+        const grimpeTimeStr = climbingCoefficients[bouldersValidated];
+        const grimpeTimeInSeconds = timeToSeconds(grimpeTimeStr);
+        const veloTimeInSeconds = timeToSeconds(athlete.velo.value);
+        const courseTimeInSeconds = timeToSeconds(athlete.course.value);
+
+        let labels = [athlete.name];
+        let grimpeData = [grimpeTimeInSeconds];
+        let veloData = [veloTimeInSeconds];
+        let courseData = [courseTimeInSeconds];
+
+        // If a comparison is provided, add the data for comparison
+        if (comparisonAthlete) {
+          const comparisonBouldersValidated = comparisonAthlete.grimpe.value;
+          const comparisonGrimpeTimeStr =
+            climbingCoefficients[comparisonBouldersValidated];
+          const comparisonGrimpeTimeInSeconds = timeToSeconds(
+            comparisonGrimpeTimeStr
+          );
+          const comparisonVeloTimeInSeconds = timeToSeconds(
+            comparisonAthlete.velo.value
+          );
+          const comparisonCourseTimeInSeconds = timeToSeconds(
+            comparisonAthlete.course.value
+          );
+
+          // Update labels and data arrays
+          labels = [athlete.name, comparisonAthlete.name];
+          grimpeData = [grimpeTimeInSeconds, comparisonGrimpeTimeInSeconds];
+          veloData = [veloTimeInSeconds, comparisonVeloTimeInSeconds];
+          courseData = [courseTimeInSeconds, comparisonCourseTimeInSeconds];
         }
 
-
-        const climbingCoefficients = {
-            38: "00:00:00", 37: "00:02:00", 36: "00:04:00", 35: "00:05:00", 34: "00:07:00",
-            33: "00:09:00", 32: "00:10:30", 31: "00:12:00", 30: "00:13:30", 29: "00:15:00",
-            28: "00:16:30", 27: "00:18:00", 26: "00:20:00", 25: "00:21:00", 24: "00:22:00",
-            23: "00:24:00", 22: "00:25:00", 21: "00:26:00", 20: "00:27:00", 19: "00:28:00",
-            18: "00:29:00", 17: "00:30:00", 16: "00:31:00", 15: "00:32:00", 14: "00:33:00",
-            13: "00:34:00", 12: "00:35:00", 11: "00:36:00", 10: "00:37:00", 9: "00:38:00",
-            8: "00:38:30", 7: "00:39:00", 6: "00:39:30", 5: "00:40:00", 4: "00:40:00",
-            3: "00:40:00", 2: "00:40:00", 1: "00:40:00"
-        };
-        // Fonction d'aide pour convertir une chaîne de temps en secondes totales
-        function timeToSeconds(time) {
-            const [heures, minutes, secondes] = time.split(':').map(Number);
-            return heures * 3600 + minutes * 60 + secondes;
+        // Destroy the previous chart before creating a new one
+        if (activityChart) {
+          activityChart.destroy();
         }
 
-        // Fonction d'aide pour convertir des secondes en HH:MM:SS
-        function secondsToTime(seconds) {
-            const heures = Math.floor(seconds / 3600);
-            const minutes = Math.floor((seconds % 3600) / 60);
-            const secondesRestantes = seconds % 60;
-            return `${String(heures).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secondesRestantes).padStart(2, '0')}`;
-        }
-
-        let activityChart = null;  // Référence pour le graphique des activités
-        let rankChart = null;      // Référence pour le graphique des classements
-
-        // Fonction pour afficher le temps d'activité en graphique en barres empilées
-        function plotActivityTimes(athlete) {
-            const bouldersValidated = athlete.grimpe.value;
-            const grimpeTimeStr = climbingCoefficients[bouldersValidated];
-            const grimpeTimeInSeconds = timeToSeconds(grimpeTimeStr);
-            const veloTimeInSeconds = timeToSeconds(athlete.velo.value);
-            const courseTimeInSeconds = timeToSeconds(athlete.course.value);
-
-            console.log(bouldersValidated, grimpeTimeStr, veloTimeInSeconds, courseTimeInSeconds);
-
-            // Si un graphique précédent existe, le détruire avant d'en créer un nouveau
-            if (activityChart) {
-                activityChart.destroy();
-            }
-
-            const ctx = document.getElementById('activityBarChart').getContext('2d');
-            activityChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Temps Total d\'Activité'],
-                    datasets: [
-                        {
-                            label: 'Grimpe',
-                            data: [grimpeTimeInSeconds],
-                            backgroundColor: 'rgba(75, 192, 192, 0.7)',
-                            stack: 'total',
-                            timeValue: grimpeTimeStr
-                        },
-                        {
-                            label: 'Vélo',
-                            data: [veloTimeInSeconds],
-                            backgroundColor: 'rgba(54, 162, 235, 0.7)',
-                            stack: 'total',
-                            timeValue: athlete.velo.value
-                        },
-                        {
-                            label: 'Course',
-                            data: [courseTimeInSeconds],
-                            backgroundColor: 'rgba(255, 159, 64, 0.7)',
-                            stack: 'total',
-                            timeValue: athlete.course.value
-                        }
-                    ]
+        // Create the new chart with or without comparison
+        const ctx = document
+          .getElementById("activityBarChart")
+          .getContext("2d");
+        activityChart = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: labels, // Display the names
+            datasets: [
+              {
+                label: "Grimpe",
+                data: grimpeData,
+                backgroundColor: "rgba(75, 192, 192, 0.7)",
+                stack: "total",
+                timeValue: grimpeData,
+              },
+              {
+                label: "Vélo",
+                data: veloData,
+                backgroundColor: "rgba(54, 162, 235, 0.7)",
+                stack: "total",
+                timeValue: veloData,
+              },
+              {
+                label: "Course",
+                data: courseData,
+                backgroundColor: "rgba(255, 159, 64, 0.7)",
+                stack: "total",
+                timeValue: courseData,
+              },
+            ],
+          },
+          options: {
+            indexAxis: "y",
+            plugins: {
+              tooltip: {
+                callbacks: {
+                  label: function (tooltipItem) {
+                    const dataset = tooltipItem.dataset;
+                    return `${dataset.label}: ${secondsToTime(
+                      tooltipItem.raw
+                    )}`;
+                  },
                 },
-                options: {
-                    indexAxis: 'y',
-                    plugins: {
-                        tooltip: {
-                            callbacks: {
-                                label: function(tooltipItem) {
-                                    const dataset = tooltipItem.dataset;
-                                    return `${dataset.label}: ${dataset.timeValue}`;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            beginAtZero: true,
-                            ticks: {
-                                callback: function(value) {
-                                    return secondsToTime(value);  // Afficher le temps en format HH:MM:SS sur l'axe x
-                                }
-                            }
-                        },
-                        y: {
-                            stacked: true  // Activer l'empilement des barres
-                        }
-                    }
-                }
-            });
-        }
-
-        // Fonction pour afficher les classements sous forme de graphique en barres horizontales
-        function plotRankBarChart(athlete) {
-            if (rankChart) {
-                rankChart.destroy();
-            }
-
-            const ctx = document.getElementById('rankScatterPlot').getContext('2d');
-            rankChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Grimpe', 'Vélo', 'Course', 'Triathlon'],
-                    datasets: [{
-                        label: 'Classement',
-                        data: [
-                            athlete.grimpe.rank,
-                            athlete.velo.rank,
-                            athlete.course.rank,
-                            athlete.triathlon.rank
-                        ],
-                        backgroundColor: [
-                            'rgba(75, 192, 192, 0.7)',  // Grimpe
-                            'rgba(54, 162, 235, 0.7)',  // Vélo
-                            'rgba(255, 159, 64, 0.7)',  // Course
-                            'rgba(153, 102, 255, 0.7)'  // Triathlon
-                        ]
-                    }]
+              },
+            },
+            scales: {
+              x: {
+                beginAtZero: true,
+                ticks: {
+                  callback: function (value) {
+                    return secondsToTime(value); // Display time in HH:MM:SS format
+                  },
                 },
-                options: {
-                    indexAxis: 'y',
-                    scales: {
-                        x: {
-                            beginAtZero: true,
-                            title: {
-                                display: true,
-                                text: 'Classement'
-                            }
-                        },
-                        y: {
-                            title: {
-                                display: true,
-                                text: 'Activités'
-                            }
-                        }
-                    }
-                }
-            });
+              },
+              y: {
+                stacked: true, // Enable stacking of bars
+              },
+            },
+          },
+        });
+      }
+      // Fonction pour afficher les classements sous forme de graphique en barres horizontales
+      function plotRankBarChart(athlete) {
+        if (rankChart) {
+          rankChart.destroy();
         }
+
+        const ctx = document.getElementById("rankScatterPlot").getContext("2d");
+        rankChart = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: ["Grimpe", "Vélo", "Course", "Triathlon"],
+            datasets: [
+              {
+                label: "Classement",
+                data: [
+                  athlete.grimpe.rank,
+                  athlete.velo.rank,
+                  athlete.course.rank,
+                  athlete.triathlon.rank,
+                ],
+                backgroundColor: [
+                  "rgba(75, 192, 192, 0.7)", // Grimpe
+                  "rgba(54, 162, 235, 0.7)", // Vélo
+                  "rgba(255, 159, 64, 0.7)", // Course
+                  "rgba(153, 102, 255, 0.7)", // Triathlon
+                ],
+              },
+            ],
+          },
+          options: {
+            indexAxis: "y",
+            scales: {
+              x: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: "Classement",
+                },
+              },
+              y: {
+                title: {
+                  display: true,
+                  text: "Activités",
+                },
+              },
+            },
+          },
+        });
+      }
+
+      // Function to display comparison by sport (Grimpe, Vélo, Course) in vertical bars
+      function plotComparisonBySport(athlete, comparisonAthlete = null) {
+        const bouldersValidated = athlete.grimpe.value;
+        const grimpeTimeStr = climbingCoefficients[bouldersValidated];
+        const grimpeTimeInSeconds = timeToSeconds(grimpeTimeStr);
+        const veloTimeInSeconds = timeToSeconds(athlete.velo.value);
+        const courseTimeInSeconds = timeToSeconds(athlete.course.value);
+
+        let labels = ["Grimpe", "Vélo", "Course"];
+        let athleteData = [
+          grimpeTimeInSeconds,
+          veloTimeInSeconds,
+          courseTimeInSeconds,
+        ];
+
+        let datasets = [
+          {
+            label: athlete.name,
+            data: athleteData,
+            backgroundColor: "rgba(85, 162, 122, 0.7)",
+          },
+        ];
+
+        // If a comparison is provided, add the comparison data
+        if (comparisonAthlete) {
+          const comparisonBouldersValidated = comparisonAthlete.grimpe.value;
+          const comparisonGrimpeTimeStr =
+            climbingCoefficients[comparisonBouldersValidated];
+          const comparisonGrimpeTimeInSeconds = timeToSeconds(
+            comparisonGrimpeTimeStr
+          );
+          const comparisonVeloTimeInSeconds = timeToSeconds(
+            comparisonAthlete.velo.value
+          );
+          const comparisonCourseTimeInSeconds = timeToSeconds(
+            comparisonAthlete.course.value
+          );
+
+          let comparisonData = [
+            comparisonGrimpeTimeInSeconds,
+            comparisonVeloTimeInSeconds,
+            comparisonCourseTimeInSeconds,
+          ];
+
+          datasets.push({
+            label: comparisonAthlete.name,
+            data: comparisonData,
+            backgroundColor: "rgba(255, 99, 132, 0.7)", // Different color for comparison
+          });
+        }
+
+        // Destroy the previous chart before creating a new one
+        if (comparisonBarChart) {
+          comparisonBarChart.destroy();
+        }
+
+        const ctx = document
+          .getElementById("comparisonBarChart")
+          .getContext("2d");
+        comparisonBarChart = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: labels, // 'Grimpe', 'Vélo', 'Course'
+            datasets: datasets,
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              tooltip: {
+                callbacks: {
+                  label: function (tooltipItem) {
+                    const dataset = tooltipItem.dataset;
+                    return `${dataset.label}: ${secondsToTime(
+                      tooltipItem.raw
+                    )}`;
+                  },
+                },
+              },
+            },
+            scales: {
+              x: {
+                title: {
+                  display: true,
+                  text: "Sports",
+                },
+              },
+              y: {
+                beginAtZero: true,
+                ticks: {
+                  callback: function (value) {
+                    return secondsToTime(value); // Display time in HH:MM:SS format on y-axis
+                  },
+                },
+                title: {
+                  display: true,
+                  text: "Temps (HH:MM:SS)",
+                },
+              },
+            },
+          },
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
