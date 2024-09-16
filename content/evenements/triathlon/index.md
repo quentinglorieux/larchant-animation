@@ -7,6 +7,17 @@ description: Triathlon
 preview: triathlon-2024.jpg
 ---
 # Triathlon
+
+## LES CLASSEMENTS 2024
+
+- [Le classement général en version graphique](/classement_general)
+- [Les statistiques individuelles de votre course](/classement)
+
+- [Le classement général en version texte](https://script.google.com/macros/s/AKfycby9PigiIzgdNCaZHI33fkPTWqt9CZrTT5wWOvRvNhMHTNw2z9rs8bARbWPQPN2RIues5w/exec?view=classement)
+
+
+
+
 ## 15 Septembre 2024
 
 Essayez de réaliser un maximum de BLOCS puis le meilleur grimpeur sera  le 1er à s’élancer en VTT et le TRAIL s’enchaînera à la suite.
@@ -50,26 +61,4 @@ Les GPX sont ici pour le [VTT](/gpx/exp_VTT.gpx) et pour le [trail](/gpx/exp_Tra
 ## Tarifs
 
 16€ (8 € pour les juniors 12-17ans)
-
-LES INSCRIPTIONS EN LIGNE SONT FERMEES.
-INSCRIPTION POSSIBLE DIMANCHE MATIN 8H SUR PLACE.
-PAIEMENT EN CB Junior:8e / Adultes: 16e
-PAIEMENT EN ESPECES: Junior:10e / Adultes: 20e
-
-
-## Important : à lire avant de s'inscrire en ligne
-Attention lors de l'inscription en ligne, Yapla vous demandera une *contribution suggérée* pour les frais de gestion. Vous pouvez modifier cette contribution à votre convenance et bien sur même la mettre à 0. **Cette contribution est uniquement destinée à couvrir les frais de gestion de notre partenaire bancaire Yapla et n'est absolument pas reversée à l'association.**
-Voir ci-dessous: ![](/images/contrib.png).
-
-# Inscriptions en ligne pour l'édition 2024 c'est ICI !
-
-LES INSCRIPTIONS EN LIGNE SONT FERMEES.
-INSCRIPTION POSSIBLE DIMANCHE MATIN 8H SUR PLACE.
-PAIEMENT EN CB Junior:8e / Adultes: 16e
-PAIEMENT EN ESPECES: Junior:10e / Adultes: 20e
-
-[Inscrivez vous sur le site de notre partenaire Yapla](https://larchant-animation.s2.yapla.com/fr/event-58468) ou directement sur notre site ci-dessous :
-
-<iframe  src="https://larchant-animation.s2.yapla.com/fr/event-58468"></iframe>
-
 
