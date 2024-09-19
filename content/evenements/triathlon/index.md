@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Triathlon
-preview: triathlon-2024.jpg
+preview: benevoles-tri.jpg
 ---
 # Triathlon
 
@@ -15,7 +15,9 @@ preview: triathlon-2024.jpg
 
 - [Le classement général en version texte](https://script.google.com/macros/s/AKfycby9PigiIzgdNCaZHI33fkPTWqt9CZrTT5wWOvRvNhMHTNw2z9rs8bARbWPQPN2RIues5w/exec?view=classement)
 
+## LES PHOTOS 2024
 
+C'est par [ici](/photos/triathlon2024/) pour les photos du triathlon 2024.
 
 
 ## 15 Septembre 2024
@@ -30,7 +32,7 @@ Trois parcours au choix:
 Les Seniors Hommes (SH) et Vétérans Hommes (VH) seront récompensés sur le parcours L, les Seniors Femmes (SF) et Vétérans Femmes (VF) sur le parcours M et les Juniors Hommes (JH) et Femmes (JF) sur le parcours S.
 _ Il est possible de vous inscrire sur d'autres distances mais dans ce cas vous serez classés uniquement au scratch._
 
-
+![Affiche](/images/triathlon-2024.jpg)
 
 Epreuve limitée à 150 participants  
 
