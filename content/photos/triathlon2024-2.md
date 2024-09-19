@@ -11,5 +11,4 @@ Voilà les photos du triathlon de Larchant 2024.
 
 ### [Voir page 1](/photos/triathlon2024-1/)
 
-{{< image-gallery gallery_dir="/album/tri2024/p1" >}}
 

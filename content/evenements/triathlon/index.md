@@ -17,7 +17,7 @@ preview: benevoles-tri.jpg
 
 ## LES PHOTOS 2024
 
-C'est par [ici](/photos/triathlon2024/) pour les photos du triathlon 2024.
+C'est par [ici](https://photos.app.goo.gl/VTTr8t9tfqTYVA7A6) pour les photos du triathlon 2024.
 
 
 ## 15 Septembre 2024
