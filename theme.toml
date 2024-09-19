@@ -25,3 +25,6 @@ min_version = "0.104.0"
   author = "4044ever"
   homepage = "https://github.com/4044ever"
   repo = "https://github.com/4044ever/Hugo-Tailwind-3.1"
+
+[resource]
+  timeout = 60000  # increase timeout to 60 seconds
