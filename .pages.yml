@@ -13,7 +13,7 @@ content:
         type: string
       - label: "Date"
         name: date
-        type: datetime
+        type: date
       - label: "Draft"
         name: draft
         type: boolean
@@ -37,20 +37,20 @@ content:
         required: false
       - label: "Body"
         name: body
-        type: markdown
+        type: rich-text
         required: false
 
-  - collection: blog
+  - type: collection
+    name: blog
     label: "Blog"
-    folder: content/posts
-    create: true
+    path: content/posts
     fields:
       - label: "Titre"
         name: title
         type: string
       - label: "Date de l'évènement"
         name: date
-        type: datetime
+        type: date
       - label: "Draft"
         name: draft
         type: boolean
@@ -58,10 +58,6 @@ content:
       - label: "Image de présentation"
         name: preview
         type: image
-        media_library:
-          allow_multiple: false
-        media_folder: "/assets/images"
-        public_folder: "images"
         required: false
       - label: "Résumé"
         name: summary
@@ -73,8 +69,6 @@ content:
       - label: "Image Auteur"
         name: authorimage
         type: image
-        media_library:
-          allow_multiple: false
         required: false
       - label: "Categorie"
         name: categories
@@ -86,7 +80,7 @@ content:
         required: false
       - label: "Fichier Joint"
         name: file
-        type: file
+        type: object
         required: false
       - label: "Légende du fichier"
         name: file_label
@@ -94,7 +88,7 @@ content:
         required: false
       - label: "Texte du post"
         name: body
-        type: markdown
+        type: rich-text
         required: false
 
   - collection: ateliers
