@@ -77,10 +77,6 @@ content:
         name: tags
         type: string
         required: false
-      - label: "Fichier Joint"
-        name: file
-        type: object
-        required: false
       - label: "Légende du fichier"
         name: file_label
         type: string
