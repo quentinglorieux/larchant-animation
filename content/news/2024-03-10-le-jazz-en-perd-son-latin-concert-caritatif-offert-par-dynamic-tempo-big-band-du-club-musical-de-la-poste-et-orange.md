@@ -1,7 +1,7 @@
 ---
 title: Le JAZZ en perd son LATIN
 draft: false
-preview: /assetsx/images/fete-des-plantes-2024.jpg
+preview: //featured-img-placeholder.png
 summary: Concert caritatif offert par Dynamic Tempo Big band du club musical de
   la Poste et Orange
 tags: Concert
