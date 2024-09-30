@@ -1,5 +1,5 @@
 media:
-  input: assets/images
+  input: assets
   output: /assets/images
 
 content:
