@@ -1,0 +1,441 @@
+backend:
+  git:
+    branch: main
+    api: git-gateway
+
+media:
+  assets:
+    folder: "assets/images"
+    public_folder: "/images"
+
+site:
+  url: https://larchantanimation.fr/
+  display_url: https://larchantanimation.fr/
+  logo_url: https://larchantanimation.fr/images/logo.png
+  locale: 'fr'
+
+content:
+  - collection: alaune
+    label: "A la Une"
+    folder: content/news
+    create: true
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Date"
+        name: date
+        widget: datetime
+      - label: "Draft"
+        name: draft
+        widget: boolean
+        required: false
+      - label: "Image"
+        name: preview
+        widget: image
+        media_library:
+          allow_multiple: false
+        required: false
+      - label: "Résumé"
+        name: summary
+        widget: text
+      - label: "Categorie"
+        name: categories
+        widget: string
+        required: false
+      - label: "Tags"
+        name: tags
+        widget: string
+        required: false
+      - label: "Body"
+        name: body
+        widget: markdown
+        required: false
+
+  - collection: blog
+    label: "Blog"
+    folder: content/posts
+    create: true
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Date de l'évènement"
+        name: date
+        widget: datetime
+      - label: "Draft"
+        name: draft
+        widget: boolean
+        required: false
+      - label: "Image de présentation"
+        name: preview
+        widget: image
+        media_library:
+          allow_multiple: false
+        media_folder: "/assets/images"
+        public_folder: "images"
+        required: false
+      - label: "Résumé"
+        name: summary
+        widget: text
+      - label: "Auteur"
+        name: author
+        widget: string
+        required: false
+      - label: "Image Auteur"
+        name: authorimage
+        widget: image
+        media_library:
+          allow_multiple: false
+        required: false
+      - label: "Categorie"
+        name: categories
+        widget: string
+        required: false
+      - label: "Tags"
+        name: tags
+        widget: string
+        required: false
+      - label: "Fichier Joint"
+        name: file
+        widget: file
+        required: false
+      - label: "Légende du fichier"
+        name: file_label
+        widget: string
+        required: false
+      - label: "Texte du post"
+        name: body
+        widget: markdown
+        required: false
+
+  - collection: ateliers
+    label: "Ateliers"
+    folder: content/ateliers
+    create: true
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Description"
+        name: description
+        widget: string
+      - label: "Image"
+        name: preview
+        widget: image
+      - label: "Body"
+        name: body
+        widget: markdown
+
+  - collection: activites
+    label: "Activités libres"
+    folder: content/activites
+    create: true
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Description"
+        name: description
+        widget: string
+      - label: "Image"
+        name: preview
+        widget: image
+      - label: "Body"
+        name: body
+        widget: markdown
+
+  - collection: evenements
+    label: "Évènements"
+    folder: content/evenements
+    create: true
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Description"
+        name: description
+        widget: string
+      - label: "Image"
+        name: preview
+        widget: image
+      - label: "Body"
+        name: body
+        widget: markdown
+
+  - collection: club-multisports
+    label: "Club Multisports"
+    folder: content/club-multisports
+    create: false
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Description"
+        name: description
+        widget: string
+      - label: "Body"
+        name: body
+        widget: markdown
+
+  - collection: mediatheque
+    label: "Médiathèque"
+    folder: content/mediatheque
+    create: false
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Description"
+        name: description
+        widget: string
+      - label: "Body"
+        name: body
+        widget: markdown
+
+  - collection: newsletter
+    label: "News Mediatheque"
+    folder: content/newsletter
+    create: true
+    fields:
+      - label: "Titre"
+        name: title
+        widget: string
+      - label: "Date"
+        name: date
+        widget: datetime
+      - label: "Image"
+        name: preview
+        widget: image
+        media_library:
+          allow_multiple: false
+        media_folder: "/assets/images"
+        public_folder: "images"
+        required: false
+      - label: "Categorie"
+        name: categories
+        widget: string
+        required: false
+
+  - collection: settings
+    label: "Homepage & Settings"
+    files:
+      - label: "HomePage"
+        name: homepage
+        file: data/settings.yml
+        fields:
+          - label: "Slogan"
+            name: moto
+            widget: string
+          - label: "Sous-titre"
+            name: description
+            widget: string
+          - label: "Bloc de texte 1"
+            name: paragraph1
+            widget: object
+            fields:
+              - label: "Titre"
+                name: heading
+                widget: string
+              - label: "Logo"
+                name: image
+                widget: image
+              - label: "Contenu"
+                name: content
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+          - label: "Bloc de texte 2"
+            name: paragraph2
+            widget: object
+            fields:
+              - label: "Titre"
+                name: heading
+                widget: string
+              - label: "Logo"
+                name: image
+                widget: image
+              - label: "Contenu"
+                name: content
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+          - label: "Bloc Ateliers"
+            name: ateliers
+            widget: object
+            fields:
+              - label: "Contenu"
+                name: content
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+              - label: "Liens"
+                name: links
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+                  - label: "Lien"
+                    name: url
+                    widget: string
+                    hint: "/ateliers"
+              - label: "Logos"
+                name: logos
+                widget: list
+                fields:
+                  - label: "Nom"
+                    name: identifier
+                    widget: string
+                  - label: "Image"
+                    name: image
+                    widget: image
+                  - label: "Lien"
+                    name: url
+                    widget: string
+                    hint: "/ateliers/yoga"
+          - label: "Bloc Activités libres"
+            name: activities
+            widget: object
+            fields:
+              - label: "Contenu"
+                name: content
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+              - label: "Liens"
+                name: links
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+                  - label: "Lien"
+                    name: url
+                    widget: string
+                    hint: "/activites"
+              - label: "Logos"
+                name: logos
+                widget: list
+                fields:
+                  - label: "Nom"
+                    name: identifier
+                    widget: string
+                  - label: "Image"
+                    name: image
+                    widget: image
+          - label: "Bloc News"
+            name: blog
+            widget: object
+            fields:
+              - label: "Titre"
+                name: heading
+                widget: string
+              - label: "Contenu"
+                name: content
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+          - label: "Formulaire de contact"
+            name: mailinglist
+            widget: object
+            fields:
+              - label: "Titre"
+                name: heading
+                widget: string
+              - label: "Contenu"
+                name: content
+                widget: list
+                fields:
+                  - label: "Texte"
+                    name: text
+                    widget: text
+              - label: "Action"
+                name: action
+                widget: string
+                hint: "Ne pas toucher : https://formsubmit.co/quentin.glorieux@gmail.com"
+              - label: "Sous-titre"
+                name: label
+                widget: string
+              - label: "Remplissage par défaut"
+                name: placeholder
+                widget: string
+              - label: "Bouton"
+                name: button
+                widget: string
+          - label: "Réseaux sociaux"
+            name: social_media
+            widget: object
+            fields:
+              - label: "Github"
+                name: github
+                widget: object
+                fields:
+                  - label: "Activé"
+                    name: enabled
+                    widget: boolean
+                  - label: "Lien"
+                    name: url
+                    widget: string
+              - label: "Facebook"
+                name: facebook
+                widget: object
+                fields:
+                  - label: "Activé"
+                    name: enabled
+                    widget: boolean
+                  - label: "Lien"
+                    name: url
+                    widget: string
+              - label: "Instagram"
+                name: instagram
+                widget: object
+                fields:
+                  - label: "Activé"
+                    name: enabled
+                    widget: boolean
+                  - label: "Lien"
+                    name: url
+                    widget: string
+              - label: "Twitter"
+                name: twitter
+                widget: object
+                fields:
+                  - label: "Activé"
+                    name: enabled
+                    widget: boolean
+                  - label: "Lien"
+                    name: url
+                    widget: string
+
+menu:
+  main:
+    fields:
+      - label: "Nom"
+        name: name
+        widget: string
+      - label: "Presentation"
+        name: pre
+        widget: select
+        options: ["", "complexdropdown"]
+        hint: "Choisir complexdropdown pour une sous-collection ou rien pour un menu simple"
+        required: false
+      - label: "Identifiant"
+        name: identifier
+        widget: string
+        required: false
+        hint: "Le nom de la collection (ne pas remplir pour complexdropdown)"
+      - label: "URL"
+        name: url
+        widget: string
+        hint: "Ex: /about/"
