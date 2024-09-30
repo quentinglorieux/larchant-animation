@@ -1,7 +1,7 @@
 media:
   input: assets
   output: /assets
-  path: images
+  path: assets/images
 
 content:
   - name: alaune
