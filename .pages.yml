@@ -1,12 +1,6 @@
-backend:
-  git:
-    branch: main
-    api: git-gateway
-
 media:
-  assets:
-    folder: "assets/images"
-    public_folder: "/images"
+  input: assets/images
+  output: /assets/images
 
 site:
   url: https://larchantanimation.fr/
