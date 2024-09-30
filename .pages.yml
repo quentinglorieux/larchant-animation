@@ -22,8 +22,6 @@ content:
       - label: "Image"
         name: preview
         type: image
-        media_library:
-          allow_multiple: false
         required: false
       - label: "Résumé"
         name: summary
