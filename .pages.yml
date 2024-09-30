@@ -1,6 +1,6 @@
 media:
   input: assets
-  output: /assets
+  output: /assetsx
 
 content:
   - name: alaune
