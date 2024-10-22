@@ -1,6 +1,6 @@
 ---
 title: "🎉 Donnez une seconde vie à vos jouets ! "
-date: 2024-10-23T19:57:00.000Z
+date: 2024-10-22T20:03:00.000Z
 draft: false
 preview: /images/baj2024.jpg
 summary: Rejoignez-nous à la Bourse aux jouets de Larchant pour déposer vos trésors !
