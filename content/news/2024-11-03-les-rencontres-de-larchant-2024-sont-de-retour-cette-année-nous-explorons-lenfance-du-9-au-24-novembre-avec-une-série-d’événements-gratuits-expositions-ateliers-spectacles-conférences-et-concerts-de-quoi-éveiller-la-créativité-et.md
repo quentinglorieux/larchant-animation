@@ -1,7 +1,7 @@
 ---
 title: "📣 Les Rencontres de Larchant 2024 sont de retour !  "
 date: 2024-11-03T15:43:00.000Z
-draft: false
+draft: true
 preview: /images/1-affiche-web-1-.jpg
 summary: >-
   📣 Les Rencontres de Larchant 2024 sont de retour !
