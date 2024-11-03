@@ -1,6 +1,6 @@
 ---
 title: 📣 Les Rencontres de Larchant 2024 sont de retour !
-date: 2024-11-03T15:49:00.000Z
+date: 2024-11-09T16:49:00.000Z
 preview: /images/1-affiche-web-1-.jpg
 summary: "Cette année, nous explorons l'ENFANCE du 9 au 24 novembre avec une
   série d’événements gratuits : expositions, ateliers, spectacles, conférences,
