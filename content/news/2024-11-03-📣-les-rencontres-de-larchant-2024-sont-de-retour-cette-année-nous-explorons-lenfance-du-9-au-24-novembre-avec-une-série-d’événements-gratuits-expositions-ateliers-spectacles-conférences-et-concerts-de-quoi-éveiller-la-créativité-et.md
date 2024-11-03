@@ -5,7 +5,7 @@ title: "📣 Les Rencontres de Larchant 2024 sont de retour !  Cette année, nou
   la créativité et offrir des moments de partage intergénérationnel !"
 date: 2024-11-30T11:17:00.000Z
 draft: false
-preview: /images/newsletter-nov-2024_2.jpg
+preview: /images/1-affiche-web-1-.jpg
 summary: >-
   📣 Les Rencontres de Larchant 2024 sont de retour !
 
