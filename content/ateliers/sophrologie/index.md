@@ -1,9 +1,9 @@
 ---
-title: Sophorlogie
+title: Sophrologie
 date: 2023-01-01
 draft: false
 language: fr
-description: Sophorlogie
+description: Sophrologie
 preview: arbre.png
 ---
 # Sophrologie
