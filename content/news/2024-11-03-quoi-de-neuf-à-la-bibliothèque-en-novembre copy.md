@@ -1,6 +1,6 @@
 ---
 title: 📚✨ Quoi de neuf à la bibliothèque en novembre ? ✨📚
-date: 2024-11-30
+date: 2024-12-01
 draft: false
 preview: /images/newsletter-nov-2024_2.jpg
 summary: Ce mois-ci, découvrez non pas une, mais deux newsletters avec toutes
