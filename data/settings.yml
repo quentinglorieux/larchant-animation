@@ -45,6 +45,9 @@ ateliers:
     - identifier: Sophrologie
       image: /images/logos/sophrologie.svg
       url: ateliers/sophrologie
+    - identifier: Mémoire
+      image: /images/logos/brain.svg
+      url: ateliers/memoire
 activities:
   heading: Nos activités libres
   content:

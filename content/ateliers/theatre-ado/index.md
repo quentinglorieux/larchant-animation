@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Théâtre ados avec Justine
-preview: whatsapp-image-2024-07-31-à-17.59.16_a5d42125.jpg
+preview: th2.jpg
 ---
 # Théâtre Ado
 

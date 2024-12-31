@@ -47,6 +47,7 @@ Pour récompenser vos efforts, une soupe à l’oignon bien chaude et un sandwic
 ## Inscriptions :
 Le nombre de places est limité à 500 participants, alors ne tardez pas !
 
+## Réglement
 
 
 [Les photos 2023](https://www.flickr.com/photos/197712637@N08/sets/72177720305875728/)

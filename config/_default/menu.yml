@@ -24,12 +24,7 @@ main:
     url: /contact/
     weight: 50
 ateliers:
-  - identifier: yoga
-    pre: /images/logos/yoga.svg
-    name: Yoga
-    post: Lundi, Mercredi & Jeudi avec Antonine
-    url: /ateliers/yoga/
-    weight: 10
+
   - identifier: cirque
     pre: /images/logos/cirque.svg
     name: Cirque Adultes
@@ -42,12 +37,18 @@ ateliers:
     post: Mardi, Mercerdi & Jeudi avec Alice
     url: /ateliers/cirque-enfant/
     weight: 21
+  - identifier: yoga
+    pre: /images/logos/yoga.svg
+    name: Yoga
+    post: Lundi, Mercredi & Jeudi avec Antonine
+    url: /ateliers/yoga/
+    weight: 30
   - identifier: gym
     pre: /images/logos/gym.svg
     name: Gym
     post: Lundi avec Monique
     url: /ateliers/gym/
-    weight: 30
+    weight: 31
   - identifier: theatre-adultes
     pre: /images/logos/theatre.svg
     name: Théâtre adultes
@@ -66,6 +67,12 @@ ateliers:
     post: Lundi avec Aurélie
     url: /ateliers/sophrologie/
     weight: 60
+  - identifier: memoire
+    pre: /images/logos/brain.svg
+    name: Mémoire
+    post: Mardi avec Nathalie
+    url: /ateliers/memoire/
+    weight: 70
 events:
   - identifier: hivernale
     pre: /images/logos/vtt.svg
