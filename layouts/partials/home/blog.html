@@ -18,15 +18,13 @@
         <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
             <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
                 <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
-                    {{ range (first 3 (where .Site.RegularPages "Section" "posts")).ByDate}}
+                    {{ range (first 3 (where .Site.RegularPages "Section" "posts").ByDate.Reverse) }}
                     <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
                         <a href="{{.Permalink}}">
                             {{ with .Params.preview }}
-                            {{/*  <img src="{{ . }}" class="object-fill overflow-hidden rounded-t-lg" heig="500px"  loading="lazy">  */}}
                             {{ with resources.Get . }}
                             {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
                             <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
-
                             {{ end }}
                             {{ end }}
                         </a>
@@ -62,9 +60,6 @@
                                     </p>
                                     <div class="flex pt-4 font-black text-md text-gray-800  dark:text-white">
                                         <time datetime="{{ .Date.Format "2006-01-02" | lang .Site.Language.Lang }}">{{ upper (dateFormat "Monday 02 January 2006" .Date) }}</time>
-
-                                        {{/*  <span>{{ math.Ceil (div (countwords .Content) 220.0) }}
-                                            min de lecture</span>  */}}
                                     </div>
                                 </div>
                             </div>
