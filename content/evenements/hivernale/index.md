@@ -4,10 +4,10 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Randonée VTT
-preview: hivernale-annulation.jpg
+preview: hivernale25front.webp
 ---
 
-# L'Hivernale 2024 - ANNULÉE
+## L'Hivernale - Édition 2025
 
 > Une rando VTT mythique au coeur de la foret de Larchant. (500 places et c'est tout !)
 
@@ -16,40 +16,39 @@ preview: hivernale-annulation.jpg
 </a> -->
 
 
-C’est avec un immense regret que nous vous annonçons **l’annulation** de notre randonnée VTT « L’Hivernale ».
-En effet, malgré les accords des mairies des communes traversées, de l’ONF et de la société SIBELCO, **il nous a été interdit de traverser certaines parcelles privées dans le secteur de Puiselet/Saint Pierre les Nemours**. Dans ce contexte, nous ne pouvons vous garantir toutes les conditions de sécurité nécessaires au bon déroulement de cette manifestation.  
-Ces parcelles sont situées dans une portion du parcours que vous appréciez toutes et tous et qui sont l’ADN de notre randonnée. Les contourner aurait été vous trahir en les remplaçant par de longues lignes droites sans difficultés !  
-
-Au regard de tous ces problèmes d’organisation, le conseil d’administration de Larchant Animation a voté, à contre-coeur, cette annulation en ayant conscience de la déception pour vous toutes et tous.   
-
-Nous vous remercions pour toutes vos participations depuis de nombreuses années.
-« L’Hivernale 2023 » aura donc été la dernière édition.  
-A bientôt sur d’autres rendez-vous !
 
 
-Revenez bientot sur le site pour avoir des infos ! Et laissez nous un [petit message de soutien](/contact) ça nous fera plaisir !
+### Date : Dimanche 9 mars 2025
 
-
-
-## Date : Annulée
-
-## Lieu :
+### Lieu :
 
 Salle Chatenoy, 1 Rue de la Cave de Châtenoy. Larchant
 
-## Infos
+### Tarif : 12 € (identique pour les deux parcours)
+
+### Infos
 
 Epreuve VTT, technique, ludique, froide, engagée et rare avec 80% de singles, 50 Kms (environ !) et un dénivelé entre 1250 et 1400 m.
-Cette année, **une nouveauté**, nous lançons la "Petite Hivernale", _seulement_ 25 kms, mais tout aussi froide et engagée.
+Cette année, **une nouveauté**, nous lançons la "Petite Hivernale", _seulement_ 35-30 kms, mais tout aussi froide et engagée.
+
+
+Important : Ces deux tracés, bien qu’adaptés à différents niveaux, restent exigeants. 
+Une préparation physique et un bon équipement sont nécessaires pour participer à cet enduro forestier.
+
+#### Départs cadencés entre 7h30 et 9h30,  le départ sera étalé sur ces horaires pour éviter les bouchons
+
+#### Ravitaillements :
+ Deux points de ravitaillement riches en énergie vous attendent (Fruits secs, fromage, Gâteaux, fruits frais, Chocolat & boissons)
+
+#### À l'arrivée :
+Pour récompenser vos efforts, une soupe à l’oignon bien chaude et un sandwich seront offerts à chaque participant.
+
+## Inscriptions :
+Le nombre de places est limité à 500 participants, alors ne tardez pas !
+
+
 
 [Les photos 2023](https://www.flickr.com/photos/197712637@N08/sets/72177720305875728/)
-
-## Nos conseils
-
-Nous avons mis en place une charte avec les chasseurs afin que certaines périodes soient « fermées » aux vététistes et randonneurs et nous nous concertons également avec des propriétaires privés, les carrières de la Sibelco, et l’ONF.
-
-Des affiches, visibles, sont apposées à l’entrée de ces secteurs, interdisant l’accès du 1er septembre au 1er mars de l’année suivante.
-/extension-output-eliostruyf.vscode-front-matter-#1-Front Matter CMSMerci de respecter cette charte, pour que l’Hivernale vive encore de belles années !
 
 
 

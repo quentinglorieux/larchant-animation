@@ -109,6 +109,12 @@ events:
     post: de retour à Larchant
     url: /evenements/vide-grenier
     weight: 70
+  - identifier: telethon
+    pre: /images/logos/tele.svg
+    name: Telethon
+    post: AFM Téléthon
+    url: /evenements/telethon
+    weight: 80
 footer:
   - identifier: about
     name: L'association
