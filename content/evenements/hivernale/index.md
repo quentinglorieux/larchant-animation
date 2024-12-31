@@ -11,9 +11,10 @@ preview: hivernale25front.webp
 
 > Une rando VTT mythique au coeur de la foret de Larchant. (500 places et c'est tout !)
 
-<!-- <a class="flex justify-center no-underline" href="#inscriptions">
-<button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions 2024 (en attente) </button>
-</a> -->
+<a class="flex justify-center no-underline" href="https://larchant-animation.s2.yapla.com/fr/event-72285">
+<button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions 2025 </button>
+</a>
+
 
 
 

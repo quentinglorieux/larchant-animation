@@ -23,3 +23,6 @@ Les inscriptions seront ouvertes dès le 31 decembre 2024. Restez connectés pou
 
 L'Hivernale, c'est le rendez-vous incoutournable des amateurs de VTT. 🚵‍♂️🚵‍♀️
 
+<a class="flex justify-center no-underline" href="https://larchant-animation.s2.yapla.com/fr/event-72285">
+<button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions 2025 </button>
+</a>
