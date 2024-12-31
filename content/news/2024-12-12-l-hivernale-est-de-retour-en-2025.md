@@ -19,7 +19,7 @@ Le parcours de 25km est plus abordable, idéal pour les débutants ou les amateu
 ## Date et inscriptions
 L'Hivernale 2025 aura lieu le **9 mars 2025.**
 
-Les inscriptions seront ouvertes dès le 20 decembre 2024. Restez connectés pour plus d'informations !
+Les inscriptions seront ouvertes dès le 31 decembre 2024. Restez connectés pour plus d'informations !
 
 L'Hivernale, c'est le rendez-vous incoutournable des amateurs de VTT. 🚵‍♂️🚵‍♀️
 
