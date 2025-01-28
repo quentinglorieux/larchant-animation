@@ -3,7 +3,10 @@ title: Nuit de la Lecture
 date: 2025-01-31T16:00:00.000Z
 draft: false
 preview: /images/nuit-de-la-lecture-affiche.jpg
-summary: vendredi 31 janvier
+summary: |-
+  Nuit de la lecture vendredi 31 janvier 
+  Rendez-vous Enfance 18h/19h
+  Rendez-vous Jeunes et Adultes 20h30/21h30 
 display_date: 2025-01-21
 categories: A la Une
 tags: LECTURE
