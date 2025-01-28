@@ -30,6 +30,4 @@ A la médiathèque : Justine Mattioli, Laurence Limier, Laurent Feuillette et Lo
 
 Entrée libre, on vous attend nombreux ! 
 
-Pour tout renseignement laisser un texto au 0630936910
-
-### Toutes les infos : [ICI](/ateliers/memoire)
+Pour tout renseignement laisser un texto au 0630936910[](/ateliers/memoire)
