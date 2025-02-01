@@ -16,12 +16,9 @@ display_date: 2025-01-21
 categories: A la Une
 tags: Film
 ---
-# NUIT DE LA LECTURE
+# PROJECTION
 
-
-
-
-**Projection du film "Encordés : 200 ans d’histoire dans le regard des guides de Chamonix"**
+**Encordés : 200 ans d’histoire dans le regard des guides de Chamonix**
 **Samedi 8 février 2025**
 **17h30**
 **Salle de la Sablonnière - Larchant**
@@ -32,7 +29,5 @@ Plongez dans deux siècles d’histoire et d’héroïsme à travers les yeux de
 Organisé par **Larchant Animation**.
 
 Partagez et venez nombreux !
-
-
 
 [](/ateliers/memoire)
