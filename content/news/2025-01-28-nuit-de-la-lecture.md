@@ -1,6 +1,6 @@
 ---
 title: Projection de film
-date: 2025-01-31T16:55:00.000Z
+date: 2025-02-01T18:55:00.000Z
 draft: false
 preview: /images/encordes.jpg
 summary: >-
