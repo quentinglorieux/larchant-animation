@@ -3,6 +3,7 @@ title: ENCORDES
 date: 2025-02-01T19:14:00.000Z
 preview: images/encordes.jpg
 summary: 200 ans d’histoire dans le regard des guides de Chamonix
+tags: Evènements
 ---
 
 
