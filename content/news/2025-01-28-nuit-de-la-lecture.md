@@ -1,37 +1,38 @@
 ---
-title: Nuit de la Lecture
+title: Projection de film
 date: 2025-01-31T16:55:00.000Z
 draft: false
-preview: /images/nuit-de-la-lecture-affiche.jpg
-summary: |-
-  Nuit de la lecture à la Médiathèque
+preview: /images/encordes.jpg
+summary: >-
+  Projection du film "Encordés : 200 ans d’histoire dans le regard des guides de
+  Chamonix"
 
-  Rendez-vous Enfance 18h/19h
-  Rendez-vous Jeunes et Adultes 20h30/21h30 
+  Samedi 8 février 2025
+
+  17h30
+
+  Salle de la Sablonnière - Larchant
 display_date: 2025-01-21
 categories: A la Une
-tags: Lecture
+tags: Film
 ---
 # NUIT DE LA LECTURE
 
-Rendez-vous Enfance 18h/19h 
 
-Deux points de lecture seront proposés : 
 
-Lectures pour les 3/8 ans 
 
-Le fil invisible, Madame et monsieur, L’édredon , L’arrière-arrière-arrière- petit-fils de Barbe-Bleue, le secret du clan… 
+**Projection du film "Encordés : 200 ans d’histoire dans le regard des guides de Chamonix"**
+**Samedi 8 février 2025**
+**17h30**
+**Salle de la Sablonnière - Larchant**
 
-Lectures pour les 8/11 ans 
+Plongez dans deux siècles d’histoire et d’héroïsme à travers les yeux des guides de Chamonix. Un voyage captivant au cœur de l’alpinisme, ses défis et ses valeurs intemporelles.
 
-Le fil de soie, l’arbre sans fin, les poings sur les îles… Justine, Laurence et Louise seront là pour vous conter de belles histoires dans un décor tout spécial pour l’occasion… 
+**Entrée libre** et pot amical en fin de projection.
+Organisé par **Larchant Animation**.
 
-!!! Trois invités-surprise se joindront à nous : les lauréats du concours de lecture à voix haute de l’école de Larchant. 
+Partagez et venez nombreux !
 
-Rendez-vous Jeunes et Adultes 20h30/21h30 
 
-A la médiathèque : Justine Mattioli, Laurence Limier, Laurent Feuillette et Louise Meynet seront les passeurs de ces textes mémoire, de vies et de transmission… Textes de Maylis de Kerangal Marion Fayolle Earl Thompson Romain Garry Anne-Laure Bondoux Natacha Appanah Marcel Proust Olivier Rollin 
 
-Entrée libre, on vous attend nombreux ! 
-
-Pour tout renseignement laisser un texto au 0630936910[](/ateliers/memoire)
+[](/ateliers/memoire)
