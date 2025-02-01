@@ -1,19 +1,12 @@
 ---
-title: Conférences
+title: ENCORDES
 date: 2023-01-01
 draft: false
 language: fr
-description: Conférences pour tous et toutes
-preview: samedi-24-février-2024.jpg
+description: 200 ans d’histoire dans le regard des guides de Chamonix
+preview: encordes.jpg
 ---
-# Conférence
+# PROJECTION
 
-Rdv à 17h
 
-## Lieu :
-
-Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy. Larchant
-
-## Tarif
-
-Entrée libre
+**200 ans d’histoire dans le regard des guides de Chamonix**
