@@ -1,6 +1,7 @@
 ---
 title: Projection de film
 date: 2025-02-08T19:55:00.000Z
+display_date: 2025-02-08
 draft: false
 preview: /images/encordes.jpg
 summary: >-
@@ -12,7 +13,6 @@ summary: >-
   17h30
 
   Salle de la Sablonnière - Larchant
-display_date: 2025-01-21
 categories: A la Une
 tags: Film
 ---
