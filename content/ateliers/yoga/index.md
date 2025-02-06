@@ -23,7 +23,7 @@ Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèret�
 * lundi 12h15 - 13h15 (Yoga doux)
 * Mercredi 18h30-20h   (débutants et intermédiaires)
 * Jeudi 12h15 - 13h15 (Yoga doux)
-* Jeudi 18h30-20h    (débutants et intermédiaires)
+* Jeudi 18h45-20h15    (débutants et intermédiaires)
 
 ## Lieu :
 
