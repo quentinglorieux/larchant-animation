@@ -29,7 +29,7 @@ Salle Chatenoy, 1 Rue de la Cave de Châtenoy. Larchant
 
 ### Infos
 
-Epreuve VTT, technique, ludique, froide, engagée et rare avec 80% de singles, 50 Kms (environ !) et un dénivelé entre 1250 et 1400 m.
+Epreuve VTT, technique, ludique, froide, engagée et rare avec 80% de singles, 50 Kms (environ !) et un dénivelé entre 900 et 950 m.
 Cette année, **une nouveauté**, nous lançons la "Petite Hivernale", _seulement_ 35-30 kms, mais tout aussi froide et engagée.
 
 
