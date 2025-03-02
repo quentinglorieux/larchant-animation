@@ -3,13 +3,12 @@ title: L'Hivernale est de retour en 2025
 date: 2025-03-09T00:00:00.000Z
 draft: false
 preview: /images/hivernale25front.webp
-summary: La fameuse rando VTT de Larchant revient en 2025 ! 🚵‍♂️ Cette année,
-  un nouveau parcours de 50km tout aussi technique qu'auparavant pour la
-  Classique et un parcours plus abordable de 30-35km pour essayer.
+summary: Cloture des inscriptions le 7 mars 2025 à 23h59.
 display_date: 2025-03-09
 categories: A la Une
 tags: Evenement
 ---
+## Attention clôture des inscriptions le 7 mars 2025 à 23h59.
 
 ## L'Hivernale 2025
 La fameuse rando VTT de Larchant revient en 2025 ! 🚵‍♂️ Cette année, un nouveau parcours de 50km tout aussi technique qu'auparavant pour la Classique et un parcours plus abordable de 30-35km pour essayer.
