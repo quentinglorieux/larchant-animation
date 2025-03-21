@@ -1,6 +1,6 @@
 ---
 title: Triathlon 2024 - Page 1
-date: 2024-15-09
+# date: 2024-15-09
 draft: false
 language: fr
 description: Les photos du triathlon 2024
