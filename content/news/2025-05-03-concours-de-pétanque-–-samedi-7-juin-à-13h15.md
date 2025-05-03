@@ -1,5 +1,5 @@
 ---
-title: Concours de Pétanque – Samedi 7 juin à 13h15
+title: Concours de Pétanque
 date: 2025-06-07T02:00:00.000Z
 draft: false
 preview: /images/whatsapp-image-2025-04-23-à-19.18.36_70b31d3a.jpg
