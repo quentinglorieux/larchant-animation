@@ -1,5 +1,5 @@
 ---
-title: Concours de Pétanque – Samedi 7 juin 2025
+title: Concours de Pétanque
 date: 2025-06-07T23:14:00.000Z
 preview: images/whatsapp-image-2025-04-23-à-19.18.36_70b31d3a.jpg
 summary: concours en doublette
