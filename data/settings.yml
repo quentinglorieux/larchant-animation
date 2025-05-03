@@ -61,9 +61,6 @@ activities:
     - identifier: Course
       image: images/logos/running.svg
       url: activites/course
-    - identifier: Pétanque
-      image: images/logos/petanque.svg
-      url: activites/petanque
     - identifier: Marche
       image: images/logos/marche.svg
       url: activites/marche
