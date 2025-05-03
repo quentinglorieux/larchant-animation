@@ -1,6 +1,6 @@
 ---
 title: "Save the date : Samedi 24 mai à 17h !"
-date: 2025-06-07
+date: 2025-05-24T00:00:00.000Z
 draft: false
 preview: /images/conf24mai_page-0001.jpg
 summary: >-
