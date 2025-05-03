@@ -29,6 +29,4 @@ Derrière nos téléphones, nos voitures ou nos vêtements se cachent des ressou
 
 Organisé par **Larchant Animation**
 
-🖼️ \[Affiche de la conférence à télécharger ou consulter ci-dessous]
-
-###
+![](/images/conf24mai_page-0001.jpg)
