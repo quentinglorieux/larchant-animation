@@ -1,6 +1,6 @@
 ---
 title: " Les jeunes talents de l’atelier théâtre présentent"
-date: 2025-06-15T00:00:00.000Z
+date: 2025-06-15T15:30:00.000Z
 draft: false
 preview: /images/logo-la-2024.png
 summary: UN JOUR ...
