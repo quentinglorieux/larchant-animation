@@ -26,10 +26,13 @@ La première séance débutera par une introduction au travail sur la palette (g
 
 ##### Tarif 20€ par stage
 
-##### Pour adultes et Ado. de plus de 13 ans
+##### Pour adultes et Ado. de plus de 13 ans                              
 
 ##### Renseignements et inscriptions 07 69 97 40 65
 
-##### larchantanimation@gmail.com
+##### larchantanimation@gmail.com   
+
+# Pour vous inscrire en ligne c'est [ici](https://larchant-animation.s2.yapla.com/fr/event-85077)
+
 
 ![](/images/atelier-dessin-2025.jpg)
