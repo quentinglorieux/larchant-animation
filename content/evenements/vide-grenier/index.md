@@ -1,10 +1,10 @@
 ---
-title: "Vide Grenier"
+title: Vide Grenier
 date: 2023-01-01
 draft: false
 language: fr
 description: Vide Grenier
-preview: videgrenier2024.jpg
+preview: assets/images/2025-bulletin-d-inscription.pdf
 ---
 
 # Vide Grenier
