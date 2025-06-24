@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Vide Grenier
-preview: assets/images/2025-bulletin-d-inscription.pdf
+preview: assets/images/affiche-vg.jpg
 ---
 
 # Vide Grenier
