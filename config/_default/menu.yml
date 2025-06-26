@@ -12,7 +12,7 @@ main:
     url: /mediatheque/
     weight: 35
   - identifier: cml
-    name: Club Multisports
+    name: Les Savanturiers (Multisports)
     url: /club-multisports/
     weight: 37
   - identifier: events

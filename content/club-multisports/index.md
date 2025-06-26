@@ -1,42 +1,46 @@
 ---
-title: Club Multisports
+title: Les Savanturiers de Larchant
 date: 2023-01-01
 draft: false
 language: fr
-description: Les Pachydermes de Larchant
+description: Club multisport et Sciences pour les enfants de 6 à 12 ans
 ---
-# Les Pachydermes de Larchant et de Nemours
+# Club multisport et Sciences pour les enfants de 6 à 12 ans
 
 ## Présentation
 
-Le club multisport vous accueille cette année pour une rentrée dynamique avec une gamme variée d’activités en salle et en extérieur, telles que judo, yoga, rugby, jeux et bien d’autres encore. 
+En Septrembre 2025 le club multisport devient les Savanturiers. Nous vous accueillons cette année pour une rentrée sportive et ludique pour les enfants de 6 à 13 ans.
+Les savanturiers de Larchant propose des activités sportives et scientifiques variées pour les enfants, avec un accent sur la découverte, l'entraide et l'apprentissage dans une ambiance conviviale. 
+
 
 Les encadrants sont **des bénévoles de l'association** qui sauront accompagner vos enfants dans leur découverte des sports et leur apprentissage.
 - Elsa, professeure d'EPS
-- Francis, professeur d'EPS
 - Sylvain, Moniteur d'escalade
-- Hugo, certificat de qualification d'escalade
-- Quentin, diplomé du BAFA (animateur) et du BAFD (directeur de centre de loisirs)
-- Antonine, professeure de yoga
+- Hugo, certificat de qualification d'escalade et expert du Rubik's Cube
+- Quentin, diplomé du BAFA (animateur) et du BAFD (directeur de centre de loisirs) et professeur de Physique à la Sorbonne.
+- Antonine, professeure de yoga et docteure en Physique quantique.
+- Garance, architecte et passionnée de maquettes
 - Alice, diplomée de cirque
 
-Chaque séance est conçue pour permettre aux enfants de 6 à 11 ans (classes de primaires) de découvrir des sports dans une atmosphère amusante et stimulante. Le prix comprend l’affiliation à la Fédération Sportive et Gymnique du Travail (FSGT) pour les enfants ainsi que les animateurs et enseignants qualifiés.
+En hiver, nous serons en salle Sablonnière à Larchant pour des ateliers scientifiques et ludiques: construction de microfusées, réalisation de maquettes, construction d'une station météo, découverte du Rubik's cube. En été, nous serons en extérieur pour des jeux et du sport: jeux collectifs, escalade, course d'orientation, construction de cabanes, etc. Nous aurons aussi des séances de découverte du cirque et du yoga.
 
-<div > 
+<!-- <div > 
           <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-enfants-2024-2025-14144" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
             S'inscrire en ligne
           </a>
           
-</div>
+</div> -->
 
 ## Tarifs
 
-29 séances de 50mns à 1h20 : 116€
+30 séances de 50mns à 1h20 : 126€
 
 ## Horaires
-- Séances en plein air : 10h à 11h20
-- Séances en salle 6-7 ans : 10h à 10h50 
-- Séances en salle 8-11 ans : 10h50 à 12h
+Samedi matin. Plus de précisions en septembre.
 
-## Calendrier des activités
-![Calendrier](CML25.png "Calendrier")
+<!-- ## Calendrier des activités
+![Calendrier](CML25.png "Calendrier") -->
+## Contact
+Antonine au 0647681326
+
+![Savanturiers](Affiche.jpg "Savanturiers")
