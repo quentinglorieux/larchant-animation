@@ -17,6 +17,6 @@ Les emplacements sont disponibles à la réservation selon les modalités suivan
 * Mètre supplémentaire : 2,00 €
 * Voiture sur le stand (sur réservation) : 10,00 €
 
-Le bulletin d' inscription sera téléchargeable prochainement sinon demander un bulletin par mail à l'adresse [larchantanimation@gmail.com](larchantanimation@gmail.com)
+[](larchantanimation@gmail.com)Renseignements : 06 72 16 65 87
 
-Renseignements : 06 72 16 65 87
+Télécharger le bulletin d'inscription :
