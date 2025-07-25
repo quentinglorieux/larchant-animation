@@ -24,6 +24,4 @@ La première séance débutera par une introduction au travail sur la palette (g
 
 ##### Renseignements et inscriptions 07 69 97 40 65
 
-##### larchantanimation@gmail.com
-
-# Pour vous inscrire en ligne c'est [ici](<>)
+##### larchantanimation@gmail.com[](<>)
