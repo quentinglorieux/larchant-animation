@@ -2,12 +2,12 @@
 title: Le vide-grenier
 date: 2025-09-21T12:00:00.000+02:00
 preview: images/affiche-vg.jpg
-summary: >-
-  Le grand Vide-Grenier de Larchant se tiendra le dimanche 21 septembre 2025
-
-  Une belle occasion de dénicher des trésors, de rencontrer les habitants et de profiter de l’ambiance chaleureuse de notre charmant village.
+summary: |
+  Vide-Greniers de Larchant dimanche 21 septembre 2025
 tags: Evèvements
 ---
+Une belle occasion de dénicher des trésors, de rencontrer les habitants et de profiter de l’ambiance chaleureuse de notre charmant village.
+
 Réservation des Emplacements
 
 Les emplacements sont disponibles à la réservation selon les modalités suivantes :
