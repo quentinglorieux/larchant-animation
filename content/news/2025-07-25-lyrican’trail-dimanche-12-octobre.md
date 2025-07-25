@@ -9,6 +9,6 @@ Amateurs des bosses, passionnés des paysages magnifiques et des défis sportifs
 
 Le LYRICAN’TRAIL revient pour sa 10ème Edition avec des nouveautés entre sentiers, forêt et rochers !
 
-Inscriptions sur chronoteam.org
+Inscriptions sur [chronoteam.org](https://www.chronoteam.org/evenements/)
 
 Les places sont limitées, ne tardez pas !
