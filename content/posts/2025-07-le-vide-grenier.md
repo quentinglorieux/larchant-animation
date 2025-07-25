@@ -5,6 +5,7 @@ preview: images/affiche-vg.jpg
 summary: |
   Vide-Greniers de Larchant dimanche 21 septembre 2025
 tags: Evèvements
+file: /files/2025-bulletin-d-inscription-1-.pdf
 ---
 Une belle occasion de dénicher des trésors, de rencontrer les habitants et de profiter de l’ambiance chaleureuse de notre charmant village.
 
