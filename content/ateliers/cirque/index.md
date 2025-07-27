@@ -1,26 +1,20 @@
 ---
-title: Cirque Adultes
+title: Renforcement musculaire
 date: 2023-01-01
 draft: false
 language: fr
-description: Atelier Cirque Adultes avec Alice
-preview: cirque.jpg
+description: Renforcement musculaire avec Alice
+preview: alice.png
 ---
-# Atelier Cirque Adultes
+# Renforcement musculaire avec Alice
 
-Venez découvrir une activité sportive originale et artistique qui vous permettra de développer vos facultés corporelles telles que l’équilibre, la dextérité, la force, la souplesse et bien plus encore !
+Pour un corps tonique, ancré, aligné et en mouvement ! Des séances dynamiques centrées sur la conscience corporelle.
 
-<div > 
-          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
-            S'inscrire en ligne
-          </a>
-          
-</div>
+Objectifs : renforcer le tonus, améliorer la mobilité, développer l’équilibre, stimuler la créativité, le tout dans un esprit ludique et inspiré du cirque. 
 
+### Horaires & Tarifs
 
-## Horaires
-
-* Mercredi : 18h30 - 19h45
+Jeudi 18h30 - 19h30 - 34 séances - Tarif : 200 € - A partir de 16 ans
 
 ## Lieu
 
@@ -30,18 +24,9 @@ Salle de la *Sablonnière*, 1 Rue de la Cave de Châtenoy. Larchant
 
 Alice diplômée de l’académie Fratellini
 
-## Déroulement de la séance
-
-- Echauffement acrobatique
-- Equilibre et jonglerie
-- Exercices de souplesse
-
-Cours adultes est adapté à tous les niveaux acrobatiques.
-
 ## Tarifs
 
-* **Abonnement annuel : 221 euros + adhésion à Larchant Animation**
-
+**Abonnement annuel : 200 euros + adhésion à Larchant Animation**
 
 <div > 
           <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
