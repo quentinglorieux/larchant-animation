@@ -27,8 +27,8 @@ ateliers:
     - identifier: Yoga Iyengar
       image: images/logos/yoga.svg
       url: ateliers/yoga
-    - identifier: Cirque Adulte
-      image: /images/logos/circus-stunt-acrobat-svgrepo-com.svg
+    - identifier: Renforcement musculaire
+      image: /images/logos/gym.svg
       url: ateliers/cirque
     - identifier: Gym douce
       image: images/logos/gym.svg
