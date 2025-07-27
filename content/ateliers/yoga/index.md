@@ -10,7 +10,6 @@ preview: yoga.jpg
 
 Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèreté, autant de mots pour vous donner le goût de l’exploration du corps comme le lieu de la conscience.
 
-
 <div > 
           <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
             S'inscrire en ligne
@@ -18,12 +17,15 @@ Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèret�
           
 </div>
 
-## Horaires :
+## Horaires / tarifs
 
-* lundi 12h15 - 13h15 (Yoga doux)
-* Mercredi 18h30-20h   (débutants et intermédiaires)
-* Jeudi 12h15 - 13h15 (Yoga doux)
-* Jeudi 18h45-20h15    (débutants et intermédiaires)
+* Yoga intermédiaire à avancé Lundi 12h30 - 14h et Mercredi 18h30 - 20h 
+* Yoga doux et aussi adapté auxfutures Mamans et jeunes Mamans avec leur bébé Jeudi 12h30 - 13h30
+* Yoga débutant à intermédiaire Jeudi 18h30 - 20h
+
+33 à 35 séances Tarif : 200 €
+
+* Yoga adapté Vendredi 12h -13h 15€ la séance
 
 ## Lieu :
 
@@ -47,10 +49,6 @@ Nos cours permettent de travailler sur la posture, la respiration, la concentrat
 * Respiration Consciente : Explorez l'importance de la respiration consciente pendant la pratique.
 * plus d'infos sur le site d'Antonine :  [Sādhaka yoga des racines à la cime](https://yoga.antoninerochet.fr/)
 
-## Tarifs
-
-* **Abonnement annuel : 33 à 35 séances de 1h à 1h30 : 200€ + adhésion à Larchant Animation**
-* **Cours à la séance : 10 euros**
 
 
 <div > 
@@ -59,6 +57,5 @@ Nos cours permettent de travailler sur la posture, la respiration, la concentrat
           </a>
           
 </div>
-
 
 Possibilité de rejoindre en cours d'année sur demande. [Nous contacter.](/contact)
