@@ -4,19 +4,13 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Vide Grenier
-preview: assets/images/affiche-vg.jpg
+preview: affiche-vg.jpg
 ---
 # Vide Grenier
 
-Larchant Animation a le plaisir de vous annoncer le grand Vide-Grenier de Larchant, qui se tiendra le dimanche 22 septembre 2024. Cette journée festive est l’occasion idéale pour dénicher des trésors, rencontrer les habitants et profiter de l’atmosphère conviviale de notre charmant village.
+Une belle occasion de dénicher des trésors, de rencontrer les habitants et de profiter de l’ambiance chaleureuse de notre charmant village.
 
-## Informations Pratiques
-
-* Date : Dimanche 22 septembre 2024
-* Lieu : Larchant, Place Pasteur et Place des Tilleuls
-* Buvette et restauration sur place
-
-## Réservation des Emplacements
+Réservation des Emplacements
 
 Les emplacements sont disponibles à la réservation selon les modalités suivantes :
 
