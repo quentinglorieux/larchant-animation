@@ -18,7 +18,7 @@ Les emplacements sont disponibles à la réservation selon les modalités suivan
 * Mètre supplémentaire : 2,00 €
 * Voiture sur le stand (sur réservation) : 10,00 €
 
-[bulletin inscription ](assets/images/2025-bulletin-d-inscription.pdf) 
+[bulletin inscription ](https://larchantanimation.fr/files/2025-bulletin-d-inscription-1-.pdf) 
 
 Pour vous inscrire en ligne, remplissez le formulaire. (Si vous rencontrez des difficultés, n'hésitez pas à nous contacter par téléphone ou par mail) puis renvoyez-le par voie postale avec votre règlement ou par mail, avec la possibilité de payer par virement bancaire.
 
