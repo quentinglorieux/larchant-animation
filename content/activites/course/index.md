@@ -6,10 +6,10 @@ language: fr
 description: Course
 preview: course.png
 ---
-# Trail
+# Trai
 
 ## Avec les Lyricantropes
 
-### Rdv parking Sablonnière 
+### Rdv parking Sablonnière
 
 #### les mardis et jeudis 18h45 les dimanches 9h
