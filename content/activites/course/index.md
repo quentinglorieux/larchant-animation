@@ -6,7 +6,7 @@ language: fr
 description: Course
 preview: course.png
 ---
-# Trai
+# Trail
 
 ## Avec les Lyricantropes
 
