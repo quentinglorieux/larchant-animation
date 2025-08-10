@@ -48,6 +48,9 @@ ateliers:
     - identifier: Mémoire
       image: /images/logos/brain.svg
       url: ateliers/memoire
+    - identifier: Dessin
+      image: /images/logos/streamline-freehand-design-process-drawing-board.svg
+      url: ateliers/dessin
 activities:
   heading: Nos activités libres
   content:
