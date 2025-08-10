@@ -36,9 +36,9 @@ ateliers:
     - identifier: L. I. A.
       image: /images/logos/arcticons-lets-go-fitness.svg
       url: ateliers/LIA
-    - identifier: Theatre Ado
-      image: images/logos/theatre.svg
-      url: ateliers/theatre-ado
+    - identifier: Djembe
+      image: /images/logos/djembe.svg
+      url: ateliers/Djembe
     - identifier: Cirque enfant
       image: /images/logos/circus-stunt-acrobat-svgrepo-com.svg
       url: ateliers/cirque-enfant
