@@ -64,9 +64,6 @@ activities:
     - identifier: Marche
       image: images/logos/marche.svg
       url: activites/marche
-    - identifier: Djembé
-      image: images/logos/djembe.svg
-      url: activites/djembe
     - identifier: De fil en aiguille
       image: images/logos/couture.svg
       url: activites/couture
