@@ -28,7 +28,7 @@ ateliers:
       image: images/logos/yoga.svg
       url: ateliers/yoga
     - identifier: Renforcement musculaire
-      image: /images/logos/gym.svg
+      image: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiIHN0cm9rZS13aWR0aD0iNCI+PHBhdGggZD0iTTI0IDIyYTUgNSAwIDEgMCAwLTEwYTUgNSAwIDAgMCAwIDEwWiIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTIzIDI5bC0yIDdsLTktMmwtNSAxMG0xNC04bDIgOGgxMU03IDIzbDE2IDZsMTItMmw2LjA0LTQuOTdNMTIgNGMxNC0yIDI0IDIgMzIgMTEiLz48L2c+PC9zdmc+
       url: ateliers/cirque
     - identifier: Gym douce
       image: images/logos/gym.svg
