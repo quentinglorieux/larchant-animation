@@ -30,6 +30,6 @@ Alice diplômée de l’académie Fratellini
 
 **Bulletin d'inscription à télécharger prochainement ou le demander par mail à [larchantanimation@gmail.com](larchantanimation@gmail.com)**
 
-
+## **Inscription en ligne**
 
 **[<iframe width="950" height="750" src="https://larchant-animation.s2.yapla.com/fr/event-89162"></iframe>](larchantanimation@gmail.com)**
