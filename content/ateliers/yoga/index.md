@@ -48,4 +48,6 @@ Bulletin d'inscription à demander à larchantanimation@gmail.com
 
 ou 
 
-## [Inscription en ligne](https://larchant-animation.s2.yapla.com/fr/event-89162)
+## Inscription en ligne
+
+https://larchant-animation.s2.yapla.com/fr/event-89162
