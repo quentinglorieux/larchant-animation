@@ -10,17 +10,10 @@ preview: yoga.jpg
 
 Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèreté, autant de mots pour vous donner le goût de l’exploration du corps comme le lieu de la conscience.
 
-<div > 
-          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
-            S'inscrire en ligne
-          </a>
-          
-</div>
-
 ## Horaires / tarifs
 
 * Yoga intermédiaire à avancé Lundi 12h30 - 14h et Mercredi 18h30 - 20h 
-* Yoga doux et aussi adapté auxfutures Mamans et jeunes Mamans avec leur bébé Jeudi 12h30 - 13h30
+* Yoga doux et aussi adapté aux futures Mamans et jeunes Mamans avec leur bébé Jeudi 12h30 - 13h30
 * Yoga débutant à intermédiaire Jeudi 18h30 - 20h
 
 33 à 35 séances Tarif : 200 €
@@ -47,15 +40,14 @@ Nos cours permettent de travailler sur la posture, la respiration, la concentrat
 * Utilisation de Matériel : N'hésitez pas à utiliser des accessoires comme des blocs et des ceintures pour faciliter votre alignement corporel.
 * Adaptabilité à Tous Niveaux : Que vous soyez débutant ou avancé, nos cours sont adaptés à tous les niveaux.
 * Respiration Consciente : Explorez l'importance de la respiration consciente pendant la pratique.
-* plus d'infos sur le site d'Antonine :  [Sādhaka yoga des racines à la cime](https://yoga.antoninerochet.fr/)
-
-
-
-<div > 
-          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
-            S'inscrire en ligne
-          </a>
-          
-</div>
+* plus d'infos sur le site d'Antonine :  [Sādhaka yoga des racines à la cime](https://yoga.antoninerochet.fr/)[](https://yoga.antoninerochet.fr/)
 
 Possibilité de rejoindre en cours d'année sur demande. [Nous contacter.](/contact)
+
+Bulletin d'inscription à demander à larchantanimation@gmail.com 
+
+ou 
+
+## Inscription en ligne 
+
+<iframe width="950" height="750" src="https://larchant-animation.s2.yapla.com/fr/event-89162"></iframe>
