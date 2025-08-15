@@ -14,7 +14,7 @@ Objectifs : renforcer le tonus, améliorer la mobilité, développer l’équili
 
 ### Horaires & Tarifs
 
-Jeudi 18h30 - 19h30 - 34 séances - Tarif : 200 € - A partir de 16 ans
+mercredi 18h30 - 19h30 - 34 séances - Tarif : 200 € - A partir de 16 ans
 
 ## Lieu
 
