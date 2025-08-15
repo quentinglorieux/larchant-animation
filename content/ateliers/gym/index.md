@@ -6,14 +6,7 @@ language: fr
 description: Cours de Gym avec Monique
 preview: gym.jpg
 ---
-# Cours de Gym douce
-
-<div > 
-          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
-            S'inscrire en ligne
-          </a>
-          
-</div>
+# Gym douce
 
 ## Horaires :
 
@@ -23,12 +16,7 @@ preview: gym.jpg
 
 Salle de la Sablonnière, 1 Rue de la Cave de Châtenoy, Larchant
 
-## L'enseignante
-
-Monique, notre instructrice expérimentée, vous guidera avec passion à travers chaque séance.
-
-Echauffement, exercices d’équilibre statiques et dynamiques, renforcement musculaire, étirements et exercices de respiration.
-
+Une activité adaptée à tous, pour entretenir son bien-être en douceur. Au programme : échauffement, travail de l’équilibre (statique et en mouvement), renforcement musculaire ciblé, étirements progressifs et exercices de respiration pour terminer en détente.
 
 ## Nos conseils
 
@@ -37,21 +25,12 @@ Echauffement, exercices d’équilibre statiques et dynamiques, renforcement mus
 * N'hésitez pas à poser des questions à Monique si vous avez besoin de conseils personnalisés.
 * Axés vers les thématiques du Sport Santé, les cours de gym douce sont adaptés à tous les niveaux et tous les âges.
 
-
-## Tarifs :
-
-Les tarifs pour les cours de gym sont les suivants :
-
-* **Abonnement annuel :** 34 séances de 1 h - 204 € **+ adhésion à Larchant Animation**
-* **Cours à la séance : 10 euros**
-
-<div > 
-          <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-adultes-2024-2025-14141" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
-            S'inscrire en ligne
-          </a>
-          
-</div>
-
 Rejoignez-nous pour une expérience de gym agréable et bénéfique pour votre santé !
 
+bulletin d'inscription sur demande à Larchantanimation@gmail.com
 
+ou
+
+## Inscription en ligne
+
+<iframe width="950" height="750" src="https://larchant-animation.s2.yapla.com/fr/event-89162"></iframe>
