@@ -23,6 +23,6 @@ Le vide grenier a lieu les années impaires. L'an prochain pas de vide grenier, 
 
 
 ## Renseignements : 06 72 16 65 87
-[Contactez-nous](larchantanimation@gmail.com).
+Contactez-nous: larchantanimation@gmail.com.
 
 Télécharger le [Bulletin d'inscription](https://larchantanimation.fr/files/2025-bulletin-d-inscription-1-.pdf)
