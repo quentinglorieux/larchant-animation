@@ -13,7 +13,7 @@ Larchant Animation est née en 1983.
 
 Depuis proposons aux habitants de Larchant et des communes environnantes, de nombreuses activités telles que **Gym, Jeux de société, Yoga, Atelier couture, Dessin, Pilate, Théâtre, Djembé, Trail, Marche nordique, VTT** et des évènements qui font notre renommée comme le **Lyricantrail, l’Hivernale, la Foire aux plantes, le Triathlon, le Vide-greniers, la Bourse aux jouets, le Festi’Baleine**. Tous ces divertissements rayonnent autour de la **Médiathèque** qui, au-delà de ces activités propres, est un carrefour d’information et de rencontres propice à la naissance de projets collaboratifs.
 
-## Adhésion 2024-2025
+## Adhésion 2025-2026
 
 L'adhésion est annuelle de date à date. Elle est obligatoire pour participer aux activités de l'association.
 
