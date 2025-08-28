@@ -7,7 +7,7 @@ summary: |
 tags: Evèvements
 file: /files/2025-bulletin-d-inscription-1-.pdf
 ---
-Une belle occasion de dénicher des trésors, de rencontrer les habitants et de profiter de l’ambiance chaleureuse de notre charmant village.
+Une belle occasion de dénicher des trésors, de rencontrer les habitants et de profiter de l’ambiance chaleureuse de notre charmant village !
 
 ## Réservation des Emplacements
 
@@ -20,7 +20,7 @@ Les emplacements sont disponibles à la réservation selon les modalités suivan
 ## Attention rappel
 Le vide grenier a lieu les années impaires. L'an prochain pas de vide grenier, mais un super triathlon !
 
-[](larchantanimation@gmail.com)Renseignements : 06 72 16 65 87
+[Contactez-nous](mailto:larchantanimation@gmail.com).
+Renseignements : 06 72 16 65 87
 
-Télécharger le bulletin d'inscription :
-
+Télécharger le [Bulletin d'inscription](https://larchantanimation.fr/files/2025-bulletin-d-inscription-1-.pdf)
