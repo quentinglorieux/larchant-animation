@@ -20,7 +20,9 @@ Les emplacements sont disponibles à la réservation selon les modalités suivan
 ## Attention rappel
 Le vide grenier a lieu les années impaires. L'an prochain pas de vide grenier, mais un super triathlon !
 
-[Contactez-nous](mailto:larchantanimation@gmail.com).
-Renseignements : 06 72 16 65 87
+
+
+## Renseignements : 06 72 16 65 87
+[Contactez-nous](larchantanimation@gmail.com).
 
 Télécharger le [Bulletin d'inscription](https://larchantanimation.fr/files/2025-bulletin-d-inscription-1-.pdf)
