@@ -95,7 +95,7 @@ events:
   - identifier: triathlon
     pre: /images/logos/triathlon.svg
     name: Triathlon
-    post: Grimpe, VTT, trail
+    post: Grimpe, VTT, trail (années paires)
     url: /evenements/triathlon
     weight: 40
   - identifier: conferences
@@ -113,7 +113,7 @@ events:
   - identifier: vide-grenier
     pre: /images/logos/market.svg
     name: Vide Grenier
-    post: de retour à Larchant
+    post: (les années impaires)
     url: /evenements/vide-grenier
     weight: 70
   - identifier: telethon
