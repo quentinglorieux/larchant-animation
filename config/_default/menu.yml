@@ -83,7 +83,7 @@ events:
   - identifier: trail
     pre: /images/logos/running.svg
     name: Lyricantrail
-    post: Course nature de 20km
+    post: Course nature de 14 et 26km
     url: /evenements/lyricantrail
     weight: 20
   - identifier: festibaleine
@@ -95,7 +95,7 @@ events:
   - identifier: triathlon
     pre: /images/logos/triathlon.svg
     name: Triathlon
-    post: Grimpe, VTT, trail (années paires)
+    post: Grimpe, VTT, trail (les années paires)
     url: /evenements/triathlon
     weight: 40
   - identifier: conferences
