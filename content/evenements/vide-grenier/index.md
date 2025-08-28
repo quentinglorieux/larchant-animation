@@ -1,6 +1,6 @@
 ---
 title: Vide Grenier
-date: 2023-01-01
+date: 2025-21-09
 draft: false
 language: fr
 description: Vide Grenier
@@ -18,7 +18,7 @@ Les emplacements sont disponibles à la réservation selon les modalités suivan
 * Mètre supplémentaire : 2,00 €
 * Voiture sur le stand (sur réservation) : 10,00 €
 
-[bulletin inscription ](https://larchantanimation.fr/files/2025-bulletin-d-inscription-1-.pdf) 
+[Bulletin inscription ](https://larchantanimation.fr/files/2025-bulletin-d-inscription-1-.pdf) 
 
 Pour vous inscrire en ligne, remplissez le formulaire. (Si vous rencontrez des difficultés, n'hésitez pas à nous contacter par téléphone ou par mail) puis renvoyez-le par voie postale avec votre règlement ou par mail, avec la possibilité de payer par virement bancaire.
 
@@ -30,3 +30,6 @@ Réglement en [PDF](REGLEMENT.pdf).
 ## Contact et Informations
 
 Pour toute question ou information supplémentaire, vous pouvez contacter  : larchantanimation@gmail.com
+
+## Attention rappel
+Le vide grenier a lieu les années impaires. L'an prochain pas de vide grenier, mais un super triathlon !

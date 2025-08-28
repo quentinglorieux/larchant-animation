@@ -20,3 +20,6 @@ Les emplacements sont disponibles à la réservation selon les modalités suivan
 [](larchantanimation@gmail.com)Renseignements : 06 72 16 65 87
 
 Télécharger le bulletin d'inscription :
+
+## Attention rappel
+Le vide grenier a lieu les années impaires. L'an prochain pas de vide grenier, mais un super triathlon !
