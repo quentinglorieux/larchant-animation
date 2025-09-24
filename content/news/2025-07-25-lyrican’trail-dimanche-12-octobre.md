@@ -3,6 +3,7 @@ title: LYRICAN’TRAIL Dimanche 12 octobre
 date: 2025-10-12T12:00:00.000+02:00
 preview: /images/complet.jpg
 summary: C'est complet !!
+categories: Sport
 ---
 Amateurs des bosses, passionnés des paysages magnifiques et des défis sportifs, le moment est arrivé !
 
