@@ -1,7 +1,7 @@
 ---
 title: LYRICAN’KIDS Dimanche 12 octobre
 date: 2025-10-12T12:00:00.000+02:00
-preview: /images/complet.jpg
+preview: /images/lyricankids.png
 summary: Inscrivez vos enfants dès maintenant !!
 categories: Sport
 ---
