@@ -1,6 +1,6 @@
 ---
 title: BOURSE AUX JOUETS
-date: 2025-10-06T18:16:00.000+02:00
+date: 2025-10-12T09:00:00.000+02:00
 preview: /images/copie-de-bourse-aux-jouets-2025-fd-blanc_page-0001-1-.jpg
 summary: Larchant Animation organise sa traditionnelle Bourse aux Jouets et
   matériel de puériculture !
