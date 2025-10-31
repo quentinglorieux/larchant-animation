@@ -1,7 +1,7 @@
 ---
 title: Rencontre avec l’auteur WAZO – Pour tout l’or de Brest
 date: 2025-11-08T10:30:00.000+01:00
-draft: true
+draft: false
 preview: /images/110-76-34950254.webp
 summary: Issus de la culture Street Art et Urbex, WAZO nous entraîne dans une
   enquête haletante où se mêlent art, mystère et exploration souterraine.
