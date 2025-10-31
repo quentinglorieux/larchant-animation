@@ -6,8 +6,7 @@ preview: /images/110-76-34950254.webp
 summary: WAZO pour une rencontre et dédicace autour de son roman Pour tout l’or
   de Brest, un polar haletant entre street art, urbex et enquête souterraine !
 categories: Rencontre d’auteur
-tags: WAZO, roman policier, street art, urbex, Larchant Animation, littérature,
-  dédicace
+tags: Rencontre d’auteur
 ---
 
 
