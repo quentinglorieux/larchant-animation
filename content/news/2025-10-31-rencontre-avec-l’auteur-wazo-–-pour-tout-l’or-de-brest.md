@@ -1,5 +1,5 @@
 ---
-title: Rencontre avec l’auteur WAZO – Pour tout l’or de Brest
+title: Rencontre avec l’auteur WAZO <br> Pour tout l’or de Brest
 date: 2025-11-08T10:30:00.000+01:00
 draft: false
 preview: /images/110-76-34950254.webp
