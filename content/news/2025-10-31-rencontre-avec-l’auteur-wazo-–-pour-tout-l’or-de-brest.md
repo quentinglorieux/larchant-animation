@@ -3,11 +3,8 @@ title: Rencontre avec l’auteur WAZO – Pour tout l’or de Brest
 date: 2025-11-08T10:30:00.000+01:00
 draft: false
 preview: /images/110-76-34950254.webp
-summary: Issus de la culture Street Art et Urbex, WAZO nous entraîne dans une
-  enquête haletante où se mêlent art, mystère et exploration souterraine.
-  Larchant Animation vous invite à une rencontre exceptionnelle autour de son
-  roman Pour tout l’or de Brest, le samedi 8 novembre à 10h30 à la Médiathèque
-  de Larchant.
+summary: WAZO pour une rencontre et dédicace autour de son roman Pour tout l’or
+  de Brest, un polar haletant entre street art, urbex et enquête souterraine !
 categories: Rencontre d’auteur
 tags: WAZO, roman policier, street art, urbex, Larchant Animation, littérature,
   dédicace
