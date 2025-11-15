@@ -6,7 +6,7 @@ summary: "Journée solidaire au profit du Téléthon : pétanque, activité cirq
   trail & cani-trail, marche et buvette avec « goûter gourmand » au City Stade
   de Larchant."
 categories: Événements / Association
-tags: Téléthon, Larchant, Solidarité, Événement, Sport, Animation
+tags: Téléthon
 ---
 
 Téléthon 2025 à Larchant – Samedi 6 décembre
