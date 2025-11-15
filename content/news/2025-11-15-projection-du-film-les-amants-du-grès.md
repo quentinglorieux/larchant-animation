@@ -5,7 +5,7 @@ preview: /images/projection-amants-du-gres.jpg
 summary: Projection du documentaire Les Amants du Grès en présence du
   réalisateur Laurent Chevallier. Entrée libre.
 categories: Événements
-tags: cinéma, documentaire, culture, projection, Larchant
+tags: projection
 ---
 **Projection du film *Les Amants du Grès***
 
