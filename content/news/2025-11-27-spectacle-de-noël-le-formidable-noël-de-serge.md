@@ -4,8 +4,8 @@ date: 2025-12-13T15:30:00.000+01:00
 preview: /images/noel-de-serge.jpg
 summary: Spectacle de Noël pour les enfants à partir de 3 ans, offert par
   l’association Larchant Animation. Suivi d’un goûter pour tous.
-categories: Événements
-tags: Noël, Spectacle, Enfants, Larchant, Animation
+categories: Noël, Spectacle, Enfants, Larchant, Animation
+tags: Événements
 ---
 L'association Larchant Animation est heureuse d’offrir aux enfants du village un spectacle magique :
 
