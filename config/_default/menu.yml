@@ -27,7 +27,7 @@ ateliers:
 
   - identifier: cirque
     pre: /images/logos/cirque.svg
-    name: Cirque Adultes
+    name: Renforcement musculaire
     post: Mercredi avec Alice
     url: /ateliers/cirque/
     weight: 20
