@@ -55,10 +55,10 @@ ateliers:
     post: Vendredi avec Alain
     url: /ateliers/theatre-adultes/
     weight: 40
-  - identifier: theatre-ado
+  - identifier: court d'art
     pre: /images/logos/theatre.svg
     name: Dessin 
-    post: jeeu avec Isabelle
+    post: jeudi avec Isabelle
     url: /ateliers/dessin/
     weight: 50
   - identifier: sophrologie
