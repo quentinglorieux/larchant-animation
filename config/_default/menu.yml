@@ -26,15 +26,15 @@ main:
 ateliers:
 
   - identifier: cirque
-    pre: /images/logos/cirque.svg
+    pre: /images/logos/gym.svg
     name: Renforcement musculaire
-    post: Mercredi avec Alice
+    post: Lundi avec Alice
     url: /ateliers/cirque/
     weight: 20
   - identifier: cirque-enfant
     pre: /images/logos/cirque.svg
     name: Cirque Enfant
-    post: Mardi, Mercerdi & Jeudi avec Alice
+    post: Mercerdi avec Alice
     url: /ateliers/cirque-enfant/
     weight: 21
   - identifier: yoga
@@ -57,9 +57,9 @@ ateliers:
     weight: 40
   - identifier: theatre-ado
     pre: /images/logos/theatre.svg
-    name: Théâtre Ado
-    post: Lundi avec Justine
-    url: /ateliers/theatre-ado/
+    name: Dessin 
+    post: jeeu avec Isabelle
+    url: /ateliers/dessin/
     weight: 50
   - identifier: sophrologie
     pre: /images/logos/sophrologie.svg
