@@ -56,7 +56,7 @@ ateliers:
     url: /ateliers/lia/
     weight: 40
   - identifier: court d'art
-    pre: /images/logos/theatre.svg
+    pre: /images/logos/streamline-freehand-design-process-drawing-board.svg
     name: Dessin 
     post: jeudi avec Isabelle
     url: /ateliers/dessin/
