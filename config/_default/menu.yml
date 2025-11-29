@@ -49,11 +49,11 @@ ateliers:
     post: Lundi avec Monique
     url: /ateliers/gym/
     weight: 31
-  - identifier: theatre-adultes
-    pre: /images/logos/theatre.svg
-    name: Théâtre adultes
-    post: Vendredi avec Alain
-    url: /ateliers/theatre-adultes/
+  - identifier: LIA
+    pre: /images/logos/gym.svg
+    name: LIA
+    post: mardi avec Bryan
+    url: /ateliers/ateliers/lia/
     weight: 40
   - identifier: court d'art
     pre: /images/logos/theatre.svg
