@@ -53,7 +53,7 @@ ateliers:
     pre: /images/logos/gym.svg
     name: LIA
     post: mardi avec Bryan
-    url: /ateliers/ateliers/lia/
+    url: /ateliers/lia/
     weight: 40
   - identifier: court d'art
     pre: /images/logos/theatre.svg
