@@ -7,9 +7,9 @@ summary: >-
   joyeuses fêtes.
 
   La médiathèque reste ouverte pendant les vacances tous les samedis de 11h à 13h.
-categories: Actualités
-tags: Larchant Animation, bibliothèque, médiathèque, fêtes, village, livres, BD,
-  mangas, jeunesse
+categories: Larchant Animation, bibliothèque, médiathèque, fêtes, village,
+  livres, BD, mangas, jeunesse
+tags: ""
 ---
 🎄 \*\*Joyeuses fêtes à toutes et à tous !\*\*
 
