@@ -11,7 +11,9 @@ preview: hivernale26.jpeg
 
 > Une rando VTT mythique au coeur de la foret de Larchant. (500 places et c'est tout !)
 
-<a class="flex justify-center no-underline" href="https://larchant-animation.s2.yapla.com/fr/event-72285">
+
+
+<a class="flex justify-center no-underline" href="https://larchant-animation.s2.yapla.com/fr/event-101886">
 <button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions 2026 </button>
 </a>
 
