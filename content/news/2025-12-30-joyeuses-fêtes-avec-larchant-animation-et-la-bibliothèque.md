@@ -1,6 +1,6 @@
 ---
 title: Joyeuses fêtes avec Larchant Animation et la bibliothèque
-date: 2025-12-23T11:55:00.000+01:00
+date: 2026-01-01
 preview: /images/noel-larchant-animation.png
 summary: >-
   Larchant Animation et les bénévoles de la bibliothèque vous souhaitent de

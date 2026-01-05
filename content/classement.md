@@ -1,4 +1,0 @@
----
-title: "Classement"
-layout: "classement"
----

@@ -1,25 +1,25 @@
 ---
 title: "L'Hivernale"
-date: 2026-03-08
+date: 2023-01-01
 draft: false
 language: fr
 description: Randonée VTT
-preview: hivernale26.jpeg
+preview: hivernale25front.webp
 ---
 
-## L'Hivernale - Édition 2026
+## L'Hivernale - Édition 2025
 
 > Une rando VTT mythique au coeur de la foret de Larchant. (500 places et c'est tout !)
 
 <a class="flex justify-center no-underline" href="https://larchant-animation.s2.yapla.com/fr/event-72285">
-<button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions 2026 </button>
+<button class="px-4 py-2  rounded-xl bg-indigo-500 hover:bg-indigo-600 text-slate-100 hover:text-slate-200"> Inscriptions 2025 </button>
 </a>
 
 
 
 
 
-### Date : Dimanche 8 mars 2026
+### Date : Dimanche 9 mars 2025
 
 ### Lieu :
 
