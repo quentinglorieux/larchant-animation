@@ -7,14 +7,16 @@ summary: |-
   Inscriptions 2026
   Date : Dimanche 8 mars 2026
 ---
-<p>
-
-  ❄️ <strong>L’Hivernale</strong> – Inscriptions ouvertes :
-
-  <a href="https://larchant-animation.s2.yapla.com/fr/event-101886" target="_blank">
-
-\    je m’inscris
-
-  </a>
-
-</p>
+<a href="https://larchant-animation.s2.yapla.com/fr/event-101886"
+   target="_blank"
+   style="
+     display:inline-block;
+     padding:8px 14px;
+     background-color:#1f4e79;
+     color:#fff;
+     text-decoration:none;
+     border-radius:4px;
+     font-weight:bold;
+   ">
+  ❄️ Inscriptions L’Hivernale
+</a>
