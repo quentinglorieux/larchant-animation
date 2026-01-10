@@ -5,7 +5,7 @@ preview: images/hivernale.jpeg
 summary: Hivernale 2026
 author: Les inscriptions sont ouvertes !
 authorimage: ""
-tags: List [ "Evènements" ]
+tags: Evènements
 ---
 ## L'Hivernale - Édition 2026
 
