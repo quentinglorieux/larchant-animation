@@ -1,5 +1,5 @@
 ---
-title: "Théâtre à Larchant : Marie qui n’aimait pas la nuit"
+title: Marie qui n’aimait pas la nuit
 date: 2026-02-14T20:00:00.000+01:00
 preview: images/affiche-marie-14-février.jpg
 summary: Un spectacle de théâtre mêlant texte et musique
