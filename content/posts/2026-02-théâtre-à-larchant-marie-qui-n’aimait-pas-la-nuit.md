@@ -6,23 +6,19 @@ summary: Un spectacle de théâtre mêlant texte et musique
 categories: théâtre, spectacle, larchant, culture, monologue, musique
 tags: Evènements
 ---
-🎭 \*\*THÉÂTRE À LARCHANT\*\*
+🎭 THÉÂTRE À LARCHANT
 
 Larchant Animation vous propose une soirée théâtre avec le spectacle  
 
-\*\*\_Marie qui n’aimait pas la nuit\_\*\*, une pièce-monologue en 12 épisodes écrite par \*\*Daniel Coué\*\*.
+Marie qui n’aimait pas la nuit, une pièce-monologue en 12 épisodes écrite par Daniel Coué.
 
-📅 \*\*Samedi 14 février 2026\*\*  
+📅 Samedi 14 février 2026  
 
-🕗 \*\*20h\*\*  
+🕗 20h  
 
-📍 \*\*Salle de la Sablonnière – Larchant\*\*
+📍 Salle de la Sablonnière – Larchant
 
-
-
-\---
-
-\### 🌙 Le spectacle
+ 🌙 Le spectacle
 
 Marie est phobique de la nuit depuis sa plus tendre enfance.  
 
@@ -32,14 +28,12 @@ Avec humour et cynisme, le spectateur découvre peu à peu que cette femme, atta
 
 Un spectacle tout en finesse, où le texte dialogue avec la musique pour créer une atmosphère singulière et immersive.
 
-\---
+ 🎤 Les artistes
 
-\### 🎤 Les artistes
+Jeu : Françoise Bègue  
 
-\*\*Jeu :\*\* Françoise Bègue  
+Musique : Jean-Claude Perron, dit Félix
 
-\*\*Musique :\*\* Jean-Claude Perron, dit Félix
+👨‍👩‍👧 Tout public à partir de 12 ans  
 
-👨‍👩‍👧 \*\*Tout public à partir de 12 ans\*\*  
-
-💶 \*\*Participation libre\*\*
+💶 Participation libre
