@@ -3,7 +3,7 @@ title: L'Hivernale est de retour
 date: 2026-03-08T02:18:00.000+01:00
 preview: images/hivernale.jpeg
 summary: Hivernale 2026
-author: Bientôt les inscriptions !
+author: Les inscriptions sont ouvertes !
 authorimage: ""
 tags:
   - Évènements
