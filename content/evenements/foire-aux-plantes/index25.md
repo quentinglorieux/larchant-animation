@@ -10,17 +10,17 @@ preview: plante.png
 
 ## Inscriptions :
 
-### [Tout savoir sur l'édition 2026 (inscriptions)](http://larchantanimation.fr/posts/2026-02-foire-aux-plantes/)
+### [Tout savoir sur l'édition 2025 (inscriptions)](http://larchantanimation.fr/posts/2025-02-foire-aux-plantes/)
 
 ## Date :
 
-Dimanche 5 Avril 2026
+6 Avril 2025
 
 ## Lieu :
 
 Place des Tilleuls et place Pasteur. Larchant
 
-![](/images/FAP2026.jpg)
+![](/images/affiche-fap-2025.jpg)
 
 
 
