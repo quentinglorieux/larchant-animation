@@ -4,6 +4,7 @@ date: 2026-05-16T20:30:00.000+02:00
 preview: images/rosetta.jpg
 summary: spectacle, musique, concert, théâtre, rock, gospel, sortie, Larchant,
   tout public
+tags: Evènements
 ---
 Spectacle musical – tout public
 
