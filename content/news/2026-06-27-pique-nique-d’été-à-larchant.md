@@ -4,7 +4,7 @@ date: 2026-06-27T19:00:00.000+02:00
 preview: /images/pique-nique1.jpg
 summary: Un moment convivial à partager en famille et entre amis !
 categories: ""
-tags: Événements
+tags: Evénements
 ---
 ## **Venez partager un moment convivial au cœur du village ! 🌿**
 
