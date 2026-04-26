@@ -2,8 +2,11 @@
 title: L’incroyable Sister Rosetta Tharpe – spectacle musical
 date: 2026-05-16T20:30:00.000+02:00
 preview: /images/rosetta.jpg
-summary: Un spectacle musical vibrant entre concert et théâtre autour de la
-  pionnière du rock’n’roll.
+summary: >-
+  Un spectacle musical vibrant entre concert et théâtre autour de la pionnière
+  du rock’n’roll.
+
+  Réservation conseillée : 06 81 20 45 22 (sms ou message)
 categories: Spectacle
 ---
 🎤 **L’incroyable Sister Rosetta Tharpe**
