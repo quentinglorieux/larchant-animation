@@ -7,7 +7,8 @@ summary: >-
   du rock’n’roll.
 
   Réservation conseillée : 06 81 20 45 22 (sms ou message)
-categories: Spectacle
+categories: ""
+tags: Événements
 ---
 🎤 **L’incroyable Sister Rosetta Tharpe**
 
