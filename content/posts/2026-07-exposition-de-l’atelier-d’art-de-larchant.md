@@ -4,6 +4,7 @@ date: 2026-07-04T18:00:00.000+02:00
 preview: images/2604.30-affiche-expo.jpg
 summary: Les participants de l’Atelier d’Art de Larchant vous invitent à
   découvrir leurs créations
+tags: Evènements
 ---
 **Exposition de l’Atelier d’Art de Larchant**
 
