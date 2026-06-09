@@ -6,3 +6,4 @@ summary: Découvrez les créations des participants les 4, 5, 11 et 12 juillet
   2026 à la Salle de la Sablonnière. Entrée libre.
 tags: Evénements
 ---
+EXP
