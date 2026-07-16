@@ -1,7 +1,7 @@
 ---
 title: "Incendies en forêt de Fontainebleau : notre soutien et notre engagement"
 date: 2026-07-16T09:36:00.000+02:00
-preview: ""
+preview: /images/la-forete-renait.png
 summary: La forêt de Fontainebleau appartient un peu à chacun d'entre nous.
   Aujourd'hui elle souffre, demain elle aura besoin de nous
 ---
