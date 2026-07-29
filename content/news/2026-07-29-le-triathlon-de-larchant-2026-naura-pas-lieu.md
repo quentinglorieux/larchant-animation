@@ -1,8 +1,9 @@
 ---
-title: Le Triathlon 2026 est annulé
+title: L'édition 2026 du Triathlon de Larchant est annulée
 date: 2026-07-29T13:13:00.000+02:00
 preview: /images/triathlon-2026.png
-summary: une décision responsable pour préserver notre forêt
+summary: Nous ne vous l'avions pas encore annoncé...
+tags: Evènement
 ---
 # **L'édition 2026 du Triathlon de Larchant est annulée**
 
