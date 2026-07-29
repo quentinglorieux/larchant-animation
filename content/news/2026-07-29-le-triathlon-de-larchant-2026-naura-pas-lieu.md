@@ -1,8 +1,8 @@
 ---
-title: "Le Triathlon de Larchant 2026 n'aura pas lieu... "
+title: Le Triathlon 2026 est annulé
 date: 2026-07-29T13:13:00.000+02:00
 preview: /images/triathlon-2026.png
-summary: pour laisser la forêt respirer
+summary: une décision responsable pour préserver notre forêt
 ---
 # **L'édition 2026 du Triathlon de Larchant est annulée**
 
