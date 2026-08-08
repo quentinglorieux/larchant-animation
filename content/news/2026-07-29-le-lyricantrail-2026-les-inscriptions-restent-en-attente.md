@@ -1,6 +1,6 @@
 ---
 title: "Le Lyrican'Trail 2026 : les inscriptions restent en attente"
-date: 2026-07-29T13:44:00.000+02:00
+date: 2026-08-08T12:14:00.000+02:00
 preview: /images/lyricantrail-2026.png
 summary: dans l'attente des décisions des autorités compétentes
 tags: Lyrican'Trail
