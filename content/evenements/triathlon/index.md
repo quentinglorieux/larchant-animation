@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Triathlon
-preview: benevoles-tri.jpg
+preview: édition-2026-du-triathlon-de-larchant-annulée_page-0001.jpg
 ---
 # Triathlon
 
