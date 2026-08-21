@@ -1,6 +1,6 @@
 ---
 title: "Atelier d’art à Larchant : stage et cours de dessin"
-date: 2026-08-08T12:08:00.000+02:00
+date: 2026-08-21T19:11:00.000+02:00
 preview: /images/2608.03-affiche-cours-stage.jpg
 summary: |-
   📅 Stage de deux jours
