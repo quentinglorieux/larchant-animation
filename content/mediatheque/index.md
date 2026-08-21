@@ -6,7 +6,7 @@ language: fr
 layout: mediatheque
 description: Médiathèque de Larchant
 ---
-![](image-gen-1-1-.png)
+![](rayonnage-manga-dans-une-librairie-chaleureuse.png)
 
 # La Médiathèque de Larchant
 
