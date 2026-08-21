@@ -6,6 +6,8 @@ language: fr
 layout: mediatheque
 description: Médiathèque de Larchant
 ---
+![](image-gen-1-1-.png)
+
 # La Médiathèque de Larchant
 
 > ##### Un lieu pour lire, découvrir… mais aussi se retrouver !
