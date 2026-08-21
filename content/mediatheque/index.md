@@ -67,7 +67,6 @@ L’adhésion annuelle permet de profiter de la médiathèque et de participer �
 
 * Catherine
 * Dany 
-* Dominique 
 * Floriane 
 * Isabelle 
 * Laurence
