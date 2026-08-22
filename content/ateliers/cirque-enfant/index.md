@@ -40,4 +40,4 @@ Les tarifs pour les cours de cirque sont les suivants :
 
 * **Abonnement annuel : 180 euros + adhésion à Larchant Animation**
 
-Bulletin d'inscription a demander à larchantanimation@gmail.com et paiement possible en ligne [ici](https://s2.yapla.com/event/fr/event/cards/eventId/123925/)
+Bulletin d'inscription a demander à larchantanimation@gmail.com et paiement possible en ligne
