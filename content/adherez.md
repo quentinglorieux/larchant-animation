@@ -30,7 +30,7 @@ L'adhésion est annuelle de date à date. Elle est obligatoire pour participer a
 
 ### Inscription papier
 
-Téléchargez le [formulaire d'adhésion](../../evenements/adhesion/2024_inscription.pdf) et retournez-le par voie postale ou à la médiathèque lors des horaires d'ouverture.
+Téléchargez le [bulletin d'adhésion 2026-2027](/files/bulletin-adhesion-2026-2027.pdf) et retournez-le par voie postale ou à la médiathèque lors des horaires d'ouverture.
 
 ### Formulaire en ligne
 
@@ -43,4 +43,4 @@ Voir ci-dessous: ![](/images/contrib.png).
 
 # Inscription en ligne
 
-<iframe src="https://larchant-animation.s2.yapla.com/fr/adhesion2025-12153"></iframe>
+<iframe src="https://larchant-animation.s2.yapla.com/fr/adh-sion-larchant-animation-2026-2027-21787"></iframe>
