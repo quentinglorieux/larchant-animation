@@ -9,8 +9,8 @@ description: Club multisport et Sciences pour les enfants de 6 à 12 ans
 
 ## Présentation
 
-Les Savanturiers de Larchant reviennent pour la saison 2026-2027 ! Nous accueillons les enfants de 6 à 13 ans pour une année placée sous le signe de la nature, des animaux, de la forêt, du marais et des sciences.
-Les Savanturiers de Larchant proposent des activités sportives et scientifiques variées pour les enfants, avec un accent sur la découverte, l'entraide et l'apprentissage dans une ambiance conviviale.
+Les Savanturier-es de Larchant reviennent pour la saison 2026-2027 ! Nous accueillons les enfants de 6 à 13 ans pour une année placée sous le signe de la nature, des animaux, de la forêt, du marais et des sciences.
+Les Savanturier-es de Larchant proposent des activités sportives et scientifiques variées pour les enfants, avec un accent sur la découverte, l'entraide et l'apprentissage dans une ambiance conviviale.
 
 La rentrée est prévue le **samedi 12 septembre 2026**. Le planning détaillé des activités sera publié prochainement, une fois les interventions confirmées.
 
@@ -49,4 +49,4 @@ Samedi matin. Plus de précisions en septembre.
 
 Antonine au 0647681326
 
-![Savanturiers 2026-2027](affiche-2026-2027.jpg "Les Savanturiers de Larchant 2026-2027")
+<img src="affiche-2026-2027.jpg" alt="Les Savanturier-es de Larchant 2026-2027" style="display:block;margin:2rem auto;width:100%;max-width:480px;border-radius:8px;" loading="lazy">
