@@ -22,7 +22,7 @@ La 11e édition du Lyrican'Trail !
 
 ## Inscriptions
 
-Les inscriptions se feront en ligne sur [chronoteam.org](https://www.chronoteam.org). **Le lien d'inscription sera publié ici très prochainement.**
+**Les inscriptions sont ouvertes en ligne : [chronoteam.org/lyrican-trail-2026](https://www.chronoteam.org/lyrican-trail-2026/)**
 
 Le Lyrican'Kids est gratuit, inscriptions sur larchantanimation.fr.
 

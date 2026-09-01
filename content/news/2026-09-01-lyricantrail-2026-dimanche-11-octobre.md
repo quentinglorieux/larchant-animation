@@ -17,7 +17,7 @@ Bonne nouvelle : la **11e édition du Lyrican'Trail** aura bien lieu le **dimanc
 
 ## Inscriptions
 
-Les inscriptions aux courses adultes se feront en ligne sur **Chronoteam** (www.chronoteam.org). **Le lien d'inscription sera publié ici très prochainement.**
+**Les inscriptions aux courses adultes sont ouvertes sur [Chronoteam](https://www.chronoteam.org/lyrican-trail-2026/).**
 
 ![](/images/lyricantrail-2026-affiche.jpg)
 
