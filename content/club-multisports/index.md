@@ -9,8 +9,10 @@ description: Club multisport et Sciences pour les enfants de 6 à 12 ans
 
 ## Présentation
 
-En Septrembre 2025 le club multisport devient les Savanturiers. Nous vous accueillons cette année pour une rentrée sportive et ludique pour les enfants de 6 à 13 ans.
-Les savanturiers de Larchant propose des activités sportives et scientifiques variées pour les enfants, avec un accent sur la découverte, l'entraide et l'apprentissage dans une ambiance conviviale. 
+Les Savanturiers de Larchant reviennent pour la saison 2026-2027 ! Nous accueillons les enfants de 6 à 13 ans pour une année placée sous le signe de la nature, des animaux, de la forêt, du marais et des sciences.
+Les Savanturiers de Larchant proposent des activités sportives et scientifiques variées pour les enfants, avec un accent sur la découverte, l'entraide et l'apprentissage dans une ambiance conviviale.
+
+La rentrée est prévue le **samedi 5 septembre 2026**. Le planning détaillé des activités sera publié prochainement, une fois les interventions confirmées.
 
 Les encadrants sont **des bénévoles de l'association** qui sauront accompagner vos enfants dans leur découverte des sports et leur apprentissage.
 
@@ -22,7 +24,7 @@ Les encadrants sont **des bénévoles de l'association** qui sauront accompagner
 * Garance, architecte et passionnée de maquettes
 * Alice, diplomée de cirque
 
-En hiver, nous serons en salle Sablonnière à Larchant pour des ateliers scientifiques et ludiques: construction de microfusées, réalisation de maquettes, construction d'une station météo, découverte du Rubik's cube. En été, nous serons en extérieur pour des jeux et du sport: jeux collectifs, escalade, course d'orientation, construction de cabanes, etc. Nous aurons aussi des séances de découverte du cirque et du yoga.
+En hiver, nous serons en salle Sablonnière à Larchant pour des ateliers scientifiques et ludiques. En été, nous serons en extérieur pour des jeux, du sport et des sorties nature. Au programme cette année (sous réserve de confirmation) : escalade, échecs, chimie et microscopie, cirque, sorties en forêt et au marais, et bien d'autres surprises.
 
 <!-- <div > 
           <a href="https://larchant-animation.s2.yapla.com/fr/ateliers-enfants-2024-2025-14144" class="items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
