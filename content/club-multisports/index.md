@@ -23,6 +23,7 @@ Les encadrants sont **des bénévoles de l'association** qui sauront accompagner
 * Antonine, professeure de yoga et docteure en Physique quantique.
 * Garance, architecte et passionnée de maquettes
 * Alice, diplomée de cirque
+* Rodolphe, professeur de maths et sciences en lycée professionnel, pour les ateliers d'échecs
 
 En hiver, nous serons en salle Sablonnière à Larchant pour des ateliers scientifiques et ludiques. En été, nous serons en extérieur pour des jeux, du sport et des sorties nature. Au programme cette année (sous réserve de confirmation) : escalade, échecs, chimie et microscopie, cirque, sorties en forêt et au marais, et bien d'autres surprises.
 
