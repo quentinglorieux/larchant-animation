@@ -21,10 +21,11 @@
                     </p>
                     {{ end }}
                 </div>
-                <form name="mailing-list" action="{{ .Site.Data.settings.mailinglist.action }}" method="POST" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+                <form name="mailing-list" id="mailing-list-form" action="{{ .Site.Data.settings.mailinglist.action }}" method="POST" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+                    <input type="text" name="bot-field" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <div class="flex-1 min-w-0">
                         <label for="email" class="sr-only">{{ .Site.Data.settings.mailinglist.label }}</label>
-                        <input id="email" name="email" type="email" class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500" placeholder="{{ .Site.Data.settings.mailinglist.placeholder }}">
+                        <input id="email" name="email" type="email" required class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500" placeholder="{{ .Site.Data.settings.mailinglist.placeholder }}">
                     </div>
                     <div class="mt-4 sm:mt-0 sm:ml-3">
                         <button type="submit" class="block w-full px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
@@ -32,6 +33,35 @@
                         </button>
                     </div>
                 </form>
+                <p id="mailing-list-msg" class="mt-6 text-lg font-medium text-white sm:text-center" hidden></p>
+                <script>
+                  (function () {
+                    var form = document.getElementById('mailing-list-form');
+                    if (!form) return;
+                    var msg = document.getElementById('mailing-list-msg');
+                    form.addEventListener('submit', function (e) {
+                      e.preventDefault();
+                      var btn = form.querySelector('button[type="submit"]');
+                      btn.disabled = true;
+                      fetch(form.action, { method: 'POST', body: new URLSearchParams(new FormData(form)) })
+                        .then(function (r) { return r.text(); })
+                        .then(function (t) {
+                          if (t.trim() === 'ok') {
+                            form.reset();
+                            msg.textContent = 'Merci, vous êtes bien inscrit !';
+                          } else {
+                            msg.textContent = 'Adresse invalide, merci de vérifier votre email.';
+                          }
+                          msg.hidden = false;
+                        })
+                        .catch(function () {
+                          msg.textContent = 'Une erreur est survenue, merci de réessayer plus tard.';
+                          msg.hidden = false;
+                        })
+                        .then(function () { btn.disabled = false; });
+                    });
+                  })();
+                </script>
             </div>
         </div>
     </div>

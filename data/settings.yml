@@ -80,7 +80,7 @@ mailinglist:
   heading: Inscrivez vous à notre liste de diffusion
   content:
     - text: Si vous souhaitez être tenu informé de nos activités.
-  action: https://formsubmit.co/quentin.glorieux@gmail.com
+  action: https://script.google.com/macros/s/AKfycbxTJwyga8hOEfVUfCIaMFl0QfnqmLoxAsra4XXpp9SebNJyQpVnkHS7lciGBhaDvxDKfg/exec
   label: Adresse email
   placeholder: Entrez votre email
   button: Inscrivez moi !
