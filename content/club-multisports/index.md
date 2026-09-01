@@ -48,4 +48,4 @@ Samedi matin. Plus de précisions en septembre.
 
 Antonine au 0647681326
 
-![Savanturiers](Affiche.jpg "Savanturiers")
+![Savanturiers 2026-2027](affiche-2026-2027.jpg "Les Savanturiers de Larchant 2026-2027")
