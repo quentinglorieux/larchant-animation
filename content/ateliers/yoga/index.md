@@ -4,7 +4,7 @@ date: 2023-01-01
 draft: false
 language: fr
 description: Yoga avec Antonine
-preview: yoga.jpg
+preview: yoga-studio.jpg
 ---
 # Cours de Yoga Iyengar
 
@@ -69,8 +69,6 @@ Nos cours permettent de travailler sur la posture, la respiration, la concentrat
 
 Possibilité de rejoindre en cours d'année sur demande. [Nous contacter.](/contact)
 
-Bulletin d'inscription à demander à larchantanimation@gmail.com 
+## Inscription
 
-ou 
-
-## [Inscription en ligne](https://larchant-animation.s2.yapla.com/fr/event-89162)
+Bulletin d'inscription à demander à larchantanimation@gmail.com
