@@ -28,13 +28,11 @@ L'adhésion est annuelle de date à date. Elle est obligatoire pour participer a
 * Adhésion à la médiathèque
 * Participation aux décisions de l'association lors de l'AG annuelle
 
-### Inscription papier
-
-Téléchargez le [bulletin d'adhésion 2026-2027](/files/bulletin-adhesion-2026-2027.pdf) et retournez-le par voie postale ou à la médiathèque lors des horaires d'ouverture.
-
 ### Formulaire en ligne
 
 Pour simplifier la gestion nous avons mis en place un formulaire en ligne avec notre partenaire Yapla.
+
+**[Adhérer en ligne pour 2026-2027](https://larchant-animation.s2.yapla.com/fr/adh-sion-larchant-animation-2026-2027-21787)**
 
 ### Important : à lire avant de s'inscrire en ligne
 

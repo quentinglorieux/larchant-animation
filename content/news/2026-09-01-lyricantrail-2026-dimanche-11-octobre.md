@@ -12,12 +12,14 @@ Bonne nouvelle : la **11e édition du Lyrican'Trail** aura bien lieu le **dimanc
 ## Au programme
 
 * **9h00** : 25 km, D+ 999 m
-* **9h15** : Lyrican'Kids, 1 km (inscriptions gratuites sur larchantanimation.fr)
+* **9h15** : Lyrican'Kids, 1 km (inscriptions gratuites en ligne)
 * **9h30** : 14 km, D+ 499 m
 
 ## Inscriptions
 
 **Les inscriptions aux courses adultes sont ouvertes sur [Chronoteam](https://www.chronoteam.org/lyrican-trail-2026/).**
+
+**Le Lyrican'Kids est gratuit : [inscrivez vos enfants ici](https://larchant-animation.s2.yapla.com/fr/event-125567).**
 
 ![](/images/lyricantrail-2026-affiche.jpg)
 
