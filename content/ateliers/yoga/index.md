@@ -10,19 +10,44 @@ preview: yoga.jpg
 
 Rire, douleur joyeuse, renforcement, concentration, douceur, rigueur, légèreté, autant de mots pour vous donner le goût de l’exploration du corps comme le lieu de la conscience.
 
-## Horaires / tarifs
+## Horaires 2026-2027
 
-* Yoga intermédiaire à avancé Lundi 12h30 - 14h et Mercredi 18h30 - 20h 
-* Yoga doux et aussi adapté aux futures Mamans et jeunes Mamans avec leur bébé Jeudi 12h30 - 13h30
-* Yoga débutant à intermédiaire Jeudi 18h30 - 20h
+* **Lundi 10h45 - 12h** : débutant / intermédiaire
+* **Lundi 12h30 - 14h** : intermédiaire / avancé
+* **Mardi 18h30 - 20h** : débutant / intermédiaire
+* **Mardi 20h - 21h** : yoga doux
+* **Mercredi 18h30 - 20h30** : intermédiaire / avancé
+* **Jeudi 12h30 - 13h30** : yoga doux
+* **Jeudi 18h30 - 20h** : débutant / intermédiaire
+* **Vendredi 12h - 13h** : yoga adapté
 
-33 à 35 séances Tarif : 200 €
+## Les différents niveaux
 
-* Yoga adapté Vendredi 12h -13h 15€ la séance
+**Débutant / intermédiaire** : idéal pour découvrir les fondamentaux de la méthode Iyengar. Les postures sont amenées graduellement par des éducatifs qui ouvrent le corps, sensibilisent et renforcent. Accessible à toutes et tous, sans prérequis de souplesse !
 
-## Lieu :
+**Intermédiaire / avancé** : le rythme du déroulé y est plus rapide et le cours physiquement assez soutenu. Il s'adresse à qui veut explorer davantage, le seul prérequis étant de s'y amuser !
 
-Bienvenue dans **LE STUDIO** nouveau lieu pour pratiquer le Yoga en toute quiétude, proche de la salle Sablonnière au n°16 de la place des Tilleuls.
+**Yoga doux** : une approche en douceur sur un temps plus court (1h). En utilisant largement les supports, on favorise l'exploration d'un axe en particulier pour relâcher les tensions et retrouver de l'aisance. Ce cours est également adapté aux femmes enceintes qui désirent pratiquer doucement et aux femmes en post-partum (avec leur bébé).
+
+**Yoga adapté** : un cours en petit effectif, avec une pratique sur-mesure pour que chacun et chacune puisse bénéficier des bienfaits du yoga en toute sécurité. Il aborde des problématiques variées (équilibre, renforcement des jambes, étirement du dos) et est axé sur le troisième âge.
+
+## Tarifs
+
+Trois tarifs au choix, pour garder les cours accessibles tout en assurant leur équilibre financier :
+
+* **200 € / an** : *Accès*, si votre budget loisir est limité (moins de 6 € le cours)
+* **300 € / an** : *Équilibre*, le tarif qui permet de maintenir l'équilibre financier des cours (moins de 9 € le cours)
+* **400 € / an** : *Soutien*, pour aider à continuer de proposer des cours accessibles à toutes et tous (moins de 12 € le cours)
+
+Ces tarifs s'entendent hors [adhésion annuelle à Larchant Animation](/adherez), obligatoire pour participer aux cours (20 €).
+
+En cas de double inscription, **20 % de réduction** pour un deuxième cours de yoga ou une seconde activité proposée par l'association.
+
+## Lieu
+
+**LE STUDIO**, 16 place des Tilleuls à Larchant, au cœur du village avec vue sur l'église. Entrez sans frapper !
+
+Le studio est entièrement équipé : tapis, briques, sangles, couvertures, chaises et cordes murales. Des vestiaires et des sanitaires sont à votre disposition pour vous changer sur place.
 
 ## L'enseignante
 
