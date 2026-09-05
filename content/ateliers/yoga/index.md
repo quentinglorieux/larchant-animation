@@ -41,7 +41,7 @@ Trois tarifs au choix, pour garder les cours accessibles tout en assurant leur �
 
 Ces tarifs s'entendent hors [adhésion annuelle à Larchant Animation](/adherez), obligatoire pour participer aux cours (20 €).
 
-En cas de double inscription, **20 % de réduction** pour un deuxième cours de yoga ou une seconde activité proposée par l'association.
+En cas de double inscription, **10 % de réduction** pour un deuxième cours de yoga ou une seconde activité proposée par l'association.
 
 ## Lieu
 
@@ -53,7 +53,7 @@ Le studio est entièrement équipé : tapis, briques, sangles, couvertures, chai
 
 Antonine pratique le yoga depuis 8 ans et l'enseigne depuis 2021.
 
-## Iyengar et Sport Santé
+## La méthode Iyengar
 
 La méthode Iyengar est basée sur une pratique rigoureuse des postures en se souciant principalement de l’alignement précis du corps dans l’espace ; les supports tels que les briques, les sangles ou les chaises permettent à toutes morphologies ou particularités corporelles d’organiser le travail debout et au sol pour développer la force, l’endurance, la souplesse et la relaxation. Chacun progresse petit à petit ; tous les élèves peuvent s’engager avec ferveur, dès lors que le goût de l’effort et l’intensité du travail ne les rebutent pas. Quand le mental est concentré sur l’action, la conscience intérieure s’améliore.
 
