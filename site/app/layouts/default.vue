@@ -2,13 +2,15 @@
 import type { InfosGenerales, SiteParams } from '~/types'
 
 const nav = [
+  { label: 'L’association', to: '/about' },
   { label: 'Évènements', to: '/evenements' },
   { label: 'Ateliers', to: '/ateliers' },
   { label: 'Activités', to: '/activites' },
+  { label: 'Savanturiers', to: '/club-multisports' },
+  { label: 'Médiathèque', to: '/mediatheque' },
   { label: 'Actualités', to: '/blog' },
-  { label: 'Newsletters', to: '/newsletters' },
-  { label: 'Adhérer', to: '/adherez' },
-  { label: 'Contact', to: '/contact' }
+  { label: 'Contact', to: '/contact' },
+  { label: 'Adhérer', to: '/adherez' }
 ]
 
 const open = ref(false)
@@ -29,7 +31,7 @@ const { data: infos } = await useDirectusSingleton<InfosGenerales>('infos_genera
       <UContainer class="flex items-center justify-between h-16">
         <AppLogo />
 
-        <nav class="hidden lg:flex items-center gap-1">
+        <nav class="hidden xl:flex items-center gap-1">
           <UButton
             v-for="item in nav"
             :key="item.to"
@@ -51,7 +53,7 @@ const { data: infos } = await useDirectusSingleton<InfosGenerales>('infos_genera
         </nav>
 
         <UButton
-          class="lg:hidden"
+          class="xl:hidden"
           :icon="open ? 'i-lucide-x' : 'i-lucide-menu'"
           variant="ghost"
           color="neutral"
@@ -61,7 +63,7 @@ const { data: infos } = await useDirectusSingleton<InfosGenerales>('infos_genera
       </UContainer>
 
       <!-- Menu mobile -->
-      <div v-if="open" class="lg:hidden border-t border-[var(--color-rule)] bg-[var(--color-paper)]">
+      <div v-if="open" class="xl:hidden border-t border-[var(--color-rule)] bg-[var(--color-paper)]">
         <UContainer class="py-3 flex flex-col gap-1">
           <UButton
             v-for="item in nav"

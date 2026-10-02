@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import type { Article, Atelier, Edition, Evenement, Categorie, SiteParams } from '~/types'
+import type { Article, Atelier, Edition, Evenement, Categorie, SiteParams, Slide } from '~/types'
 
 const today = new Date().toISOString().slice(0, 10)
 
 const { data: site } = await useDirectusSingleton<SiteParams>('site_parameters')
+const { data: slides } = await useDirectusCollection<Slide>('accueil_slides', { sort: ['sort'], fields: ['*'] })
+const { getUrl } = useDirectusFile()
 
 const { data: upcoming } = await useDirectusCollection<Edition>('editions', {
   filter: { status: { _eq: 'published' }, date_start: { _gte: today } },
@@ -40,17 +42,20 @@ const evList = computed(() => (upcoming.value?.length ? upcoming.value : []) as 
   <div>
     <!-- Hero -->
     <PageHero
-      kicker="Larchant · Forêt de Fontainebleau"
+      :kicker="site?.devise || 'Larchant · Forêt de Fontainebleau'"
       :title="site?.hero_title || 'Larchant Animation'"
       :subtitle="site?.hero_subtitle || 'Évènements, ateliers et activités tout au long de l’année.'"
     >
       <div class="mt-7 flex flex-wrap gap-3">
-        <UButton to="/evenements" size="lg" color="primary" trailing-icon="i-lucide-arrow-right">Les évènements</UButton>
+        <UButton v-if="site?.bandeau_texte && site?.bandeau_lien" :to="site.bandeau_lien" size="lg" color="primary" trailing-icon="i-lucide-arrow-right">{{ site.bandeau_texte }}</UButton>
+        <UButton to="/evenements" size="lg" :color="site?.bandeau_texte && site?.bandeau_lien ? 'neutral' : 'primary'" :variant="site?.bandeau_texte && site?.bandeau_lien ? 'soft' : 'solid'" trailing-icon="i-lucide-arrow-right">Les évènements</UButton>
         <UButton to="/adherez" size="lg" color="neutral" variant="soft">Adhérer</UButton>
       </div>
     </PageHero>
 
     <UContainer class="py-14 space-y-16">
+      <HomeCarousel :slides="slides || []" />
+
       <!-- Prochains rendez-vous -->
       <section v-if="evList.length">
         <div class="flex items-end justify-between mb-6">
@@ -110,12 +115,23 @@ const evList = computed(() => (upcoming.value?.length ? upcoming.value : []) as 
         </div>
       </section>
 
+      <!-- Association -->
+      <section v-if="site?.asso_texte" class="grid gap-8 md:grid-cols-2 items-center">
+        <div>
+          <h2 class="text-2xl font-semibold mb-3">{{ site.asso_titre || 'Notre association' }}</h2>
+          <MarkdownBody :text="site.asso_texte" />
+          <UButton to="/about" variant="link" color="primary" trailing-icon="i-lucide-arrow-right">En savoir plus</UButton>
+        </div>
+        <img v-if="site.asso_image" :src="getUrl(site.asso_image, { width: '900' })!" alt="" class="rounded-2xl w-full object-cover">
+      </section>
+
       <!-- Ateliers -->
       <section v-if="ateliers?.length">
         <div class="flex items-end justify-between mb-6">
           <h2 class="text-2xl font-semibold">Ateliers de la saison</h2>
           <UButton to="/ateliers" variant="link" color="primary" trailing-icon="i-lucide-arrow-right">Tous les ateliers</UButton>
         </div>
+        <MarkdownBody v-if="site?.ateliers_texte" :text="site.ateliers_texte" class="mb-6" />
         <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <ContentCard
             v-for="at in ateliers"
@@ -127,6 +143,8 @@ const evList = computed(() => (upcoming.value?.length ? upcoming.value : []) as 
           />
         </div>
       </section>
+
+      <NewsletterForm :intro="site?.newsletter_texte" />
     </UContainer>
   </div>
 </template>
