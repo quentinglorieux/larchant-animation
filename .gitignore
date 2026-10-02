@@ -21,3 +21,6 @@ directus/extensions/
 migration/report.json
 nuxt/
 directus/database/
+
+# Captures et journaux du MCP Playwright
+.playwright-mcp/
