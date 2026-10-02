@@ -48,8 +48,18 @@ Le Studio se connecte avec le compte admin Directus (`DIRECTUS_ADMIN_EMAIL` / `�
 **Machine** : VPS `hostinger-KVM`, dépôt dans `/root/larchant-animation` (branche `refonte-directus`), Node 22.
 Ports, tous en écoute locale uniquement : site `13010`, Studio `13011`, Directus `18056`, Postgres `54322`
 (IMAP occupe déjà 13000, 13001, 18055 et 54321 : ne pas y toucher).
-Domaines : `beta.larchantanimation.fr` (site), `studio.larchantanimation.fr`, `api.larchantanimation.fr` (Directus).
+Domaines **temporaires** (en ligne actuellement) : `la.quentinglorieux.fr` (site), `studio.la.quentinglorieux.fr`,
+`api.la.quentinglorieux.fr` (Directus). Domaines visés : `beta.larchantanimation.fr` (puis `larchantanimation.fr`),
+`studio.larchantanimation.fr`, `api.larchantanimation.fr`. Dans les commandes ci-dessous, remplacer les noms
+`*.larchantanimation.fr` par les domaines temporaires tant que la bascule n'est pas faite.
 `larchantanimation.fr` reste sur Netlify jusqu'à la bascule.
+
+**Changer de domaine (bascule)** : DNS A vers `109.176.199.51`, puis modifier
+`ecosystem.config.cjs` (constantes `DIRECTUS_PROD_URL` et `SITE_URL`), `docker-compose.yml` (`CORS_ORIGIN`),
+`deploy/nginx/larchant.conf` (`server_name`), `site/public/robots.txt` (ligne `Sitemap`) et, sur le VPS, `.env`
+(`DIRECTUS_PUBLIC_URL`, `NUXT_PUBLIC_DIRECTUS_URL`, `NUXT_PUBLIC_SITE_URL`). Ensuite : `docker compose up -d`,
+recopier le vhost et `nginx -t && systemctl reload nginx`, `certbot --nginx -d <site> -d <studio> -d <api>`,
+rebuild du site et du Studio (section 3) et `pm2 restart larchant-site larchant-studio --update-env`.
 
 ### 1. Installation
 ```bash
