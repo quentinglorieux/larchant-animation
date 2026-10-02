@@ -35,7 +35,8 @@
     "annee": 2024,
     "date_start": null,
     "annule": true,
-    "articles": []
+    "articles": [],
+    "affiche": "content/evenements/hivernale/hivernale_annulation.jpg"
   },
   "content/evenements/hivernale/index25.md": {
     "annee": 2025,

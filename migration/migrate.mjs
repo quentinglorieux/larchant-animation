@@ -189,7 +189,7 @@ async function migrateEvenements() {
         edition_label: o.edition_label || `Édition ${annee}`,
         date_start: dStart,
         date_end: o.date_end ?? null,
-        affiche: resolveMedia(relDir, m.data.preview, `edition ${relFile}`),
+        affiche: o.affiche ? (byRel.get(o.affiche) ?? resolveMedia(relDir, o.affiche, `edition ${relFile}`)) : resolveMedia(relDir, m.data.preview, `edition ${relFile}`),
         content: rewriteBody(body, relDir),
         inscription_url: o.inscription_url ?? inscriptionUrl,
         annule: o.annule ?? /annul/i.test(`${m.data.title || ''} ${body}`),
@@ -396,15 +396,17 @@ async function seedSingletons() {
     logo,
   })
   await api.patch('/items/infos_generales', { email: 'contact@larchantanimation.fr' })
+  const SLIDE_IMAGE_FIX = { '/images/noel.jpg': 'assets/images/noel-larchant-animation.png' }
+  const SLIDE_TITLE_FIX = { Noel: 'Noël' }
   for (const [i, s] of (carousel.images || []).entries()) {
     const existing = await api.get(`/items/accueil_slides?filter[sort][_eq]=${i + 1}&limit=1&fields=id`)
-    const image = resolveMedia('static', s.image, `slide ${i + 1}`)
+    const image = resolveMedia('static', SLIDE_IMAGE_FIX[s.image] || s.image, `slide ${i + 1}`)
     if (!image) {
       report.skipped.push(`slide ignoree (image introuvable): ${s.title || i + 1}`)
       if (existing?.length) await api.delete(`/items/accueil_slides/${existing[0].id}`)
       continue
     }
-    const payload = { title: s.title || null, image, lien: null, sort: i + 1 }
+    const payload = { title: SLIDE_TITLE_FIX[s.title] || s.title || null, image, lien: null, sort: i + 1 }
     if (existing?.length) await api.patch(`/items/accueil_slides/${existing[0].id}`, payload)
     else await api.post('/items/accueil_slides', payload)
   }
