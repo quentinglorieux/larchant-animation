@@ -63,7 +63,7 @@ export const useDirectusAuth = () => {
 
   const login = async (email, password) => {
     try {
-      await client.value.login({ email, password })
+      await client.value.login(email, password)
       await fetchUser()
       return true
     } catch (e) {
