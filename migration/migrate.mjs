@@ -46,7 +46,7 @@ async function uploadMedia() {
   const existing = await api.get('/files?limit=-1&fields=id,title')
   const existingByTitle = new Map((existing || []).filter((f) => f.title).map((f) => [f.title, f.id]))
 
-  const dirs = [join(ROOT, 'assets', 'gpx'), join(STATIC, 'images'), join(STATIC, 'files'), CONTENT]
+  const dirs = [join(ROOT, 'assets', 'gpx'), join(ROOT, 'assets', 'images'), join(STATIC, 'images'), join(STATIC, 'files'), CONTENT]
   const seen = new Set()
   for (const d of dirs) {
     for (const full of walk(d)) {
@@ -71,18 +71,24 @@ async function uploadMedia() {
 }
 
 // Résout une référence média (preview/affiche) relative à un fichier markdown
-function resolveMedia(mdRelDir, ref) {
+function resolveMedia(mdRelDir, ref, ctx) {
+  const id = resolveMediaRaw(mdRelDir, ref)
+  if (!id && ref && ctx) report.skipped.push(`media introuvable: ${ref} (${ctx})`)
+  return id
+}
+function resolveMediaRaw(mdRelDir, ref) {
   if (!ref) return null
   let r = toForward(String(ref)).replace(/^\.?\//, '')
   const candidates = []
   if (r.startsWith('images/') || r.startsWith('files/')) candidates.push(`static/${r}`)
   else candidates.push(toForward(join(mdRelDir, r)))
-  candidates.push(`static/images/${basename(r)}`, `static/files/${basename(r)}`)
+  if (r.startsWith('images/')) candidates.push(`assets/${r}`)
+  candidates.push(`assets/images/${basename(r)}`, `static/images/${basename(r)}`, `static/files/${basename(r)}`)
   for (const c of candidates) if (byRel.has(c)) return byRel.get(c)
   return byBasename.get(basename(r).toLowerCase()) || null
 }
 
-const rewriteBody = (body, relDir) => rewrite(body, (url) => resolveMedia(relDir, url))
+const rewriteBody = (body, relDir) => rewrite(body, (url) => resolveMediaRaw(relDir, url))
 
 // ---------- upsert générique ----------
 async function findId(collection, field, value) {
@@ -139,6 +145,8 @@ async function seedCategories() {
 
 // ---------- évènements + éditions ----------
 const eventIdBySlug = {}
+// Titres absents ou mal orthographiés dans le front matter (accents)
+const TITLE_FIX = { conferences: 'Conférences', telethon: 'Téléthon' }
 
 async function migrateEvenements() {
   console.log('\n[evenements + editions]')
@@ -150,15 +158,15 @@ async function migrateEvenements() {
     const mdFiles = readdirSync(dir).filter((f) => f.endsWith('.md'))
     const indexFile = mdFiles.find((f) => f === 'index.md')
     const front = indexFile ? matter(readFileSync(join(dir, indexFile), 'utf8')) : null
-    const title = front?.data?.title || humanize(slug)
+    const title = TITLE_FIX[slug] || front?.data?.title || humanize(slug)
     const pdf = readdirSync(dir).find((f) => f.toLowerCase().endsWith('.pdf'))
 
     const evId = await upsert('evenements', 'slug', slug, {
       status: 'published',
       title,
       description: front?.data?.description || '',
-      image: front ? resolveMedia(relDir, front.data.preview) : null,
-      reglement: pdf ? resolveMedia(relDir, pdf) : null,
+      image: front ? resolveMedia(relDir, front.data.preview, `evenement ${slug}`) : null,
+      reglement: pdf ? resolveMedia(relDir, pdf, `reglement ${slug}`) : null,
       category: guessCat(slug, title, front?.data?.description),
       lieu_defaut: 'Larchant',
       legacy_path: relDir,
@@ -181,7 +189,7 @@ async function migrateEvenements() {
         edition_label: o.edition_label || `Édition ${annee}`,
         date_start: dStart,
         date_end: o.date_end ?? null,
-        affiche: resolveMedia(relDir, m.data.preview),
+        affiche: resolveMedia(relDir, m.data.preview, `edition ${relFile}`),
         content: rewriteBody(body, relDir),
         inscription_url: o.inscription_url ?? inscriptionUrl,
         annule: o.annule ?? /annul/i.test(`${m.data.title || ''} ${body}`),
@@ -209,7 +217,7 @@ async function migrateExtraEditions() {
       edition_label: x.edition_label || `Édition ${x.annee}`,
       date_start: x.date_start ?? null,
       date_end: x.date_end ?? null,
-      affiche: x.affiche ? (byRel.get(x.affiche) ?? resolveMedia(relDir, x.affiche)) : null,
+      affiche: x.affiche ? (byRel.get(x.affiche) ?? resolveMedia(relDir, x.affiche, `edition extra ${x.evenement} ${x.annee}`)) : null,
       content: x.content ?? null,
       annule: x.annule ?? false,
     })
@@ -239,7 +247,7 @@ async function migrateArticles() {
         slug,
         date: m.data.date ? String(new Date(m.data.date).toISOString().slice(0, 10)) : null,
         description: m.data.summary || m.data.description || '',
-        preview: resolveMedia(toForward(relative(ROOT, dir)), m.data.preview),
+        preview: resolveMedia(toForward(relative(ROOT, dir)), m.data.preview, `article ${relFile}`),
         content: rewriteBody((m.content || '').trim(), toForward(relative(ROOT, dir))),
         featured,
         category: guessCat(slug, title, m.data.tags),
@@ -268,7 +276,7 @@ async function migrateLeafDirs(sub, collection, counter) {
       status: m.data.draft ? 'draft' : 'published',
       title: m.data.title || humanize(slug),
       description: rewriteBody((m.content || '').trim(), relDir),
-      image: resolveMedia(relDir, m.data.preview),
+      image: resolveMedia(relDir, m.data.preview, `${collection} ${slug}`),
       category: guessCat(slug, m.data.title, m.data.description),
       actif: true,
       legacy_path: relDir,
@@ -294,7 +302,7 @@ async function migrateNewsletters() {
       slug,
       date: m.data.date ? String(new Date(m.data.date).toISOString().slice(0, 10)) : null,
       description: m.data.description || '',
-      fichier: resolveMedia(toForward(relative(ROOT, dir)), m.data.preview),
+      fichier: resolveMedia(toForward(relative(ROOT, dir)), m.data.preview, `newsletter ${relFile}`),
     })
     report.newsletters++
   }
@@ -319,7 +327,7 @@ async function migratePages() {
       status: 'published',
       title: m.data.title || humanize(slug),
       content: slug === 'contact' ? 'Vous souhaitez prendre contact avec nous pour vous informer ou nous rejoindre.' : rewriteBody((m.content || '').trim(), relDir),
-      image: resolveMedia(relDir, m.data.preview),
+      image: resolveMedia(relDir, m.data.preview, `page ${slug}`),
       legacy_path: toForward(relative(ROOT, file)),
     })
     report.pages++
@@ -379,7 +387,7 @@ async function seedSingletons() {
     devise: settings.moto || null,
     asso_titre: settings.paragraph1?.heading || null,
     asso_texte: paras(settings.paragraph1),
-    asso_image: resolveMedia('static', settings.paragraph1?.image),
+    asso_image: resolveMedia('static', settings.paragraph1?.image, 'site_parameters.asso_image'),
     ateliers_texte: paras(settings.ateliers),
     newsletter_texte: paras(settings.mailinglist),
     bandeau_texte: 'Inscriptions aux ateliers 2026-2027',
@@ -390,7 +398,13 @@ async function seedSingletons() {
   await api.patch('/items/infos_generales', { email: 'contact@larchantanimation.fr' })
   for (const [i, s] of (carousel.images || []).entries()) {
     const existing = await api.get(`/items/accueil_slides?filter[sort][_eq]=${i + 1}&limit=1&fields=id`)
-    const payload = { title: s.title || null, image: resolveMedia('static', s.image), lien: null, sort: i + 1 }
+    const image = resolveMedia('static', s.image, `slide ${i + 1}`)
+    if (!image) {
+      report.skipped.push(`slide ignoree (image introuvable): ${s.title || i + 1}`)
+      if (existing?.length) await api.delete(`/items/accueil_slides/${existing[0].id}`)
+      continue
+    }
+    const payload = { title: s.title || null, image, lien: null, sort: i + 1 }
     if (existing?.length) await api.patch(`/items/accueil_slides/${existing[0].id}`, payload)
     else await api.post('/items/accueil_slides', payload)
   }

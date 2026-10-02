@@ -35,3 +35,5 @@ mv directus/uploads/snapshot.yml directus/snapshot.yml   # depuis la racine
   à affiner ensuite dans le Studio).
 
 `report.json` résume la dernière exécution.
+
+Attention : relancer `npm run migrate` écrase les modifications faites dans le Studio sur les éléments migrés (site_parameters, slides par position, éditions et leurs champs) ; à n'utiliser que pour l'import initial.
