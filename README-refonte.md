@@ -68,6 +68,7 @@ cd /root/larchant-animation && cp .env.example .env && chmod 600 .env
 # .env : mots de passe et secret aléatoires (openssl rand -hex …),
 # DIRECTUS_PUBLIC_URL=https://api.larchantanimation.fr, NUXT_PUBLIC_DIRECTUS_URL=https://api.larchantanimation.fr,
 # NUXT_PUBLIC_SITE_URL=https://beta.larchantanimation.fr
+mkdir -p directus/uploads directus/extensions && chown -R 1000:1000 directus/uploads directus/extensions  # Directus tourne en uid 1000
 docker compose up -d
 cp deploy/nginx/larchant.conf /etc/nginx/sites-available/larchant
 ln -s /etc/nginx/sites-available/larchant /etc/nginx/sites-enabled/larchant
