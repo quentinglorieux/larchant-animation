@@ -23,6 +23,7 @@ export interface Edition {
   inscription_url?: string | null
   inscription_pdf?: string | null
   annule?: boolean
+  articles_lies?: { articles_id: Article }[]
 }
 
 export interface Evenement {
@@ -101,7 +102,17 @@ export interface SiteParams {
   facebook_url?: string | null
   instagram_url?: string | null
   youtube_url?: string | null
+  devise?: string | null
+  bandeau_texte?: string | null
+  bandeau_lien?: string | null
+  asso_titre?: string | null
+  asso_texte?: string | null
+  asso_image?: string | null
+  ateliers_texte?: string | null
+  newsletter_texte?: string | null
 }
+
+export interface Slide { id: number, title?: string | null, lien?: string | null, image?: string | null, sort?: number }
 
 export interface InfosGenerales {
   adresse?: string | null
