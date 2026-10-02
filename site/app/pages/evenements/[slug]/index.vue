@@ -15,7 +15,7 @@ if (!evenement.value) throw createError({ statusCode: 404, statusMessage: 'Évè
 
 const { data: editions } = await useDirectusCollection<Edition>('editions', {
   filter: { status: { _eq: 'published' }, evenement: { _eq: evenement.value.id } },
-  sort: ['sort', '-annee'],
+  sort: ['-annee'],
   fields: ['*']
 })
 
@@ -63,11 +63,16 @@ useHead({ title: () => evenement.value?.title || 'Évènement' })
             <span class="rounded-full bg-[var(--color-forest-600)] px-3 py-1 text-xs font-semibold text-white">
               {{ current.edition_label }}
             </span>
-            <span v-if="current.date_start" class="text-sm text-[var(--color-ink-2)]">
-              <UIcon name="i-lucide-calendar" class="size-4 inline -mt-0.5" /> {{ formatDate(current.date_start) }}
+            <span class="text-sm text-[var(--color-ink-2)]">
+              <UIcon name="i-lucide-calendar" class="size-4 inline -mt-0.5" />
+              {{ current.date_start ? formatDate(current.date_start) : 'Date à venir' }}
             </span>
             <span v-if="current.annule" class="rounded-full bg-red-100 text-red-700 px-3 py-1 text-xs font-semibold">Annulé</span>
           </div>
+
+          <p v-if="!current.annule && isFinished(current)" class="mb-4 rounded-lg bg-[var(--color-paper)] px-4 py-2 text-sm text-[var(--color-ink-2)]">
+            {{ current.edition_label }} terminée. La prochaine édition sera bientôt annoncée.
+          </p>
 
           <img v-if="afficheUrl" :src="afficheUrl" :alt="current.edition_label" class="mb-5 w-full max-w-lg rounded-xl">
 
@@ -78,10 +83,10 @@ useHead({ title: () => evenement.value?.title || 'Évènement' })
           <MarkdownBody :text="current.content" />
 
           <div class="mt-5 flex flex-wrap gap-3">
-            <UButton v-if="current.inscription_url" :to="current.inscription_url" target="_blank" color="primary" trailing-icon="i-lucide-external-link">
+            <UButton v-if="current.inscription_url && !isFinished(current)" :to="current.inscription_url" target="_blank" color="primary" trailing-icon="i-lucide-external-link">
               S’inscrire
             </UButton>
-            <UButton v-if="inscriptionPdf" :to="inscriptionPdf" target="_blank" variant="soft" color="neutral" icon="i-lucide-file-text">
+            <UButton v-if="inscriptionPdf && !isFinished(current)" :to="inscriptionPdf" target="_blank" variant="soft" color="neutral" icon="i-lucide-file-text">
               Bulletin d’inscription
             </UButton>
             <UButton v-if="reglementUrl" :to="reglementUrl" target="_blank" variant="soft" color="neutral" icon="i-lucide-file-text">
@@ -97,7 +102,7 @@ useHead({ title: () => evenement.value?.title || 'Évènement' })
             <NuxtLink
               v-for="ed in archive"
               :key="ed.id"
-              :to="`/evenements/${evenement.slug}/${ed.annee || ed.id}`"
+              :to="`/evenements/${evenement.slug}/${ed.annee}`"
               class="flex items-center gap-4 rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-3 transition hover:border-[var(--color-forest-400)]"
             >
               <img
