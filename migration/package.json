@@ -8,10 +8,12 @@
     "schema": "node schema.mjs",
     "migrate": "node migrate.mjs",
     "permissions": "node permissions.mjs",
-    "test": "node --test lib/*.test.mjs"
+    "test": "node --test lib/*.test.mjs",
+    "review": "node review.mjs"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^5.4.2"
   }
 }

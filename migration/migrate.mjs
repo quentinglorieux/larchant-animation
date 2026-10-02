@@ -5,22 +5,23 @@ import { readFileSync, readdirSync, statSync, existsSync, writeFileSync } from '
 import { resolve, dirname, join, relative, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import matter from 'gray-matter'
+import * as yaml from 'js-yaml'
 import { api, DIRECTUS_URL } from './lib/directus.mjs'
+import { slugify, stripDate, rewriteBody as rewrite, extractInscription, editionYear, mimeFor } from './lib/content.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
 const CONTENT = join(ROOT, 'content')
 const STATIC = join(ROOT, 'static')
 
-const MEDIA_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg', '.pdf', '.avif'])
+const MEDIA_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg', '.pdf', '.avif', '.gpx'])
+const OVERRIDES_FILE = join(__dirname, 'editions-overrides.json')
+const OVERRIDES = existsSync(OVERRIDES_FILE) ? JSON.parse(readFileSync(OVERRIDES_FILE, 'utf8')) : {}
+const editionLinks = []
 const report = { files: 0, categories: 0, evenements: 0, editions: 0, articles: 0, ateliers: 0, activites: 0, newsletters: 0, pages: 0, links: 0, skipped: [] }
 
 // ---------- utilitaires ----------
 const norm = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
-function slugify(s) {
-  return norm(s).toLowerCase().replace(/['’]/g, ' ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80)
-}
-const stripDate = (name) => name.replace(/^\d{4}-\d{2}(-\d{2})?-/, '').replace(/\.md$/, '')
 const humanize = (s) => s.replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 const toForward = (p) => p.split('\\').join('/')
 
@@ -45,7 +46,7 @@ async function uploadMedia() {
   const existing = await api.get('/files?limit=-1&fields=id,title')
   const existingByTitle = new Map((existing || []).filter((f) => f.title).map((f) => [f.title, f.id]))
 
-  const dirs = [join(STATIC, 'images'), join(STATIC, 'files'), CONTENT]
+  const dirs = [join(ROOT, 'assets', 'gpx'), join(STATIC, 'images'), join(STATIC, 'files'), CONTENT]
   const seen = new Set()
   for (const d of dirs) {
     for (const full of walk(d)) {
@@ -57,8 +58,7 @@ async function uploadMedia() {
       let id = existingByTitle.get(rel)
       if (!id) {
         const buf = readFileSync(full)
-        const ext = extname(full).toLowerCase().slice(1)
-        const mime = ext === 'pdf' ? 'application/pdf' : (ext === 'svg' ? 'image/svg+xml' : `image/${ext === 'jpg' ? 'jpeg' : ext}`)
+        const mime = mimeFor(full)
         const f = await api.upload(buf, basename(full), mime, { title: rel })
         id = f.id
         report.files++
@@ -82,19 +82,7 @@ function resolveMedia(mdRelDir, ref) {
   return byBasename.get(basename(r).toLowerCase()) || null
 }
 
-// Réécrit les liens médias dans un corps markdown vers les assets Directus
-function rewriteBody(body, mdRelDir) {
-  if (!body) return body
-  return body.replace(/(!?\[[^\]]*\]\()([^)\s]+)(\))|(\bsrc=["'])([^"']+)(["'])/g,
-    (m, p1, url1, p3, s1, url2, s3) => {
-      const url = url1 || url2
-      if (!url || /^(https?:|mailto:|tel:|#|data:)/i.test(url)) return m
-      const id = resolveMedia(mdRelDir, url)
-      if (!id) return m
-      const asset = `${DIRECTUS_URL}/assets/${id}`
-      return url1 ? `${p1}${asset}${p3}` : `${s1}${asset}${s3}`
-    })
-}
+const rewriteBody = (body, relDir) => rewrite(body, (url) => resolveMedia(relDir, url))
 
 // ---------- upsert générique ----------
 async function findId(collection, field, value) {
@@ -181,24 +169,25 @@ async function migrateEvenements() {
     for (const f of mdFiles) {
       const m = matter(readFileSync(join(dir, f), 'utf8'))
       const relFile = toForward(relative(ROOT, join(dir, f)))
-      const suffix = f.match(/index(\d{2})?\.md$/)?.[1]
-      let dStart = m.data.date ? String(new Date(m.data.date).toISOString().slice(0, 10)) : null
-      if (dStart === '2023-01-01') dStart = null // date bidon de l'ancien site
-      const annee = suffix ? 2000 + parseInt(suffix, 10) : (dStart ? new Date(dStart).getFullYear() : null)
-      const isCurrent = !suffix // index.md = édition courante/à venir
-      const body = (m.content || '').trim()
-      const annule = /annul/i.test((m.data.title || '') + ' ' + body)
-      await upsert('editions', 'legacy_path', relFile, {
+      const o = OVERRIDES[relFile] || {}
+      const rawDate = m.data.date ? new Date(m.data.date).toISOString().slice(0, 10) : null
+      const dStart = 'date_start' in o ? o.date_start : (rawDate === '2023-01-01' ? null : rawDate)
+      const annee = o.annee ?? editionYear(f, rawDate) ?? new Date().getFullYear()
+      const { body, inscriptionUrl } = extractInscription((m.content || '').trim())
+      const editionId = await upsert('editions', 'legacy_path', relFile, {
         status: 'published',
         evenement: evId,
         annee,
-        edition_label: annee ? `Édition ${annee}` : 'Édition en cours',
+        edition_label: o.edition_label || `Édition ${annee}`,
         date_start: dStart,
+        date_end: o.date_end ?? null,
         affiche: resolveMedia(relDir, m.data.preview),
         content: rewriteBody(body, relDir),
-        annule,
-        sort: isCurrent ? -9999 : (annee ? -annee : 0), // édition courante en tête
+        inscription_url: o.inscription_url ?? inscriptionUrl,
+        annule: o.annule ?? /annul/i.test(`${m.data.title || ''} ${body}`),
+        resultats: o.resultats ?? null,
       })
+      editionLinks.push({ editionId, articles: o.articles || [] })
       report.editions++
     }
   }
@@ -289,7 +278,7 @@ async function migrateNewsletters() {
 // ---------- pages ----------
 async function migratePages() {
   console.log('\n[pages]')
-  const rootPages = ['about.md', 'contact.md', 'adherez.md']
+  const rootPages = ['about.md', 'contact.md', 'adherez.md', 'inscriptions.md', 'merci.md']
   const dirPages = ['club-multisports', 'mediatheque']
   const entries = []
   for (const f of rootPages) if (existsSync(join(CONTENT, f))) entries.push([join(CONTENT, f), slugify(f.replace(/\.md$/, '')), CONTENT])
@@ -303,7 +292,7 @@ async function migratePages() {
     await upsert('pages', 'slug', slug, {
       status: 'published',
       title: m.data.title || humanize(slug),
-      content: rewriteBody((m.content || '').trim(), relDir),
+      content: slug === 'contact' ? 'Vous souhaitez prendre contact avec nous pour vous informer ou nous rejoindre.' : rewriteBody((m.content || '').trim(), relDir),
       image: resolveMedia(relDir, m.data.preview),
       legacy_path: toForward(relative(ROOT, file)),
     })
@@ -339,23 +328,47 @@ async function linkArticles() {
       report.links++
     }
   }
+  for (const { editionId, articles } of editionLinks) {
+    for (const legacy of articles) {
+      const artId = await findId('articles', 'legacy_path', legacy)
+      if (!artId) { report.skipped.push(`article introuvable pour édition : ${legacy}`); continue }
+      const exists = await api.get(`/items/articles_editions?filter[articles_id][_eq]=${artId}&filter[editions_id][_eq]=${editionId}&limit=1&fields=id`)
+      if (!exists?.length) { await api.post('/items/articles_editions', { articles_id: artId, editions_id: editionId }); report.links++ }
+    }
+  }
   console.log(`  ${report.links} liens créés`)
 }
 
 // ---------- singletons ----------
 async function seedSingletons() {
   console.log('\n[singletons]')
+  const settings = yaml.load(readFileSync(join(ROOT, 'data/settings.yml'), 'utf8'))
+  const carousel = yaml.load(readFileSync(join(ROOT, 'data/carousel.yml'), 'utf8'))
+  const paras = (b) => (b?.content || []).map((c) => c.text).join('\n\n')
   const logo = byRel.get('static/images/logo.png') || byBasename.get('logo.png') || null
   await api.patch('/items/site_parameters', {
     site_title: 'Larchant Animation',
     hero_title: 'Larchant Animation',
-    hero_subtitle: 'La vie culturelle et sportive de Larchant, au pied de la forêt.',
+    hero_subtitle: settings.description?.trim() || null,
+    devise: settings.moto || null,
+    asso_titre: settings.paragraph1?.heading || null,
+    asso_texte: paras(settings.paragraph1),
+    asso_image: resolveMedia('static', settings.paragraph1?.image),
+    ateliers_texte: paras(settings.ateliers),
+    newsletter_texte: paras(settings.mailinglist),
+    bandeau_texte: 'Inscriptions aux ateliers 2026-2027',
+    bandeau_lien: '/inscriptions',
+    facebook_url: settings.social_media?.facebook?.url || null,
     logo,
   })
-  await api.patch('/items/infos_generales', {
-    email: 'contact@larchantanimation.fr',
-  })
-  console.log(`  site_parameters (logo ${logo ? 'baleine ✓' : 'manquant'}), infos_generales`)
+  await api.patch('/items/infos_generales', { email: 'contact@larchantanimation.fr' })
+  for (const [i, s] of (carousel.images || []).entries()) {
+    const existing = await api.get(`/items/accueil_slides?filter[sort][_eq]=${i + 1}&limit=1&fields=id`)
+    const payload = { title: s.title || null, image: resolveMedia('static', s.image), lien: null, sort: i + 1 }
+    if (existing?.length) await api.patch(`/items/accueil_slides/${existing[0].id}`, payload)
+    else await api.post('/items/accueil_slides', payload)
+  }
+  console.log(`  site_parameters, infos_generales, ${carousel.images?.length || 0} slides`)
 }
 
 async function main() {

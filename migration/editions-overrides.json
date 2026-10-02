@@ -1,0 +1,59 @@
+{
+  "content/evenements/baleine/index.md": {
+    "annee": 2024,
+    "date_start": "2024-06-28",
+    "date_end": "2024-06-29",
+    "articles": ["content/posts/2024-06-28-Baleino.md", "content/posts/2024-06-29-LaBaleine.md"]
+  },
+  "content/evenements/foire-aux-plantes/index.md": {
+    "annee": 2026,
+    "date_start": "2026-04-05",
+    "articles": ["content/posts/2026-02-foire-aux-plantes.md", "content/news/2026-05-04-FAP2026.md"]
+  },
+  "content/evenements/foire-aux-plantes/index25.md": {
+    "annee": 2025,
+    "date_start": "2025-04-06",
+    "articles": ["content/posts/2025-02-foire-aux-plantes.md"]
+  },
+  "content/evenements/hivernale/index.md": {
+    "annee": 2026,
+    "date_start": "2026-03-08",
+    "articles": ["content/posts/2025-12-lhivernale-est-de-retour.md", "content/news/2026-01-06-l’hivernale-c’est-parti-pour-les-inscriptions copy.md"]
+  },
+  "content/evenements/hivernale/index24.md": {
+    "annee": 2024,
+    "date_start": null,
+    "annule": true,
+    "articles": []
+  },
+  "content/evenements/hivernale/index25.md": {
+    "annee": 2025,
+    "date_start": "2025-03-09",
+    "articles": ["content/posts/2025-03-09-Hivernale_2025.md"]
+  },
+  "content/evenements/lyricantrail/index.md": {
+    "annee": 2026,
+    "date_start": "2026-10-11",
+    "inscription_url": "https://www.chronoteam.org/lyrican-trail-2026/",
+    "articles": [
+      "content/news/2026-07-29-le-lyricantrail-2026-les-inscriptions-restent-en-attente.md",
+      "content/news/2026-09-01-lyricantrail-2026-dimanche-11-octobre.md",
+      "content/posts/2026-10-lyricantrail-2026.md"
+    ]
+  },
+  "content/evenements/telethon/index.md": {
+    "annee": 2024,
+    "date_start": "2024-11-30",
+    "articles": ["content/posts/2024-11-30-Telethon.md"]
+  },
+  "content/evenements/triathlon/index.md": {
+    "annee": 2024,
+    "date_start": "2024-09-15",
+    "articles": ["content/posts/2024-09-15-le-triathlon-de-larchant.md"]
+  },
+  "content/evenements/vide-grenier/index.md": {
+    "annee": 2025,
+    "date_start": "2025-09-21",
+    "articles": []
+  }
+}
