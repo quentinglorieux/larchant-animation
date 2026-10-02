@@ -43,8 +43,8 @@ const text = (field, markdown = true) => ({
 
 const int = (field, opts = {}) => ({
   field, type: 'integer',
-  meta: { interface: 'input', width: opts.width || 'half', hidden: !!opts.hidden },
-  schema: {},
+  meta: { interface: 'input', width: opts.width || 'half', hidden: !!opts.hidden, required: !!opts.required, note: opts.note || null },
+  schema: { is_nullable: !opts.required },
 })
 
 const bool = (field, def = false) => ({
@@ -185,14 +185,14 @@ async function main() {
   console.log('\n[editions]')
   await createCollection('editions',
     { icon: 'event', note: 'Édition d’un évènement (une par année)',
-      sort_field: 'sort', archive_field: 'status', archive_value: 'archived', unarchive_value: 'draft' },
+      archive_field: 'status', archive_value: 'archived', unarchive_value: 'draft' },
     [
-      status(), int('annee'), str('edition_label', { note: 'Ex. « Édition 2026 »' }),
+      status(), int('annee', { required: true }), str('edition_label', { note: 'Ex. « Édition 2026 »' }),
       date('date_start'), date('date_end'),
-      str('lieu', { note: 'Override du lieu si différent' }),
+      str('lieu', { note: 'Si différent du lieu habituel' }),
       text('content'), text('resultats'),
       str('inscription_url'), bool('annule'),
-      sortField(), legacy(),
+      legacy(),
     ])
   await ensureM2O('editions', 'evenement', 'evenements', { onDelete: 'CASCADE' })
   await ensureFile('editions', 'affiche', { image: true })
@@ -272,10 +272,13 @@ async function main() {
     [
       str('site_title'), str('hero_title'), text('hero_subtitle', false),
       str('facebook_url'), str('instagram_url'), str('youtube_url'),
+      str('devise'), str('bandeau_texte'), str('bandeau_lien'),
+      str('asso_titre'), text('asso_texte'), text('ateliers_texte'), text('newsletter_texte'),
     ])
   await ensureFile('site_parameters', 'logo', { image: true })
   await ensureFile('site_parameters', 'logo_dark', { image: true })
   await ensureFile('site_parameters', 'hero_image', { image: true })
+  await ensureFile('site_parameters', 'asso_image', { image: true })
 
   console.log('\n[infos_generales] (singleton)')
   await createCollection('infos_generales',
@@ -285,6 +288,12 @@ async function main() {
       text('horaires', false), str('president'),
       text('adhesion'), str('helloasso_url'), text('mentions_legales'),
     ])
+
+  console.log('\n[accueil_slides]')
+  await createCollection('accueil_slides',
+    { icon: 'view_carousel', note: 'Carrousel de la page d’accueil', sort_field: 'sort' },
+    [str('title'), str('lien'), sortField()])
+  await ensureFile('accueil_slides', 'image', { image: true })
 
   // 10. Maillage M2M
   console.log('\n[maillage M2M]')
