@@ -57,6 +57,26 @@ watch(() => form.title, (v) => {
   if (hasSlug.value && hasTitle.value && !slugTouched && isCreating.value) form.slug = slugify(String(v || ''))
 })
 
+// Bascule d'un booléen directement dans le tableau : valeur mise à jour tout de suite, annulée en cas d'erreur.
+const pendingToggles = reactive(new Set<string>())
+const toggleBoolean = async (row: Row, c: ColumnDef, value: boolean) => {
+  const lock = `${c.key}:${row.id as number}`
+  if (pendingToggles.has(lock)) return
+  pendingToggles.add(lock)
+  row[c.key] = value
+  try {
+    await client.value.request(updateItem(props.collection, row.id as number, { [c.key]: value }))
+    toast.add({ title: `${c.header} : ${value ? 'activé' : 'désactivé'}`, color: 'success' })
+    emit('saved')
+  } catch (e) {
+    console.error(e)
+    row[c.key] = !value
+    toast.add({ title: friendlyDirectusError(e) || 'Échec de l’enregistrement', color: 'error' })
+  } finally {
+    pendingToggles.delete(lock)
+  }
+}
+
 const tableColumns = computed(() => props.columns.map(c => ({
   accessorKey: c.key,
   header: c.header,
@@ -73,6 +93,17 @@ const tableColumns = computed(() => props.columns.map(c => ({
     }
     if (c.type === 'badge') {
       return h(resolveComponent('UBadge'), { color: STATUS_COLOR[v as string] || 'neutral', variant: 'soft', size: 'sm' }, () => String(v ?? ''))
+    }
+    if (c.type === 'boolean' && c.editable) {
+      const id = row.original.id as number
+      return h('div', { onClick: (e: Event) => e.stopPropagation() }, [
+        h(resolveComponent('USwitch'), {
+          modelValue: !!v,
+          disabled: pendingToggles.has(`${c.key}:${id}`),
+          'aria-label': c.header,
+          'onUpdate:modelValue': (val: boolean) => toggleBoolean(row.original, c, val)
+        })
+      ])
     }
     if (c.type === 'boolean') return h('span', {}, v ? '✓' : '')
     // relation lue avec ses sous-champs (ex. evenement : { id, slug, title })

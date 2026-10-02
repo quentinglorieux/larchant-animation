@@ -22,7 +22,7 @@ const columns = [
   { key: 'preview', header: '', type: 'image' },
   { key: 'title', header: 'Titre' },
   { key: 'date', header: 'Date', type: 'date' },
-  { key: 'featured', header: 'À la une', type: 'boolean' },
+  { key: 'featured', header: 'À la une', type: 'boolean', editable: true },
   { key: 'status', header: 'Statut', type: 'badge' }
 ]
 </script>

@@ -20,5 +20,7 @@ export interface ColumnDef {
   key: string
   header: string
   type?: 'image' | 'badge' | 'date' | 'boolean' | 'text' | 'state'
+  /** boolean : interrupteur modifiable directement dans le tableau. */
+  editable?: boolean
   state?: (row: Row) => { label: string, color: string } | null
 }
