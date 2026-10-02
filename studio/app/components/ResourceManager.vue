@@ -153,6 +153,8 @@ const save = async () => {
       if ((f.type === 'text' || f.type === 'textarea' || f.type === 'markdown' || f.type === 'date' || f.type === 'select' || f.type === 'color') && v === '') v = null
       payload[f.key] = v ?? null
     }
+    // Clés fixées par initialFilter (ex. evenement sur la fiche évènement) : absentes des champs, mais requises à la création.
+    if (isCreating.value && props.initialFilter) for (const k of Object.keys(props.initialFilter)) if (!(k in payload)) payload[k] = form[k] ?? null
     if (hasSlug.value && !payload.slug && hasTitle.value) payload.slug = slugify(String(form.title))
     const problem = await props.validate?.(payload, isCreating.value ? null : editing.value!.id as number)
     if (problem) { toast.add({ title: problem, color: 'warning' }); return }

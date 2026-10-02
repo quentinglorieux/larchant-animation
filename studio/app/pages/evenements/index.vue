@@ -9,8 +9,7 @@ const fields = [
   { key: 'description', label: 'Description (markdown)', type: 'markdown' },
   { key: 'image', label: 'Image générique', type: 'image', half: true },
   { key: 'reglement', label: 'Règlement (PDF)', type: 'file', half: true },
-  { key: 'featured', label: 'À la une', type: 'boolean', half: true },
-  { key: 'sort', label: 'Ordre', type: 'number', half: true }
+  { key: 'featured', label: 'À la une', type: 'boolean', half: true }
 ]
 const columns = [
   { key: 'image', header: '', type: 'image' },
@@ -22,8 +21,8 @@ const columns = [
   <div>
     <ResourceManager
       collection="evenements" title="Évènements" singular-label="évènement"
-      description="Infos générales pérennes. Gérez les éditions dans l’onglet Éditions."
-      :fields="fields" :columns="columns" :default-sort="['sort', 'title']"
+      description="Cliquez sur un évènement pour modifier sa présentation et gérer ses éditions."
+      :fields="fields" :columns="columns" :default-sort="['title']" :row-to="(r) => `/evenements/${r.id}`"
     />
   </div>
 </template>

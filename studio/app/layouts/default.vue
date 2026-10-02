@@ -12,7 +12,6 @@ const items = [
   [
     { label: 'Contenu', type: 'label' },
     { label: 'Évènements', icon: 'i-lucide-party-popper', to: '/evenements' },
-    { label: 'Éditions', icon: 'i-lucide-calendar-days', to: '/editions' },
     { label: 'Articles', icon: 'i-lucide-newspaper', to: '/articles' },
     { label: 'Ateliers', icon: 'i-lucide-school', to: '/ateliers' },
     { label: 'Activités', icon: 'i-lucide-bike', to: '/activites' },
