@@ -176,11 +176,11 @@ const save = async () => {
 
 const remove = async () => {
   if (!editing.value) return
-  const block = await props.deleteGuard?.({ ...form, id: editing.value.id })
-  if (block) { toast.add({ title: 'Suppression impossible', description: block, color: 'warning' }); return }
-  if (!confirm(`Supprimer définitivement « ${form.title || form.edition_label || props.singularLabel} » ? Cette action est irréversible.`)) return
   saving.value = true
   try {
+    const block = await props.deleteGuard?.({ ...form, id: editing.value.id })
+    if (block) { toast.add({ title: 'Suppression impossible', description: block, color: 'warning' }); return }
+    if (!confirm(`Supprimer définitivement « ${form.title || form.edition_label || props.singularLabel} » ? Cette action est irréversible.`)) return
     await client.value.request(deleteItem(props.collection, editing.value.id as number))
     toast.add({ title: 'Supprimé', color: 'success' })
     slideoverOpen.value = false

@@ -36,11 +36,16 @@ async function loadLast() {
 }
 
 onMounted(async () => {
+  try {
   const ev = await client.value.request(readItem('evenements', id, { fields: fields.map(f => f.key) })) as Row
   Object.assign(form, ev, { category: (ev.category as Row | null)?.id ?? ev.category })
   const cats = await client.value.request(readItems('categories', { fields: ['id', 'name'], sort: ['name'], limit: -1 })) as { id: number, name: string }[]
   refOptions.category = cats.map(c => ({ value: c.id, label: c.name }))
   await loadLast()
+  } catch {
+    toast.add({ title: 'Évènement introuvable', color: 'error' })
+    await navigateTo('/evenements')
+  }
 })
 
 async function save() {

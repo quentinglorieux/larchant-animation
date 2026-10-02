@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const fields = [
   { key: 'name', label: 'Nom', type: 'text', required: true },
-  { key: 'slug', label: 'Adresse de la page', type: 'text', half: true, help: 'Fin de l’adresse web, générée depuis le titre. À ne pas modifier après publication.' },
+  { key: 'slug', label: 'Identifiant', type: 'text', half: true, help: 'Identifiant technique, sans espaces ni accents. À ne pas modifier.' },
   { key: 'type', label: 'Type', type: 'select', half: true, options: [
     { value: 'evenement', label: 'Évènement' }, { value: 'atelier', label: 'Atelier' },
     { value: 'activite', label: 'Activité' }, { value: 'article', label: 'Article' } ] },
