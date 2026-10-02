@@ -6,7 +6,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev --port 13001",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest run"
   },
   "dependencies": {
     "@directus/sdk": "^19.1.0",
@@ -16,6 +17,7 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vitest": "^3.2.7"
   }
 }
