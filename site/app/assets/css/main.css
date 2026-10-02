@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@import "@fontsource/inter-tight/300.css";
+@import "@fontsource/inter-tight/400.css";
+@import "@fontsource/inter-tight/500.css";
+@import "@fontsource/inter-tight/600.css";
+@import "@fontsource/inter-tight/700.css";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/600.css";
+@import "@fontsource/space-grotesk/700.css";
+
+@theme static {
+  /* Typographie */
+  --font-sans: 'Inter Tight', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Forest — vert forêt (couleur primaire) */
+  --color-forest-50:  oklch(97% 0.020 150);
+  --color-forest-100: oklch(94% 0.034 150);
+  --color-forest-200: oklch(88% 0.052 150);
+  --color-forest-300: oklch(79% 0.078 148);
+  --color-forest-400: oklch(68% 0.098 147);
+  --color-forest-500: oklch(58% 0.105 146);
+  --color-forest-600: oklch(50% 0.098 146);
+  --color-forest-700: oklch(42% 0.082 147);
+  --color-forest-800: oklch(34% 0.064 148);
+  --color-forest-900: oklch(28% 0.048 150);
+  --color-forest-950: oklch(18% 0.032 150);
+
+  /* Grès — sable/ocre de Fontainebleau (accent) */
+  --color-sable:       #C68B4E;
+  --color-sable-light: #E0B27C;
+
+  /* Surfaces (chaudes, papier) */
+  --color-paper:   oklch(98.4% 0.008 80);
+  --color-paper-2: oklch(96.6% 0.012 80);
+  --color-bone:    oklch(95% 0.018 80);
+
+  /* Encre (texte) */
+  --color-ink:   oklch(22% 0.018 150);
+  --color-ink-2: oklch(36% 0.016 150);
+  --color-ink-3: oklch(54% 0.012 150);
+
+  /* Filets / bordures */
+  --color-rule:   oklch(89% 0.012 120);
+  --color-rule-2: oklch(93% 0.008 120);
+}
+
+/* Mode couleur : override par classe + repli système */
+:root { color-scheme: light; }
+
+:root.dark,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --color-paper:   oklch(20% 0.014 155);
+  --color-paper-2: oklch(24% 0.016 155);
+  --color-bone:    oklch(27% 0.018 155);
+  --color-ink:   oklch(93% 0.012 130);
+  --color-ink-2: oklch(76% 0.012 130);
+  --color-ink-3: oklch(60% 0.010 130);
+  --color-rule:   oklch(36% 0.012 150);
+  --color-rule-2: oklch(30% 0.010 150);
+  --color-sable:  oklch(78% 0.10 70);
+}
+
+:root.light,
+[data-theme='light'] { color-scheme: light; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not([data-theme='light']) {
+    color-scheme: dark;
+    --color-paper:   oklch(20% 0.014 155);
+    --color-paper-2: oklch(24% 0.016 155);
+    --color-bone:    oklch(27% 0.018 155);
+    --color-ink:   oklch(93% 0.012 130);
+    --color-ink-2: oklch(76% 0.012 130);
+    --color-ink-3: oklch(60% 0.010 130);
+    --color-rule:   oklch(36% 0.012 150);
+    --color-rule-2: oklch(30% 0.010 150);
+    --color-sable:  oklch(78% 0.10 70);
+  }
+}
+
+/* Global */
+html { background-color: var(--color-paper); }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01","cv11";
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
+
+/* Étiquette monospace discrète */
+.monotag {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+}
+
+/* Hero village/forêt — fond dégradé naturel */
+.la-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 12% 12%, color-mix(in oklab, var(--color-forest-500) 22%, transparent) 0%, transparent 46%),
+    radial-gradient(ellipse at 88% 8%, color-mix(in oklab, var(--color-sable) 20%, transparent) 0%, transparent 46%),
+    linear-gradient(170deg, var(--color-forest-900) 0%, var(--color-forest-950) 100%);
+}
+
+/* Rendu du contenu markdown */
+.prose-la :where(h2) { font-family: var(--font-display); font-size: 1.5rem; margin: 1.6rem 0 0.6rem; }
+.prose-la :where(h3) { font-family: var(--font-display); font-size: 1.2rem; margin: 1.2rem 0 0.4rem; }
+.prose-la :where(p)  { margin: 0.7rem 0; line-height: 1.7; }
+.prose-la :where(ul) { list-style: disc; padding-left: 1.4rem; margin: 0.7rem 0; }
+.prose-la :where(ol) { list-style: decimal; padding-left: 1.4rem; margin: 0.7rem 0; }
+.prose-la :where(a)  { color: var(--color-forest-600); text-decoration: underline; }
+.prose-la :where(img){ border-radius: 0.75rem; margin: 1rem 0; max-width: 100%; }
+.prose-la :where(blockquote) {
+  border-left: 3px solid var(--color-sable);
+  padding-left: 1rem; color: var(--color-ink-2); font-style: italic; margin: 1rem 0;
+}

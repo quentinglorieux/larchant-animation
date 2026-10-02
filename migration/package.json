@@ -1,0 +1,16 @@
+{
+  "name": "larchant-migration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Outils one-shot : création du schéma Directus + migration du contenu Hugo/markdown.",
+  "scripts": {
+    "schema": "node schema.mjs",
+    "migrate": "node migrate.mjs",
+    "permissions": "node permissions.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "gray-matter": "^4.0.3"
+  }
+}

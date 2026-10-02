@@ -1,13 +1,13 @@
 node_modules/
 resources/
-public/
+/public/
 .hugo_build.lock
 .vercel
 yarn-error.log
 # Local Netlify folder
 .netlify
 yarn-error.log
-package-lock.json
+/package-lock.json
 .DS*
 
 # --- Nuxt 4 + Directus stack (refonte 2026) ---
@@ -19,3 +19,5 @@ directus/extensions/
 **/.output/
 **/dist/
 migration/report.json
+nuxt/
+directus/database/

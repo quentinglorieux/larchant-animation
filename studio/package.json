@@ -1,0 +1,21 @@
+{
+  "name": "larchant-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 13001",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@directus/sdk": "^19.1.0",
+    "@iconify-json/lucide": "^1.2.102",
+    "@nuxt/ui": "^4.6.1",
+    "nuxt": "^4.4.2",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}

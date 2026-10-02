@@ -1,0 +1,25 @@
+{
+  "name": "larchant-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@directus/sdk": "^19.1.0",
+    "@fontsource/inter-tight": "^5.2.7",
+    "@fontsource/space-grotesk": "^5.2.10",
+    "@iconify-json/lucide": "^1.2.102",
+    "@iconify-json/simple-icons": "^1.2.78",
+    "@nuxt/ui": "^4.6.1",
+    "markdown-it": "^14.1.0",
+    "nuxt": "^4.4.2",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}
