@@ -9,3 +9,13 @@ yarn-error.log
 yarn-error.log
 package-lock.json
 .DS*
+
+# --- Nuxt 4 + Directus stack (refonte 2026) ---
+.env
+.env.local
+directus/uploads/
+directus/extensions/
+**/.nuxt/
+**/.output/
+**/dist/
+migration/report.json

@@ -4,7 +4,7 @@
 
 **Décisions validées (2026-10-02)**
 - Backend Directus 11 + **Postgres 16** (`docker-compose.yml` actuel conservé). Sauvegarde : cron quotidien `pg_dump` + tarball `directus/uploads/`, 14 jours.
-- Hébergement : VPS Hostinger (`ssh hostinger-KVM`), même pattern qu'IMAP : site PM2 `:13010`, Studio PM2 `:13011`, Directus Docker `127.0.0.1:18056`, Postgres `127.0.0.1:54322`, nginx + Let's Encrypt. Domaines `larchantanimation.fr`, `studio.`, `api.` (+ `beta.` pendant la recette). DNS OVH via `ovhcloud`, chaque commande confirmée.
+- Hébergement : VPS Hostinger (`ssh hostinger-KVM`), même pattern qu'IMAP : site PM2 `:13010`, Studio PM2 `:13011`, Directus Docker `127.0.0.1:18056`, Postgres `127.0.0.1:54322`, nginx + Let's Encrypt. Domaines : le nouveau site est publié sur **`beta.larchantanimation.fr`** (l'actuel reste sur `larchantanimation.fr` / Netlify), plus `studio.` et `api.` ; la bascule du domaine principal se fera plus tard, sur décision explicite. DNS OVH via `ovhcloud` (A vers le VPS 109.176.199.51), chaque commande confirmée.
 - Le site lit Directus en direct (cache SWR ~60 s), pas de rebuild.
 - Rôles : Public (lecture du publié), **Éditeur unique** (CRUD contenu + fichiers, aucun réglage), Admin.
 - Formulaires (contact, newsletter) : composants Vue postant vers les URL **Google Apps Script** actuelles, même jeton anti-spam.
@@ -32,6 +32,6 @@
 
 **Tests** : Vitest sur `currentEdition`/`pastEditions` (future, passée, annulée, sans date) et sur la duplication d'édition ; script post-migration (comptes, liens médias, toutes les anciennes URL en 200/301) ; recette manuelle avec un compte Éditeur.
 
-**Bascule** : déploiement VPS, recette sur `beta.`, bascule DNS, Netlify gardé en secours jusqu'à stabilité, puis suppression de `content/`, `layouts/`, `static/admin`, `nuxt/`, `netlify.toml`, `vercel.toml`.
+**Bascule** : déploiement VPS sur `beta.` / `studio.` / `api.`, recette, puis (sur décision) bascule DNS du domaine principal, Netlify gardé en secours jusqu'à stabilité, puis suppression de `content/`, `layouts/`, `static/admin`, `nuxt/`, `netlify.toml`, `vercel.toml`.
 
 **Hors périmètre** : droits par activité, stockage des formulaires dans Directus, SMTP, nouvelle identité visuelle.
