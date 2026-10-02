@@ -37,7 +37,7 @@ useSeoMeta({
       <aside v-if="infos.length" class="space-y-3">
         <div class="rounded-2xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-5 space-y-3">
           <div v-for="i in infos" :key="i.label" class="flex gap-3 text-sm">
-            <UIcon :name="i.icon" class="size-5 text-[var(--color-forest-600)] shrink-0" />
+            <UIcon :name="i.icon" class="size-5 text-[var(--color-brand-600)] shrink-0" />
             <div>
               <p class="monotag">{{ i.label }}</p>
               <p class="text-[var(--color-ink)]">{{ i.value }}</p>

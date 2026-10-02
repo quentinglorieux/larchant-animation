@@ -20,9 +20,9 @@ useHead({ title: 'Newsletters' })
           :key="n.id"
           :href="getUrl(n.fichier) || '#'"
           target="_blank"
-          class="flex items-center gap-4 rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-4 transition hover:border-[var(--color-forest-400)]"
+          class="flex items-center gap-4 rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-4 transition hover:border-[var(--color-brand-400)]"
         >
-          <div class="flex size-12 items-center justify-center rounded-lg bg-[var(--color-bone)] text-[var(--color-forest-600)]">
+          <div class="flex size-12 items-center justify-center rounded-lg bg-[var(--color-bone)] text-[var(--color-brand-600)]">
             <UIcon name="i-lucide-mail" class="size-6" />
           </div>
           <div>

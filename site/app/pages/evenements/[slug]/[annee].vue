@@ -61,7 +61,7 @@ useHead({ title: () => `${edition.value?.evenement?.title} · ${edition.value?.e
         <h2 class="text-xl font-semibold mb-2">Articles de cette édition</h2>
         <ul class="space-y-1">
           <li v-for="a in articles" :key="a.slug">
-            <NuxtLink :to="`/blog/${a.slug}`" class="text-[var(--color-forest-600)] hover:underline">{{ a.title }}</NuxtLink>
+            <NuxtLink :to="`/blog/${a.slug}`" class="text-[var(--color-brand-600)] hover:underline">{{ a.title }}</NuxtLink>
             <span class="text-xs text-[var(--color-ink-3)]"> · {{ formatDate(a.date) }}</span>
           </li>
         </ul>

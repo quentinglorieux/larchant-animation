@@ -65,7 +65,7 @@ useSeoMeta({
         <!-- Édition en cours -->
         <section v-if="current" class="rounded-2xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-6">
           <div class="flex items-center gap-3 mb-4">
-            <span class="rounded-full bg-[var(--color-forest-600)] px-3 py-1 text-xs font-semibold text-white">
+            <span class="rounded-full bg-[var(--color-brand-600)] px-3 py-1 text-xs font-semibold text-white">
               {{ current.edition_label }}
             </span>
             <span class="text-sm text-[var(--color-ink-2)]">
@@ -108,7 +108,7 @@ useSeoMeta({
               v-for="ed in archive"
               :key="ed.id"
               :to="`/evenements/${evenement.slug}/${ed.annee}`"
-              class="flex items-center gap-4 rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-3 transition hover:border-[var(--color-forest-400)]"
+              class="flex items-center gap-4 rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-3 transition hover:border-[var(--color-brand-400)]"
             >
               <img
                 v-if="getUrl(ed.affiche, { width: '120', height: '120', fit: 'cover' })"
@@ -135,7 +135,7 @@ useSeoMeta({
           v-for="a in relatedArticles"
           :key="a.slug"
           :to="`/blog/${a.slug}`"
-          class="flex gap-3 rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-3 transition hover:border-[var(--color-forest-400)]"
+          class="flex gap-3 rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-3 transition hover:border-[var(--color-brand-400)]"
         >
           <img
             v-if="getUrl(a.preview, { width: '120', height: '120', fit: 'cover' })"

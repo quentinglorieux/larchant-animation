@@ -40,7 +40,7 @@ useHead({ title: () => page.value?.title || 'Page' })
             :href="getUrl(n.fichier) || undefined"
             target="_blank"
             rel="noopener"
-            class="block rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-4 hover:border-[var(--color-forest-600)]"
+            class="block rounded-xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-4 hover:border-[var(--color-brand-600)]"
           >
             <span class="font-medium">{{ n.title }}</span>
             <span v-if="n.date" class="block text-sm text-[var(--color-ink-3)]">{{ formatMonth(n.date) }}</span>
@@ -64,7 +64,7 @@ useHead({ title: () => page.value?.title || 'Page' })
         <div class="rounded-2xl border border-[var(--color-rule)] bg-[var(--color-paper-2)] p-5 space-y-3 text-sm">
           <p class="monotag">Nous contacter</p>
           <p v-if="infos.adresse" class="whitespace-pre-line text-[var(--color-ink-2)]">{{ infos.adresse }}</p>
-          <p v-if="infos.email"><a :href="`mailto:${infos.email}`" class="text-[var(--color-forest-600)] hover:underline">{{ infos.email }}</a></p>
+          <p v-if="infos.email"><a :href="`mailto:${infos.email}`" class="text-[var(--color-brand-600)] hover:underline">{{ infos.email }}</a></p>
           <p v-if="infos.telephone" class="text-[var(--color-ink-2)]">{{ infos.telephone }}</p>
           <p v-if="infos.horaires" class="whitespace-pre-line text-[var(--color-ink-3)]">{{ infos.horaires }}</p>
         </div>

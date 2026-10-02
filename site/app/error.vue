@@ -8,7 +8,7 @@ useHead({ title: is404.value ? 'Page introuvable' : 'Erreur' })
 <template>
   <NuxtLayout>
     <UContainer class="py-24 text-center space-y-4">
-      <p class="text-6xl font-bold text-[var(--color-forest-600)]">{{ error.statusCode }}</p>
+      <p class="text-6xl font-bold text-[var(--color-brand-600)]">{{ error.statusCode }}</p>
       <h1 class="text-2xl font-semibold">{{ is404 ? 'Cette page n’existe pas (ou plus).' : 'Une erreur est survenue.' }}</h1>
       <UButton @click="clearError({ redirect: '/' })">Retour à l’accueil</UButton>
     </UContainer>
