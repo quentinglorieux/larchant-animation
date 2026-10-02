@@ -7,7 +7,8 @@
   "scripts": {
     "schema": "node schema.mjs",
     "migrate": "node migrate.mjs",
-    "permissions": "node permissions.mjs"
+    "permissions": "node permissions.mjs",
+    "test": "node --test lib/*.test.mjs"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
