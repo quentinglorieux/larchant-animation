@@ -32,6 +32,9 @@ test('editionYear : suffixe de fichier prioritaire, sinon date, date bidon ignor
   assert.equal(editionYear('index.md', '2026-03-08'), 2026)
   assert.equal(editionYear('index.md', '2023-01-01'), null)
   assert.equal(editionYear('index.md', null), null)
+  assert.equal(editionYear('index.md', new Date('2023-01-01')), null)
+  assert.equal(editionYear('index.md', new Date('2026-03-08T00:00:00Z')), 2026)
+  assert.equal(editionYear('index.md', 'pas une date'), null)
 })
 test('hugoUrlize reproduit les URLs du sitemap live', () => {
   assert.equal(hugoUrlize('posts/2024-06-08-Pétanque'), 'posts/2024-06-08-pétanque')
@@ -44,7 +47,7 @@ test('hugoUrlize reproduit les URLs du sitemap live', () => {
   assert.equal(hugoUrlize('ateliers/Djembe'), 'ateliers/djembe')
 })
 test('hugoUrlize normalise en NFC (noms de fichiers macOS en NFD)', () => {
-  assert.equal(hugoUrlize('posts/Pétanque'), 'posts/pétanque')
+  assert.equal(hugoUrlize('posts/Pe\u0301tanque'), 'posts/p\u00e9tanque')
 })
 test('mimeFor', () => {
   assert.equal(mimeFor('a.JPG'), 'image/jpeg')

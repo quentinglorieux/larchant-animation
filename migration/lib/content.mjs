@@ -1,5 +1,5 @@
 // Fonctions pures partagées par migrate.mjs, redirects.mjs (testées dans content.test.mjs).
-const norm = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
+const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
 export function slugify(s) {
   return norm(s).toLowerCase().replace(/['’]/g, ' ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80)
@@ -34,8 +34,12 @@ export function extractInscription(body) {
 export function editionYear(filename, date) {
   const suffix = filename.match(/index(\d{2})\.md$/)?.[1]
   if (suffix) return 2000 + Number(suffix)
-  if (!date || String(date).startsWith('2023-01-01')) return null
-  return new Date(date).getUTCFullYear()
+  if (!date) return null
+  const parsed = date instanceof Date ? date : new Date(String(date))
+  if (Number.isNaN(parsed.getTime())) return null
+  const iso = parsed.toISOString()
+  if (iso.startsWith('2023-01-01')) return null
+  return parsed.getUTCFullYear()
 }
 
 // Comme urlize de Hugo : minuscules, espaces en tirets, on ne garde que lettres, chiffres, marques et - _ . /
