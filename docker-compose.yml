@@ -39,7 +39,8 @@ services:
       ADMIN_PASSWORD: ${DIRECTUS_ADMIN_PASSWORD}
       PUBLIC_URL: ${DIRECTUS_PUBLIC_URL}
       CORS_ENABLED: "true"
-      CORS_ORIGIN: "http://localhost:13000,http://localhost:13001,https://larchantanimation.fr,https://www.larchantanimation.fr,https://studio.larchantanimation.fr"
+      CORS_ORIGIN: "http://localhost:13010,http://localhost:13011,https://beta.larchantanimation.fr,https://studio.larchantanimation.fr"
+      FILES_MAX_UPLOAD_SIZE: "20mb"
       EMAIL_FROM: ${DIRECTUS_ADMIN_EMAIL}
     volumes:
       - ./directus/uploads:/directus/uploads
