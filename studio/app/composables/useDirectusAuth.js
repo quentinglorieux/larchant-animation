@@ -48,7 +48,7 @@ export const useDirectusAuth = () => {
   // Proxy Nuxt local pour éviter les soucis de CORS.
   const directusUrl = typeof window !== 'undefined'
     ? window.location.origin + '/api/directus'
-    : 'http://localhost:13001/api/directus'
+    : 'http://localhost:13011/api/directus'
 
   if (!singletonClient) singletonClient = createDirectusClient(directusUrl)
 

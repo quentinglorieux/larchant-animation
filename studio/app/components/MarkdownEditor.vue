@@ -67,8 +67,17 @@ onMounted(() => {
       EditorView.theme({ '&': { minHeight: `${props.rows * 1.6}em` }, '.cm-scroller': { fontFamily: 'ui-monospace, monospace' } }),
       EditorView.updateListener.of((u) => { if (u.docChanged) model.value = u.state.doc.toString() }),
       EditorView.domEventHandlers({
-        paste: (e) => { const f = e.clipboardData?.files; if (f?.length) { e.preventDefault(); uploadFiles(f); return true } return false },
-        drop: (e) => { const f = e.dataTransfer?.files; if (f?.length) { e.preventDefault(); uploadFiles(f); return true } return false }
+        paste: (e) => {
+          const f = e.clipboardData?.files
+          const hasImage = !!f && Array.from(f).some(x => x.type.startsWith('image/'))
+          if (hasImage && !e.clipboardData!.getData('text/plain')) { e.preventDefault(); uploadFiles(f!); return true }
+          return false
+        },
+        drop: (e) => {
+          const f = e.dataTransfer?.files
+          if (f && Array.from(f).some(x => x.type.startsWith('image/'))) { e.preventDefault(); uploadFiles(f); return true }
+          return false
+        }
       })
     ]
   })
@@ -100,7 +109,7 @@ onBeforeUnmount(() => view?.destroy())
     <div class="grid lg:grid-cols-2 flex-1 min-h-0">
       <div ref="host" :class="['min-w-0 overflow-auto', tab === 'preview' ? 'hidden lg:block' : '']" />
       <!-- eslint-disable-next-line vue/no-v-html -->
-      <div :class="['prose-la overflow-auto border-l border-gray-200 dark:border-gray-800 p-4 text-sm', tab === 'write' ? 'hidden lg:block' : '']" v-html="render(model)" />
+      <div :class="['prose-la overflow-auto border-l border-gray-200 dark:border-gray-800 p-4', tab === 'write' ? 'hidden lg:block' : '']" v-html="render(model)" />
     </div>
     <p class="px-2 py-1 text-xs text-gray-500">Astuce : collez ou glissez une image directement dans le texte.</p>
   </div>
