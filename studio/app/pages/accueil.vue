@@ -105,7 +105,7 @@ const validateSlide = async (p: Row, id: number | null) => {
         </li>
       </ul>
       <ResourceManager
-        ref="rm" hide-header collection="accueil_slides" title="Carrousel" singular-label="image"
+        ref="rm" hide-header hide-table collection="accueil_slides" title="Carrousel" singular-label="image"
         :fields="slideFields" :columns="slideColumns" :default-sort="['sort']"
         :validate="validateSlide" @saved="loadSlides"
       />

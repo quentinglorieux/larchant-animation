@@ -23,7 +23,7 @@ const items = computed(() => [
     { label: 'Réglages', type: 'label' },
     { label: 'Catégories', icon: 'i-lucide-tag', to: '/categories' },
     { label: 'Logo et coordonnées', icon: 'i-lucide-sliders-horizontal', to: '/settings' },
-    ...(canManageUsers.value ? [{ label: 'Comptes', icon: 'i-lucide-users', to: '/comptes' }] : [])
+    ...(canManageUsers.value === true ? [{ label: 'Comptes', icon: 'i-lucide-users', to: '/comptes' }] : [])
   ]
 ])
 </script>

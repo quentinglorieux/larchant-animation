@@ -18,6 +18,7 @@ const props = defineProps<{
   deleteGuard?: (row: Row) => Promise<string | null>
   rowTo?: (row: Row) => string
   hideHeader?: boolean
+  hideTable?: boolean
   extraFields?: string[]
 }>()
 const emit = defineEmits<{ saved: [] }>()
@@ -211,7 +212,8 @@ defineExpose({ openCreate, openEdit, reload: load })
       <UButton icon="i-lucide-plus" class="ml-auto" @click="openCreate()">Ajouter</UButton>
     </div>
 
-    <div v-if="loading" class="flex justify-center p-16">
+    <div v-if="hideTable" />
+    <div v-else-if="loading" class="flex justify-center p-16">
       <UIcon name="i-lucide-loader-2" class="w-8 h-8 animate-spin text-primary-500" />
     </div>
     <template v-else>

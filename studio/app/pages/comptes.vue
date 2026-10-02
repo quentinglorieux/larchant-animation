@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import { readUsers, createUser, updateUser, readRoles } from '@directus/sdk'
 
-const { client, canManageUsers } = useDirectusAuth()
+const { client, canManageUsers, checkAdmin } = useDirectusAuth()
 const { toast } = useStudio()
-if (!canManageUsers.value) await navigateTo('/')
+if (canManageUsers.value === null) await checkAdmin()
+if (canManageUsers.value !== true) await navigateTo('/')
 
 const roleId = ref<string | null>(null)
 const users = ref<Record<string, any>[]>([])
 const revealed = ref<{ email: string, password: string } | null>(null)
 const draft = reactive({ first_name: '', last_name: '', email: '' })
-const genPassword = () => crypto.randomUUID().replace(/-/g, '').slice(0, 14)
+const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789'
+const genPassword = () => Array.from(crypto.getRandomValues(new Uint32Array(16)), n => ALPHABET[n % ALPHABET.length]).join('')
 
 async function load() {
   const [role] = await client.value.request(readRoles({ filter: { name: { _eq: 'Éditeur' } }, fields: ['id'] })) as { id: string }[]
@@ -18,6 +20,7 @@ async function load() {
 }
 async function addEditor() {
   if (!draft.email.trim()) return toast.add({ title: 'L’adresse email est requise', color: 'warning' })
+  if (!roleId.value) return toast.add({ title: 'Rôle Éditeur introuvable : lancez les permissions (migration) avant de créer des comptes.', color: 'error' })
   const password = genPassword()
   try {
     await client.value.request(createUser({ ...draft, password, role: roleId.value }))

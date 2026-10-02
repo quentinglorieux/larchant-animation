@@ -80,15 +80,19 @@ export const useDirectusAuth = () => {
     }
   }
 
-  const canManageUsers = useState('directus-can-manage-users', () => false)
+  const canManageUsers = useState('directus-can-manage-users', () => null)
   const checkAdmin = async () => {
+    if (canManageUsers.value !== null) return
     try { await client.value.request(readRoles({ limit: 1, fields: ['id'] })); canManageUsers.value = true }
-    catch { canManageUsers.value = false }
+    catch (e) {
+      // Faux seulement si l'accès est refusé ; sinon on réessaiera à la prochaine navigation.
+      if (e?.response?.status === 401 || e?.response?.status === 403) canManageUsers.value = false
+    }
   }
 
   const logout = async () => {
     try { await client.value.logout() } catch (e) { console.error(e) }
-    clearStoredAuth(); user.value = null; canManageUsers.value = false; resetClient()
+    clearStoredAuth(); user.value = null; canManageUsers.value = null; resetClient()
     if (typeof window !== 'undefined') { window.location.replace('/login'); return }
     navigateTo('/login')
   }
@@ -100,9 +104,9 @@ export const useDirectusAuth = () => {
     } catch (e) {
       console.error('fetchUser failed', e)
       // Session conservée sur erreur réseau ou serveur : on ne déconnecte que si l'authentification est refusée.
-      if (isAuthError(e)) { clearStoredAuth(); user.value = null; canManageUsers.value = false; resetClient() }
+      if (isAuthError(e)) { clearStoredAuth(); user.value = null; canManageUsers.value = null; resetClient() }
     }
   }
 
-  return { client, user, isAuthenticated, hasStoredAuth, login, logout, fetchUser, canManageUsers }
+  return { client, user, isAuthenticated, hasStoredAuth, login, logout, fetchUser, canManageUsers, checkAdmin }
 }
