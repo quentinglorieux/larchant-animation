@@ -1,5 +1,5 @@
 <script setup>
-const { logout, user } = useDirectusAuth()
+const { logout, user, canManageUsers } = useDirectusAuth()
 const colorMode = useColorMode()
 const mobileNavOpen = ref(false)
 
@@ -7,10 +7,11 @@ const toggleColorMode = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
 
-const items = [
+const items = computed(() => [
   [{ label: 'Tableau de bord', icon: 'i-lucide-layout-dashboard', to: '/' }],
   [
     { label: 'Contenu', type: 'label' },
+    { label: 'Accueil du site', icon: 'i-lucide-house', to: '/accueil' },
     { label: 'Évènements', icon: 'i-lucide-party-popper', to: '/evenements' },
     { label: 'Articles', icon: 'i-lucide-newspaper', to: '/articles' },
     { label: 'Ateliers', icon: 'i-lucide-school', to: '/ateliers' },
@@ -21,9 +22,10 @@ const items = [
   [
     { label: 'Réglages', type: 'label' },
     { label: 'Catégories', icon: 'i-lucide-tag', to: '/categories' },
-    { label: 'Paramètres du site', icon: 'i-lucide-sliders-horizontal', to: '/settings' }
+    { label: 'Logo et coordonnées', icon: 'i-lucide-sliders-horizontal', to: '/settings' },
+    ...(canManageUsers.value ? [{ label: 'Comptes', icon: 'i-lucide-users', to: '/comptes' }] : [])
   ]
-]
+])
 </script>
 
 <template>

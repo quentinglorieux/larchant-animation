@@ -1,4 +1,4 @@
-import { createDirectus, rest, authentication, readMe } from '@directus/sdk'
+import { createDirectus, rest, authentication, readMe, readRoles } from '@directus/sdk'
 
 let singletonClient = null
 const AUTH_STORAGE_KEY = 'larchant-studio-auth'
@@ -44,6 +44,13 @@ const createDirectusClient = (directusUrl) => {
     .with(rest())
 }
 
+const isAuthError = (e) => {
+  const status = e?.response?.status
+  if (status === 401 || status === 403) return true
+  const code = e?.errors?.[0]?.extensions?.code
+  return code === 'INVALID_CREDENTIALS' || code === 'TOKEN_EXPIRED' || code === 'INVALID_TOKEN'
+}
+
 export const useDirectusAuth = () => {
   // Proxy Nuxt local pour éviter les soucis de CORS.
   const directusUrl = typeof window !== 'undefined'
@@ -73,9 +80,15 @@ export const useDirectusAuth = () => {
     }
   }
 
+  const canManageUsers = useState('directus-can-manage-users', () => false)
+  const checkAdmin = async () => {
+    try { await client.value.request(readRoles({ limit: 1, fields: ['id'] })); canManageUsers.value = true }
+    catch { canManageUsers.value = false }
+  }
+
   const logout = async () => {
     try { await client.value.logout() } catch (e) { console.error(e) }
-    clearStoredAuth(); user.value = null; resetClient()
+    clearStoredAuth(); user.value = null; canManageUsers.value = false; resetClient()
     if (typeof window !== 'undefined') { window.location.replace('/login'); return }
     navigateTo('/login')
   }
@@ -83,11 +96,13 @@ export const useDirectusAuth = () => {
   const fetchUser = async () => {
     try {
       user.value = await client.value.request(readMe({ fields: ['id', 'first_name', 'last_name', 'email', 'avatar'] }))
+      await checkAdmin()
     } catch (e) {
       console.error('fetchUser failed', e)
-      clearStoredAuth(); user.value = null; resetClient()
+      // Session conservée sur erreur réseau ou serveur : on ne déconnecte que si l'authentification est refusée.
+      if (isAuthError(e)) { clearStoredAuth(); user.value = null; canManageUsers.value = false; resetClient() }
     }
   }
 
-  return { client, user, isAuthenticated, hasStoredAuth, login, logout, fetchUser }
+  return { client, user, isAuthenticated, hasStoredAuth, login, logout, fetchUser, canManageUsers }
 }

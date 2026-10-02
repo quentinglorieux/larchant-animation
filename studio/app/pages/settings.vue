@@ -53,7 +53,7 @@ const save = async () => {
 <template>
   <div>
     <div class="mb-6 flex items-center justify-between">
-      <h1 class="text-2xl font-bold">Paramètres du site</h1>
+      <h1 class="text-2xl font-bold">Logo et coordonnées</h1>
       <UButton color="primary" :loading="saving" icon="i-lucide-save" @click="save">Enregistrer</UButton>
     </div>
 

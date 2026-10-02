@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const rm = ref()
+onMounted(() => { if (useRoute().query.nouveau) rm.value?.openCreate() })
 const fields = [
   { key: 'title', label: 'Titre', type: 'text', required: true },
   { key: 'slug', label: 'Adresse de la page', type: 'text', half: true, help: 'Fin de l’adresse web, générée depuis le titre. À ne pas modifier après publication.' },
@@ -19,6 +21,6 @@ const columns = [
 ]
 </script>
 <template>
-  <ResourceManager collection="articles" title="Articles" singular-label="article"
+  <ResourceManager ref="rm" collection="articles" title="Articles" singular-label="article"
     :fields="fields" :columns="columns" :preview-path="(r) => `/blog/${r.slug}`" :default-sort="['-date']" />
 </template>
