@@ -1,3 +1,13 @@
+import redirects from './redirects.json'
+
+const redirectRules = Object.fromEntries(Object.entries(redirects as Record<string, string>).flatMap(([from, to]) => {
+  const rule = { redirect: { to, statusCode: 301 } }
+  // Les URLs Hugo existent avec et sans slash final, et le navigateur peut les envoyer encodées.
+  const bare = from.replace(/\/$/, '')
+  const variants = new Set([from, bare, encodeURI(from), encodeURI(bare)].filter(Boolean))
+  return [...variants].map(v => [v, rule])
+}))
+
 const DIRECTUS_URL = import.meta.env.NUXT_PUBLIC_DIRECTUS_URL ?? 'http://localhost:18056'
 
 export default defineNuxtConfig({
@@ -37,6 +47,7 @@ export default defineNuxtConfig({
   routeRules: {
     // Le markdown stocke les images en /assets/<id> : on les sert depuis Directus.
     '/assets/**': { proxy: `${DIRECTUS_URL}/assets/**` },
+    ...redirectRules,
     '/**': { swr: 60 }
   },
 

@@ -9,7 +9,8 @@
     "migrate": "node migrate.mjs",
     "permissions": "node permissions.mjs",
     "test": "node --test lib/*.test.mjs",
-    "review": "node review.mjs"
+    "review": "node review.mjs",
+    "redirects": "node redirects.mjs"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

@@ -13,6 +13,8 @@ const nav = [
   { label: 'Adhérer', to: '/adherez' }
 ]
 
+useSeoMeta({ ogSiteName: 'Larchant Animation', ogType: 'website' })
+
 const open = ref(false)
 const route = useRoute()
 watch(() => route.path, () => { open.value = false })

@@ -39,6 +39,10 @@ const afficheUrl = computed(() => getUrl(current.value?.affiche, { width: '900' 
 const inscriptionPdf = computed(() => getUrl(current.value?.inscription_pdf))
 
 useHead({ title: () => evenement.value?.title || 'Évènement' })
+useSeoMeta({
+  description: () => seoDescription(evenement.value?.description),
+  ogImage: () => getUrl(current.value?.affiche || evenement.value?.image, { width: '1200' })
+})
 </script>
 
 <template>

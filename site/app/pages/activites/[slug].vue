@@ -20,6 +20,10 @@ const infos = computed(() => [
 ].filter(i => i.value))
 
 useHead({ title: () => item.value?.title || 'Activité' })
+useSeoMeta({
+  description: () => seoDescription(item.value?.description),
+  ogImage: () => getUrl(item.value?.image, { width: '1200' })
+})
 </script>
 
 <template>

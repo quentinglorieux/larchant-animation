@@ -16,6 +16,10 @@ const img = computed(() => getUrl(article.value?.preview, { width: '1000' }))
 const events = computed(() => (article.value?.evenements_lies || []).map(e => e.evenements_id).filter(Boolean))
 
 useHead({ title: () => article.value?.title || 'Article' })
+useSeoMeta({
+  description: () => seoDescription(article.value?.description || article.value?.content),
+  ogImage: () => getUrl(article.value?.preview, { width: '1200' })
+})
 </script>
 
 <template>
