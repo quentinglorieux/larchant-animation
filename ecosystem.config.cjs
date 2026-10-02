@@ -1,4 +1,4 @@
-// PM2 — site public + studio admin (build SSR Nuxt).
+// PM2: site public + studio admin (build SSR Nuxt).
 // Adapter le chemin racine et l'URL Directus de prod ci-dessous.
 const ROOT = '/root/larchant-animation'
 const DIRECTUS_PROD_URL = 'https://api.larchantanimation.fr'

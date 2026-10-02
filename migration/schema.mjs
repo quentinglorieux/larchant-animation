@@ -164,7 +164,7 @@ async function main() {
       sortField(),
     ])
 
-  // 2. evenements (parent — infos pérennes)
+  // 2. evenements (parent: infos pérennes)
   console.log('\n[evenements]')
   await createCollection('evenements',
     { icon: 'celebration', note: 'Évènement récurrent (infos générales pérennes)',
@@ -181,7 +181,7 @@ async function main() {
   await ensureFile('evenements', 'image', { image: true })
   await ensureFile('evenements', 'reglement')
 
-  // 3. editions (enfant — une instance par an)
+  // 3. editions (enfant: une instance par an)
   console.log('\n[editions]')
   await createCollection('editions',
     { icon: 'event', note: 'Édition d’un évènement (une par année)',

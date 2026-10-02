@@ -12,7 +12,7 @@ useHead({ title: 'Évènements' })
 
 <template>
   <div>
-    <PageHero kicker="Toute l’année" title="Nos évènements" subtitle="Rendez-vous récurrents de l’association — chaque édition et ses archives." />
+    <PageHero kicker="Toute l’année" title="Nos évènements" subtitle="Rendez-vous récurrents de l’association: chaque édition et ses archives." />
     <UContainer class="py-14">
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <ContentCard

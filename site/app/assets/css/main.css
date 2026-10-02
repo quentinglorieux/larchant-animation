@@ -15,7 +15,7 @@
   --font-sans: 'Inter Tight', sans-serif;
   --font-display: 'Space Grotesk', sans-serif;
 
-  /* Forest — vert forêt (couleur primaire) */
+  /* Forest: vert forêt (couleur primaire) */
   --color-forest-50:  oklch(97% 0.020 150);
   --color-forest-100: oklch(94% 0.034 150);
   --color-forest-200: oklch(88% 0.052 150);
@@ -28,7 +28,7 @@
   --color-forest-900: oklch(28% 0.048 150);
   --color-forest-950: oklch(18% 0.032 150);
 
-  /* Grès — sable/ocre de Fontainebleau (accent) */
+  /* Grès: sable/ocre de Fontainebleau (accent) */
   --color-sable:       #C68B4E;
   --color-sable-light: #E0B27C;
 
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
   color: var(--color-ink-3);
 }
 
-/* Hero village/forêt — fond dégradé naturel */
+/* Hero village/forêt: fond dégradé naturel */
 .la-hero {
   position: relative;
   overflow: hidden;

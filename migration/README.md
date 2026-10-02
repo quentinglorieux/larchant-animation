@@ -1,11 +1,11 @@
-# Migration & schéma Directus — Larchant Animation
+# Migration & schéma Directus · Larchant Animation
 
 Outils one-shot, idempotents, pour (1) créer le schéma Directus et (2) importer le contenu
 markdown de l'ancien site Hugo (`../content`, `../static`).
 
 ## Prérequis
 - Directus en marche : `docker compose up -d` à la racine du repo.
-- `.env` rempli (cf `../.env.example`) — login admin lu par les scripts.
+- `.env` rempli (cf `../.env.example`), login admin lu par les scripts.
 - `npm install` dans ce dossier.
 
 ## Étapes
