@@ -27,6 +27,7 @@ const { data: related } = await useDirectusCollection<{ articles_id: { slug: str
   {
     filter: { evenements_id: { _eq: evenement.value.id } },
     fields: [{ articles_id: ['slug', 'title', 'preview', 'date', 'status'] }],
+    sort: ['-articles_id.date'],
     limit: 12
   }
 )
@@ -87,10 +88,10 @@ useSeoMeta({
           <MarkdownBody :text="current.content" />
 
           <div class="mt-5 flex flex-wrap gap-3">
-            <UButton v-if="current.inscription_url && !isFinished(current)" :to="current.inscription_url" target="_blank" color="primary" trailing-icon="i-lucide-external-link">
+            <UButton v-if="current.inscription_url && !current.annule && !isFinished(current)" :to="current.inscription_url" target="_blank" color="primary" trailing-icon="i-lucide-external-link">
               S’inscrire
             </UButton>
-            <UButton v-if="inscriptionPdf && !isFinished(current)" :to="inscriptionPdf" target="_blank" variant="soft" color="neutral" icon="i-lucide-file-text">
+            <UButton v-if="inscriptionPdf && !current.annule && !isFinished(current)" :to="inscriptionPdf" target="_blank" variant="soft" color="neutral" icon="i-lucide-file-text">
               Bulletin d’inscription
             </UButton>
             <UButton v-if="reglementUrl" :to="reglementUrl" target="_blank" variant="soft" color="neutral" icon="i-lucide-file-text">

@@ -4,6 +4,7 @@ import type { Article, Categorie } from '~/types'
 const { data: articles } = await useDirectusCollection<Article>('articles', {
   filter: { status: { _eq: 'published' } },
   sort: ['-date'],
+  limit: -1,
   fields: ['id', 'slug', 'title', 'description', 'preview', 'date', 'featured', { category: ['*'] }]
 })
 const featured = computed(() => (articles.value || []).filter((a) => a.featured).slice(0, 3))
