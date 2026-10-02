@@ -11,7 +11,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      directusUrl: DIRECTUS_URL
+      directusUrl: DIRECTUS_URL,
+      siteUrl: import.meta.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:13010'
     }
   },
 
@@ -19,10 +20,11 @@ export default defineNuxtConfig({
   routeRules: {
     '/api/directus/**': {
       proxy: `${DIRECTUS_URL}/**`
-    }
+    },
+    '/assets/**': { proxy: `${DIRECTUS_URL}/assets/**` }
   },
 
-  devServer: { port: 13001 },
+  devServer: { port: 13011 },
 
   compatibilityDate: '2025-01-15'
 })
