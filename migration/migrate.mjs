@@ -18,7 +18,11 @@ const MEDIA_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg', '.p
 const OVERRIDES_FILE = join(__dirname, 'editions-overrides.json')
 const OVERRIDES = existsSync(OVERRIDES_FILE) ? JSON.parse(readFileSync(OVERRIDES_FILE, 'utf8')) : {}
 const editionLinks = []
-const report = { files: 0, categories: 0, evenements: 0, editions: 0, articles: 0, ateliers: 0, activites: 0, newsletters: 0, pages: 0, links: 0, skipped: [] }
+// Doublons news/posts : { keep, drop } (voir articles-duplicates.json)
+const DUPLICATES = JSON.parse(readFileSync(join(__dirname, 'articles-duplicates.json'), 'utf8'))
+const dropToKeep = new Map(DUPLICATES.map((d) => [d.drop, d.keep]))
+const keepFeatured = new Set(DUPLICATES.filter((d) => d.keep.includes('/news/') || d.drop.includes('/news/')).map((d) => d.keep))
+const report = { merged: 0, files: 0, categories: 0, evenements: 0, editions: 0, articles: 0, ateliers: 0, activites: 0, newsletters: 0, pages: 0, links: 0, skipped: [] }
 
 // ---------- utilitaires ----------
 const norm = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -238,6 +242,7 @@ async function migrateArticles() {
     for (const f of readdirSync(dir).filter((x) => x.endsWith('.md')).sort()) {
       const m = matter(readFileSync(join(dir, f), 'utf8'))
       const relFile = toForward(relative(ROOT, join(dir, f)))
+      if (dropToKeep.has(relFile)) continue
       const year = m.data.date ? new Date(m.data.date).getFullYear() : ''
       const slug = await uniqueSlug('articles', slugify(stripDate(f)), year, 'legacy_path', relFile)
       const title = m.data.title || humanize(stripDate(f))
@@ -249,7 +254,7 @@ async function migrateArticles() {
         description: m.data.summary || m.data.description || '',
         preview: resolveMedia(toForward(relative(ROOT, dir)), m.data.preview, `article ${relFile}`),
         content: rewriteBody((m.content || '').trim(), toForward(relative(ROOT, dir))),
-        featured,
+        featured: featured || keepFeatured.has(relFile),
         category: guessCat(slug, title, m.data.tags),
       })
       articleIds.push({ id, slug, title })
@@ -257,6 +262,27 @@ async function migrateArticles() {
     }
   }
   console.log(`  ${report.articles} articles`)
+}
+
+// Nettoyage idempotent : un article `drop` déjà importé est fusionné dans son `keep` puis supprimé
+async function mergeDuplicates() {
+  console.log('\n[doublons]')
+  for (const { keep, drop } of DUPLICATES) {
+    const dropId = await findId('articles', 'legacy_path', drop)
+    if (!dropId) continue
+    const keepId = await findId('articles', 'legacy_path', keep)
+    if (!keepId) { report.skipped.push(`doublon non fusionné (keep introuvable) : ${keep}`); continue }
+    for (const [junction, other] of [['articles_evenements', 'evenements_id'], ['articles_editions', 'editions_id']]) {
+      const rows = await api.get(`/items/${junction}?filter[articles_id][_eq]=${dropId}&limit=-1&fields=id,${other}`)
+      for (const row of rows || []) {
+        const exists = await api.get(`/items/${junction}?filter[articles_id][_eq]=${keepId}&filter[${other}][_eq]=${row[other]}&limit=1&fields=id`)
+        if (!exists?.length) await api.post(`/items/${junction}`, { articles_id: keepId, [other]: row[other] })
+      }
+    }
+    await api.delete(`/items/articles/${dropId}`)
+    report.merged++
+    console.log(`  fusionné : ${drop} -> ${keep}`)
+  }
 }
 
 // ---------- ateliers / activites ----------
@@ -364,7 +390,7 @@ async function linkArticles() {
   }
   for (const { editionId, articles } of editionLinks) {
     for (const legacy of articles) {
-      const artId = await findId('articles', 'legacy_path', legacy)
+      const artId = await findId('articles', 'legacy_path', dropToKeep.get(legacy) || legacy)
       if (!artId) { report.skipped.push(`article introuvable pour édition : ${legacy}`); continue }
       const exists = await api.get(`/items/articles_editions?filter[articles_id][_eq]=${artId}&filter[editions_id][_eq]=${editionId}&limit=1&fields=id`)
       if (!exists?.length) { await api.post('/items/articles_editions', { articles_id: artId, editions_id: editionId }); report.links++ }
@@ -421,6 +447,7 @@ async function main() {
   await migrateEvenements()
   await migrateExtraEditions()
   await migrateArticles()
+  await mergeDuplicates()
   await migrateLeafDirs('ateliers', 'ateliers', 'ateliers')
   await migrateLeafDirs('activites', 'activites', 'activites')
   await migrateNewsletters()

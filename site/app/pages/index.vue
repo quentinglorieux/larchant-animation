@@ -28,6 +28,13 @@ const { data: articles } = await useDirectusCollection<Article>('articles', {
   fields: ['*', { category: ['*'] }]
 })
 
+const { data: unes } = await useDirectusCollection<Article>('articles', {
+  filter: { status: { _eq: 'published' }, featured: { _eq: true } },
+  sort: ['-date'],
+  limit: 3,
+  fields: ['*', { category: ['*'] }]
+})
+
 const { data: ateliers } = await useDirectusCollection<Atelier>('ateliers', {
   filter: { status: { _eq: 'published' }, actif: { _eq: true } },
   sort: ['title'],
@@ -91,6 +98,26 @@ const evList = computed(() => (upcoming.value?.length ? upcoming.value : []) as 
             :image="ev.image"
             :description="ev.description"
             :category="(ev.category as Categorie)"
+          />
+        </div>
+      </section>
+
+      <!-- À la une -->
+      <section v-if="unes?.length">
+        <div class="flex items-end justify-between mb-6">
+          <h2 class="text-2xl font-semibold">À la une</h2>
+          <UButton to="/blog" variant="link" color="primary" trailing-icon="i-lucide-arrow-right">Le blog</UButton>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-3">
+          <ContentCard
+            v-for="a in unes"
+            :key="`une-${a.id}`"
+            :to="`/blog/${a.slug}`"
+            :title="a.title"
+            :image="a.preview"
+            :meta="formatDate(a.date)"
+            :description="a.description"
+            :category="(a.category as Categorie)"
           />
         </div>
       </section>

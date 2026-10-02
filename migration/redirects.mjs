@@ -17,6 +17,14 @@ for (const [col, prefix] of Object.entries(SECTIONS)) {
     byOld.set(old, col === 'newsletters' ? '/newsletters' : prefix ? `/${prefix}/${it.slug}` : `/${it.slug}`)
   }
 }
+// Doublons news/posts fusionnés : l'ancienne URL du `drop` mène à l'article conservé
+const dupes = JSON.parse(readFileSync(new URL('./articles-duplicates.json', import.meta.url), 'utf8'))
+const keepSlug = new Map((await api.get('/items/articles?limit=-1&fields=slug,legacy_path')).map((a) => [a.legacy_path, a.slug]))
+for (const { keep, drop } of dupes) {
+  const slug = keepSlug.get(keep)
+  if (!slug) { console.error(`article conservé introuvable dans Directus : ${keep}`); process.exit(1) }
+  byOld.set('/' + hugoUrlize(drop.replace(/^content\//, '').replace(/(\/index)?\.md$/, '')) + '/', `/blog/${slug}`)
+}
 const manual = JSON.parse(readFileSync(new URL('./redirects-manual.json', import.meta.url), 'utf8'))
 const out = {}
 const unmatched = []

@@ -1,0 +1,8 @@
+[
+  { "keep": "content/news/2026-05-16-l’incroyable-sister-rosetta-tharpe-–-spectacle-musical.md", "drop": "content/posts/2026-05-l’incroyable-sister-rosetta-tharpe-–-spectacle-musical.md" },
+  { "keep": "content/news/2026-06-27-pique-nique-d’été-à-larchant.md", "drop": "content/posts/2026-06-pique-nique-d’été-à-larchant.md" },
+  { "keep": "content/posts/2026-07-exposition-de-l’atelier-d’art-de-larchant.md", "drop": "content/news/2026-07-04-exposition-de-l’atelier-d’art-de-larchant.md" },
+  { "keep": "content/news/2026-09-01-lyricantrail-2026-dimanche-11-octobre.md", "drop": "content/posts/2026-10-lyricantrail-2026.md" },
+  { "keep": "content/posts/2025-12-lhivernale-est-de-retour.md", "drop": "content/news/2026-01-06-l’hivernale-c’est-parti-pour-les-inscriptions copy.md" },
+  { "keep": "content/news/2026-05-04-FAP2026.md", "drop": "content/posts/2026-02-foire-aux-plantes.md" }
+]
