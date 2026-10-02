@@ -23,7 +23,6 @@ export interface Edition {
   inscription_url?: string | null
   inscription_pdf?: string | null
   annule?: boolean
-  sort?: number
 }
 
 export interface Evenement {
