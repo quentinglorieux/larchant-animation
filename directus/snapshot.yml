@@ -6162,7 +6162,7 @@ relations:
       one_allowed_collections: null
       one_collection: articles
       one_collection_field: null
-      one_deselect_action: nullify
+      one_deselect_action: delete
       one_field: editions_liees
       sort_field: null
     schema:
@@ -6183,7 +6183,7 @@ relations:
       one_allowed_collections: null
       one_collection: editions
       one_collection_field: null
-      one_deselect_action: nullify
+      one_deselect_action: delete
       one_field: articles_lies
       sort_field: null
     schema:
@@ -6204,7 +6204,7 @@ relations:
       one_allowed_collections: null
       one_collection: articles
       one_collection_field: null
-      one_deselect_action: nullify
+      one_deselect_action: delete
       one_field: evenements_lies
       sort_field: null
     schema:
@@ -6225,7 +6225,7 @@ relations:
       one_allowed_collections: null
       one_collection: evenements
       one_collection_field: null
-      one_deselect_action: nullify
+      one_deselect_action: delete
       one_field: articles_lies
       sort_field: null
     schema:

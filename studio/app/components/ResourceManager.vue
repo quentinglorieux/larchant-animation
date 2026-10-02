@@ -3,6 +3,8 @@ import { h, resolveComponent } from 'vue'
 import { readItems, createItem, updateItem, deleteItem } from '@directus/sdk'
 
 import type { FieldDef, ColumnDef, Row } from '~/types/resource'
+import { friendlyDirectusError } from '~/utils/directusErrors'
+import { uniqueSlug, slugYear } from '~/utils/slug'
 
 const props = defineProps<{
   collection: string
@@ -44,7 +46,7 @@ const hasTitle = computed(() => props.fields.some(f => f.key === 'title'))
 
 const blank = () => {
   const o: Record<string, unknown> = {}
-  for (const f of props.fields) o[f.key] = f.type === 'boolean' ? false : null
+  for (const f of props.fields) o[f.key] = f.type === 'boolean' ? false : f.type === 'm2m' ? [] : null
   if (props.fields.some(f => f.key === 'status')) o.status = 'draft'
   return o
 }
@@ -92,23 +94,35 @@ const load = async () => {
 
 const loadRefs = async () => {
   for (const f of props.fields) {
-    if (f.type === 'm2o' && f.refCollection) {
+    if ((f.type === 'm2o' || f.type === 'm2m') && f.refCollection) {
       const labelKey = f.refLabelKey || 'title'
       const data = await client.value.request(readItems(f.refCollection, {
-        fields: ['id', labelKey], sort: [labelKey], limit: -1
+        fields: f.refFields || ['id', labelKey], sort: f.refFields ? ['-id'] : [labelKey], limit: -1
       })) as Record<string, unknown>[]
-      refOptions[f.key] = data.map(d => ({ value: d.id, label: String(d[labelKey]) }))
+      const label = f.refLabel || ((d: Row) => String(d[labelKey] ?? ''))
+      refOptions[f.key] = data.map(d => ({ value: d.id, label: label(d) }))
+        .sort((a, b) => a.label.localeCompare(b.label, 'fr'))
     }
   }
+}
+
+// Clés fixées par initialFilter (ex. evenement sur la fiche évènement), sans l'opérateur _eq.
+const filterValues = (): Row => Object.fromEntries(
+  Object.entries(props.initialFilter || {}).map(([k, v]) => [k, (v as { _eq?: unknown })?._eq ?? v])
+)
+
+const slugExists = async (slug: string) => {
+  const found = await client.value.request(readItems(props.collection, {
+    fields: ['id'], filter: { slug: { _eq: slug } }, limit: 1
+  })) as Row[]
+  return found.length > 0
 }
 
 const openCreate = (prefill?: Row) => {
   editing.value = null
   slugTouched = false
   Object.assign(form, blank())
-  if (props.initialFilter) Object.assign(form, props.initialFilter && Object.fromEntries(
-    Object.entries(props.initialFilter).map(([k, v]) => [k, (v as { _eq?: unknown })?._eq ?? v])
-  ))
+  if (props.initialFilter) Object.assign(form, filterValues())
   if (prefill) Object.assign(form, prefill)
   slideoverOpen.value = true
 }
@@ -120,7 +134,7 @@ const openEdit = async (rowOrEvent: unknown) => {
   editing.value = orig
   slugTouched = true
   const full = await client.value.request(readItems(props.collection, {
-    fields: ['id', ...props.fields.map(f => f.key), ...(props.extraFields || [])],
+    fields: ['id', ...props.fields.map(f => f.type === 'm2m' ? `${f.key}.${f.junctionField}` : f.key), ...(props.extraFields || [])],
     filter: { id: { _eq: orig.id } },
     limit: 1
   })) as Record<string, unknown>[]
@@ -128,6 +142,11 @@ const openEdit = async (rowOrEvent: unknown) => {
   Object.assign(form, blank())
   for (const f of props.fields) {
     const val = d[f.key]
+    // m2m : lignes de jonction { evenements_id: 3 } converties en liste d'identifiants
+    if (f.type === 'm2m') {
+      form[f.key] = Array.isArray(val) ? val.map(j => (j as Row)[f.junctionField!]).filter(id => id != null) : []
+      continue
+    }
     // les relations/fichiers peuvent revenir en objet { id }
     form[f.key] = (val && typeof val === 'object' && 'id' in (val as object)) ? (val as { id: unknown }).id : (val ?? form[f.key])
   }
@@ -152,24 +171,35 @@ const save = async () => {
       if (f.type === 'number') v = (v === '' || v == null) ? null : Number(v)
       if (f.type === 'boolean') v = !!v
       if ((f.type === 'text' || f.type === 'textarea' || f.type === 'markdown' || f.type === 'date' || f.type === 'select' || f.type === 'color') && v === '') v = null
+      // m2m : la liste complète remplace les liens existants (les liens retirés sont supprimés).
+      if (f.type === 'm2m') v = ((v as unknown[]) || []).map(id => ({ [f.junctionField!]: id }))
       payload[f.key] = v ?? null
     }
     // Clés fixées par initialFilter (ex. evenement sur la fiche évènement) : absentes des champs, mais requises à la création.
     if (isCreating.value && props.initialFilter) for (const k of Object.keys(props.initialFilter)) if (!(k in payload)) payload[k] = form[k] ?? null
     if (hasSlug.value && !payload.slug && hasTitle.value) payload.slug = slugify(String(form.title))
-    const problem = await props.validate?.(payload, isCreating.value ? null : editing.value!.id as number)
+    // En modification, la validation reçoit aussi ces clés (ex. evenement, pour refuser une année en double), sans les écrire.
+    const toValidate = isCreating.value ? payload : { ...filterValues(), ...payload }
+    const problem = await props.validate?.(toValidate, isCreating.value ? null : editing.value!.id as number)
     if (problem) { toast.add({ title: problem, color: 'warning' }); return }
+    // Création : une adresse déjà prise devient unique (ajout de l'année, puis -2, -3…).
+    let slugAdjusted = false
+    if (isCreating.value && hasSlug.value && typeof payload.slug === 'string' && payload.slug) {
+      const unique = await uniqueSlug(payload.slug, slugYear(form), slugExists)
+      slugAdjusted = unique !== payload.slug
+      payload.slug = form.slug = unique
+    }
     if (isCreating.value) await client.value.request(createItem(props.collection, payload))
     else await client.value.request(updateItem(props.collection, editing.value!.id as number, payload))
     const savedTitle = !('status' in payload) ? 'Enregistré'
       : payload.status === 'published' ? 'Enregistré : c’est en ligne' : 'Enregistré en brouillon'
-    toast.add({ title: savedTitle, color: 'success' })
+    toast.add({ title: savedTitle, description: slugAdjusted ? `Adresse déjà utilisée : la page s’appellera « ${payload.slug} ».` : undefined, color: 'success' })
     slideoverOpen.value = false
     emit('saved')
     await load()
   } catch (e) {
     console.error(e)
-    toast.add({ title: 'Échec de l’enregistrement', color: 'error' })
+    toast.add({ title: friendlyDirectusError(e) || 'Échec de l’enregistrement', color: 'error' })
   } finally {
     saving.value = false
   }
@@ -189,7 +219,7 @@ const remove = async () => {
     await load()
   } catch (e) {
     console.error(e)
-    toast.add({ title: 'Échec de la suppression', color: 'error' })
+    toast.add({ title: friendlyDirectusError(e) || 'Échec de la suppression', color: 'error' })
   } finally {
     saving.value = false
   }

@@ -70,6 +70,16 @@ watch(() => props.form.annee, (annee, old) => {
         :placeholder="f.placeholder"
         class="w-full text-sm"
       />
+      <!-- m2m : plusieurs choix -->
+      <USelectMenu
+        v-else-if="f.type === 'm2m'"
+        v-model="(form[f.key] as unknown[])"
+        :items="refOptions[f.key] || []"
+        value-key="value"
+        multiple
+        placeholder="Aucun"
+        class="w-full"
+      />
       <!-- select / m2o / status -->
       <USelectMenu
         v-else-if="f.type === 'select' || f.type === 'm2o' || f.key === 'status'"

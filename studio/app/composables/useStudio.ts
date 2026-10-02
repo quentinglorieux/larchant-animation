@@ -36,6 +36,7 @@ export const useStudio = () => {
       headers: token ? { Authorization: `Bearer ${token}` } : {},
       body: formData
     })
+    if (!res.ok) throw new Error(`Envoi refusé (${res.status})`)
     const data = await res.json()
     return data.data?.id ?? null
   }
@@ -53,6 +54,7 @@ export const useStudio = () => {
       try {
         const id = await uploadToDirectus(file)
         if (id) onSuccess(id)
+        else toast.add({ title: 'Échec de l’envoi du fichier', color: 'error' })
       } catch {
         toast.add({ title: 'Échec de l’envoi du fichier', color: 'error' })
       }

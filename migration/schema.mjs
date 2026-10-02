@@ -121,16 +121,32 @@ async function ensureM2M({ junction, colA, fieldA, aliasA, colB, fieldB, aliasB 
   await ensureField(colB, { field: aliasB, type: 'alias', meta: { interface: 'list-m2m', special: ['m2m'], width: 'full' } })
 
   // Relations de la jonction vers chaque côté
-  await ensureRelation({
+  await ensureJunctionRelation({
     collection: junction, field: fieldA, related_collection: colA,
-    meta: { one_field: aliasA, junction_field: fieldB, sort_field: null },
+    meta: { one_field: aliasA, junction_field: fieldB, sort_field: null, one_deselect_action: 'delete' },
     schema: { on_delete: 'CASCADE' },
   })
-  await ensureRelation({
+  await ensureJunctionRelation({
     collection: junction, field: fieldB, related_collection: colB,
-    meta: { one_field: aliasB, junction_field: fieldA, sort_field: null },
+    meta: { one_field: aliasB, junction_field: fieldA, sort_field: null, one_deselect_action: 'delete' },
     schema: { on_delete: 'CASCADE' },
   })
+}
+
+// Relation de jonction M2M : clé étrangère en cascade (supprimer un article efface ses liens)
+// et lien retiré supprimé (one_deselect_action delete) au lieu d'une ligne orpheline.
+// Une relation existante sans clé étrangère ou avec un autre comportement est recréée :
+// un PATCH ne sait pas ajouter la clé étrangère et, sur Directus 11, la fait même disparaître.
+async function ensureJunctionRelation(def) {
+  const relations = await api.get(`/relations/${def.collection}`)
+  const existing = Array.isArray(relations) ? relations.find((r) => r.field === def.field) : null
+  if (existing?.schema && existing.meta?.one_deselect_action === 'delete') {
+    console.log(`    = relation ${def.collection}.${def.field} (existe)`)
+    return
+  }
+  if (existing) await api.delete(`/relations/${def.collection}/${def.field}`)
+  await api.post('/relations', def)
+  console.log(`    + relation ${def.collection}.${def.field} → ${def.related_collection}`)
 }
 
 // Crée une collection de base (PK + champs) de façon idempotente

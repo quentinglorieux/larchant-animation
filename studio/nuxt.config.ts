@@ -9,6 +9,11 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  // Outil interne : jamais indexé par les moteurs de recherche.
+  app: {
+    head: { meta: [{ name: 'robots', content: 'noindex, nofollow' }] }
+  },
+
   runtimeConfig: {
     public: {
       directusUrl: DIRECTUS_URL,

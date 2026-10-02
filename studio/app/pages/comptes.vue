@@ -22,9 +22,10 @@ async function addEditor() {
   if (!draft.email.trim()) return toast.add({ title: 'L’adresse email est requise', color: 'warning' })
   if (!roleId.value) return toast.add({ title: 'Rôle Éditeur introuvable : lancez les permissions (migration) avant de créer des comptes.', color: 'error' })
   const password = genPassword()
+  const email = draft.email.trim()
   try {
-    await client.value.request(createUser({ ...draft, password, role: roleId.value }))
-    revealed.value = { email: draft.email, password }
+    await client.value.request(createUser({ first_name: draft.first_name.trim(), last_name: draft.last_name.trim(), email, password, role: roleId.value }))
+    revealed.value = { email, password }
     Object.assign(draft, { first_name: '', last_name: '', email: '' })
     await load()
   } catch { toast.add({ title: 'Création impossible (email déjà utilisé ?)', color: 'error' }) }

@@ -37,6 +37,7 @@ export function useEditionConfig(opts: { withEvenement?: boolean } = {}) {
   const extraFields = ['annule', 'date_end', 'evenement.id', 'evenement.slug', 'evenement.title']
 
   const validate = async (p: Row, id: number | null) => {
+    if (p.annee == null || p.annee === '' || Number.isNaN(Number(p.annee))) return 'L’année est obligatoire.'
     const rows = await client.value.request(readItems('editions', {
       filter: { evenement: { _eq: p.evenement as number } },
       fields: ['id', 'evenement', 'annee', 'date_start', 'date_end'],
