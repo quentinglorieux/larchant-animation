@@ -3,22 +3,33 @@
     "annee": 2024,
     "date_start": "2024-06-28",
     "date_end": "2024-06-29",
-    "articles": ["content/posts/2024-06-28-Baleino.md", "content/posts/2024-06-29-LaBaleine.md"]
+    "articles": [
+      "content/posts/2024-06-28-Baleino.md",
+      "content/posts/2024-06-29-LaBaleine.md"
+    ]
   },
   "content/evenements/foire-aux-plantes/index.md": {
     "annee": 2026,
     "date_start": "2026-04-05",
-    "articles": ["content/posts/2026-02-foire-aux-plantes.md", "content/news/2026-05-04-FAP2026.md"]
+    "articles": [
+      "content/posts/2026-02-foire-aux-plantes.md",
+      "content/news/2026-05-04-FAP2026.md"
+    ]
   },
   "content/evenements/foire-aux-plantes/index25.md": {
     "annee": 2025,
     "date_start": "2025-04-06",
-    "articles": ["content/posts/2025-02-foire-aux-plantes.md"]
+    "articles": [
+      "content/posts/2025-02-foire-aux-plantes.md"
+    ]
   },
   "content/evenements/hivernale/index.md": {
     "annee": 2026,
     "date_start": "2026-03-08",
-    "articles": ["content/posts/2025-12-lhivernale-est-de-retour.md", "content/news/2026-01-06-l’hivernale-c’est-parti-pour-les-inscriptions copy.md"]
+    "articles": [
+      "content/posts/2025-12-lhivernale-est-de-retour.md",
+      "content/news/2026-01-06-l’hivernale-c’est-parti-pour-les-inscriptions copy.md"
+    ]
   },
   "content/evenements/hivernale/index24.md": {
     "annee": 2024,
@@ -29,7 +40,9 @@
   "content/evenements/hivernale/index25.md": {
     "annee": 2025,
     "date_start": "2025-03-09",
-    "articles": ["content/posts/2025-03-09-Hivernale_2025.md"]
+    "articles": [
+      "content/posts/2025-03-09-Hivernale_2025.md"
+    ]
   },
   "content/evenements/lyricantrail/index.md": {
     "annee": 2026,
@@ -44,16 +57,74 @@
   "content/evenements/telethon/index.md": {
     "annee": 2024,
     "date_start": "2024-11-30",
-    "articles": ["content/posts/2024-11-30-Telethon.md"]
+    "articles": [
+      "content/posts/2024-11-30-Telethon.md"
+    ]
   },
   "content/evenements/triathlon/index.md": {
     "annee": 2024,
     "date_start": "2024-09-15",
-    "articles": ["content/posts/2024-09-15-le-triathlon-de-larchant.md"]
+    "articles": [
+      "content/posts/2024-09-15-le-triathlon-de-larchant.md"
+    ]
   },
   "content/evenements/vide-grenier/index.md": {
     "annee": 2025,
     "date_start": "2025-09-21",
     "articles": []
-  }
+  },
+  "_extra": [
+    {
+      "evenement": "triathlon",
+      "annee": 2026,
+      "date_start": null,
+      "annule": true,
+      "affiche": "content/evenements/triathlon/édition-2026-du-triathlon-de-larchant-annulée_page-0001.jpg",
+      "content": "L'édition 2026 du Triathlon de Larchant est annulée en raison des incendies qui ont touché le massif forestier de Fontainebleau, en concertation avec l'ONF.",
+      "articles": [
+        "content/news/2026-07-29-le-triathlon-de-larchant-2026-naura-pas-lieu.md"
+      ]
+    },
+    {
+      "evenement": "lyricantrail",
+      "annee": 2024,
+      "date_start": "2024-10-13",
+      "affiche": "content/evenements/lyricantrail/affiche-2024.jpg",
+      "content": null,
+      "articles": [
+        "content/posts/2024-08-lyricantrail.md"
+      ]
+    },
+    {
+      "evenement": "vide-grenier",
+      "annee": 2024,
+      "date_start": "2024-09-22",
+      "affiche": "content/evenements/vide-grenier/videgrenier2024.jpg",
+      "content": null,
+      "articles": [
+        "content/posts/2024-09-22-VideGrenier.md"
+      ]
+    },
+    {
+      "evenement": "telethon",
+      "annee": 2025,
+      "date_start": "2025-12-06",
+      "content": null,
+      "articles": [
+        "content/news/2025-11-15-téléthon-2025-à-larchant-–-samedi-6-décembre.md"
+      ]
+    },
+    {
+      "evenement": "conferences",
+      "annee": 2025,
+      "date_start": "2025-02-08",
+      "affiche": "content/evenements/conferences/encordes.jpg",
+      "content": null,
+      "articles": [
+        "content/posts/2025-02-encordes.md",
+        "content/news/2025-10-31-rencontre-avec-l’auteur-wazo-–-pour-tout-l’or-de-brest.md",
+        "content/news/2025-11-15-projection-du-film-les-amants-du-grès.md"
+      ]
+    }
+  ]
 }

@@ -194,6 +194,32 @@ async function migrateEvenements() {
   console.log(`  ${report.evenements} évènements, ${report.editions} éditions`)
 }
 
+// Éditions connues uniquement par des articles (clé "_extra" des overrides)
+async function migrateExtraEditions() {
+  console.log('\n[éditions issues d articles]')
+  let n = 0
+  for (const x of OVERRIDES._extra || []) {
+    const evId = eventIdBySlug[x.evenement]
+    if (!evId) { report.skipped.push(`évènement inconnu pour édition extra : ${x.evenement} ${x.annee}`); continue }
+    const relDir = toForward(dirname(x.affiche || '')) 
+    const editionId = await upsert('editions', 'legacy_path', `extra:${x.evenement}:${x.annee}`, {
+      status: 'published',
+      evenement: evId,
+      annee: x.annee,
+      edition_label: x.edition_label || `Édition ${x.annee}`,
+      date_start: x.date_start ?? null,
+      date_end: x.date_end ?? null,
+      affiche: x.affiche ? (byRel.get(x.affiche) ?? resolveMedia(relDir, x.affiche)) : null,
+      content: x.content ?? null,
+      annule: x.annule ?? false,
+    })
+    editionLinks.push({ editionId, articles: x.articles || [] })
+    report.editions++
+    n++
+  }
+  console.log(`  ${n} éditions extra`)
+}
+
 // ---------- articles (posts + news) ----------
 const articleIds = []
 async function migrateArticles() {
@@ -377,6 +403,7 @@ async function main() {
   await seedSingletons()
   await seedCategories()
   await migrateEvenements()
+  await migrateExtraEditions()
   await migrateArticles()
   await migrateLeafDirs('ateliers', 'ateliers', 'ateliers')
   await migrateLeafDirs('activites', 'activites', 'activites')
