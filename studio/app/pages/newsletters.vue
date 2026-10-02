@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const fields = [
   { key: 'title', label: 'Titre', type: 'text', required: true },
-  { key: 'slug', label: 'Slug', type: 'text', half: true },
+  { key: 'slug', label: 'Adresse de la page', type: 'text', half: true, help: 'Fin de l’adresse web, générée depuis le titre. À ne pas modifier après publication.' },
   { key: 'status', label: 'Statut', type: 'select', half: true },
   { key: 'date', label: 'Date', type: 'date', half: true },
   { key: 'numero', label: 'Numéro', type: 'number', half: true },

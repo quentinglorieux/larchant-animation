@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const fields = [
   { key: 'title', label: 'Titre', type: 'text', required: true },
-  { key: 'slug', label: 'Slug', type: 'text', half: true },
+  { key: 'slug', label: 'Adresse de la page', type: 'text', half: true, help: 'Fin de l’adresse web, générée depuis le titre. À ne pas modifier après publication.' },
   { key: 'status', label: 'Statut', type: 'select', half: true },
   { key: 'category', label: 'Catégorie', type: 'm2o', refCollection: 'categories', refLabelKey: 'name', half: true },
   { key: 'actif', label: 'Actif', type: 'boolean', half: true },
@@ -12,7 +12,7 @@ const fields = [
   { key: 'tarif', label: 'Tarif', type: 'text', half: true },
   { key: 'contact', label: 'Contact', type: 'text', half: true },
   { key: 'image', label: 'Image', type: 'image' },
-  { key: 'description', label: 'Description (markdown)', type: 'markdown' }
+  { key: 'description', label: 'Description', type: 'markdown' }
 ]
 const columns = [
   { key: 'image', header: '', type: 'image' },
@@ -23,5 +23,5 @@ const columns = [
 </script>
 <template>
   <ResourceManager collection="ateliers" title="Ateliers" singular-label="atelier"
-    :fields="fields" :columns="columns" :default-sort="['title']" />
+    :fields="fields" :columns="columns" :preview-path="(r) => `/ateliers/${r.slug}`" :default-sort="['title']" />
 </template>
