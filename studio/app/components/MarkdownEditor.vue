@@ -5,7 +5,7 @@ import { applyFormat, insertUploadedImage, type FormatKind } from '~/utils/markd
 
 const model = defineModel<string | null>({ default: '' })
 const props = withDefaults(defineProps<{ rows?: number }>(), { rows: 14 })
-const { uploadToDirectus, toast } = useStudio()
+const { uploadToDirectus, toast, IMAGE_ACCEPT } = useStudio()
 const { render } = useMarkdownRender()
 
 const host = ref<HTMLElement>()
@@ -51,7 +51,7 @@ async function uploadFiles(files: FileList | File[]) {
 function pickImage() {
   const input = document.createElement('input')
   input.type = 'file'
-  input.accept = 'image/*'
+  input.accept = IMAGE_ACCEPT
   input.onchange = () => { if (input.files) uploadFiles(input.files) }
   input.click()
 }

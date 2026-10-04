@@ -47,8 +47,7 @@ export default defineNuxtConfig({
   routeRules: {
     // Le markdown stocke les images en /assets/<id> : on les sert depuis Directus.
     '/assets/**': { proxy: `${DIRECTUS_URL}/assets/**` },
-    ...redirectRules,
-    '/**': { swr: 60 }
+    ...redirectRules
   },
 
   compatibilityDate: '2025-01-15'

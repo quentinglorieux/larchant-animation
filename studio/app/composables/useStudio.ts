@@ -5,6 +5,8 @@ export const useStudio = () => {
 
   const DIRECTUS_URL = config.public.directusUrl as string
   const DIRECTUS_ASSETS = `${DIRECTUS_URL}/assets`
+  // Le sélecteur de macOS grise souvent les .avif avec image/* seul.
+  const IMAGE_ACCEPT = 'image/*,.avif,.webp,.png,.jpg,.jpeg,.gif,.svg'
 
   const assetUrl = (
     id: string | null | undefined,
@@ -63,12 +65,12 @@ export const useStudio = () => {
   }
 
   const triggerImageUpload = (onSuccess: (id: string) => void) => {
-    triggerFileUpload(onSuccess, { accept: 'image/*' })
+    triggerFileUpload(onSuccess, { accept: IMAGE_ACCEPT })
   }
 
   return {
     client, user, toast,
-    DIRECTUS_URL, DIRECTUS_ASSETS,
+    DIRECTUS_URL, DIRECTUS_ASSETS, IMAGE_ACCEPT,
     assetUrl, slugify, uploadToDirectus, triggerFileUpload, triggerImageUpload
   }
 }
