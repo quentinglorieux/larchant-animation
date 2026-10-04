@@ -3,7 +3,7 @@ import type { Article, Atelier, Categorie, SiteParams } from '~/types'
 
 const { data: site } = await useDirectusSingleton<SiteParams>('site_parameters')
 const { getUrl } = useDirectusFile()
-const { logoUrl } = await useLogos()
+const pictoUrl = usePicto()
 
 // Dernières actualités (un article « à la une » y figure aussi).
 const { data: articles } = await useDirectusCollection<Article>('articles', {
@@ -25,22 +25,22 @@ const { data: ateliersRaw } = await useDirectusCollection<Atelier>('ateliers', {
   filter: { status: { _eq: 'published' }, actif: { _eq: true } },
   sort: ['title'],
   limit: -1,
-  fields: ['id', 'slug', 'title', 'image']
+  fields: ['id', 'slug', 'title', 'image', 'picto']
 })
 
 const { data: activitesRaw } = await useDirectusCollection<Atelier>('activites', {
   filter: { status: { _eq: 'published' } },
   sort: ['title'],
   limit: -1,
-  fields: ['id', 'slug', 'title', 'image']
+  fields: ['id', 'slug', 'title', 'image', 'picto']
 })
 
 const ateliers = computed(() => sortByLogoOrder('ateliers', ateliersRaw.value))
 const activites = computed(() => sortByLogoOrder('activites', activitesRaw.value))
 
 /** Pictogramme de l'ancien site, sinon l'image de l'élément dans Directus. */
-const tileImage = (kind: 'ateliers' | 'activites', it: Atelier) =>
-  logoUrl(kind, it.slug) || getUrl(it.image, { width: '96', height: '96', fit: 'contain' })
+const tileImage = (it: Atelier) =>
+  pictoUrl(it) || getUrl(it.image, { width: '96', height: '96', fit: 'contain' })
 
 const logo = computed(() => getUrl(site.value?.logo, { width: '300', height: '300', fit: 'contain' }))
 const hasBandeau = computed(() => !!(site.value?.bandeau_texte && site.value?.bandeau_lien))
@@ -238,7 +238,7 @@ function scrollToAsso(e: Event) {
               :to="`/ateliers/${at.slug}`"
               class="flex flex-col justify-center col-span-1 px-8 pt-8 pb-4 bg-gray-50 hover:bg-slate-300 hover:text-indigo-600 dark:text-slate-200 dark:bg-gray-900/10 dark:hover:bg-slate-600 dark:hover:text-indigo-300"
             >
-              <img v-if="tileImage('ateliers', at)" :src="tileImage('ateliers', at)!" alt="" class="w-full max-h-12 object-contain dark:invert">
+              <img v-if="tileImage(at)" :src="tileImage(at)!" alt="" class="w-full max-h-12 object-contain dark:invert">
               <span class="pt-2 text-center">{{ at.title }}</span>
             </NuxtLink>
           </div>
@@ -281,7 +281,7 @@ function scrollToAsso(e: Event) {
             :to="`/activites/${ac.slug}`"
             class="flex flex-col justify-center col-span-1 px-8 pt-8 pb-4 bg-gray-50 hover:bg-slate-300 hover:text-indigo-600 dark:text-slate-200 dark:bg-gray-900/10 dark:hover:bg-slate-600 dark:hover:text-indigo-300"
           >
-            <img v-if="tileImage('activites', ac)" :src="tileImage('activites', ac)!" alt="" class="w-full max-h-12 object-contain dark:invert">
+            <img v-if="tileImage(ac)" :src="tileImage(ac)!" alt="" class="w-full max-h-12 object-contain dark:invert">
             <span class="pt-2 text-center">{{ ac.title }}</span>
           </NuxtLink>
         </div>

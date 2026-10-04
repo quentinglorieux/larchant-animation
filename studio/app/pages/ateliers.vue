@@ -12,6 +12,7 @@ const fields = [
   { key: 'tarif', label: 'Tarif', type: 'text', half: true },
   { key: 'contact', label: 'Contact', type: 'text', half: true },
   { key: 'image', label: 'Image', type: 'image' },
+  { key: 'picto', label: 'Pictogramme (SVG)', type: 'image', help: 'Petit dessin affiché dans le menu et sur l’accueil.' },
   { key: 'description', label: 'Description', type: 'markdown' }
 ]
 const columns = [

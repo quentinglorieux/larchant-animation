@@ -7,21 +7,21 @@ const { data: site } = await useDirectusSingleton<SiteParams>('site_parameters',
 const { data: infos } = await useDirectusSingleton<InfosGenerales>('infos_generales')
 const { data: navAteliers } = await useDirectusCollection<Atelier>('ateliers', {
   filter: { status: { _eq: 'published' }, actif: { _eq: true } },
-  fields: ['id', 'slug', 'title', 'animateur', 'horaires'],
+  fields: ['id', 'slug', 'title', 'animateur', 'horaires', 'picto'],
   limit: -1
 })
 const { data: navActivites } = await useDirectusCollection<Atelier>('activites', {
   filter: { status: { _eq: 'published' } },
-  fields: ['id', 'slug', 'title'],
+  fields: ['id', 'slug', 'title', 'picto'],
   sort: ['title'],
   limit: -1
 })
 const { data: navEvenements } = await useDirectusCollection<Evenement>('evenements', {
   filter: { status: { _eq: 'published' } },
-  fields: ['id', 'slug', 'title', 'description', { category: ['name'] }],
+  fields: ['id', 'slug', 'title', 'description', 'picto', { category: ['name'] }],
   limit: -1
 })
-const { logoUrl } = await useLogos()
+const pictoUrl = usePicto()
 
 interface SubItem { label: string, to: string, hint?: string | null, icon?: string | null }
 interface NavItem { label: string, to?: string, children?: SubItem[] }
@@ -37,7 +37,7 @@ const nav = computed<NavItem[]>(() => [
         label: a.title,
         to: `/ateliers/${a.slug}`,
         hint: a.horaires || a.animateur,
-        icon: logoUrl('ateliers', a.slug)
+        icon: pictoUrl(a)
       })),
       { label: 'Tous les ateliers', to: '/ateliers' }
     ]
@@ -48,7 +48,7 @@ const nav = computed<NavItem[]>(() => [
       ...sortByLogoOrder('activites', navActivites.value).map(a => ({
         label: a.title,
         to: `/activites/${a.slug}`,
-        icon: logoUrl('activites', a.slug)
+        icon: pictoUrl(a)
       })),
       { label: 'Toutes les activités', to: '/activites' }
     ]
@@ -62,7 +62,7 @@ const nav = computed<NavItem[]>(() => [
         label: e.title,
         to: `/evenements/${e.slug}`,
         hint: e.description || catName(e.category),
-        icon: logoUrl('evenements', e.slug)
+        icon: pictoUrl(e)
       })),
       { label: 'Tous les événements', to: '/evenements' }
     ]

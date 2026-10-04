@@ -195,6 +195,7 @@ async function main() {
     ])
   await ensureM2O('evenements', 'category', 'categories')
   await ensureFile('evenements', 'image', { image: true })
+  await ensureFile('evenements', 'picto', { image: true })
   await ensureFile('evenements', 'reglement')
 
   // 3. editions (enfant: une instance par an)
@@ -242,6 +243,7 @@ async function main() {
     ])
   await ensureM2O('ateliers', 'category', 'categories')
   await ensureFile('ateliers', 'image', { image: true })
+  await ensureFile('ateliers', 'picto', { image: true })
 
   // 6. activites (activités libres)
   console.log('\n[activites]')
@@ -258,6 +260,7 @@ async function main() {
     ])
   await ensureM2O('activites', 'category', 'categories')
   await ensureFile('activites', 'image', { image: true })
+  await ensureFile('activites', 'picto', { image: true })
 
   // 7. newsletters
   console.log('\n[newsletters]')

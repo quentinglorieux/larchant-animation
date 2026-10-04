@@ -37,6 +37,7 @@ export interface Evenement {
   recurrence?: string | null
   reglement?: string | null
   image?: string | null
+  picto?: string | null
   couleur?: string | null
   couleur_accent?: string | null
   featured?: boolean
@@ -70,6 +71,7 @@ export interface Atelier {
   tarif?: string | null
   contact?: string | null
   image?: string | null
+  picto?: string | null
   category?: number | Categorie | null
   actif?: boolean
 }

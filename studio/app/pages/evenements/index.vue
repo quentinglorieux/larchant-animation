@@ -8,6 +8,7 @@ const fields = [
   { key: 'recurrence', label: 'Récurrence', type: 'text' },
   { key: 'description', label: 'Présentation', type: 'markdown' },
   { key: 'image', label: 'Image générique', type: 'image', half: true },
+  { key: 'picto', label: 'Pictogramme (SVG)', type: 'image', half: true, help: 'Petit dessin affiché dans le menu.' },
   { key: 'reglement', label: 'Règlement (PDF)', type: 'file', half: true },
   { key: 'featured', label: 'À la une', type: 'boolean', half: true }
 ]

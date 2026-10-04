@@ -11,7 +11,8 @@
     "test": "node --test lib/*.test.mjs",
     "review": "node review.mjs",
     "redirects": "node redirects.mjs",
-    "verify": "node verify.mjs"
+    "verify": "node verify.mjs",
+    "pictos": "node pictos.mjs"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
