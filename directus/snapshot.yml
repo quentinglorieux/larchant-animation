@@ -1,5 +1,5 @@
 version: 1
-directus: 11.17.4
+directus: 11.17.3
 vendor: postgres
 collections:
   - collection: accueil_slides
@@ -1119,6 +1119,47 @@ fields:
       width: half
     schema:
       name: image
+      table: activites
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: activites
+    field: picto
+    type: uuid
+    meta:
+      collection: activites
+      conditions: null
+      display: null
+      display_options: null
+      field: picto
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: null
+      readonly: false
+      required: false
+      searchable: true
+      sort: 15
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: picto
       table: activites
       data_type: uuid
       default_value: null
@@ -2563,6 +2604,47 @@ fields:
       width: half
     schema:
       name: image
+      table: ateliers
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: ateliers
+    field: picto
+    type: uuid
+    meta:
+      collection: ateliers
+      conditions: null
+      display: null
+      display_options: null
+      field: picto
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: null
+      readonly: false
+      required: false
+      searchable: true
+      sort: 16
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: picto
       table: ateliers
       data_type: uuid
       default_value: null
@@ -4193,6 +4275,47 @@ fields:
       validation: null
       validation_message: null
       width: full
+  - collection: evenements
+    field: picto
+    type: uuid
+    meta:
+      collection: evenements
+      conditions: null
+      display: null
+      display_options: null
+      field: picto
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: null
+      readonly: false
+      required: false
+      searchable: true
+      sort: 16
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: picto
+      table: evenements
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
   - collection: infos_generales
     field: id
     type: integer
@@ -6110,6 +6233,27 @@ relations:
       constraint_name: activites_image_foreign
       on_update: NO ACTION
       on_delete: SET NULL
+  - collection: activites
+    field: picto
+    related_collection: directus_files
+    meta:
+      junction_field: null
+      many_collection: activites
+      many_field: picto
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: activites
+      column: picto
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: activites_picto_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
   - collection: articles
     field: category
     related_collection: categories
@@ -6278,6 +6422,27 @@ relations:
       constraint_name: ateliers_image_foreign
       on_update: NO ACTION
       on_delete: SET NULL
+  - collection: ateliers
+    field: picto
+    related_collection: directus_files
+    meta:
+      junction_field: null
+      many_collection: ateliers
+      many_field: picto
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: ateliers
+      column: picto
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: ateliers_picto_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
   - collection: editions
     field: evenement
     related_collection: evenements
@@ -6402,6 +6567,27 @@ relations:
       foreign_key_table: directus_files
       foreign_key_column: id
       constraint_name: evenements_reglement_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: evenements
+    field: picto
+    related_collection: directus_files
+    meta:
+      junction_field: null
+      many_collection: evenements
+      many_field: picto
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: evenements
+      column: picto
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: evenements_picto_foreign
       on_update: NO ACTION
       on_delete: SET NULL
   - collection: newsletters
